@@ -1,0 +1,2929 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Tecnicas de Diseño"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\footnotesize\ttfamily},commentstyle={\color{blue}},emphstyle={\color{red}},frame=single,keywordstyle={\color{red}},language=Cobol,tabsize=2"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[75.27] Algoritmos y Programación IV
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introducción a la programación estructurada
+\end_layout
+
+\begin_layout Description
+Programación
+\begin_inset space ~
+\end_inset
+
+estructurada paradigma de programación orientado a mejorar la claridad,
+ calidad y tiempo de desarrollo de un programa de computadora, utilizando
+ únicamente subrutinas y tres estructuras: secuencia, selección (
+\emph on
+if
+\emph default
+ y 
+\emph on
+switch
+\emph default
+) e iteración (bucles 
+\emph on
+for
+\emph default
+ y 
+\emph on
+while
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+teorema del programa estructurado
+\series default
+ demuestra que todo programa puede escribirse utilizando únicamente las
+ tres instrucciones de control siguientes:
+\end_layout
+
+\begin_layout Enumerate
+Secuencia: ejecución ordenada de sentencias.
+\end_layout
+
+\begin_layout Enumerate
+Selección (
+\emph on
+if / else
+\emph default
+, 
+\emph on
+switch
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language={[ibm]Cobol},showstringspaces=false"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+program-id.
+ Seleccion.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+data division.
+\end_layout
+
+\begin_layout Plain Layout
+
+working-storage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+01  nro     pic     S999.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+procedure division.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   ACCEPT nro.
+\end_layout
+
+\begin_layout Plain Layout
+
+   IF (nro < 0) THEN
+\end_layout
+
+\begin_layout Plain Layout
+
+       DISPLAY "Numero negativo"
+\end_layout
+
+\begin_layout Plain Layout
+
+   ELSE IF (nro > 0) THEN
+\end_layout
+
+\begin_layout Plain Layout
+
+       DISPLAY "Numero positivo"
+\end_layout
+
+\begin_layout Plain Layout
+
+   ELSE
+\end_layout
+
+\begin_layout Plain Layout
+
+       DISPLAY "Cero"
+\end_layout
+
+\begin_layout Plain Layout
+
+   END-IF.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	EVALUATE nro
+\end_layout
+
+\begin_layout Plain Layout
+
+		WHEN 0
+\end_layout
+
+\begin_layout Plain Layout
+
+			DISPLAY "Cero"
+\end_layout
+
+\begin_layout Plain Layout
+
+		WHEN 1
+\end_layout
+
+\begin_layout Plain Layout
+
+			DISPLAY "Uno"
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   DISPLAY "Presione ENTER para salir".
+\end_layout
+
+\begin_layout Plain Layout
+
+   ACCEPT nro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Iteración (
+\emph on
+do...while
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+program-id.
+ Iteracion.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+data division.
+\end_layout
+
+\begin_layout Plain Layout
+
+working-storage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+01 I        PIC     99.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+procedure division.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   MOVE 1 TO I.
+\end_layout
+
+\begin_layout Plain Layout
+
+   PERFORM ciclo UNTIL I > 10.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ciclo.
+\end_layout
+
+\begin_layout Plain Layout
+
+   DISPLAY I.
+\end_layout
+
+\begin_layout Plain Layout
+
+   ADD 1 TO I.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Diagramas de Jackson
+\end_layout
+
+\begin_layout Itemize
+Cada cuadrado es un párrafo.
+\end_layout
+
+\begin_layout Itemize
+Cada cuadrado con un asterisco es una instrucción de tipo 
+\family typewriter
+perform
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Cada cuadrado con dos barras en la esquina superior derecha es una llamada
+ a otro módulo.
+\end_layout
+
+\begin_layout Itemize
+Cada cuadrado con un círculo en la esquina superior derecha es una sentencia
+ 
+\family typewriter
+if
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Cada cuadrado con una línea diagonal es una sentencia 
+\family typewriter
+else
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/diag-jackson.JPG
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo de diagrama de Jackson
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Archivos secuenciales
+\end_layout
+
+\begin_layout Standard
+Se leen con la sentencia 
+\family typewriter
+read
+\family default
+.
+\end_layout
+
+\begin_layout Section
+COBOL (COmmon Business Oriented Language)
+\end_layout
+
+\begin_layout Itemize
+Año 1959
+\end_layout
+
+\begin_layout Itemize
+Es un lenguaje compilado
+\end_layout
+
+\begin_layout Itemize
+Sentencias deben finalizar con un punto.
+\end_layout
+
+\begin_layout Standard
+El programa se divide en 
+\series bold
+divisions
+\series default
+, 
+\series bold
+sections
+\series default
+ y 
+\series bold
+párrafos
+\series default
+.
+ Una division está formada por una o más sections.
+ Una section puede tener más de un párrafo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+IDENTIFICATION DIVISION.
+\end_layout
+
+\begin_layout Plain Layout
+
+program-id.
+ Programa.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ENVIRONMENT DIVISION.
+\end_layout
+
+\begin_layout Plain Layout
+
+configuration section.
+\end_layout
+
+\begin_layout Plain Layout
+
+[special names
+\end_layout
+
+\begin_layout Plain Layout
+
+	decimal point is comma.]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+input-output section.
+\end_layout
+
+\begin_layout Plain Layout
+
+file-control.
+\end_layout
+
+\begin_layout Plain Layout
+
+	select nom-arch
+\end_layout
+
+\begin_layout Plain Layout
+
+	assign to disk "path
+\backslash
+al
+\backslash
+archivo"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+DATA DIVISION.
+\end_layout
+
+\begin_layout Plain Layout
+
+file section.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+working-storage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+linkage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PROCEDURE DIVISION.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	perform nom-parrafo until ...
+\end_layout
+
+\begin_layout Plain Layout
+
+	stop run.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+nom-parrafo.
+\end_layout
+
+\begin_layout Plain Layout
+
+	...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Declaración de variables
+\end_layout
+
+\begin_layout Itemize
+X: caracter
+\end_layout
+
+\begin_layout Itemize
+9: número
+\end_layout
+
+\begin_layout Subsection
+Instrucciones
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+move corresponding id1 to id2
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Mueve los campos del mismo nombre del grupo 
+\family typewriter
+id1
+\family default
+ al grupo 
+\family typewriter
+id2
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Merge y apareo de archivos
+\end_layout
+
+\begin_layout Subsection
+Merge simple
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/merge-simple.JPG
+	scale 15
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Merge simple
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Merge compuesto
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/merge-compuesto.JPG
+	scale 15
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Merge compuesto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tablas
+\end_layout
+
+\begin_layout Itemize
+Definición de una tabla con 10 celdas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+01 tabladnis occurs 10 times.
+\end_layout
+
+\begin_layout Plain Layout
+
+    03  tipo    pic x.
+\end_layout
+
+\begin_layout Plain Layout
+
+    03  numero  pic 9(8).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Carga de una tabla.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "CobolProject/CobolProject/Tablas.cbl"
+lstparams "label={tablas-cbl},language=Cobol"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Búsqueda en una tabla.
+ Se requiere el uso de la sentencia INDEXED BY.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Si la tabla no está ordenada: verbo SEARCH (búsqueda lineal).
+\end_layout
+
+\begin_layout Itemize
+Si la tabla está ordenada: verbo SEARCH ALL (búsqueda binaria).
+ Se requiere el uso de la sentencia KEY IS.
+ Los elementos sin valores deben rellenarse con HIGH-VALUES para que esto
+ funcione bien (búsqueda ascendente).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+working-storage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+01 tabladnis occurs 10 times
+\end_layout
+
+\begin_layout Plain Layout
+
+       ascending key is numero
+\end_layout
+
+\begin_layout Plain Layout
+
+       indexed by indice.
+\end_layout
+
+\begin_layout Plain Layout
+
+       03  tipo    pic x.
+\end_layout
+
+\begin_layout Plain Layout
+
+       03  numero  pic 9(8) value 99999999.
+\end_layout
+
+\begin_layout Plain Layout
+
+       03  nombre  pic x(30).
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+01  indicecarga      pic 99.
+\end_layout
+
+\begin_layout Plain Layout
+
+01  exitval        pic x.
+\end_layout
+
+\begin_layout Plain Layout
+
+01  in-dni         pic 9(8).
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+procedure division.
+\end_layout
+
+\begin_layout Plain Layout
+
+   open input arch.
+\end_layout
+
+\begin_layout Plain Layout
+
+   perform leerarch.
+\end_layout
+
+\begin_layout Plain Layout
+
+   move 1 to indicecarga.
+\end_layout
+
+\begin_layout Plain Layout
+
+   perform cargar until eof-arch or indicecarga > 9.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+   close arch.
+\end_layout
+
+\begin_layout Plain Layout
+
+   display "Ingrese un dni para obtener el nombre: ".
+\end_layout
+
+\begin_layout Plain Layout
+
+   accept in-dni.
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   initialize indice.
+\end_layout
+
+\begin_layout Plain Layout
+
+   search all tabladnis
+\end_layout
+
+\begin_layout Plain Layout
+
+       at end perform noencontrado
+\end_layout
+
+\begin_layout Plain Layout
+
+       when (numero(indice)) equals in-dni perform 
+\end_layout
+
+\begin_layout Plain Layout
+
+       mostrarnombre
+\end_layout
+
+\begin_layout Plain Layout
+
+   end-search.
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   accept exitval.
+\end_layout
+
+\begin_layout Plain Layout
+
+   stop run.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Archivos indexados
+\end_layout
+
+\begin_layout Itemize
+Declaración de un archivo indexado
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+environment division.
+\end_layout
+
+\begin_layout Plain Layout
+
+file-control.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	select arch
+\end_layout
+
+\begin_layout Plain Layout
+
+	assign to disk "path
+\backslash
+al
+\backslash
+archivo"
+\end_layout
+
+\begin_layout Plain Layout
+
+	organization is indexed
+\end_layout
+
+\begin_layout Plain Layout
+
+	access mode is [sequential, dynamic, random]
+\end_layout
+
+\begin_layout Plain Layout
+
+	record key is nombre-clave-primaria
+\end_layout
+
+\begin_layout Plain Layout
+
+	alternate record key is nombre-clave-secundaria [with duplicates]
+\end_layout
+
+\begin_layout Plain Layout
+
+	file status is fs-arch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Acceso secuencial (solo por clave primaria)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+read nombrearch record.
+\end_layout
+
+\begin_layout Plain Layout
+
+if (fs-nombrearch <> oknombrearch)
+\end_layout
+
+\begin_layout Plain Layout
+
+	*hacer algo
+\end_layout
+
+\begin_layout Plain Layout
+
+end-if.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Acceso aleatorio (por clave primaria o secundaria)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+read nombrearch record
+\end_layout
+
+\begin_layout Plain Layout
+
+	[key is nombre-clave].
+\end_layout
+
+\begin_layout Plain Layout
+
+if (fs-nombrearch <> oknombrearch)
+\end_layout
+
+\begin_layout Plain Layout
+
+	*hacer algo
+\end_layout
+
+\begin_layout Plain Layout
+
+end-if.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Acceso dinámico (por clave primaria o secundaria)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+start nombrearch [key is operacion nombre-dato]
+\end_layout
+
+\begin_layout Plain Layout
+
+if (fs-nombrearch <> oknombrearch)
+\end_layout
+
+\begin_layout Plain Layout
+
+	*hacer algo
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+read nombrearch next record
+\end_layout
+
+\begin_layout Plain Layout
+
+	[key is nombre-clave].
+\end_layout
+
+\begin_layout Plain Layout
+
+if (fs-nombrearch <> oknombrearch)
+\end_layout
+
+\begin_layout Plain Layout
+
+	*hacer algo
+\end_layout
+
+\begin_layout Plain Layout
+
+end-if.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Operaciones CRUD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+REWRITE   *para actualizar un registro
+\end_layout
+
+\begin_layout Plain Layout
+
+WRITE     *para insertar un registro
+\end_layout
+
+\begin_layout Plain Layout
+
+DELETE	*para borrar, LECTURA ANTERIOR ES OBLIGATORIA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Sort de archivos
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sort arch-ordenar
+\end_layout
+
+\begin_layout Plain Layout
+
+	ascending key clave
+\end_layout
+
+\begin_layout Plain Layout
+
+	input procedure is entrada
+\end_layout
+
+\begin_layout Plain Layout
+
+	output procedure is salida
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para mandar un registro al archivo ordenado: 
+\family typewriter
+release
+\end_layout
+
+\begin_layout Standard
+Para obtener un registro del archivo ordenado: 
+\family typewriter
+return
+\end_layout
+
+\begin_layout Standard
+Con el 
+\begin_inset Quotes eld
+\end_inset
+
+input procedure
+\begin_inset Quotes erd
+\end_inset
+
+ seleccionamos los campos y armamos el registro que va a ir al archivo de
+ sort.
+\end_layout
+
+\begin_layout Standard
+Con el 
+\begin_inset Quotes eld
+\end_inset
+
+output procedure
+\begin_inset Quotes erd
+\end_inset
+
+, vamos leyendo registros con 
+\family typewriter
+return
+\family default
+ y luego trabajamos sobre ellos (por ejemplo, imprimiendo un reporte).
+\end_layout
+
+\begin_layout Standard
+El archivo de sort no es necesario abrilo ni cerrarlo.
+\end_layout
+
+\begin_layout Section
+Subprogramas
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+program-id.
+ avg.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+data division.
+\end_layout
+
+\begin_layout Plain Layout
+
+working-storage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+01 a pic 99.
+\end_layout
+
+\begin_layout Plain Layout
+
+01 b pic 99.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+linkage section.
+\end_layout
+
+\begin_layout Plain Layout
+
+01 res pic 99.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+procedure division using a b res.
+\end_layout
+
+\begin_layout Plain Layout
+
+   compute res = ( a + b ) / 2.
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+end program avg.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+SQL embebido en COBOL
+\end_layout
+
+\begin_layout Subsection
+Introducción
+\end_layout
+
+\begin_layout Standard
+Let's say we've written a COBOL code which has some SQLs in it.
+\end_layout
+
+\begin_layout Enumerate
+The COBOL compiler cannot understand the SQL statements.
+ And if it were to encounter SQLs then it would flag compile time errors.
+ So there needs to be someone who will be able to comment out these SQLs
+ before the compiler runs.
+ This someone is the 
+\series bold
+DB2 precompiler
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The
+\series bold
+ DB2 precompiler
+\series default
+ takes the source code (COBOL+DB2 commands), comments out the SQLs and inserts
+ some CALL statements; the CALL statements are allowed in COBOL.
+ Thus the code would be something like this: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CALL 'DSNHLI' USING SQL-PLIST7 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+DSNHLI is another program.
+ While compiling the original source code, the compiler won't know what
+ DSNHLI is.
+ It leaves this task to the linker.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The DB2 precompiler filters out the SQLs from the source code and creates
+ a 
+\series bold
+DBRM
+\series default
+ (
+\series bold
+\emph on
+Database Request Module
+\series default
+\emph default
+).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Thus the output of the DB2 precompiler will be:
+\end_layout
+
+\begin_layout Enumerate
+a modified source code (with SQLs commented out and some extra CALL statements).
+ This will be compiled as usual by the COBOL compiler and the object code
+ will be created.
+ 
+\end_layout
+
+\begin_layout Enumerate
+a DBRM (containing the SQLs alone)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The DBRM doesn't have any information about how to access the data requested
+ from the tables (like what is the best method to access the database, optimizin
+g the query, etc).
+ 
+\series bold
+Binding
+\series default
+ achieves all of the above.
+ We bind the DBRM into an 
+\series bold
+execution plan
+\series default
+ and this plan contains the information about the DB2 resources required
+ and access paths.
+ 
+\end_layout
+
+\begin_layout Subsection
+Definición de datos
+\end_layout
+
+\begin_layout Standard
+When you access data with SQL statements in COBOL programs, you must provide
+ corresponding data definitions in your COBOL source code.
+ This requirement is usually accomplished by stating the data definitions
+ in a copybook and including that copybook in your COBOL source code.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+EXEC SQL ...
+ END-EXEC Blocks.
+ 
+\series default
+Every SQL statement in your program must be included within an EXEC SQL
+ ...
+ END-EXEC.
+ Each EXEC SQL ...
+ END-EXEC block must contain only one SQL statement.
+ If the SQL command is not terminated by an END-EXEC operand, a COBOL compiler
+ error will be generated.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Host Variables.
+
+\series default
+ Use host variables to store data that is accessed by both SQL and COBOL
+ statements.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+There are two ways to use host variables:
+\end_layout
+
+\begin_layout Enumerate
+To store information returned by the database engine as the result of an
+ SQL statement.
+ 
+\end_layout
+
+\begin_layout Enumerate
+To store information sent to the database engine and/or dynamic information
+ that controls what is returned by a SELECT statement.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+EXEC SQL 
+\end_layout
+
+\begin_layout Plain Layout
+
+     DECLARE EMPCURS CURSOR FOR 
+\end_layout
+
+\begin_layout Plain Layout
+
+     SELECT LNAME, FNAME, PAYRATE, HOURS 
+\end_layout
+
+\begin_layout Plain Layout
+
+         FROM EMPLOYEE 
+\end_layout
+
+\begin_layout Plain Layout
+
+         WHERE DEPT = :DEPT-NUM 
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+All host variables (DEPT-NUM) appearing inside an EXEC SQL ...
+ END-EXEC block should be preceded by a colon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Copybooks
+\series default
+.
+ Use the EXEC SQL INCLUDE statement to include copybooks containing definitions
+ for tables.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Copybooks allow host variable definitions for a table's columns to be inserted
+ within your COBOL code, allowing data from those columns to be used in
+ your program.
+ If a modification is made to a table (such as a change of data type or
+ column length), then it is only necessary to modify the copybook rather
+ than the source code definition for that table in all the programs that
+ use it.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ 01 EMP-TABLE.
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 ENO		PIC S9(4) COMP.
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 LNAME 	 PIC X(10).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 FNAME 	 PIC X(10).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 STREET 	PIC X(20).
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 CITY 	  PIC X(15).
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 ST 		PIC XX.
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 ZIP 	   PIC X(5).
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 DEPT 	  PIC X(4).
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 PAYRATE    PIC S9(13)V99 COMP-3.
+\end_layout
+
+\begin_layout Plain Layout
+
+     03 COMP-3	 PIC S9V99 COMP-3.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definición de un 
+\emph on
+copybook
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+EXEC-SQL 
+\end_layout
+
+\begin_layout Plain Layout
+
+    INCLUDE EMPREC 
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inclusión de un 
+\emph on
+copybook 
+\emph default
+en un programa COBOL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+SQL Communications Area
+\series default
+.
+ Every COBOL program containing embedded SQL must have an SQL Communications
+ Area (SQLCA) or the field SQLCODE defined in its Working-Storage Section.
+ This definition is normally accomplished by including the SQLCA copybook
+ provided with your COBOL system.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The SQLCA holds information on the status of the SQL statement last executed.
+ It is updated after the execution of each EXEC SQL ...
+ END-EXEC block of code.
+\end_layout
+
+\begin_layout Itemize
+Create error-checking routines that use the SQLCA to control the flow of
+ the program.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+
+\emph on
+Cursor processing
+\end_layout
+
+\begin_layout Standard
+Cursor is a programming device that allows the SELECT statement to find
+ a set of rows but return them one at a time.
+ 
+\end_layout
+
+\begin_layout Standard
+Cursor processing is done in several steps: 
+\end_layout
+
+\begin_layout Enumerate
+Define the rows you want to retrieve, either in the working storage or in
+ the procedure division.
+ This is called declaring the cursor.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PROCEDURE DIVISION.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+* declare cursor for select 
+\end_layout
+
+\begin_layout Plain Layout
+
+     EXEC SQL
+\end_layout
+
+\begin_layout Plain Layout
+
+         DECLARE CursorJamesCameron CURSOR FOR
+\end_layout
+
+\begin_layout Plain Layout
+
+		 Select Film_Title
+\end_layout
+
+\begin_layout Plain Layout
+
+		   From Director_Film_Table
+\end_layout
+
+\begin_layout Plain Layout
+
+		  Where Director_Last_Name equals "Cameron"
+\end_layout
+
+\begin_layout Plain Layout
+
+		    and Director_First_Name equals "James"
+\end_layout
+
+\begin_layout Plain Layout
+
+		  Order By Film_Title
+\end_layout
+
+\begin_layout Plain Layout
+
+     END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Open the cursor.
+ This activates the cursor and loads the data.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+* open cursor
+\end_layout
+
+\begin_layout Plain Layout
+
+     EXEC SQL
+\end_layout
+
+\begin_layout Plain Layout
+
+         Open CursorJamesCameron
+\end_layout
+
+\begin_layout Plain Layout
+
+     END-EXEC 
+\end_layout
+
+\begin_layout Plain Layout
+
+     MOVE SQLCODE TO DISP-CODE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Fetch the data into host variables.
+ The fetch will take the current sequential row and put it into the host
+ variable.
+ It will then set the next sequential row to the current sequential row.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+* fetch a data item 
+\end_layout
+
+\begin_layout Plain Layout
+
+     EXEC SQL
+\end_layout
+
+\begin_layout Plain Layout
+
+         Fetch CursorJamesCameron
+\end_layout
+
+\begin_layout Plain Layout
+
+ 		 Into :CameronMovieName
+\end_layout
+
+\begin_layout Plain Layout
+
+     END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can repeat doing the fetch until you finish reading each row.
+ When all rows are read the host variable will be set to null or spaces.
+ Usually a special host variable is set by the dbms to indicate that the
+ cursor is empty.
+ In DB2 the SQLCODE is set to +100 when this happens.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Close the cursor.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+* close the cursor 
+\end_layout
+
+\begin_layout Plain Layout
+
+     EXEC SQL 
+\end_layout
+
+\begin_layout Plain Layout
+
+         Close CursorJamesCameron
+\end_layout
+
+\begin_layout Plain Layout
+
+     END-EXEC 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "CobolProject/CobolProject/DB2-SQL.cbl"
+lstparams "basicstyle={\\footnotesize\\ttfamily},commentstyle={\\color{blue}},emphstyle={\\color{red}},frame=single,keywordstyle={\\color{red}},language=Cobol,tabsize=2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CICS (Customer Information Control System)
+\end_layout
+
+\begin_layout Standard
+CICS es un monitor de comunicaciones (OLTP - 
+\emph on
+Online Transaction Processing
+\emph default
+) de IBM, bajo el cual se pueden desarrollar transacciones de modo online.
+\end_layout
+
+\begin_layout Standard
+Es una pieza clave en los servicios de muchos bancos, administraciones y
+ grandes empresas.
+\end_layout
+
+\begin_layout Standard
+CICS provee servicios que extienden o reemplazan las funciones del sistema
+ operativo.
+\end_layout
+
+\begin_layout Description
+Sistema
+\begin_inset space ~
+\end_inset
+
+online produce resultados instantáneos, y permite que múltiples programas
+ se ejecuten al mismo tiempo.
+\end_layout
+
+\begin_layout Subsection
+Componentes de una aplicación CICS
+\end_layout
+
+\begin_layout Enumerate
+Programas (obligatorio)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+EXEC CICS
+\end_layout
+
+\begin_layout Plain Layout
+
+	...
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Transacciones (optativo)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ver 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Transacciones-CICS"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mapas (optativo)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se utilizan para interactuar con el usuario.
+ Contienen los distintos datos a presentar y recibir de un usuario.
+ Son manejados por BMS (Basic Mapping Support) y son utilizados en la working
+ storage de un programa COBOL.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SEND nombre-mapa *envia un mapa a la terminal
+\end_layout
+
+\begin_layout Plain Layout
+
+RECEIVE nombre-mapa *recibe los datos que un usuario ingresa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Archivos (optativo)
+\end_layout
+
+\begin_layout Enumerate
+Bases de datos (optativo)
+\end_layout
+
+\begin_layout Enumerate
+Terminales: para conectarse con el usuario.
+ Ejemplos: teclado, impresora.
+\end_layout
+
+\begin_layout Standard
+Cada programa CICS se inicia usando un identificador de transacción.
+\end_layout
+
+\begin_layout Standard
+Una instalación CICS comprende una o más 
+\series bold
+regiones
+\series default
+, distribuídas a lo largo de una o más imágenes z/OS.
+ Cada región CICS puede inicializarse como
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+batch job
+\emph default
+: un proceso 
+\emph on
+batch
+\emph default
+ con sentencias JCL: es un 
+\emph on
+job
+\emph default
+ que corre indefinidamente.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+started task
+\emph default
+: una tarea
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Transacciones-CICS"
+
+\end_inset
+
+Transacciones CICS
+\end_layout
+
+\begin_layout Description
+Transacción
+\begin_inset space ~
+\end_inset
+
+CICS unidad de procesamiento iniciada por un único pedido que puede afectar
+ uno o más objetos.
+ Este procesamiento suele ser interactivo, pero también se permiten transaccione
+s 
+\emph on
+background
+\emph default
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Una transacción debe ser atómica.
+ CICS puede asegurarse que una transacción es ejecutada completamente o
+ no ejecutada.
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+Una transacción le da vida al programa.
+ El programa es el conjunto de datos administrado por CICS.
+ Una tarea es una instancia de una transacción.
+\end_layout
+
+\begin_layout Quote
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/transaction-program-task.gif
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/tasks.PNG
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Transacciones, programas y tareas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Una transacción puede tener una relación 1-a-1 o 1-a-muchos con los programas
+ a ejecutar.
+ 
+\end_layout
+
+\begin_layout Standard
+Para administrar los componentes de una aplicación CICS se utilizan las
+ 
+\series bold
+tablas de control
+\series default
+ (cada tabla de control tiene un programa de control que corre en modo 
+\emph on
+background
+\emph default
+).
+\end_layout
+
+\begin_layout Enumerate
+FCT (
+\emph on
+File Control Table
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Todos los archivos VSAM se registran aquí (modo de acceso, nombre del archivo,
+ operaciones soportadas, 
+\emph on
+file status
+\emph default
+, cantidad de buffers, etc.)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+TCT (
+\emph on
+Terminal Control Table
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Registra todas las terminales que pueden iniciar transacciones.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+PCT (
+\emph on
+Program Control Table
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Registra las asociaciones entre transacciones y los programas.
+ Guarda el identificador de la transacción (1 a 4 caracteres), el nombre
+ del programa, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+PPT (
+\emph on
+Processing Program Table
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Registra todos los programas y los mapas.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Puede haber programas que aparezcan en PPT y no en PCT, pero no al revés.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Transferring control in CICS environments
+\end_layout
+
+\begin_layout Standard
+Transfers in the CICS environment are supported in the following ways: 
+\end_layout
+
+\begin_layout Itemize
+A transfer to program statement is implemented as a CICS XCTL command.
+ 
+\end_layout
+
+\begin_layout Itemize
+A transfer to transaction statement is implemented as one of the following
+ commands: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+a CICS START command if the genReturnImmediate build descriptor option is
+ set to NO 
+\end_layout
+
+\begin_layout Itemize
+a CICS RETURN IMMEDIATE command if the genReturnImmediate build descriptor
+ option is set to YES
+\end_layout
+
+\begin_layout Standard
+Setting genReturnImmediate to YES is supported only for CICS for z/OS® systems
+ 
+\end_layout
+
+\begin_layout Standard
+A show statement with an associated form and a returning clause is implemented
+ as a CICS RETURN TRANSID command.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pase de datos utilizando la 
+\family typewriter
+COMMAREA
+\family default
+.
+ Se utiliza para persistir la 
+\family typewriter
+working storage
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Instrucción LINK.
+ Es como una CALL, pero la tarea sigue siendo la misma.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+EXEC CICS
+\end_layout
+
+\begin_layout Plain Layout
+
+	LINK nombre-programa
+\end_layout
+
+\begin_layout Plain Layout
+
+	DISPLAY ...
+ * esto si se ejecuta
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Instrucción XCTL: Es como una CALL, pero el programa termina su ejecución.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+EXEC CICS
+\end_layout
+
+\begin_layout Plain Layout
+
+	XCTL nombre-programa
+\end_layout
+
+\begin_layout Plain Layout
+
+	DISPLAY ...
+ * esto NO se ejecuta
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Llamadas asincrónicas:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+EXEC CICS
+\end_layout
+
+\begin_layout Plain Layout
+
+	START TRANSID(xxxx) *comienza una nueva tarea
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+EXEC CICS
+\end_layout
+
+\begin_layout Plain Layout
+
+	RETURN *pasar datos a una nueva transaccion
+\end_layout
+
+\begin_layout Plain Layout
+
+END-EXEC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+JCL (Job Control Language)
+\end_layout
+
+\begin_layout Standard
+JCL es un lenguaje que se utiliza para describir los pasos de un 
+\emph on
+batch job
+\emph default
+.
+ Es el medio empleado para comunicarse con el Sistema Operativo y 
+\emph on
+Job Entry Subsystem
+\emph default
+ (JES2).
+\end_layout
+
+\begin_layout Description
+Job uno o varios grupos de sentencias de control que informan al sistema
+ los programas a ejecutar, los archivos que éstos usarán, la cantidad de
+ memoria necesaria, las característias de la tarea, el tipo de salida, etc.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Un job puede estar formado por uno o varios 
+\emph on
+job steps
+\emph default
+ (máximo 255).
+\end_layout
+
+\begin_layout Standard
+Todo job es tratado por el JES2 como un archivo ordinario
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Job
+\begin_inset space ~
+\end_inset
+
+step unidad de trabajo asociada a un programa.
+\end_layout
+
+\begin_layout Subsection
+Sentencias JCL
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sentencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sintaxis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+JOB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+jobname JOB parametros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marcar el comienzo de un 
+\emph on
+job 
+\emph default
+y asignarle un nombre.
+ Debe ser la primera en cada conjunto de sentencias.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+//
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marcar el fin de un 
+\emph on
+job
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+EXEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+stepname EXEC parametros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marcar el comienzo de un 
+\emph on
+job step
+\emph default
+ y asignarle un nombre, identificar al programa a ejecutar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+DD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ddname DD parametros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identificar y describir un archivo a ser usado en un 
+\emph on
+job 
+\emph default
+o procedimiento.
+ Debe colocarse a continuación de la sentencia EXEC.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+PROC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+nombre PROC [parametros opcionales]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marcar el comienzo de un procedimiento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+PEND
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+PEND
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marcar el fin de un procedimiento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sentencias JCL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,10225 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Tecnicas de Diseño"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 0
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\footnotesize\ttfamily},commentstyle={\color{blue}},emphstyle={\color{red}},frame=single,keywordstyle={\color{red}},language={Java},tabsize=2"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[75.10] Técnicas de Diseño
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Code Complete 2
+\begin_inset Quotes erd
+\end_inset
+
+, Steve McConnell: hasta página 144
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Resumen
+\end_layout
+
+\begin_layout Description
+Técnicas
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+diseño procedimientos y métodos para diseñar una solución a un problema.
+ Tiene 
+\emph on
+dependencias
+\emph default
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Requerimientos
+\series default
+: funcionales y no funcionales
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Paradigmas
+\series default
+: son los puntos de vista para atacar un problema
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Metodologías de desarrollo
+\series default
+: dependen del tipo de problema (grande o chico)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Tecnologías
+\series default
+: lenguajes de programación
+\end_layout
+
+\begin_layout Section
+Construcción de software
+\end_layout
+
+\begin_layout Standard
+Etapas:
+\end_layout
+
+\begin_layout Enumerate
+Definición del problema
+\end_layout
+
+\begin_layout Enumerate
+Análisis de requisitos
+\end_layout
+
+\begin_layout Enumerate
+Planeamiento
+\end_layout
+
+\begin_layout Enumerate
+Diseño de alto nivel (arquitectura)
+\end_layout
+
+\begin_layout Enumerate
+Diseño detallado
+\end_layout
+
+\begin_layout Enumerate
+Implementación
+\end_layout
+
+\begin_layout Enumerate
+Integración
+\end_layout
+
+\begin_layout Enumerate
+Pruebas unitarias
+\end_layout
+
+\begin_layout Enumerate
+Mantenimiento correctivo
+\end_layout
+
+\begin_layout Enumerate
+Mejoras funcionales
+\end_layout
+
+\begin_layout Subsection
+Definición del problema
+\end_layout
+
+\begin_layout Standard
+Es importante que sea correcto porque sino, perdemos tiempo resolviendo
+ el problema equivocado.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Ejemplo: 
+\begin_inset Quotes eld
+\end_inset
+
+Necesitamos soportar la cantidad de pedidos que nos realizan
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Análisis de requisitos
+\end_layout
+
+\begin_layout Standard
+Los requisitos pueden cambiar en el tiempo, porque el usuario no siempre
+ sabe lo que quiere.
+\end_layout
+
+\begin_layout Itemize
+Siempre verificar que se está trabajando para cumplir los requisitos.
+\end_layout
+
+\begin_layout Itemize
+Hacerle saber al cliente lo que implica un cambio de requisitos (costo y
+ dinero).
+\end_layout
+
+\begin_layout Itemize
+Establecer un procedimiento para lidiar con los cambios de requisitos.
+\end_layout
+
+\begin_layout Itemize
+Usar ciclos cortos de desarrollo, que agregan una nueva funcionalidad en
+ cada iteración.
+\end_layout
+
+\begin_layout Subsection
+Diseño de alto nivel (arquitectura)
+\end_layout
+
+\begin_layout Standard
+Distribuir el sistema en módulos, cuya función esté bien definida.
+ Cada módulo debe saber lo menos posible del resto de los módulos.
+ Cada módulo debe tener una interfaz bien definida.
+\end_layout
+
+\begin_layout Standard
+Componentes de la arquitectura:
+\end_layout
+
+\begin_layout Itemize
+Organización del programa
+\end_layout
+
+\begin_layout Itemize
+Estrategia de cambios de requisitos
+\end_layout
+
+\begin_layout Itemize
+Decisiones de tipo 
+\begin_inset Quotes eld
+\end_inset
+
+construir vs comprar
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Estructuras de datos principales
+\end_layout
+
+\begin_layout Itemize
+Algoritmos principales
+\end_layout
+
+\begin_layout Itemize
+Objetos principales (en sistemas orientados a objetos)
+\end_layout
+
+\begin_layout Itemize
+Interfaz de usuario
+\end_layout
+
+\begin_layout Itemize
+Procesamiento de errores
+\end_layout
+
+\begin_layout Itemize
+Procesamiento de parámetros inválidos
+\end_layout
+
+\begin_layout Itemize
+Robusticidad del sistema
+\end_layout
+
+\begin_layout Itemize
+Tolerancia a fallos
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Performance
+\end_layout
+
+\begin_layout Section
+Diseño de rutinas
+\end_layout
+
+\begin_layout Description
+Rutina función individual que tiene un solo objetivo.
+\end_layout
+
+\begin_layout Description
+Función rutina que devuelve un valor.
+\end_layout
+
+\begin_layout Description
+Procedimiento rutina que no devuelve un valor.
+\end_layout
+
+\begin_layout Standard
+PDL (
+\emph on
+Program Design Language
+\emph default
+) es una metodología por la cual se escribe en lenguaje natural un pseudocódigo
+ de la rutina, de tal forma que su conversión en código es rápida.
+ No debe atarse a características del lenguaje en el que se va a programar.
+\end_layout
+
+\begin_layout Standard
+Pasos para diseñar una rutina:
+\end_layout
+
+\begin_layout Itemize
+Chequear los pre-requisitos
+\end_layout
+
+\begin_layout Itemize
+Definir el problema que va a resolver la rutina
+\end_layout
+
+\begin_layout Itemize
+Nombrar la rutina
+\end_layout
+
+\begin_layout Itemize
+Decidir cómo testear la rutina
+\end_layout
+
+\begin_layout Itemize
+Buscar los algoritmos apropiados
+\end_layout
+
+\begin_layout Itemize
+Escribir el PDL
+\end_layout
+
+\begin_layout Itemize
+Pensar sobre la eficiencia
+\end_layout
+
+\begin_layout Itemize
+Pensar sobre los datos
+\end_layout
+
+\begin_layout Standard
+Ventajas del uso de rutinas:
+\end_layout
+
+\begin_layout Itemize
+Reducen la complejidad
+\end_layout
+
+\begin_layout Itemize
+Evitan el código duplicado
+\end_layout
+
+\begin_layout Itemize
+Limita los efectos de los cambios
+\end_layout
+
+\begin_layout Itemize
+Ocultan la secuencialidad de las operaciones
+\end_layout
+
+\begin_layout Subsection
+Características de una buena rutina
+\end_layout
+
+\begin_layout Enumerate
+El nombre nos dice qué hace la rutina
+\end_layout
+
+\begin_layout Enumerate
+Está bien documentada
+\end_layout
+
+\begin_layout Enumerate
+No utiliza variables globales, sino que se comunica con otras rutinas
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Fuerte cohesión
+\series default
+: tiene un objetivo claro
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Poco acoplamiento
+\series default
+: la rutina puede ser llamada fácilmente por otras rutinas
+\end_layout
+
+\begin_layout Enumerate
+Es defensiva contra datos inválidos
+\end_layout
+
+\begin_layout Enumerate
+No usa números mágicos
+\end_layout
+
+\begin_layout Enumerate
+Utiliza todos los parámetros
+\end_layout
+
+\begin_layout Enumerate
+Recibe hasta 7 parámetros
+\end_layout
+
+\begin_layout Section
+Diseño de clases
+\end_layout
+
+\begin_layout Standard
+Pasos para un buen diseño:
+\end_layout
+
+\begin_layout Enumerate
+Identificar los objetos y sus atributos (métodos y datos).
+\end_layout
+
+\begin_layout Enumerate
+Determinar qué se puede hacer con cada objeto.
+\end_layout
+
+\begin_layout Enumerate
+Determinar lo que un objeto puede hacerle a otros objetos.
+\end_layout
+
+\begin_layout Enumerate
+Determinar las partes del objeto que serán visibles a otro objeto.
+\end_layout
+
+\begin_layout Enumerate
+Determinar la interfaz pública del objeto.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/abstraccion.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Usar abstracciones que nos ayudan a lidiar con la complejidad.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/encapsulacion.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Usar encapsulación: 
+\begin_inset Quotes eld
+\end_inset
+
+tenés permitido usar una vista simple de un concepto complejo, pero no tenér
+ permitido ver los detalles de ese concepto
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Principios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Heurísticas de buen diseño:
+\end_layout
+
+\begin_layout Itemize
+Usar herencia cuando sea apropiado
+\end_layout
+
+\begin_layout Itemize
+Usar abstracciones
+\end_layout
+
+\begin_layout Itemize
+Usar encapsulación
+\end_layout
+
+\begin_layout Itemize
+Ocultar detalles de implementación
+\end_layout
+
+\begin_layout Itemize
+Identificar posibles áreas de cambio, y separarlas del resto
+\end_layout
+
+\begin_layout Itemize
+Usar patrones de diseño
+\end_layout
+
+\begin_layout Itemize
+Documentar las precondiciones y postcondiciones con 
+\emph on
+asserts
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+The Principle of One Right Place—there should be One Right Place to look
+ for any nontrivial piece of code, and One Right Place to make a likely
+ maintenance change
+\end_layout
+
+\begin_layout Section
+Diseño de software
+\end_layout
+
+\begin_layout Description
+Diseño
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+software concepción de un esquema que ayude transformar la especificación
+ de requisitos en un programa operacional.
+\end_layout
+
+\begin_layout Enumerate
+Es un problema 
+\begin_inset Quotes eld
+\end_inset
+
+malvado
+\begin_inset Quotes erd
+\end_inset
+
+ que solo se resuelve 
+\begin_inset Quotes eld
+\end_inset
+
+resolviéndolo
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Es un proceso 
+\begin_inset Quotes eld
+\end_inset
+
+descuidado
+\begin_inset Quotes erd
+\end_inset
+
+ porque se dan muchos pasos en falso y se cometen muchos errores, y nunca
+ se sabe si el diseño es lo suficientemente bueno.
+\end_layout
+
+\begin_layout Enumerate
+Se trata de balancear prioridades con desventajas.
+\end_layout
+
+\begin_layout Enumerate
+Es un proceso heurístico; no siempre las herramientas funcionan bien en
+ todos los procesos.
+\end_layout
+
+\begin_layout Enumerate
+Es un proceso 
+\begin_inset Quotes eld
+\end_inset
+
+emergente
+\begin_inset Quotes erd
+\end_inset
+
+ que se desarrolla y evoluciona
+\end_layout
+
+\begin_layout Standard
+Hay dos tipos de problemas que hacen que el diseño de software sea complicado:
+\end_layout
+
+\begin_layout Itemize
+Problemas esenciales: surgen de la necesidad de modelar el mundo real y
+ las muchas interconexiones que se producen en él.
+\end_layout
+
+\begin_layout Itemize
+Problemas accidentales: la mayoría fueron solucionados con la evolución
+ de los lenguajes de programación.
+\end_layout
+
+\begin_layout Standard
+El mayor problema es la 
+\series bold
+complejidad
+\series default
+.
+ El objetivo es reducir la complejidad del sistema utilizando módulos y
+ sub módulos independientes entre sí, para que en en cualquier momento el
+ programador no tenga que lidiar, mentalmente, con muchos objetos a la vez.
+\end_layout
+
+\begin_layout Standard
+Características deseables de un buen diseño:
+\end_layout
+
+\begin_layout Itemize
+Mínima complejidad: preferir diseños simples y fáciles de entender por sobre
+ diseños 
+\begin_inset Quotes eld
+\end_inset
+
+astutos
+\begin_inset Quotes erd
+\end_inset
+
+ que nadie entiende
+\end_layout
+
+\begin_layout Itemize
+Fácil de mantener
+\end_layout
+
+\begin_layout Itemize
+Mínimas interconexiones
+\end_layout
+
+\begin_layout Itemize
+Extensibilidad
+\end_layout
+
+\begin_layout Itemize
+Reusabilidad
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+High fan-in
+\emph default
+: tener muchas clases que utilicen una clase.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Low-to-medium fan-out
+\emph default
+: una clase no debe utilizar muchas otras clases.
+\end_layout
+
+\begin_layout Itemize
+Portabilidad
+\end_layout
+
+\begin_layout Itemize
+No debe tener funcionalidad extra
+\end_layout
+
+\begin_layout Itemize
+Estratificación: si debemos utilizar un código viejo mal escrito, escribir
+ una clase de servicio que interactúe con dicho código.
+\end_layout
+
+\begin_layout Subsection
+Proceso de diseño de software
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/proceso_desarrollo_sw.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Proceso de desarrollo de software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paso 1
+\series default
+: relevar requerimientos a partir de las necesidades de los usuarios (prototipo
+ de interfaces).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paso 2
+\series default
+: especificar los casos de uso para entender el comportamiento (diagramas
+ de colaboración y/o secuencia).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paso 3
+\series default
+: pensar una estructura simple a partir de conceptos extraídos del dominio
+ de problema (modelo de dominio).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paso 4
+\series default
+: refinar el modelo de dominio a un modelo de análisis.
+\end_layout
+
+\begin_layout Subsubsection
+Modelo
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+análisis
+\end_layout
+
+\begin_layout Standard
+Su objetivo es entender el negocio y sus reglas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="6cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Concepto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instancia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Descripción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Patrones de colaboración
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Streamlined Object Modeling Summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No conoce el contexto.
+ Puede conocer muchos roles, pero solo toma uno por vez.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actor - Rol
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No puede existir sin un actor.
+ Conoce al contexto.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lugares
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lugar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gran Lugar - Lugar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gran lugar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cosas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ítem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ítem - Ítem específico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ítem específico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se utiliza para modelar objetos que pueden existir en muchas variaciones.
+ No pueden existir sin su ítem correspondiente.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ensamble
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe contener al menos una parte.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ensamble - Parte
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede existir sin estar en un ensamble.
+ No puede estar en más de un ensamble.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contenedor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede no contener nada.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contenedor - Contenido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contenido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No puede estar en más de un contenedor.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grupo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grupo - Miembro
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Miembro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede pertenecer a más de un grupo.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eventos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transacción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa un evento.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Rol - Transacción
+\end_layout
+
+\begin_layout Itemize
+Lugar - Transacción
+\end_layout
+
+\begin_layout Itemize
+Ítem específico - Transacción
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transacción compuesta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa un evento que involucra más de un objeto.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transacción compuesta - 
+\emph on
+Line item
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transacción cronológica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sucede antes o después de otra transacción.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transacción - Transacción cronológica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Line item
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Captura detalles de un ítem específico con relación a una transacción compuesta.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ítem específico - 
+\emph on
+Line item
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Guía de selección de objetos en el modelo de análisis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Regla
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+negocio son las restricciones que gobiernan las acciones dentro de un dominio
+ de negocio.
+ En el modelo se traducen en 
+\series bold
+reglas de colaboración
+\series default
+.
+ Se debe decidir qué colaborador (objeto) prueba cada regla, en función
+ de lo que conoce o puede consultar.
+\end_layout
+
+\begin_layout Description
+Regla
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+colaboración chequeo de reglas de negocio entre objetos participantes de
+ relaciones.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Tipos de reglas:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Tipo
+\series default
+:
+\emph on
+ ¿el potencial colaborador es del tipo correcto?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Multiplicidad
+\series default
+: 
+\emph on
+¿qué pasa si agrego o elimino colaboradores?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Propiedad
+\series default
+: verificar los valores de las propiedades mías o de un potencial colaborador
+ contra un valor estándar
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Estado
+\series default
+: 
+\emph on
+¿estoy en el estado apropiado para formar o disolver una colaboración?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conflicto
+\series default
+: 
+\emph on
+¿alguno de mis colaboradores actuales está en conflicto con el potencial
+ colaborador?
+\end_layout
+
+\begin_layout Standard
+¿Qué colaborador chequea cada regla?
+\end_layout
+
+\begin_layout Enumerate
+Cuando se modela gente, lugares o cosas, 
+\emph on
+siempre
+\emph default
+ asignar las reglas a los objetos más específicos.
+\end_layout
+
+\begin_layout Enumerate
+Cuando se modelan objetos y sus partes, 
+\emph on
+siempre
+\emph default
+ asignas las reglas a los objetos que son 
+\begin_inset Quotes eld
+\end_inset
+
+parte de
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Cuando la gente, lugares o cosas interactúan con un evento, asignarles las
+ reglas a ellos.
+\end_layout
+
+\begin_layout Enumerate
+Cuando existen transacciones en secuencia, la transacción precedente es
+ la que chequea las reglas.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+add(aCollaborator);
+\end_layout
+
+\begin_layout Plain Layout
+
+remove(aCollaborator();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+testAdd(aCollaborator);
+\end_layout
+
+\begin_layout Plain Layout
+
+testRemove(aCollaborator);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+testAddConflict(directCollaborator, indirectCollaborator, ...);
+\end_layout
+
+\begin_layout Plain Layout
+
+testRemoveConflict(directCollaborator, indirectCollaborator, ...);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+doAdd(aCollaborator);
+\end_layout
+
+\begin_layout Plain Layout
+
+doRemove(aCollaborator);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Métodos para aplicar reglas de colaboración
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Propiedades
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+los
+\begin_inset space ~
+\end_inset
+
+objetos
+\end_layout
+
+\begin_layout Enumerate
+Descriptivos
+\end_layout
+
+\begin_layout Enumerate
+De tiempo
+\end_layout
+
+\begin_layout Enumerate
+Estado de vida
+\end_layout
+
+\begin_layout Enumerate
+Estado operativo
+\end_layout
+
+\begin_layout Enumerate
+Rol
+\end_layout
+
+\begin_layout Enumerate
+Tipo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+set(aValue);
+\end_layout
+
+\begin_layout Plain Layout
+
+setValue();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+testSet(aValue);
+\end_layout
+
+\begin_layout Plain Layout
+
+testSetValue();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+doSet(aValue);
+\end_layout
+
+\begin_layout Plain Layout
+
+doSetValue();
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Métodos para aplicar reglas de propiedad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Modelo
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+diseño implementar una solución al problema planteado en el análisis más
+ las restricciones impuestas por los requerimientos no funcionales.
+\end_layout
+
+\begin_layout Section
+Diseño de paquetes
+\end_layout
+
+\begin_layout Subsection
+Cohesión
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+The unit of reuse is the unit of release
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Classes that change together, belong together
+\end_layout
+
+\begin_layout Subsection
+Acoplamiento
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Packages must not be indirectly dependent on themselves
+\end_layout
+
+\begin_layout Subsubsection
+Estabilidad y abstracción
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/stable_dependencies.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Un paquete debe depender de paquetes más estables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Métricas Sea el paquete 
+\begin_inset Formula $P$
+\end_inset
+
+, que depende de 
+\begin_inset Formula $X$
+\end_inset
+
+ paquetes, y del cual 
+\begin_inset Formula $Y$
+\end_inset
+
+ paquetes dependen de él.
+ La 
+\series bold
+inestablidad
+\series default
+ de 
+\begin_inset Formula $P$
+\end_inset
+
+ se define como:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\frac{X}{X+Y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I\in[0,1]$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $I=1$
+\end_inset
+
+, el paquete es 
+\begin_inset Quotes eld
+\end_inset
+
+inestable
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $I=0$
+\end_inset
+
+, el paquete es 
+\begin_inset Quotes eld
+\end_inset
+
+estable
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sean las clases concretas 
+\begin_inset Formula $C_{C}$
+\end_inset
+
+ y las clases abstractas 
+\begin_inset Formula $C_{A}$
+\end_inset
+
+ dentro del paquete 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ La 
+\series bold
+abstracción
+\series default
+ de 
+\begin_inset Formula $P$
+\end_inset
+
+ se define como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\frac{C_{A}}{C_{A}+C_{C}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in[0,1]$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $A=1$
+\end_inset
+
+, el paquete es 
+\begin_inset Quotes eld
+\end_inset
+
+abstracto
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $A=0$
+\end_inset
+
+, el paquete es 
+\begin_inset Quotes eld
+\end_inset
+
+concreto
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Un paquete 
+\begin_inset Quotes eld
+\end_inset
+
+estable
+\begin_inset Quotes erd
+\end_inset
+
+ es fácil de extender.
+ Un paquete 
+\begin_inset Quotes eld
+\end_inset
+
+inestable
+\begin_inset Quotes erd
+\end_inset
+
+ es fácil de modificar.
+ Por ende, los paquetes 
+\begin_inset Quotes eld
+\end_inset
+
+inestables
+\begin_inset Quotes erd
+\end_inset
+
+ deben depender de paquetes más 
+\begin_inset Quotes eld
+\end_inset
+
+estables
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Los 
+\series bold
+conceptos
+\series default
+ no suelen cambiar mucho, por ende deben hacerse abstractos.
+ Los 
+\series bold
+objetos
+\series default
+ de la vida real son inestables, y por ende deben hacerse concretos.
+ Si las abstracciones son buenas, no cambiarán.
+\end_layout
+
+\begin_layout Section
+Principios de diseño y métricas
+\end_layout
+
+\begin_layout Enumerate
+Tomar lo que varía y separarlo de lo que no
+\end_layout
+
+\begin_layout Enumerate
+Programar contra una interfaz, no contra una implementación
+\end_layout
+
+\begin_layout Enumerate
+Preferir la composición por sobre la herencia
+\end_layout
+
+\begin_layout Enumerate
+Preferir diseños desacoplados
+\end_layout
+
+\begin_layout Enumerate
+Clases abiertas para extensión pero cerradas para modificación
+\end_layout
+
+\begin_layout Enumerate
+Depender de abstracciones, no de clases concretas (tanto las clases de alto
+ nivel como las de bajo nivel)
+\end_layout
+
+\begin_layout Enumerate
+Principio de 
+\emph on
+least knowledge
+\emph default
+: hablar sólo con los amigos más cercanos
+\end_layout
+
+\begin_layout Enumerate
+Una clase sólo debe tener una razón para variar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="6cm">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Principio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Métrica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Automatización posible?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cohesión de clases
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LCOM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SRP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Por inspección de código, responsabilidades por clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OCP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Por cada 
+\emph on
+commit
+\emph default
+, cantidad de clases modificadas y/o extendidas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LSP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cada clase debe pasar los tests unitarios de su superclase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ISP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Promedio 
+\begin_inset Formula $\frac{n}{N}$
+\end_inset
+
+ para todos los clientes de 
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DIP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\frac{d_{A}}{D}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ley de Demeter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Promedio de profundidad de navegación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reutilización de abstracciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cantidad de clases que extienden o implementan una clase o interfaz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Principios de diseño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Alta cohesión
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Lack of Cohesion of Methods
+\emph default
+ (LCOM): sea la clase 
+\begin_inset Formula $C$
+\end_inset
+
+ con 
+\begin_inset Formula $A$
+\end_inset
+
+ atributos, 
+\begin_inset Formula $M$
+\end_inset
+
+ métodos y 
+\begin_inset Formula $R(A)$
+\end_inset
+
+ métodos que utilizan el atributo 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+LCOM=\frac{\left(\frac{\sum R(A)}{A}\right)-M}{1-M}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Ley de Demeter
+\end_layout
+
+\begin_layout Standard
+Los objetos solo deben colaborar con sus vecinos más cercanos.
+ Esto significa que hay que evitar 
+\begin_inset Quotes eld
+\end_inset
+
+llamadas de llamadas
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sólo se permite invocar métodos que pertenecen a:
+\end_layout
+
+\begin_layout Enumerate
+El objeto mismo
+\end_layout
+
+\begin_layout Enumerate
+Un objeto pasado por parámetro
+\end_layout
+
+\begin_layout Enumerate
+Objetos que el método crea
+\end_layout
+
+\begin_layout Enumerate
+Componentes del objeto
+\end_layout
+
+\begin_layout Subsection
+Principios SOLID
+\end_layout
+
+\begin_layout Subsubsection
+Principio de inversión de dependencia
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Consider the implications of high level modules that depend upon low level
+ modules.
+ It is the high level modules that contain the important policy decisions
+ and business models of an application.
+ It is these models that contain the identity of the application.
+ Yet, when these modules depend upon the lower level modules, then changes
+ to the lower level modules can have direct effects upon them; and can force
+ them to change.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/dip_1.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La clase 
+\family typewriter
+Copy
+\family default
+ depende de los detalles de implementación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/dip_2.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La clase 
+\family typewriter
+Copy
+\family default
+ no depende de los detalles de implementación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inversión de dependencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Los módulos de alto nivel no deben depender de módulos de bajo nivel.
+ Ambos deben depender de abstracciones.
+\end_layout
+
+\begin_layout Enumerate
+Las abstracciones no deben depender de los detalles.
+ Los detalles deben depender de las abstracciones.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+All well structured object-oriented architectures have clearly-defined layers,
+ with each layer providing some coherent set of services though a well-defined
+ and controlled interface.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/dip_3.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sin inversión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/dip_4.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Con inversión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inversión de dependencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Dependency Inversion can be applied wherever one class sends a message to
+ another.
+\end_layout
+
+\begin_layout Standard
+Ejemplo: se quiere implementar una clase Botón que detecta cuando el mismo
+ fue presionado o soltado, y enviarle esta información a una Lámpara, que
+ se prende o apaga.
+ ¿Cuál es la política de alto nivel? Es la abstracción de que hay que detectar
+ un gesto de on/off y forwardearselo a un objetivo.
+ No importa cómo se detecta el gesto, no importa cuál es el objetivo.
+\end_layout
+
+\begin_layout Description
+Métrica si la clase 
+\begin_inset Formula $C$
+\end_inset
+
+ depende de 
+\begin_inset Formula $d_{A}$
+\end_inset
+
+ clases abstractas y 
+\begin_inset Formula $D$
+\end_inset
+
+ clases en total:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d_{A}}{D}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Principio de sustitución de Liskov
+\end_layout
+
+\begin_layout Enumerate
+Las funciones que usan referencias a clases base, deben poder usar objetos
+ de clases derivadas sin saberlo.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+If there is a function which does not conform to the LSP, then that function
+ uses a pointer or reference to a base class, but must know about all the
+ derivatives of that base class.
+ Such a function violates the Open-Closed principle because it must be modified
+ whenever a new derivative of the base class is created.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+When the creation of a derived class causes us to make changes to the base
+ class, it often implies that the design is faulty
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+When considering whether a particular design is appropriate or not, one
+ must not simply view the solution in isolation.
+ One must view it in terms of the reasonable assumptions that will be made
+ by the users of that design.
+\end_layout
+
+\begin_layout Standard
+Ejemplo: tenemos una clase base Rectángulo que tiene dos atributos, alto
+ y ancho.
+ Queremos implementar la clase Cuadrado.
+ Si hacemos que ésta herede de Rectángulo y modificamos los getters y setters
+ de ancho y alto para que 
+\begin_inset Quotes eld
+\end_inset
+
+matemáticamente hablando
+\begin_inset Quotes erd
+\end_inset
+
+ el ancho y el alto sean correctos (iguales), el siguiente test fallará:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public void TestMultiplicarAnchoPorAlto(Rectangulo &rect)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	rect.SetAncho(5);
+\end_layout
+
+\begin_layout Plain Layout
+
+	rect.SetAlto(4);
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Lo siguiente fallara si r es un Cuadrado
+\end_layout
+
+\begin_layout Plain Layout
+
+	Assert.IsTrue(rect.GetAncho() * rect.GetAlto() == 20);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto es porque el programador asumió, de manera razonable, que el método
+ SetAncho() no cambia el Alto y viceversa, algo que no es cierto para la
+ clase Cuadrado.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The LSP makes clear that in OOD the ISA relationship pertains to behavior,
+ behavior that clients depend upon.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Now the rule for the preconditions and postconditions for derivatives is:
+ ...when redefining a routine in a derivative, you may only replace its preconditio
+n by a weaker one, and its postcondition by a stronger one.
+\end_layout
+
+\begin_layout Subsubsection
+Principio de Responsabilidad Única
+\end_layout
+
+\begin_layout Enumerate
+Nunca debería haber más de una razón para cambiar una clase.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+When the requirements change, that change will be manifest through a change
+ in responsibility amongst the classes.
+ If a class assumes more than one responsibility, then there will be more
+ than one reason for it to change.
+ If a class has more then one responsibility, then the responsibilities
+ become coupled.
+ Changes to one responsibility may impair or inhibit the class’ ability
+ to meet the others.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/srp_1.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sin SRP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/srp_2.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Con SRP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Principio SRP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Principio abierto-cerrado
+\end_layout
+
+\begin_layout Enumerate
+Las clases, módulos y funciones deberían estar abiertas para la extensión,
+ y cerradas para la modificación.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+When requirements change, you extend the behavior of such modules by adding
+ new code, not by changing old code that already works.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Abstraction is the key.
+ The abstractions are abstract base classes, and the unbounded group of
+ possible behaviors is represented by all the possible derivative classes.
+ It is possible for a module to manipulate an abstraction.
+ Such a module can be closed for modification since it depends upon an abstracti
+on that is fixed.
+ Yet the behavior of that module can be extended by creating new derivatives
+ of the abstraction.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+It should be clear that no significant program can be 100% closed.
+ In general, no matter how “closed” a module is, there will always be some
+ kind of change against which it is not closed.
+ Since closure cannot be complete, it must be strategic.
+ The experienced designer knows the users and the industry well enough to
+ judge the probability of different kinds of changes.
+ He then makes sure that the open-closed principle is invoked for the most
+ probable changes.
+\end_layout
+
+\begin_layout Standard
+Heurísticas y convenciones:
+\end_layout
+
+\begin_layout Itemize
+Atributos deben ser privados.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Si un atributo depende de otros, y se permite cambiar el valor de uno de
+ ellos, el estado del objeto puede quedar inconsistente.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No usar variables globales.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Si dos módulos usan variables globales y uno de ellos altera su valor, el
+ otro módulo puede romperse.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No usar RTTI (RunTime Type Identification)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+void DrawAllShapes(Set<Shape*>& ss) 
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+	for (Iterator<Shape*>i(ss); i; i++) 
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		Circle* c = dynamic_cast<Circle*>(*i);
+\end_layout
+
+\begin_layout Plain Layout
+
+		Square* s = dynamic_cast<Square*>(*i); 
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (c) DrawCircle(c); 
+\end_layout
+
+\begin_layout Plain Layout
+
+		else if (s) DrawSquare(s);
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Si agregamos un nuevo tipo de 
+\emph on
+Shape
+\emph default
+, hay que modificar la función 
+\emph on
+DrawAllShapes
+\emph default
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\emph on
+Conformance to this principle is not achieved simply by using an object
+ oriented programming language.
+ It requires a dedication on the part of the designer to apply abstraction
+ to those parts of the program that the designer feels are going to be subject
+ to change.
+\end_layout
+
+\begin_layout Subsubsection
+Principio de segregación de interfaces
+\end_layout
+
+\begin_layout Enumerate
+Los usuarios no deberían ser forzados a depender de interfaces que no utilizan.
+
+\emph on
+ 
+\emph default
+En vez de una interfaz 
+\begin_inset Quotes eld
+\end_inset
+
+gorda
+\begin_inset Quotes erd
+\end_inset
+
+ con muchas operaciones, se prefieren interfaces pequeñas basadas en grupos
+ de operaciones.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Fat interfaces lead to inadvertent couplings beween clients that ought otherwise
+ to be isolated.
+ By making use of the ADAPTER pattern, either through delegation (object
+ form) or multiple inheritance (class form), fat interfaces can be segregated
+ into abstract base classes that break the unwanted coupling between clients.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+Métrica
+\series default
+: si la interfaz 
+\begin_inset Formula $I$
+\end_inset
+
+ expone 
+\begin_inset Formula $N$
+\end_inset
+
+ métodos, y el cliente 
+\begin_inset Formula $C$
+\end_inset
+
+ utiliza 
+\begin_inset Formula $n$
+\end_inset
+
+ métodos, entonces la interfaz es 
+\begin_inset Formula $\frac{n}{N}$
+\end_inset
+
+-específica para 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se toma un promedio 
+\begin_inset Formula $\frac{n}{N}$
+\end_inset
+
+ para todos los clientes de 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Malos diseños
+\end_layout
+
+\begin_layout Standard
+Las siguientes tres características son síntomas de un mal diseño en software:
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Rigidez
+\series default
+: es difícil de cambiar porque un cambio afecta muchas otras partes del
+ sistema.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Fragilidad
+\series default
+: al realizar un cambio, se rompen partes inesperadas del sistema.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Inmobilidad
+\series default
+: es difícil de reusar en otra aplicación porque no se puede desenganchar
+ fácilmente de la actual.
+\end_layout
+
+\begin_layout Standard
+Lo que produce que un diseño sea rígido, frágil e inmóvil es la i
+\emph on
+nterdependencia entre los módulos
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Section
+Comentarios
+\end_layout
+
+\begin_layout Itemize
+Escribir código que esté tan claro que no se necesiten comentarios
+\end_layout
+
+\begin_layout Standard
+Comentarios útiles:
+\end_layout
+
+\begin_layout Itemize
+Legales
+\end_layout
+
+\begin_layout Itemize
+Informativos.
+ 
+\emph on
+Ejemplo: al usar expresiones regulares.
+\end_layout
+
+\begin_layout Itemize
+Advertencias
+\end_layout
+
+\begin_layout Itemize
+Amplía información.
+ 
+\emph on
+Ejemplo: proporciona un link a un algoritmo.
+\end_layout
+
+\begin_layout Section
+Herramientas de software
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+FxCop
+\emph default
+: analiza el código objeto de C# para verificar que cumpla ciertas reglas
+ de diseño de Microsoft.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+StyleCop
+\emph default
+: analiza el código fuente de C#.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+CheckStyle
+\emph default
+: analiza el código fuente de Java.
+\end_layout
+
+\begin_layout Section
+Metáforas de software
+\end_layout
+
+\begin_layout Description
+Algoritmo instrucciones bien definidas para hacer una tarea.
+ Es predecible, determinístico, y no depende del azar.
+\end_layout
+
+\begin_layout Description
+Heurística técnica para buscar una solución a un problema.
+\end_layout
+
+\begin_layout Standard
+Una buena metáfora de construcción de software es la construcción de edificios.
+\end_layout
+
+\begin_layout Section
+Refactoring
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.rallydev.com/community/engineering/quick-summary-martin-fowler%E2%80%99s-%E2%80%9Crefactoring%E2%80%9D"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Refactoring proceso de cambiar un sistema de tal forma que no se altera
+ su comportamiento externo, pero sí cambia su estructura interna.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+If you need to refactor, do it before adding a feature, then add the feature
+ (7)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Before you start refactoring, check that you have a solid suite of tests.
+ These tests must be self-checking.” (8) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Never be afraid to change the names of things to improve clarity” (15)
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“In most cases a method should be on the object whose data it uses” (17)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“[Temporary variables] are often a problem in that they cause a lot of parameter
+s to be passed around when they don’t have to be.
+ You can easily lose track of what they are there for.” Use Replace Temp
+ with Query refactoring.
+ (21)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Don’t worry about [performance] while refactoring.” After running a profiler
+ you may need to optimize, but you’ll be in a better position to do it.
+ (32)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Refactoring to eliminate switch statements with enums: Replace Type Code
+ with State/Strategy (39)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“The rhythm of refactoring: test, small change, test, small change, test,
+ small change” (52)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Kent Beck’s two hats: adding function and refactoring.
+ “When you add function you shouldn’t be changing existing code; you are
+ just adding new capabilities.
+ You can measure your progress by adding tests and getting the tests to
+ work.
+ When you refactor, you make a point of not adding function; you only restructur
+e the code.
+ You don’t add any tests (unless you find a case you missed earlier); you
+ only change tests when you absolutely need to in order to cope with a change
+ in an interface … always be aware of which hat you’re wearing.” (54)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Don Roberts’ 
+\series bold
+Rule of Three
+\series default
+: “the first time you do something, you just do it.
+ Second time you do something similar, you wince at the duplication, but
+ you do the duplicate thing anyway.
+ The third time you do something similar, you refactor.” (58) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+What makes programs hard to modify: hard to read programs, programs with
+ duplicate logic, programs that require additional behavior that requires
+ you to change running code, programs with complex conditional logic (60)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+When not to refactor: if it’s easier to rewrite, current code has bugs,
+ close to a deadline (66) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Generate a plausible first shot at design, code, then refactor.
+ Refactoring changes the role of upfront design.
+ If you don’t refactor, there’s a lot of pressure in getting that upfront
+ design right.
+ (67) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Even if you know exactly what is going on in your system, measure performance,
+ don’t speculate.
+ You’ll learn something, and nine times out of ten, it won’t be that you
+ were right!” (69)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Whenever we feel the need to comment something, we write a method instead.
+ Such a method contains the code that was commented but is named after the
+ intention of the code rather than how it does it.” (77) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Don’t forget to test that exceptions are raised when things are expected
+ to go wrong” (100)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“There is a point of diminishing returns with testing, and there is the
+ danger that by trying to write too many tests, you become discouraged and
+ end up not writing any” (101)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+When to stop refactoring: when you lose confidence in your next step.
+ If the code you’ve written makes the system better keep it, otherwise trash
+ it.
+ (410) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Refactor in pairs (411)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+“Refactoring first is less dangerous than adding new code.
+ Touching the code will remind you how it works” so that adding new code
+ becomes easier/faster.
+ (412)
+\end_layout
+
+\begin_layout Section
+Métricas
+\end_layout
+
+\begin_layout Standard
+Fuentes de información del código:
+\end_layout
+
+\begin_layout Itemize
+El código mismo
+\end_layout
+
+\begin_layout Itemize
+La documentación
+\end_layout
+
+\begin_layout Itemize
+Los tests
+\end_layout
+
+\begin_layout Itemize
+La gente que lo escribió
+\end_layout
+
+\begin_layout Itemize
+=> MÉTRICAS
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Overview
+\begin_inset space ~
+\end_inset
+
+pyramid
+\emph default
+ herramienta para visualizar un sistema de forma compacta.
+ Se divide al sistema en tres categorías, y se los analiza con métricas:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Inheritance
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Coupling
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Size & Complexity
+\end_layout
+
+\begin_layout Standard
+Métricas para cada categoría:
+\end_layout
+
+\begin_layout Itemize
+Size & Complexity
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+NOC (Number of Classes)
+\end_layout
+
+\begin_layout Itemize
+NOP (Number of Packages)
+\end_layout
+
+\begin_layout Itemize
+NOM (Number of Methods)
+\end_layout
+
+\begin_layout Itemize
+LOC (Lines of Code)
+\end_layout
+
+\begin_layout Itemize
+CYCLO (Cyclomatic Complexity): cuenta la cantidad de caminos independientes
+ que hay en todo el código (
+\emph on
+if, for, and, or, try, catch
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cyclo = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+para cada keyword en (if, while, repeat, for, and, or):
+\end_layout
+
+\begin_layout Plain Layout
+
+	cyclo = cyclo + 1
+\end_layout
+
+\begin_layout Plain Layout
+
+para cada case en un case:
+\end_layout
+
+\begin_layout Plain Layout
+
+	cyclo = cyclo + 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cálculo de CYCLO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Coupling (hay tres tipos: intensivo -hablo mucho con uno-, dispersivo -hablo
+ poco con muchos-, combinado)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Calls: la cantidad de veces que se llama a una función.
+\end_layout
+
+\begin_layout Itemize
+Fanout: cuenta los tipos que se referencian por clases e interfaces.
+\end_layout
+
+\begin_layout Itemize
+ATFD (Access to Foreign Data)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Inheritance
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ANDC (Average Number of Derived Classes).
+ Por ejemplo, en un sistema con 10 clases y un valor de ANDC de 0.5, significa
+ que 5 clases heredan de alguna otra clase.
+\end_layout
+
+\begin_layout Itemize
+AHH (Average Hierarchy Height).
+ Mide el promedio de profundidad en la jerarquía de herencia.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Métrica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bajo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Promedio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Alto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CYCLO / LOC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOC / NOM: líneas de código por función
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NOM / NOC: funciones por clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NOC / NOP: clases por paquete
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CALLS / NOM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FANOUT / CALLS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.68
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ANDC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.57
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AHH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.09
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.32
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valores de referencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Polimétricas representación visual de las métricas.
+\end_layout
+
+\begin_layout Subsection
+Antipatterns
+\end_layout
+
+\begin_layout Itemize
+Categorías de problemas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\emph on
+Brain class
+\series default
+\emph default
+: una clase que sabe demasiado o hace demasiado.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Brain method
+\series default
+\emph default
+: un método que centraliza la funcionalidad de una clase.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Feature envy
+\series default
+\emph default
+: una clase que utiliza muchos métodos de otra clase.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Data class
+\series default
+\emph default
+: clases que solo tienen atributos, 
+\emph on
+getters
+\emph default
+ y 
+\emph on
+setters
+\emph default
+.
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+Data classes are like children.
+ They are okay as a starting point, but to participate as a grownup object,
+ they need to take some responsibility.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Significant duplication
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Problemas de herencia
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\emph on
+Refused parent bequest
+\series default
+\emph default
+: una clase hija que no necesita métodos de su clase padre.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Crear una clase hermana y utilizar Push Down Method y Push Down Field 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\emph on
+Tradition breaker
+\series default
+\emph default
+: una clase hija que provee servicios que no se relacionan con los que provee
+ su clase padre
+\end_layout
+
+\begin_layout Itemize
+Puede haber código repetido entre subclases
+\end_layout
+
+\begin_layout Itemize
+Un cambio en la clase madre puede inintencionalmente afectar a las subclases
+\end_layout
+
+\begin_layout Itemize
+En tiempo de ejecución, los cambios de comportamiento son difíciles
+\end_layout
+
+\begin_layout Itemize
+No se puede reemplazar el comportamiento por otro para testearlo
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Problemas de entidades
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\emph on
+Intensive coupling
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Dispersed coupling
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Divergent change
+\series default
+\emph default
+: una clase que se la cambia muy frecuentemente por muchas razones.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Shotgun surgery
+\series default
+\emph default
+: cada vez que hacemos un cambio, tenemos que cambiar algo en muchas clases
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\emph on
+Tight
+\begin_inset space ~
+\end_inset
+
+Class
+\begin_inset space ~
+\end_inset
+
+Cohesion
+\begin_inset space ~
+\end_inset
+
+(TCC)
+\emph default
+ mide cuántos atributos usan los métodos.
+ Si un método usa pocos atributos de una clase, la misma podría no ser cohesiva.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Patrones de diseño
+\end_layout
+
+\begin_layout Description
+Patrón 
+\emph on
+solución
+\emph default
+ a un 
+\emph on
+problema
+\emph default
+ en un 
+\emph on
+contexto
+\emph default
+.
+ El problema debe ser 
+\emph on
+recurrente
+\emph default
+.
+ Un patrón proporciona 
+\emph on
+reuso de experiencia 
+\emph default
+y permite 
+\emph on
+compartir
+\emph default
+ 
+\emph on
+vocabulario
+\emph default
+ entre desarrolladores.
+\end_layout
+
+\begin_layout Standard
+Categorías de patrones:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Arquitectura
+\series default
+: al nivel de paquete.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diseño
+\series default
+: al nivel de clase.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Idiom
+\series default
+\emph default
+: asociados con el código.
+\end_layout
+
+\begin_layout Standard
+Otra categoría de patrones:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Creacionales
+\series default
+: lidian con la instanciación de objetos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Singleton, Factory Method, Abstract Factory, Prototype, Builder
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Estructurales
+\series default
+: lidian con la composición de objetos en estructuras más grandes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Composite, Decorator, Proxy, Facade, Adapter, Bridge (Flyweight)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+De comportamiento
+\series default
+: lidian con cómo los objetos interactúan entre sí y se distribuyen responsabili
+dades
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Template Method, Command, Observer, Iterator, Strategy, State, Mediator,
+ Visitor, Chain of Responsibility (Memento, Interpreter)
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\emph on
+Double dispatch
+\end_layout
+
+\begin_layout Standard
+Mecanismo para llamar una función dependiendo del tipo del objeto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+void displayShape (Shape shape, Brush brush)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	shape.displayWith(brush);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Oval extends Shape
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void displayWith(Brush brush)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		brush.DisplayOval(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class PostscriptBrush extends Brush 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void DisplayOval(Oval oval)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.writeln("Displaying an oval");
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo de 
+\emph on
+double dispatch 
+\emph default
+(en este caso triple)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Duplicación de código
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Falta de flexibilidad (si agrego un 
+\emph on
+Shape
+\emph default
+ tengo que agregar un método en 
+\emph on
+Brush
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Creacionales
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Singleton
+\end_layout
+
+\begin_layout Description
+Contexto: Necesitamos una funcionalidad que pueda accederse desde el resto
+ del sistema.
+ Esa funcionalidad debe ser provista por un solo objeto.
+\end_layout
+
+\begin_layout Description
+Problema: Garantizar que una clase tenga una sola instancia, y proporcionar
+ un punto de acceso global a ella.
+\end_layout
+
+\begin_layout Description
+Solución: Una clase es responsable de controlar la cantidad de instancias
+ que posee, y de proporcionar un único punto de acceso a ella.
+ Su constructor se declara como privado.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Acceso controlado a una única instancia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No está garantizado el orden de construcción y destrucción de los objetos
+ estáticos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es una mejora con respecto a las variables globales (estas últimas solo
+ proveen 
+\emph on
+early instantiation
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede haber problemas en aplicaciones
+\emph on
+ multithreaded 
+\emph default
+(3 soluciones:
+\emph on
+ syncronized getInstance, create instance eagerly, double-checked locking
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public class Singleton {
+\end_layout
+
+\begin_layout Plain Layout
+
+	private static Singleton instance;
+\end_layout
+
+\begin_layout Plain Layout
+
+	private int data;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	private Singleton() {
+\end_layout
+
+\begin_layout Plain Layout
+
+		data = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static Singleton getInstance() {
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (instance == null) 
+\end_layout
+
+\begin_layout Plain Layout
+
+			instance = new Singleton();
+\end_layout
+
+\begin_layout Plain Layout
+
+		return instance;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}	
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clase 
+\emph on
+Singleton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/patron_singleton.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Singleton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Factory Method
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+When you have code that instantiates concrete classes, this is an area of
+ frequent change.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The Factory Method Pattern defines an interface for creating an object,
+ but lets subclasses decide which class to instantiate.
+ Factory Method lets a class defer instantiation to subclasses.
+ The creator class is written without knowledge of the actual products that
+ will be created, which is decided purely by the choice of the subclass
+ that is used.
+\end_layout
+
+\begin_layout Description
+Contexto: Una clase no puede prever qué clase de objetos debe crear, quiere
+ que sean sus subclases quienes especifiquen qué objetos se crean.
+\end_layout
+
+\begin_layout Description
+Solución: Utiliza la herencia.
+ La creación de objetos se delega a subclases que implementan el 
+\emph on
+factory method
+\emph default
+ que crea objetos.
+ El 
+\emph on
+factory
+\emph default
+ 
+\emph on
+method
+\emph default
+ tiene la siguiente estructura:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+abstract Producto crearProducto(int tipo)
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Factory Method
+\emph default
+ es un caso especial de 
+\emph on
+Template Method
+\emph default
+ (la subclase implementa todo el algoritmo definido en la clase abstracta)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conecta jerarquías de clases paralelas (productos y creadores)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se necesitan agregar Creadores por cada nuevo Producto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bajo acoplamiento entre los creadores y los productos concretos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_factorymethod.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_factorymethod_ejemplo.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Factory Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Abstract Factory
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Provide an interface for creating families of related or dependent objects
+ without specifying their concrete classes.
+\end_layout
+
+\begin_layout Description
+Contexto: Un sistema debe ser independiente de cómo se crean, componen y
+ representan sus productos.
+ La familia de productos puede variar.
+ Los productos sólo pueden ser utilizados junto a su familia.
+\end_layout
+
+\begin_layout Description
+Problema: ¿cómo crear familias de objetos similares sin tener que depender
+ de clases concretas?
+\end_layout
+
+\begin_layout Description
+Solución: Utilizar composición.
+ La creación de objetos se implementa en métodos expuestos en la interfaz
+ de la 
+\emph on
+factory
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si se agrega una nueva familia de productos, hay que modificar la interfaz
+ de la 
+\emph on
+factory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_abstractfactory.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_abstractfactory_ejempl.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Abstract Factory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Prototype
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Use when creating an instance of a class is either expensive or complicated.
+ Allows to make new instances by copying existing ones.
+\end_layout
+
+\begin_layout Description
+Contexto: El sistema debe ser independiente de cómo se crean, componen y
+ representan los objetos.
+ Las clases a instanciar deben ser especificadas en tiempo de ejecución.
+ Las instancias de una clase pueden tener uno de entre solo unos pocos estados
+ diferentes.
+\end_layout
+
+\begin_layout Description
+Problema: Especificar los tipos de objetos a crear.
+\end_layout
+
+\begin_layout Description
+Solución: Un objeto prototipo es clonado para producir nuevos objetos.
+ Estos nuevos objetos tienen los mismos atributos y los mismos métodos que
+ la clase 
+\begin_inset Quotes eld
+\end_inset
+
+madre
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Aplicabilidad: Cuando las clases a instanciar sean especificadas en tiempo
+ de ejecución.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permite añadir y eliminar clases en tiempo de ejecución
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cada subclase de Prototipo debe implementar la operación 
+\family typewriter
+clonar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reduce la herencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reduce el costo de crear nuevos objetos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_prototipo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Abstract Factory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Builder
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Use to encapsulate the construction of a complex object and allow it to
+ be built in steps.
+\end_layout
+
+\begin_layout Description
+Contexto: hay una entrada común y muchas representaciones posibles.
+\end_layout
+
+\begin_layout Description
+Problema: ¿cómo encapsular la construcción de un objeto complejo, y permitir
+ crearlo en pasos? ¿cómo permitir crear varias representaciones del objeto?
+\end_layout
+
+\begin_layout Description
+Solución: un objeto 
+\series bold
+director
+\series default
+ interpreta el pedido e invoca al 
+\series bold
+\emph on
+builder
+\series default
+\emph default
+.
+ El 
+\series bold
+\emph on
+builder
+\series default
+\emph default
+ crea las partes del objeto complejo.
+ El 
+\series bold
+cliente
+\series default
+ recibe el resultado final del 
+\series bold
+\emph on
+builder
+\series default
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permite variar la representación interna de un objeto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se requiere más conocimiento del dominio para construir los objetos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aísla el código de representación del cliente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Da más control sobre el proceso de construcción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_builder.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Builder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sequence-diags/Builder.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de secuencia del patrón 
+\emph on
+Builder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructurales
+\end_layout
+
+\begin_layout Subsection
+Composite
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Allows you to compose objects into tree structures to represent part-whole
+ hierarchies.
+ Lets clients treat individual objects and composition of objects uniformly.
+\end_layout
+
+\begin_layout Description
+Contexto objetos complejos
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo representar jerarquías parte-todo? ¿cómo hacer que los clientes
+ ignoren las diferencias entre objetos compuestos y objetos individuales?
+\end_layout
+
+\begin_layout Description
+Solución composición recursiva de objetos similares.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es fácil añadir nuevos tipos de Componentes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hay que imponer restricciones en ciertas composiciones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_composite.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Composite
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Adapter
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+An object takes an interface and adapts it to one that a client is expecting.
+\end_layout
+
+\begin_layout Description
+Contexto: Código viejo que no se puede modificar, que implementa una interfaz
+ que nuestro código no conoce.
+\end_layout
+
+\begin_layout Description
+Problema: ¿Cómo adaptar nuestro código sin modificarlo, solo extenderlo?
+\end_layout
+
+\begin_layout Description
+Solución: Crear un Adaptador, que convierte la interfaz de una clase en
+ otra interfaz (la que espera nuestro código).
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bajo acoplamiento entre el cliente y el sistema externo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No se puede adaptar una clase y todas sus subclases
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_adapter.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Adapter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Decorator
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Use composition to give objects new responsibilities at runtime without
+ making any code changes.
+\end_layout
+
+\begin_layout Description
+Contexto se quiere agregar nuevas responsabilidades a una clase.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo agregar nuevo comportamiento a una clase sin modificarla?
+\end_layout
+
+\begin_layout Description
+Solución crear una clase Decorador que contiene a un Decorado.
+ Los Decoradores son 
+\emph on
+wrappers.
+ 
+\emph default
+Son del mismo tipo que los objetos que decoran, pero añaden nuevo comportamiento.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se evita la herencia, que puede resultar inmanejable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muchas clases pequeñas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hay problemas cuando el código depende de clases específicas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mucha complejidad para instanciar un Componente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_decorator.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Decorator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_decorator_ejemplo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo del patrón 
+\emph on
+Decorator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sequence-diags/Decorator.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de secuencia del patrón 
+\emph on
+Decorator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Facade
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Alters an interface to simplify it.
+\end_layout
+
+\begin_layout Description
+Contexto Un subsistema con una interfaz muy complicada.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo simplificar el acceso al subsistema en cuestión?
+\end_layout
+
+\begin_layout Description
+Solución Una clase que ordena el acceso al subsistema.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oculta a los clientes del subsistema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bajo acoplamiento entre el subsistema y los clientes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No impide que las aplicaciones utilicen el subsistema en caso de ser necesario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_facade.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Facade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sequence-diags/Facade.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de secuencia del patrón 
+\emph on
+Facade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Proxy
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Proxies control and manage access to an object.
+\end_layout
+
+\begin_layout Description
+Contexto un objeto cuyo acceso necesita ser controlado.
+\end_layout
+
+\begin_layout Description
+Solución Proxy controla el acceso a un objeto que puede ser remoto, caro
+ para construir, o que necesita seguridad.
+ El Proxy contiene al objeto en cuestión, y a veces puede incluso crearlo.
+\end_layout
+
+\begin_layout Description
+Ejemplo el manejo de punteros con 
+\emph on
+smart pointers
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_proxy.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Proxy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bridge
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+How to vary the implementation AND the abstraction by placing the two in
+ separate class hierarchies.
+ Concrete subclasses are implemented in terms of the abstraction.
+\end_layout
+
+\begin_layout Description
+Contexto muchas implementaciones para resolver un mismo problema.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo variar la implementación y la abstracción?
+\end_layout
+
+\begin_layout Description
+Solución descomponer la interfaz y la implementación en dos jerarquías ortogonal
+es.
+ La clase interfaz contiene un puntero a la clase abstracta de la implementación.
+ Esta composición es el 
+\emph on
+bridge
+\emph default
+.
+ Todos los métodos de la abstracción se programan contra la implementación.
+\end_layout
+
+\begin_layout Description
+Ejemplo una librería gráfica.
+ Un 
+\begin_inset Quotes eld
+\end_inset
+
+botón
+\begin_inset Quotes erd
+\end_inset
+
+ es una abstracción, y un 
+\begin_inset Quotes eld
+\end_inset
+
+botón en Windows
+\begin_inset Quotes erd
+\end_inset
+
+ es una implementación.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_bridge.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Bridge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Comportamiento
+\end_layout
+
+\begin_layout Subsection
+Template Method
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The Template Method defines the steps of an algorithm and allows subclasses
+ to provide the implementation for one or more steps.
+\end_layout
+
+\begin_layout Description
+Contexto FALTA
+\end_layout
+
+\begin_layout Description
+Problema FALTA
+\end_layout
+
+\begin_layout Description
+Solución una clase abstracta provee la implementación de un algoritmo, y
+ las subclases implementan partes de ese algoritmo.
+ La clase abstracta también puede proporcionar 
+\emph on
+hook methods
+\emph default
+: métodos opcionales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_templatemethod.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Template Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Command
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Encapsulate method invocation as an object.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo enviar un mensaje a un objeto sin conocer el objeto receptor?
+\end_layout
+
+\begin_layout Description
+Solución Encapsular un pedido como un objeto.
+ Permite:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Parametrizar dinámicamente los Comandos
+\end_layout
+
+\begin_layout Itemize
+Comandos macro (i.e.
+ con más de un Comando)
+\end_layout
+
+\begin_layout Itemize
+Sistemas de logging y transaccionales
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bajo acoplamiento entre el objeto que realiza el pedido y el que lo lleva
+ a cabo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_command.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Command
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/patron_command_unittest.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo de patrón 
+\emph on
+Command
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Observer
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Establishes a 1-to-many dependency between objects, so that when one obect
+ changes state, all of its dependants are notified automatically.
+\end_layout
+
+\begin_layout Description
+Contexto se tiene un objeto cuyo estado varía.
+ Se requiere que otros objetos sean notificados de los cambios de estado.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo desacoplar los Observadores del Observado?
+\end_layout
+
+\begin_layout Description
+Solución existen dos modelos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Pull
+\emph default
+: los Observadores solicitan al Observado su estado.
+ 
+\family typewriter
+notifyObservers() + getState()
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Push
+\emph default
+: el Observado le proporciona su estado a los Observadores.
+ 
+\family typewriter
+notifyObservers(Object o)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bajo acoplamiento entre Observador y Observado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La cantidad y el tipo de los Observadores puede variar en tiempo de ejecución
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_observer.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Observer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Iterator
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Provides a way to access the elements of a collection, without exposing
+ its underlying representation.
+\end_layout
+
+\begin_layout Description
+Contexto se necesita acceder al contenido de una Colección.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo acceder a la Colección sin exponer su implementación interna?
+\end_layout
+
+\begin_layout Description
+Solución una clase Iterador que sabe cómo recorrer los objetos de la Colección.
+ El Iterador no sabe el orden de los objetos.
+ El Iterador se lo suele crear con 
+\emph on
+Factory Method
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_iterator.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Iterator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+State
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Put each state's behavior in its own class.
+ Allows an object to alter its behavior when its internal state changes.
+ The object will appear to change its class.
+\end_layout
+
+\begin_layout Description
+Contexto el comportamiento de un objeto depende de su estado.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo eliminar las sentencias CASE que deciden el comportamiento
+ en base al estado del objeto?
+\end_layout
+
+\begin_layout Description
+Solución el objeto mantiene una referencia a su estado actual.
+ Todos los estados deben poder manejar todas las transiciones posibles,
+ y ello puede implicar cambiarle el estado al Contexto.
+ Es decir, las transiciones de estado las puede manejar el Contexto o cada
+ Estado.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cada nodo del diagrama de estado es una clase que implementa la interfaz
+ Estado.
+ La interfaz Estado define como métodos todos las transiciones de Estado
+ posibles.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agregar un Estado solo implica agregar una clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muchas clases
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede haber código repetido en los Estados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_state.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+State
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_state_contextclassexample.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo de patrón 
+\emph on
+State
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Strategy
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Defines a family of algorithms, encapsulates each one and makes them interchange
+able.
+\end_layout
+
+\begin_layout Description
+Contexto una clase con muchos comportamientos que aparece con sentencias
+ CASE en sus métodos.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo cambiar el comportamiento de un objeto?
+\end_layout
+
+\begin_layout Description
+Solución utilizar delegación y composición para cambiar el comportamiento
+ en tiempo de ejecución.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nos ahorra tener que utilizar herencia para obtener nuevo comportamiento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permite cambiar comportamiento en tiempo de ejecución
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_strategy.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Strategy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_strategy_ejemplo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo del patrón 
+\emph on
+Strategy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mediator
+\end_layout
+
+\begin_layout Description
+Contexto las interdependencias entre objetos son poco estructuradas y difíciles
+ de comprender.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo reducir el acoplamiento entre objetos?
+\end_layout
+
+\begin_layout Description
+Solución Introducir un objeto que encapsula cómo interactúan una serie de
+ objetos.
+ El mediador añade funcionalidad combinando funcionalidades ya existentes.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desacopla a los objetos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+El Mediador puede ser difícil de mantener
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Centraliza el control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_mediator.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Mediator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Visitor
+\end_layout
+
+\begin_layout Description
+Contexto se necesita agregar nueva funcionalidad a un objeto compuesto
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo agregar nueva funcionalidad sin modificar el código?
+\end_layout
+
+\begin_layout Description
+Solución Una clase 
+\series bold
+Visitor
+\series default
+ visita cada elemento del objeto compuesto y devuelve su estado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_visitor_aplicacion.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Visitor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se pierde la encapsulación del objeto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hay que extender el objeto visitado una vez
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_visitor.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Visitor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Chain of Responsibility
+\end_layout
+
+\begin_layout Description
+Contexto hay un número variable de objetos que pueden procesar un pedido,
+ y el manejador no se conoce en tiempo de compilación.
+\end_layout
+
+\begin_layout Description
+Problema ¿cómo darle la posibilidad a más de un objeto de procesar un pedido?
+\end_layout
+
+\begin_layout Description
+Solución encadenar los objetos que pueden procesar el pedido y pasar el
+ mismo hasta que un objeto lo procese.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_chainofresponsibility.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón 
+\emph on
+Chain of responsibility
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Patrones de Arquitectura
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Problema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Patrones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solución
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cimientos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Layers, Pipes and Filters
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Evitar un mar de objetos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sistemas distribuidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Broker
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sistemas interactivos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+MVC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permitir interacción con personas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sistemas adaptables
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Microkernel, Reflection
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permitir la extensión de aplicaciones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Layers
+\end_layout
+
+\begin_layout Description
+Contexto: sistema grande que requiere ser descompuesto en partes más pequeñas.
+\end_layout
+
+\begin_layout Description
+Problema: ¿cómo particionar la funcionalidad de un sistema para que
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+a.
+ la funcionalidad a diferentes niveles de abstracción esté desacoplado?
+\end_layout
+
+\begin_layout Description
+b.
+ la funcionalidad a un nivel particular de abstracción pueda evolucionar
+ fácilmente?
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Solución: formar al sistema como un conjunto de capas jerárquicas.
+ Cada capa usa servicios de la capa inferior y ofrece sus servicios a la
+ capa inmediatamente superior.
+ Cada capa tiene una responsabilidad específica y los componentes tienen
+ el mismo nivel de abstracción.
+ Las capas base deberían ser más chicas.
+\end_layout
+
+\begin_layout Description
+Aplicabilidad: los cambios deben estar confinados a una capa.
+ Promueve el uso de interfaces estándares y estables.
+ Las capas deberían poder ser intercambiables.
+ Las responsabilidades están agrupadas.
+\end_layout
+
+\begin_layout Description
+Ejemplo: protocolos de red.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Las capas (deberían poder) ser reutilizadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un mal diseño puede hacer que un cambio en una capa afecte a otras
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soporte para la estandarización
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poca eficiencia si hay muchas capas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Las dependencias se conservan localmente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dificultad para establecer correcta cantidad de capas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_layer.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón Layer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+MVC (
+\emph on
+Model View Controller
+\emph default
+)
+\end_layout
+
+\begin_layout Description
+Contexto: sistemas interactivos.
+\end_layout
+
+\begin_layout Description
+Problema: se requieren cambios de interfaces simples y rápidos, que no dependan
+ del modelo de datos.
+\end_layout
+
+\begin_layout Description
+Solución: dividir la aplicación en tres partes desacopladas:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Modelo representa las entidades de la aplicación.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Utiliza el patrón 
+\emph on
+Observer 
+\emph default
+para mantener informados a la Vista y al Controlador.
+ Puede utilizar el patrón 
+\emph on
+Adapter
+\emph default
+ para adaptarse a controladores y vistas.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Vista(s) presentan datos al usuario.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Utiliza el patrón 
+\emph on
+Strategy 
+\emph default
+para cambiar su controlador.
+ También utiliza el patrón 
+\emph on
+Composite
+\emph default
+ para manejar los componentes de la vista (ventanas, botones, etc.).
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Controlador(es) se asocian con las vistas y permiten manipularlas.
+ También manipula el modelo.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Aplicabilidad: la misma información puede ser representada de muchas formas.
+ La vista debe reflejar cambios en el modelo subyacente.
+ La vista debe poder cambiarse fácilmente sin afectar al modelo.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muchas vistas de un modelo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Incremento de complejidad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Portabilidad del modelo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conexión entre la vista y el controlador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vista y controlador dependen de la plataforma
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/patron_mvc.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón MVC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mvc-sequence-diagram.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MVC aplicado a la Web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/mvc-sequence-diagram-2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MVC genérico.
+ El controlador no conoce a la Vista
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de secuencia del patrón MVC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Broker
+\end_layout
+
+\begin_layout Description
+Contexto: objetos en un sistema distribuido que interactúan de forma sincrónica
+ o asíncrona.
+\end_layout
+
+\begin_layout Description
+Problema: se requiere que la comunicación entre objetos del sistema sea
+ independiente de la localización.
+\end_layout
+
+\begin_layout Description
+Solución: separar la funcionalidad del sistema de la funcionalidad de la
+ comunicación.
+ Los clientes y servidores proveen funcionalidad en cualquier nodo de la
+ red.
+ Los 
+\emph on
+brokers 
+\emph default
+son mediadores entre clientes y servidores.
+ Los 
+\emph on
+proxies cliente / servidor
+\emph default
+ protegen a los clientes y a los servidores de los problemas en la red.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/broker.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón Broker
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Microkernel
+\end_layout
+
+\begin_layout Description
+Contexto: sistemas complejos que deben poder adaptarse a cambios de requisitos.
+\end_layout
+
+\begin_layout Description
+Problema: desarrollar una familia de aplicaciones similares que usan interfaces
+ parecidas para acceder a una funcionalidad básica común.
+\end_layout
+
+\begin_layout Description
+Solución: un objeto 
+\series bold
+\emph on
+microkernel
+\emph default
+ 
+\series default
+(pequeño, consume pocos recursos) que ofrece servicios básicos, servicios
+ de comunicación entre procesos y encapsula partes dependientes del hardware.
+ Los servidores internos extienden la funcionalidad del microkernel.
+ Los servidores externos proveen funcionalidad más compleja.
+\end_layout
+
+\begin_layout Description
+Ejemplo: Symbian OS tiene un microkernel que ofrece servicios de 
+\emph on
+scheduling
+\emph default
+, manejo de memoria y drivers de dispositivos.
+\end_layout
+
+\begin_layout Description
+Aplicabilidad: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permite la portabilidad (solo se necesita cambiar el microkernel)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor eficiencia frente a un sistema monolítico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alta flexibilidad y extensibilidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es difícil delimitar las tareas del microkernel
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/patron_microkernel.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Patrón microkernel.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Pipes and Filters
+\end_layout
+
+\begin_layout Description
+Contexto: procesamiento de 
+\emph on
+streams
+\emph default
+ de datos.
+\end_layout
+
+\begin_layout Description
+Solución: cada paso de procesamiento se encapsula en un filtro.
+ Los datos pasan por 
+\emph on
+pipes
+\emph default
+ entre filtros adyacentes.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flexibilidad para intercambiar filtros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poca eficiencia si un filtro necesita toda la información para comenzar
+ a procesar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reuso de filtros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poca eficiencia si hay que transformar muchos datos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manejo de errores es complicado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Patrones de Aplicaciones Enterprise
+\end_layout
+
+\begin_layout Standard
+Características de una aplicación 
+\emph on
+entreprise
+\emph default
+:
+\end_layout
+
+\begin_layout Itemize
+concurrencia - multiusuarios
+\end_layout
+
+\begin_layout Itemize
+persisten datos de forma masiva
+\end_layout
+
+\begin_layout Itemize
+lógica de negocio
+\end_layout
+
+\begin_layout Itemize
+muchas interfaces de usuarios
+\end_layout
+
+\begin_layout Itemize
+integración con otros sistemas
+\end_layout
+
+\begin_layout Standard
+Ejemplos de aplicaciones 
+\emph on
+entreprise
+\emph default
+:
+\end_layout
+
+\begin_layout Itemize
+sistema contable
+\end_layout
+
+\begin_layout Itemize
+home banking
+\end_layout
+
+\begin_layout Standard
+Layers (capa lógica, ej: mvc)
+\begin_inset Formula $\neq$
+\end_inset
+
+ tiers (capa física, ej: cliente-servidor)
+\end_layout
+
+\begin_layout Standard
+Vistas 4 + 1:
+\end_layout
+
+\begin_layout Itemize
+Lógica
+\end_layout
+
+\begin_layout Itemize
+Componentes
+\end_layout
+
+\begin_layout Itemize
+Despliegue
+\end_layout
+
+\begin_layout Itemize
+Procesos
+\end_layout
+
+\begin_layout Standard
+Capas:
+\end_layout
+
+\begin_layout Itemize
+Presentación
+\end_layout
+
+\begin_layout Itemize
+Servicio
+\end_layout
+
+\begin_layout Itemize
+Dominio
+\end_layout
+
+\begin_layout Itemize
+Persistencia
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Data source 
+\end_layout
+
+\begin_layout Standard
+Aspectos a tener en cuenta:
+\end_layout
+
+\begin_layout Itemize
+Seguridad: autenticación y autorización
+\end_layout
+
+\begin_layout Itemize
+Transacciones
+\end_layout
+
+\begin_layout Itemize
+Excepciones
+\end_layout
+
+\begin_layout Itemize
+Concurrencia
+\end_layout
+
+\begin_layout Itemize
+Internacionalización
+\end_layout
+
+\begin_layout Itemize
+Accesibilidad
+\end_layout
+
+\begin_layout Itemize
+Usabilidad
+\end_layout
+
+\begin_layout Standard
+Patrones de lógica de dominio:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Transaction script
+\emph default
+: hay un solo procedimiento para cada acción que requiere el usuario.
+ Podría traer repetición de código y de lógica
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Domain model
+\emph default
+: las responsabilidades se distribuyen a cada objeto de dominio
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Table module
+\emph default
+: una clase maneja todas las instancias
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Service layer
+\emph default
+: brinda un único punto de acceso al dominio
+\end_layout
+
+\begin_layout Standard
+Patrones de 
+\emph on
+data source
+\emph default
+ (persistencia):
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Row data gateway
+\emph default
+: dada una query a una base de datos, tiene una instancia del gateway por
+ cada fila retornada
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Table data gateway
+\emph default
+: dada una query a una base de datos, tiene una instancia del gateway por
+ cada tabla
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Active record
+\emph default
+: un objeto 
+\series bold
+de dominio
+\series default
+ sabe cómo interactuar con la base de datos
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Data mapper
+\emph default
+: separa un objeto de dominio de una base de datos
+\end_layout
+
+\begin_layout Standard
+Patrones de comportamiento DB:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Unit of work
+\emph default
+: mantiene el seguimiento de todo lo que se hace durante la transacción
+ de negocio que afecta a la base de datos.
+ Al final realiza todos los cambios contra la base de datos (
+\emph on
+commit
+\emph default
+).
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Identity map
+\emph default
+: se asegura que un objeto de dominio se carga una sola vez en cada transacción
+ (caché).
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Lazy load
+\emph default
+: un objeto que no contiene todos los datos necesarios, pero que sabe cómo
+ obtenerlos.
+\end_layout
+
+\begin_layout Standard
+Patrones de estructura DB:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Identity field
+\emph default
+: permite identificar un objeto de dominio persistido en una base de datos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Artículos
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Architectural Blueprints - The 4+1 View Model of Software Architecture
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/vistas4+1.PNG
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vistas 4+1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vista
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lógico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Proceso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Desarrollo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Físico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Escenarios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Componentes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tarea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Módulo, subsistema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nodo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scripts
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Conectores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asociación, herencia...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message broadcast, RCP...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compilación, dependendencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medio de comunicación, LAN, WAN...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Contenedores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Categoría de clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Proceso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Subsistema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Subsistema físico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Web
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Stakeholders
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usuario final
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseñador de sistema, integrador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desarrollador, gerente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseñador de sistema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usuario final, desarrollador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Preocupación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Funcionalidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Performance, disponibilidad, tolerancia a fallos, integridad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Organización, reuso, portabilidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Escalabilidad, performance, desarrollo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resumen del modelo 
+\begin_inset Quotes eld
+\end_inset
+
+4+1
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Java: method overloading vs.
+ method overriding
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Overloading writing two or more methods in one class that satisfy one or
+ both of these conditions:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+The number of parameters is different.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+The parameter types are different.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The following actions do not clasify as overloading and will result in compiler
+ errors:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Just changing the return type of the methods.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Just changing the name of the methods' parameters (but not their types).
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\emph on
+Overriding a method inherited from a parent class will be changed.
+ Everything remains exactly the same except the method definition – basically
+ what the method does is changed slightly to fit in with the needs of the
+ child class.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Method overriding is a run-time phenomenon that is the driving force behind
+ polymorphism.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public class Parent 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public string method()
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		return "I'm the parent";
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Child extends Parent
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public string method()
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		return "I'm the child";
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example of method overriding
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Java: methods common to all 
+\family typewriter
+Object
+\family default
+s
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Value
+\begin_inset space ~
+\end_inset
+
+class class that represents a value, e.g.
+ 
+\family typewriter
+Integer
+\family default
+ or 
+\family typewriter
+Date
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Mother class 
+\family typewriter
+Object
+\family default
+ has nonfinal methods designed to be overridden under certain conditions
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\emph on
+equals
+\family default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="6cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+When to override it
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+When 
+\emph default
+not
+\emph on
+ to override it
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+The class has logical equality that differs from object identity, and a
+ superclass has not already overriden this method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Each class instance is unique.
+ Example: a Thread
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Most value classes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+You don't care whether the class provides a 
+\begin_inset Quotes eld
+\end_inset
+
+logical equality
+\begin_inset Quotes erd
+\end_inset
+
+ test
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+A superclass has already overriden equals
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+You are certain that the method will never be invoked
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+The class uses instance control to ensure that at most one object exists
+ with each value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Contract of the 
+\family typewriter
+equals
+\family default
+ method, given 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ non-null reference values:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Reflexive
+\family typewriter
+\series default
+: x.equals(x)
+\family default
+ should return 
+\family typewriter
+true
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Symmetric
+\family typewriter
+\series default
+: x.equals(y)
+\family default
+ should be equal to 
+\family typewriter
+y.equals(x)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Transitive
+\series default
+: if 
+\family typewriter
+x.equals(y)
+\family default
+ is true and 
+\family typewriter
+y.equals(z)
+\family default
+ is true, then
+\family typewriter
+ x.equals(z)
+\family default
+ should return 
+\family typewriter
+true
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Consistent
+\series default
+: if no information used in the 
+\family typewriter
+equals
+\family default
+ comparison on the objects is modified, 
+\family typewriter
+x.equals(y)
+\family default
+ should consistently return 
+\family typewriter
+true
+\family default
+ or consistently return 
+\family typewriter
+false
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Non-nullity
+\series default
+: 
+\family typewriter
+x.equals(null)
+\family default
+ should always return 
+\family typewriter
+false
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+Problem of equivalence relations in OO languages
+\bar default
+: there is no way to extend an instantiable class and add a value component
+ while preserving the 
+\family typewriter
+equals
+\family default
+ contract.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+Workaround
+\bar default
+: favor composition over inheritance.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Tips:
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+\emph on
+Equals
+\family default
+ methods should perform deterministic computations on memory-resident objects.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Always override 
+\family typewriter
+hashCode
+\family default
+ when you override equals
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+\emph on
+hashCode
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Contract of the 
+\family typewriter
+hashCode
+\family default
+ method:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+When invoked on the same object more than once, it should consistently return
+ the same integer, provided no information used in 
+\family typewriter
+equals
+\family default
+ has changed.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Equal objects must have equal hash codes.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+A good hash function tends to produce unequal hash codes for unequal objects.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+\emph on
+toString
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\emph on
+clone
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\emph on
+finalize
+\end_layout
+
+\end_body
+\end_document

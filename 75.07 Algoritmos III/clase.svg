@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="212"
+   height="113"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-41.857143,-390.32648)"
+     id="layer1">
+    <rect
+       width="208.75"
+       height="109.75"
+       x="1"
+       y="0.99999988"
+       transform="translate(41.857143,390.32648)"
+       id="rect3058"
+       style="fill:none;stroke:#000000;stroke-opacity:1" />
+    <path
+       d="m 0.75,27.75 208.5,0"
+       transform="translate(41.857143,390.32648)"
+       id="path3828"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       d="M 209.25,69.5 1,69.5"
+       transform="translate(41.857143,390.32648)"
+       id="path3830"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       x="109.60714"
+       y="408.57648"
+       id="text3832"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+         x="109.60714"
+         y="408.57648"
+         id="tspan3834"
+         style="font-size:10px">BankAccount</tspan></text>
+    <text
+       x="18.75"
+       y="33"
+       transform="translate(41.857143,390.32648)"
+       id="text3836"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans;-inkscape-font-specification:Sans"><tspan
+         x="18.75"
+         y="33"
+         id="tspan3838"></tspan><tspan
+         x="18.75"
+         y="83"
+         id="tspan3840" /></text>
+    <text
+       x="47.357143"
+       y="437.32648"
+       id="text3842"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans;-inkscape-font-specification:Sans"><tspan
+         x="47.357143"
+         y="437.32648"
+         id="tspan3844">owner : String</tspan><tspan
+         x="47.357143"
+         y="449.82648"
+         id="tspan3846">balance : Dollars = 0</tspan></text>
+    <text
+       x="47.488979"
+       y="477.32648"
+       id="text3848"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans;-inkscape-font-specification:Sans"><tspan
+         x="47.488979"
+         y="477.32648"
+         id="tspan3850">deposit ( amount : Dollars )</tspan><tspan
+         x="47.488979"
+         y="489.82648"
+         id="tspan3852">withdrawl ( amount : Dollars )</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,9252 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{pdflscape}
+\usepackage{changepage}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\columnsep 1cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Información en las Organizaciones
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Subsection
+La revolución de los sistemas de información
+\end_layout
+
+\begin_layout Subsubsection
+¿Porqué sistemas de información?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sistema
+\series default
+: conjunto de objetos relacionados entre sí y con su ambiente, de tal forma
+ que forman una totalidad.
+ Apuntan a lograr objetivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sistema de información
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Definición
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Perspectiva de negocios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conjunto de objetos relacionados entre sí que 
+\emph on
+reúne, procesa, almacena y distribuye información
+\emph default
+ para mayor control y para ayudar en la toma de decisiones.
+ Contienen datos acerca de personas, lugares, y cosas del entorno y de la
+ organización.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solución organizacional y administrativa, basada en tecnología.
+ Forman parte de las organizaciones y en algunas es indispensable.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nos interesamos en los CBIS (
+\emph on
+Computer Based Information Systems
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+Tipos de Sistemas de Información:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Sistemas Estratégico
+\series default
+s: orientados a soportar la toma de decisiones (planeamiento, previsión
+ y administración de la organización).
+ Su utilización no es predecible.
+ Son funciones basadas en el conocimiento.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ejemplos: Management Information Systems (MIS), Business Simulation Intelligence
+ (BIS).
+\end_layout
+
+\begin_layout Standard
+Son la base de un Data Warehouse.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Sistemas Tácticos
+\series default
+: orientados a soportar la coordinación de actividades y manejo de documentación.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ejemplos: sistemas de mensajería, sistemas de coordinación y control de
+ tareas.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Sistemas Técnico-Operativo
+\series default
+s: cubren el núcleo de operaciones tradicionales de captura masiva de datos
+ (Data Entry) y servicios básicos de tratamiento de datos, con tareas predefinid
+as (contabilidad, almacén, personal, etc.).
+ Siempre son las primeras partes de la empresa a ser computarizado.
+\end_layout
+
+\begin_layout Standard
+Tipos de Sistemas de Información:
+\end_layout
+
+\begin_layout Enumerate
+SSG (
+\series bold
+Sistema de Soporte Gerencial
+\series default
+): recibe información agregada y emite proyecciones, respuestas a consultas.
+\end_layout
+
+\begin_layout Enumerate
+SIA (
+\series bold
+Sistema de Información para la Administración
+\series default
+): recibe información resumida de operaciones, emite informes.
+\end_layout
+
+\begin_layout Enumerate
+SSD (
+\series bold
+Sistema de Soporte de Decisiones
+\series default
+): recibe poco volumen de información, emite informes especiales.
+\end_layout
+
+\begin_layout Enumerate
+STC (
+\series bold
+Sistema de Trabajo del Conocimiento
+\series default
+): recibe especificaciones de diseño y emite modelos y gráficas.
+\end_layout
+
+\begin_layout Enumerate
+SAO (
+\series bold
+Sistema de Automatización en la Oficina
+\series default
+): recibe documentos y emite documentos y correos.
+\end_layout
+
+\begin_layout Enumerate
+SPO (
+\series bold
+Sistema de Procesamiento de Operaciones
+\series default
+): recibe transacciones y eventos, y emite listas y resúmenes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Datos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flujos de hechos en bruto que representan sucesos ocurridos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Información
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datos procesados.
+ Tienen significado y utilidad.
+ Características de la información: relevante, correcta, completa, clara
+ y oportuna.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Conocimiento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entendimiento de la información.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elementos de una organización: 
+\end_layout
+
+\begin_layout Enumerate
+Personal
+\end_layout
+
+\begin_layout Enumerate
+Estructura
+\end_layout
+
+\begin_layout Enumerate
+Procesos
+\end_layout
+
+\begin_layout Enumerate
+Política
+\end_layout
+
+\begin_layout Enumerate
+Cultura
+\end_layout
+
+\begin_layout Standard
+Administración:
+\end_layout
+
+\begin_layout Enumerate
+Percibir 
+\series bold
+retos
+\series default
+ del entorno
+\end_layout
+
+\begin_layout Enumerate
+Establecer la 
+\series bold
+estrategia
+\series default
+ de la organización
+\end_layout
+
+\begin_layout Enumerate
+Asignar 
+\series bold
+recursos
+\series default
+ (humanos, físicos, financieros)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Liderar
+\series default
+ a las personas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Tecnología
+\series default
+: herramienta fundamental para los administradores.
+ Formado por: software, hardware, almacenamiento y comunicaciones.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+¿Por qué sistemas de información?
+\emph default
+ 4 cambios en el mundo:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Globalización
+\emph default
+: mercado global, competencia global, grupos de trabajo globales; sistemas
+ de entrega globales.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Transformación de economías industriales a economías de servicio
+\emph default
+: nuevos productos y servicios, conocimiento como activo fundamental de
+ las empresas; entorno turbulento.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Transformación de las empresas
+\emph default
+: aplanamiento, descentralización, flexibilidad, bajos costos de coordinación,
+ equipos colaborativos.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Surgimiento de la empresa digital
+\emph default
+: todo a través de medios digitales (relación con la gente, procesos de
+ negocios, administración de activos, noticias del entorno).
+\end_layout
+
+\begin_layout Subsubsection
+Enfoques contemporáneos de los sistemas de información
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Técnico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelos normativos con bases matemáticas.
+ (Computación, Inv.
+ Op., Adm.)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Conductual
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se concentra en los cambios de actitud y cuestiones de conducta.
+ (Sociología, Psicología, Economía)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sociotécnico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Considera los puntos de vista de todas las disciplinas.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+El nuevo rol de los Sistemas de Información
+\end_layout
+
+\begin_layout Itemize
+Amplio alcance
+\end_layout
+
+\begin_layout Itemize
+Revolución de redes y Internet
+\end_layout
+
+\begin_layout Itemize
+Menos costo de la tecnología, software potente y fácil de usar
+\end_layout
+
+\begin_layout Subsubsection
+Retos para los administradores
+\end_layout
+
+\begin_layout Itemize
+Estrategia para ser competitivos y eficaces
+\end_layout
+
+\begin_layout Itemize
+Globalización
+\end_layout
+
+\begin_layout Itemize
+Arquitectura de la información?
+\end_layout
+
+\begin_layout Itemize
+Inversión en sistemas de información
+\end_layout
+
+\begin_layout Itemize
+Responsabilidad y control: uso ético de los sistemas de información
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Impactos de los Sistemas de Información
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Más velocidad de procesamiento y de distribución de información
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menos puestos de trabajo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visión más exhaustiva de los clientes (patrones de compra, preferencias...)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uso incorrecto para distribuir copias ilegales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Más rendimiento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Más dependencia en los sistemas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Más avances en ciencias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menos privacidad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Enfoque de Sistemas
+\end_layout
+
+\begin_layout Standard
+1954, por Von Bertalanffy.
+\end_layout
+
+\begin_layout Standard
+Teorías de la Organización:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Modelo formal / mecánico
+\emph default
+ (1880): por Taylor, Fayol y Weber.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+División de tareas por especialidades
+\end_layout
+
+\begin_layout Itemize
+Estructura sobre principios científicos
+\end_layout
+
+\begin_layout Itemize
+Estudio del trabajo, su secuencia y sus requerimientos
+\end_layout
+
+\begin_layout Itemize
+Descompone todo en partes pequeñas para comprenderlo mejor
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Modelo organicista
+\emph default
+: por Parsons y Homans.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Analogía con la biología
+\end_layout
+
+\begin_layout Itemize
+Equilibrio: la subsistencia de la organización depende del balance de compensaci
+ones y contribuciones
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Modelo de sistemas
+\emph default
+ (1959): por Simon.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Responde a la presión de analizar la complejidad de empresas
+\end_layout
+
+\begin_layout Itemize
+Búsqueda del conocimiento de las partes
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Organizaciones y necesidad de su administración
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Organización
+\series default
+: dos o más personas que trabajan de forma estructurada para alcanzar objetivos.
+\end_layout
+
+\begin_layout Itemize
+Obtienen y asignan recursos para conseguir las metas; procesan y obtienen
+ bienes o servicios.
+\end_layout
+
+\begin_layout Itemize
+Existen en un ambiente.
+\end_layout
+
+\begin_layout Itemize
+Tendrán administradores.
+\end_layout
+
+\begin_layout Itemize
+Sirven a la sociedad: preservan el conocimiento y lo enriquecen.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Empresa
+\series default
+: organización que se dedica a los negocios.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Administración
+\series default
+: arte de hacer las cosas a través de la gente.
+ Planear, Organizar, Liderar, Dirigir y Controlar.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Planificación
+\series default
+: pensar acciones con anticipación para lograr los objetivos establecidos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Liderazgo
+\series default
+: dirigir, influir y motivar a empleados.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Control
+\series default
+: fijar normas + medir desempeño + corregir acciones.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Estrategia
+\series default
+: plan que integra metas y políticas de una organización.
+\end_layout
+
+\begin_layout Itemize
+Ayuda a poner orden
+\end_layout
+
+\begin_layout Itemize
+Asignación de recursos
+\end_layout
+
+\begin_layout Itemize
+Anticipar posibles cambios en el entorno
+\end_layout
+
+\begin_layout Standard
+OBJETIVO 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ METAS 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ POLÍTICAS 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ PROGRAMAS
+\end_layout
+
+\begin_layout Subsubsection
+La organización como sistema
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="6cm">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Teoría de los sistemas sociotécnicos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Teoría de los sistemas abiertos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1951
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1960
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trist y Bramforth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Emey y Trist
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Límites: tecnología, sociedad y psicología
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+El sistema coexiste con el ambiente e interactúa con él.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Objetivos del diseño organizativo
+\end_layout
+
+\begin_layout Standard
+Cuanta más complejidad, y cuanta más incertidumbre hay en el entorno, las
+ empresas cambian: estructura, estrategia, cultura, procesos y Sistemas
+ de Información.
+\end_layout
+
+\begin_layout Subsubsection
+Elementos del diseño organizativo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="left" valignment="top" width="8cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Estrategia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Planeamiento: fijación de objetivos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Modelo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Posicionamiento: mercado para los productos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Perspectiva: visión de la empresa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Trampa: maniobra para eliminar un competidor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe considerarse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿QUÉ productos ofrecen?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿A QUIÉNES le ofrecen esos productos?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿POR QUÉ somos mejores?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿DÓNDE nos enfocaremos?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿CÓMO implementaremos?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Estructura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Disposición 
+\begin_inset Formula $+$
+\end_inset
+
+ agrupamiento de las partes 
+\begin_inset Formula $=$
+\end_inset
+
+ división de tareas 
+\begin_inset Formula $+$
+\end_inset
+
+ jerarquías
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Análisis de la relación entre partes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Organigrama
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipos 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Formal, informal, presunta, existente, requerida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Procesos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conjunto de actividades que recibe insumos y crea productos con valor para
+ el cliente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Gente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distribución de cargos.
+ Debe haber equilibrio entre aporte, retribución y capacidad de las personas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tecnología
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Herramienta para transformar materia prima en productos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diseño de sistemas administrativos
+\end_layout
+
+\begin_layout Standard
+Un sistema administrativo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1.6cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conjunto integrado de procedimientos necesarios para concretar en actividades
+ los objetivos de una empresa, y para generar información para el control
+ de resultados alcanzados.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe permitir
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="8cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Realizar tareas en tiempo, costo y confiabilidad aceptable
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Posibilitar toma de decisiones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Asegurar cumplimiento de objetivos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elementos que lo forman
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="4.6cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Flujos de trabajo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Flujos de información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Personas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Tecnología
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Requisitos del diseño
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Eficacia
+\series default
+: lograr objetivos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Eficiencia
+\series default
+: lograr objetivos con mínimos recursos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Calidad
+\series default
+ (1959): por W.
+ Edwards Deming.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Métodos estadísticos de control de calidad
+\end_layout
+
+\begin_layout Itemize
+Consistencia, duración, confiabilidad
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Creación de valor
+\series default
+: percepción del cliente sobre la calidad.
+ El sistema administrativo debe proveer información que agregue valor.
+\end_layout
+
+\begin_layout Itemize
+Transparencia y ética.
+\end_layout
+
+\begin_layout Subsubsection
+Pautas de control interno
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Control interno
+\series default
+: sistema coordinado de reglas y procedimientos que sirven como referencia
+ a las decisiones, atendiendo a los objetivos de la organización.
+\end_layout
+
+\begin_layout Standard
+Objetivos:
+\end_layout
+
+\begin_layout Enumerate
+Mejorar la eficiencia de las operaciones: información requerida para tomar
+ decisiones.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Evitar tareas duplicadas
+\end_layout
+
+\begin_layout Itemize
+Acortar tareas largas
+\end_layout
+
+\begin_layout Itemize
+Delegar tareas a personas capacitadas
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dar confiabilidad a la información: claridad, relevancia, pertinencia, oportunid
+ad, exactitud y veracidad de los datos.
+ Considerar el costo-beneficio de obtenerla.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Controles de aritmética
+\end_layout
+
+\begin_layout Itemize
+Controles de inventario de stock
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Protección del patrimonio.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Guardar dinero en cajas fuertes
+\end_layout
+
+\begin_layout Itemize
+Nadie puede retirar mercadería del depósito sin autorización
+\end_layout
+
+\begin_layout Itemize
+Seguimiento de stock, registro de movimientos, inventarios de stock frecuentes
+\end_layout
+
+\begin_layout Itemize
+Control de saldos de cuentas corrientes
+\end_layout
+
+\begin_layout Itemize
+Rendición periódica de un fondo fijo
+\end_layout
+
+\begin_layout Itemize
+Arqueos de caja frecuentes, inventarios de chequeras, seguimiento de formularios
+ anulados
+\end_layout
+
+\begin_layout Itemize
+Rotación de cajeros
+\end_layout
+
+\begin_layout Itemize
+Pagos de sumas grandes de dinero autorizado por 2+ personas
+\end_layout
+
+\begin_layout Itemize
+Control del vencimiento de valores para su cobro en fecha
+\end_layout
+
+\begin_layout Itemize
+Autorizar notas de crédito
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprometer al personal con los objetivos de la alta dirección.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Manuales de procedimientos y funciones
+\end_layout
+
+\begin_layout Itemize
+Segregación de funciones
+\end_layout
+
+\begin_layout Itemize
+Respeto del principio de unidad de mando
+\end_layout
+
+\begin_layout Itemize
+Actualización de los datos del sistema en momento y lugar que se producen
+\end_layout
+
+\begin_layout Itemize
+Personal idóneo para cada tarea
+\end_layout
+
+\begin_layout Itemize
+Estructura organizacional correcta
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Elementos del control interno:
+\end_layout
+
+\begin_layout Itemize
+Estructura organizativa.
+\end_layout
+
+\begin_layout Itemize
+Procedimientos estándares.
+\end_layout
+
+\begin_layout Itemize
+Capacidad del personal.
+\end_layout
+
+\begin_layout Standard
+Pautas de carácter general:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Separación de funciones
+\emph default
+: control por oposición de intereses.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+DECISIÓN vs.
+ AUTORIZACIÓN
+\end_layout
+
+\begin_layout Standard
+CUSTODIA DE BIENES vs.
+ MANEJO DE BIENES
+\end_layout
+
+\begin_layout Standard
+REGISTRO DE ACCIONES vs.
+ EJECUCIÓN DE ACCIONES
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Asignación de responsabilidades
+\emph default
+: funciones de puestos bien establecidos; uso del manual de funciones.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Niveles de autorización
+\emph default
+: definir quién puede autorizar cada operación.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Seguridad en el manejo de activos
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Centralización del manejo de activos en una entidad
+\end_layout
+
+\begin_layout Enumerate
+Acortamiento de pasos y traslados
+\end_layout
+
+\begin_layout Enumerate
+Documentación de los traslados
+\end_layout
+
+\begin_layout Enumerate
+Seguros contratados
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Diseño de formularios, archivos y registros
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Información clara y precisa
+\end_layout
+
+\begin_layout Enumerate
+Constancia del responsable que interviene
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Control de formularios y comprobantes
+\emph default
+, prenumeración de los mismos.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Integridad de la información
+\emph default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Impacto del cambio tecnológico: la Era de la Información
+\end_layout
+
+\begin_layout Itemize
+Influye sobre la forma de realizar tareas, sobre la generación y uso de
+ la información, y sobre las personas
+\end_layout
+
+\begin_layout Itemize
+Cambios en las áreas de actividad humana
+\end_layout
+
+\begin_layout Itemize
+Nuevo orden económico global: lo intangible es importante
+\end_layout
+
+\begin_layout Itemize
+Multiplicación de redes económicas; escala global
+\end_layout
+
+\begin_layout Itemize
+Modificación de nociones básicas del tiempo y la distancia
+\end_layout
+
+\begin_layout Itemize
+Reinvento de las organizaciones
+\end_layout
+
+\begin_layout Itemize
+Innovación permanente
+\end_layout
+
+\begin_layout Itemize
+Vínculos con clientes y proveedores
+\end_layout
+
+\begin_layout Subsubsection
+Ventajas de la informatización de los sistemas administrativos
+\end_layout
+
+\begin_layout Itemize
+Operaciones más rápidas y en simultáneo
+\end_layout
+
+\begin_layout Itemize
+Eliminación de papeles físicos
+\end_layout
+
+\begin_layout Itemize
+Más capacidad de almacenamiento
+\end_layout
+
+\begin_layout Itemize
+Más facilidad de acceso a la información
+\end_layout
+
+\begin_layout Itemize
+Más velocidad en transmisión de datos
+\end_layout
+
+\begin_layout Itemize
+Información apropiada y oportuna
+\end_layout
+
+\begin_layout Itemize
+Control automático de actividades
+\end_layout
+
+\begin_layout Subsubsection
+Aplicaciones de la informática
+\end_layout
+
+\begin_layout Itemize
+Redes de datos digitales
+\end_layout
+
+\begin_layout Itemize
+Máquinas interactivas (ejemplo: cajeros digitales)
+\end_layout
+
+\begin_layout Itemize
+Fabricación virtual (ejemplo: CAD - 
+\emph on
+Computer Assisted Design
+\emph default
+ -)
+\end_layout
+
+\begin_layout Itemize
+Oficinas sin papeles
+\end_layout
+
+\begin_layout Itemize
+Sistemas de información integrales (ERP)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+E-commerce
+\end_layout
+
+\begin_layout Subsection
+Diagramas y manuales
+\end_layout
+
+\begin_layout Standard
+Son una formalización de la empresa.
+\end_layout
+
+\begin_layout Standard
+Ventajas:
+\end_layout
+
+\begin_layout Itemize
+Reduce variabilidad del comportamiento y permite controlarlo
+\end_layout
+
+\begin_layout Itemize
+Coordina tareas
+\end_layout
+
+\begin_layout Itemize
+Consistencia para producción eficiente
+\end_layout
+
+\begin_layout Itemize
+Asegura imparcialidad
+\end_layout
+
+\begin_layout Standard
+Tres modos de formalización:
+\end_layout
+
+\begin_layout Itemize
+Por corriente de trabajo
+\end_layout
+
+\begin_layout Itemize
+Por posición
+\end_layout
+
+\begin_layout Itemize
+Por reglas
+\end_layout
+
+\begin_layout Standard
+Algunos diagramas:
+\end_layout
+
+\begin_layout Enumerate
+Diagrama de flujo de datos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename diag_flujo_datos.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Diagrama de bloque
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename diag_bloque.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Diagrama de interdependencia sectorial / diagrama analítico
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename diag_interdep_sectorial.JPG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Diagrama de operación de procesos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename diag_op_procesos.gif
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cursograma
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cursograma.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Manuales
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De función
+\end_layout
+
+\begin_layout Enumerate
+De procedimientos
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+La empresa en funcionamiento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename emp_en_func.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sistemas administrativos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sistema administrativo
+\series default
+: conjunto ordenado de procedimientos relacionados entre sí, que sirven
+ de base para el cumplimiento de una función.
+ Es una serie de procedimientos (preparación, control, autorización, registració
+n, archivo, seguimiento).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Procedimiento
+\series default
+: sucesión cronológica y secuencial de operaciones predefinidas repetitivas
+ para cumplir tareas de una organización.
+ Son los actos mínimos que integran la estructura de la organización y los
+ aspectos operativos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Proceso
+\series default
+: forma de hacer las cosas en forma sistemática.
+ Secuencia de pasos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Circuito
+\series default
+: seguimiento de un orden secuencial, bajo la forma de procedimientos burocrátic
+os.
+ Tienen en cuenta las áreas y los puestos de trabajo encargados de llevar
+ a cabo las tareas.
+ Establecer para cada agente:
+\end_layout
+
+\begin_layout Itemize
+Funciones
+\end_layout
+
+\begin_layout Itemize
+Responsabilidad
+\end_layout
+
+\begin_layout Itemize
+Autoridad
+\end_layout
+
+\begin_layout Standard
+Un buen conjunto de sistemas administrativos debe:
+\end_layout
+
+\begin_layout Enumerate
+Otorgar previsibilidad
+\end_layout
+
+\begin_layout Enumerate
+Otorgar orden secuencial
+\end_layout
+
+\begin_layout Enumerate
+Permitir identificar las etapas de una operación
+\end_layout
+
+\begin_layout Subsection
+Descripción de procedimientos administrativos
+\end_layout
+
+\begin_layout Enumerate
+Narrativa
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="4.3cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lectura extensa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Difícil visión del procedimiento en su conjunto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Narración subjetiva
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Complica elaboración de software
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Diagramas
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="5cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elimina ambigüedad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Proporciona una visión global del procedimiento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utilidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Relevar información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detectar problemas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseñar mejoras
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comparar realidades administrativas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Manual de procedimientos: contiene una relación ordenada y sistematizada
+ de los procedimientos administrativos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="5cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contenido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IDENTIFICACIÓN: órgano, procedimiento, código del procedimiento, fecha de
+ elaboración, fecha de vigencia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OBJETIVO
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NARRATIVA: operaciones numeradas, en forma secuencial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PORTADORES DE INFORMACIÓN: dibujo e instrucciones de llenado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CURSOGRAMA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cursograma: modelo esquemático gráfico de un procedimiento.
+ Usa símbolos (para caracterizar acciones) y reglas convencionales (rigen
+ la forma de presentación y disposición de los símbolos).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="4.4cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Determinar errores, omisiones, reiteraciones, superposición de tareas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analizar cambios por optimización o por necesidad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Introducir a personal ajeno a las prácticas administrativas de la empresa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Información que brindan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unidades funcionales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operaciones, controles y decisiones llevadas a cabo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Formularios y archivos involucrados (cuántos y cómo se distribuyen)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cursos de acción posibles
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Metodología para el análisis de Sistema de Información
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Objetivo
+\emph default
+: investigar sistemas actuales para detectar errores y proponer mejoras.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Metodología
+\emph default
+: descomponer el procedimiento en partes.
+ Conocer qué, por qué, quién/es, dónde, cuándo, cómo.
+\end_layout
+
+\begin_layout Standard
+Errores comunes:
+\end_layout
+
+\begin_layout Itemize
+Trabajo innecesario, muchas etapas, mucho movimiento de personas
+\end_layout
+
+\begin_layout Itemize
+Error en el orden o la secuencia
+\end_layout
+
+\begin_layout Itemize
+Falta de unificación
+\end_layout
+
+\begin_layout Itemize
+Excesivo registro de datos
+\end_layout
+
+\begin_layout Subsection
+Norma IRAM 34501.
+ Símbolos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="3.4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Símbolo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Nombre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Significado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Documento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contiene: denominación abreviada + cantidad de ejemplares
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: acción de elaboración, modificación o incorporación de información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: acción de verificación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Demora
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: detención transitoria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Archivo transitorio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: almacenamiento temporal de información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Archivo definitivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: almacenamiento permanente de información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Destrucción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: eliminación de información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alternativa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indica: formas de acción
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Proceso No Representado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: acciones que se desconocen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Traslado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: desplazamiento físico de papeles
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Traslado de información
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: desplazamiento de información
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conector
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa: nexo entre procedimientos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Norma IRAM 34502.
+ Técnicas
+\end_layout
+
+\begin_layout Itemize
+Sentido descendente y en forma horizontal.
+\end_layout
+
+\begin_layout Itemize
+Pueden graficarse unidades externas a la organización que participan en
+ el procedimiento.
+\end_layout
+
+\begin_layout Itemize
+Las columnas (unidades funcionales) separadas por rayas.
+\end_layout
+
+\begin_layout Itemize
+Cruce de líneas con puentes de media circunferencia; el puente con la concavidad
+ del mismo sentido de la línea que corta.
+\end_layout
+
+\begin_layout Itemize
+Uniones de líneas de secuencia forman ángulos de 90 grados.
+\end_layout
+
+\begin_layout Subsection
+Norma IRAM 34503.
+ Diseño de formularios
+\end_layout
+
+\begin_layout Itemize
+Formatos de hojas: A3 (apaisado), o A4 (vertical).
+\end_layout
+
+\begin_layout Itemize
+Margen mayor a 25 mm.
+\end_layout
+
+\begin_layout Itemize
+En el encabezado va la organización, el procedimiento, y la fecha.
+\end_layout
+
+\begin_layout Itemize
+Referencias a nombres de formularios.
+\end_layout
+
+\begin_layout Section
+Formularios y documentos comerciales
+\end_layout
+
+\begin_layout Standard
+Objetivos de los documentos comerciales:
+\end_layout
+
+\begin_layout Itemize
+Precisar la relación jurídica entre las partes intervinientes
+\end_layout
+
+\begin_layout Itemize
+Oficiar como prueba de los actos comerciales
+\end_layout
+
+\begin_layout Itemize
+Contabilización y control de las operaciones
+\end_layout
+
+\begin_layout Subsection
+Cheque
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cheque
+\series default
+: título de crédito que contiene una orden de pago librada contra un banco,
+ respecto del cual se tiene provisión y disponibilidad de fondos, para que
+ pague a la vista al portador legítimo del título una suma determinada de
+ dinero.
+\end_layout
+
+\begin_layout Standard
+Tipos de cheques:
+\end_layout
+
+\begin_layout Itemize
+Cheque común
+\end_layout
+
+\begin_layout Itemize
+Cheque de pago diferido: no es un cheque, debería llamarse 
+\emph on
+instrumento de pago diferido
+\emph default
+, porque no es una orden de pago, es un instrumento de crédito como un pagaré.
+\end_layout
+
+\begin_layout Itemize
+Cheque cruzado: es aquel en el cual se colocan dos barras paralelas en el
+ ángulo superior izquierdo, con lo cual el cheque no podrá hacerse ejecutivo
+ en ventanilla, deberá ser depositado para el pago a través de una entidad
+ bancaria.
+\end_layout
+
+\begin_layout Itemize
+Cheque para acreditar en cuenta: es aquel que tampoco se paga por ventanilla;
+ únicamente debe ser depositado en la cuenta indicada en el cuerpo del cheque.
+ Es el cheque más seguro porque no se puede negociar.
+\end_layout
+
+\begin_layout Itemize
+Cheque imputado: no se puede cobrar en ventanilla.
+ Sirve para pagar algún servicio de caja del banco (ej: un impuesto).
+\end_layout
+
+\begin_layout Itemize
+Cheque certificado: el portador lo presenta al banco para certificar que
+ hay fondos suficientes y disponibles en la cuenta.
+ El cheque no queda en el banco, se le devuelve a quien lo presenta.
+\end_layout
+
+\begin_layout Itemize
+Cheque no negociable
+\end_layout
+
+\begin_layout Subsection
+Factura
+\end_layout
+
+\begin_layout Standard
+Tipos de facturas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Tipo factura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Vendedor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Comprador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+IVA discriminado en factura?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA inscripto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA inscripto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA inscripto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consumidor final, exento, monotributista
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monotributista / Exento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Todos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No hay IVA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA inscripto / Monotributista
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Empresa importadora extranjera
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No hay IVA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA inscripto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA inscripto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Impuestos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Impuesto
+\series default
+: cargas obligatorias que las personas y empresas tienen que pagar para
+ financiar al Estado.
+\end_layout
+
+\begin_layout Subsection
+IVA
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+Impuesto al Valor Agregado
+\series default
+ (IVA) es un 
+\series bold
+impuesto al consumo
+\series default
+, que se aplica a la venta de cosas, a la prestación de servicios y a las
+ importaciones de ciertos bienes.
+\end_layout
+
+\begin_layout Standard
+El porcentaje que se agrega al precio como IVA es del 21%.
+ El organismo que lo recauda es la D.G.I.
+ (Dirección General Impositiva) que depende de la A.F.I.P.
+ (Administración General de Ingresos Públicos).
+\end_layout
+
+\begin_layout Standard
+Los impuestos al consumo gravan al acto de consumir bienes y servicios:
+ alimentos, indumentaria, artículos de tocador y perfumería, combustibles,
+ servicios públicos, seguros, etc.
+\end_layout
+
+\begin_layout Standard
+Los impuestos son un mecanismo para financiar el gasto público mediante
+ el cual el Estado redistribuye ingresos desde los sectores más ricos hacia
+ los más vulnerables.
+\end_layout
+
+\begin_layout Standard
+Los impuestos son parte de la Política Tributaria que debe ser 
+\series bold
+equitativa
+\series default
+, es decir, promover la igualdad.
+ Este concepto comprende la equidad horizontal y la equidad vertical.
+ 
+\end_layout
+
+\begin_layout Itemize
+Equidad horizontal: si dos contribuyentes tienen iguales características
+ deben ser tratados de igual manera.
+\end_layout
+
+\begin_layout Itemize
+Equidad vertical: las personas con diferente capacidad de pago deberían
+ pagar diferentes cantidades de impuestos.
+ 
+\end_layout
+
+\begin_layout Standard
+El concepto de 
+\series bold
+progresividad
+\series default
+ establece que para que un impuesto sea equitativo un contribuyente de mayores
+ ingresos debería pagar más no sólo en valor absoluto, sino también proporcional
+mente.
+\end_layout
+
+\begin_layout Standard
+Dado que los hogares de menores ingresos gastan en consumo todos sus ingresos
+ y los hogares de mayores ingresos tienen capacidad de ahorro, los primeros
+ tienen todos sus ingresos gravados mientras que los segundos solo una parte
+ de ella.
+ De lo anterior se desprende que
+\series bold
+ el IVA no tendría que ser aplicado a la canasta básica
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+El Impuesto al Valor Agregado se lo denomina un 
+\series bold
+impuesto en cascada
+\series default
+, debido a que cada ciclo productivo se lo traslada al siguiente, hasta
+ llegar al consumidor final, quien corta la cadena de traslado.
+\end_layout
+
+\begin_layout Standard
+Para mantener al IVA como un impuesto al consumo, existe un 
+\series bold
+mecanismo de compensación
+\series default
+ a través del cual los débitos generados por la venta de productos pueden
+ pagarse por medio del IVA que se paga al realizar la compra de insumos
+ o el pago de servicios a terceros.
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+débito fiscal
+\series default
+ es aquel que los Responsables Inscriptos le cobran a sus clientes cuando
+ le vende bienes o servicios.
+ Se acredita en la cuenta 
+\begin_inset Quotes eld
+\end_inset
+
+IVA Débito Fiscal
+\begin_inset Quotes erd
+\end_inset
+
+ del Pasivo.
+\end_layout
+
+\begin_layout Standard
+En cambio, el 
+\series bold
+crédito fiscal
+\series default
+ es el que se genera en la compra de insumos, contratación de servicios,
+ etc.
+ Se debita en la cuenta 
+\begin_inset Quotes eld
+\end_inset
+
+IVA Crédito Fiscal
+\begin_inset Quotes erd
+\end_inset
+
+ del Activo.
+\end_layout
+
+\begin_layout Standard
+La diferencia entre el impuesto que se incluye en las ventas (débito fiscal)
+ y el tomado de las facturas de compras de insumos o servicios (crédito
+ fiscal), constituye en cada período fiscal el monto a abonar al fisco.
+\end_layout
+
+\begin_layout Standard
+Cuando el Débito Fiscal es mayor que el Crédito Fiscal la diferencia se
+ deposita en la D.G.I.
+\end_layout
+
+\begin_layout Standard
+Cuando el Crédito Fiscal es mayor que el Débito Fiscal la diferencia queda
+ a favor del contribuyente como saldo a favor y puede descontárselo cuando
+ en los meses posteriores le de a pagar a favor de la D.G.I.
+\end_layout
+
+\begin_layout Standard
+Las operaciones de compras y ventas de los Responsables Inscriptos y los
+ Responsables no Inscriptos deben registrarse en los libros I.V.A compras
+ e I.V.A ventas.
+\end_layout
+
+\begin_layout Standard
+Excluyendo al consumidor final, para el resto de los integrantes del ciclo
+ comercial, 
+\series bold
+el efecto del IVA debería ser neutro
+\series default
+ considerando los IVA de compras y ventas.
+ Esta neutralidad se rompe en la medida que: 
+\end_layout
+
+\begin_layout Itemize
+el fisco implementa sistemas de retenciones anticipadas al depósito de débito
+ fiscal
+\end_layout
+
+\begin_layout Itemize
+largos períodos de saldo a favor debido a la estacionalidad inherente a
+ la actividad, produciendo esto un costo financiero adicional.
+\end_layout
+
+\begin_layout Standard
+Uno de los mayores 
+\series bold
+problemas
+\series default
+ que causa a una empresa este impuesto, es la retención de capital por un
+ tiempo determinado, con el consecuente aumento del costo oportunidad.
+\end_layout
+
+\begin_layout Subsubsection
+Categorías del IVA
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+IVA Inscripto
+\series default
+: aquellas personas o empresas que superaron en el año calendario anterior
+ el monto mínimo establecido por la D.G.I, actualmente $144.000.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Los Responsables Inscriptos deben pagar el 21% adicional sobre las transacciones
+ comerciales que realice cuando compra y cobrar el 21% adicional a Responsables
+ Inscriptos, consumidores finales y el 21% + el 10,5% correspondiente a
+ la sobre tasa para los Responsables no Inscriptos cuando venda.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+IVA No Inscripto
+\series default
+: Son los que realizan operaciones pero sus ingresos no superan el importe
+ determinado por la D.G.I., actualmente $144.000.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Los Responsables no Inscriptos paga el 21% + 10,5% cuando realiza sus compras.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Los Responsables no Inscriptos emiten facturas C ya sea una venta a Responsables
+ Inscriptos, Responsables no Inscriptos, Exentos y Consumidores finales.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Monotributo
+\series default
+: es un nuevo régimen que reúne el IVA, el Impuesto a las Ganancias y los
+ recursos de seguridad social.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Ventajas:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Simplifica el pago de las obligaciones impositivas y previsionales.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Facilita el cumplimiento tributario, ya que las ventas no generan obligaciones
+ tributarias en el IVA, ni los ingreso en Ganancias.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Disminuye los costos.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Desventajas:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+No se puede tomar el crédito de impuesto, cuando compramos mercaderías o
+ materias primas.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Las sociedades regulares no tienen acceso a este régimen (solo pueden optar
+ por él, las sociedades de hecho).
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Es más dificultoso el acceso al crédito, mediante entidades bancarias.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Se está limitado a tres puntos de ventas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1.8cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Categoría de Monotributo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Ing.
+ Brut.
+ anuales ($)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Sup.
+ afectada 
+\begin_inset Formula $\left(m^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Electricidad consumida anual (kw)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.300
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.700
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+96.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+144.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Exentos
+\series default
+: no pagan el IVA.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Ventas exceptuadas de IVA: libros, diarios, estampillas, agua natural, pan,
+ leche sin aditivos, medicamentos.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Servicios exentos de IVA: escuelas privadas, transporte, lotería, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Consumidor final
+\end_layout
+
+\begin_layout Subsection
+Impuesto a los Bienes Personales
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+Impuesto a los Bienes Personales
+\series default
+ aplica un gravamen al conjunto de 
+\series bold
+bienes que una persona posee
+\series default
+ al 31 de diciembre de cada año.
+\end_layout
+
+\begin_layout Standard
+El monto del mínimo exento en Bienes Personales es de $305.000.
+\end_layout
+
+\begin_layout Standard
+Las alícuotas aplicables, entonces, serían:
+\end_layout
+
+\begin_layout Itemize
+Hasta $ 305.000: 0% 
+\end_layout
+
+\begin_layout Itemize
+Más de $ 305.000 a 750.000: 0.50% 
+\end_layout
+
+\begin_layout Itemize
+Más de $ 750.000 a 2.000.000: 0.75% 
+\end_layout
+
+\begin_layout Itemize
+Más de $ 2.000.000 a 5.000.000: 1.00% 
+\end_layout
+
+\begin_layout Itemize
+Más de $ 5.000.000: 1.25% 
+\end_layout
+
+\begin_layout Standard
+Actualmente, mediante los Anexos que anualmente se emiten, se establecen
+ valores más acordes a la realidad del mercado en cuanto valor de los automotore
+s, de cotización de monedas extranjeras, etcétera.
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que las personas radicadas en el país tributarán sobre los
+ bienes que poseen tanto en el mismo como en el exterior.
+ Sin embargo, las personas radicadas en el extranjero tributarán sólo sobre
+ los bienes que poseen en Argentina, a través de un responsable sustituto.
+\end_layout
+
+\begin_layout Subsection
+Ingresos Brutos
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+Impuesto sobre los Ingresos Brutos
+\series default
+, principal recurso que obtienen los gobiernos provinciales, 
+\series bold
+grava el ejercicio de la actividad económica
+\series default
+ con propósitos de lucro en una determinada jurisdicción y, en general,
+ se calcula únicamente sobre las ventas y no supera el 3 ó 3,5% de las mismas.
+\end_layout
+
+\begin_layout Subsection
+Impuesto a las Ganancias
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+impuesto a las ganancias
+\series default
+ es un tributo que pagan tanto las empresas como las personas físicas y
+ que se calcula en proporción a sus beneficios.
+\end_layout
+
+\begin_layout Standard
+La ley estipula que 
+\series bold
+sólo paguen impuesto a las ganancias las empresas y personas físicas que
+ ganen una cantidad de dinero mínimo por mes
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Según normativas del año 2005, el impuesto a las ganancias en Argentina
+ alcanzaba el 35%, una vez descontadas las deducciones que permite la ley.
+ Sin embargo, en 2009 se produjo un importante alivio al bolsillo de los
+ contribuyentes gracias a la eliminación de la llamada “tablita de Machinea
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En la actualidad, los trabajadores que ganan más de $240.000 netos por año
+ pagan $28.500 más una tasa del 35% sobre el monto que supera los 120.000
+ pesos.
+ Pero a partir de 2009 se creó una escala nueva según la cual los que ganen
+ más de $240.000 pagarán una suma fija de $70.500 más un 37% sobre el excedente
+ de 240.000 pesos.
+\end_layout
+
+\begin_layout Standard
+En la Argentina, el impuesto a las ganancias posee carácter 
+\series bold
+progresivo
+\series default
+.
+ Esto significa que a mayor ganancia, mayor deberá ser el aporte.
+\end_layout
+
+\begin_layout Section
+Introducción a contabilidad
+\end_layout
+
+\begin_layout Subsection
+Estados contables
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Estado contable
+\series default
+: conjunto de informes que presentan información generada por la empresa.
+ Responden a formatos y contenidos estandarizados.
+ Se confeccionan teniendo en cuenta normas contables internacionales.
+ Las empresas que cotizan en bolsa están obligadas a divulgarlas.
+ En Internet se puede obtener un conjunto de esos informes.
+ Los más conocidos son:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Estado de Situación Patrimonial / Balance General
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Son útiles para evaluar y comparar el estado de diferentes empresas en un
+ mismo momento, o en una empresa a lo largo del tiempo.
+ Refleja el estado contable de la empresa en un momento determinado.
+ Es una 
+\begin_inset Quotes eld
+\end_inset
+
+foto
+\begin_inset Quotes erd
+\end_inset
+
+ que se toma de la empresa al final del ejercicio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo
+\size scriptsize
+ (todo lo que hay en la empresa)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pasivo
+\size scriptsize
+ (cómo se dispone el activo)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Patrimonio Neto 
+\size scriptsize
+(todo lo que queda a favor de los socios)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Egresos (R
+\begin_inset Formula $^{-}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ingresos (R
+\begin_inset Formula $^{+}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ecuación Estática: 
+\begin_inset Formula $\mbox{\mbox{Activo = Pasivo + PatNeto}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ecuación Dinámica: 
+\begin_inset Formula $\mbox{\mbox{Activo + Egr = Pasivo + PatNeto + Ing}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Cuadro de Resultados
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Resume los cambios sucedidos entre dos fechas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="5.4cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ingresos por Ventas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Costos variables (MP)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Costos fijos imputables (
+\size small
+atribuibles a una producción
+\size default
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Margen de contribución
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Costos fijos no imputables (
+\size small
+gastos de adm.
+ y ventas
+\size default
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Amortización
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad Bruta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Intereses
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Impuestos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad Neta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Estado de evolución del Patrimonio Neto
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Detalla los aspectos relacionados con el patrimonio neto solamente.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Estado de flujo de fondos / Cash Flow
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se concentran en el flujo de efectivo; ingresos y egresos en el momento
+ en que se concentran.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Cuentas
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Cuentas patrimoniales
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Activos
+\series default
+ (7)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Disponibilidades
+\emph default
+: activos con poder cancelatorio legal ilimitado (efectivo, cheques, depósitos
+ bancarios)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Inversiones
+\emph default
+: colocaciones de capital al margen de la actividad de la empresa (acciones,
+ títulos públicos, plazos fijos, inmuebles para alquilar)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Créditos por ventas
+\emph default
+: derechos que la empresa tiene sobre bienes de terceros para percibir dinero,
+ bienes o servicios (créditos por ventas, anticipos a proveedores, gastos
+ pagados por adelantado)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Otros créditos
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Bienes de cambio
+\emph default
+: bienes materiales para vender (mercadería de reventa, materias primas,
+ producción en proceso)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Bienes de uso
+\emph default
+: bienes tangibles para ser usados en la actividad (terrenos, edificios,
+ maquinarias, rodados)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los bienes de uso pierden valor en el tiempo por desgaste o desuso.
+ Los únicos bienes de uso que no se amortizan son los Terrenos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Activos intangibles
+\emph default
+: expresan un valor cuya existencia depende de la posibilidad futura de
+ producir ingresos (derechos de propiedad intelectual, llave de negocio,
+ gastos de IyD, patentes)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Pasivos
+\series default
+ (3)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Deudas
+\emph default
+: deudas a favor de terceros
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Clasificación de deudas
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Por su plazo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Por su origen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Por su naturaleza
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hasta 1 año
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comerciales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Con garantía
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Más de 1 año
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bancarias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sin garantía
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Financieras
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sociales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Provisiones
+\emph default
+: hechos económicos de ocurrencia 
+\bar under
+cierta
+\bar default
+ que deben incidir en los resultados del ejercicio, pero que no constituyen
+ obligaciones exigibles a la fecha del balance 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Previsiones
+\emph default
+: hechos económicos de ocurrencia 
+\bar under
+eventual
+\bar default
+.
+ Son estimaciones de situaciones contingentes con probabilidad de originar
+ obligaciones
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Patrimonio Neto
+\series default
+ (3)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Capital
+\emph default
+: capital suscripto por los dueños de la empresa
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Reservas
+\emph default
+: parte de las utilidades no distribuidas
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Resultados
+\emph default
+: saldo de las ganancias o pérdidas acumuladas.
+ Su evolución durante el ejercicio se detalla en el Estado de Resultados
+ Acumulados
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Cuentas Transitorias
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+De Resultado
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Ingresos
+\emph default
+ (R+): venta de mercaderías, venta de bienes de uso, alquileres e intereses
+ cobrados, descuentos obtenidos
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Egresos
+\emph default
+ (R-): sueldos, impuestos, amortizaciones, gastos, servicios, costo de venta,
+ descuentos otorgados
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Ganancias y Pérdidas
+\emph default
+: aquí se vuelcan las cuentas de ingreso y egreso al cierre del ejercicio.
+ Pueden tener saldo positivo (Ganancia) o negativo (Pérdida)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+De Producción
+\series default
+: cuentas en las que se van acumulando los costos de fabricación a medida
+ que avanza la producción.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Materia prima en proceso
+\end_layout
+
+\begin_layout Itemize
+Mano de obra directa en proceso
+\end_layout
+
+\begin_layout Itemize
+Gastos generales de fabricación en proceso
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Cuentas de Orden
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Costo
+\series default
+: se incorpora al valor del producto durante la fabricación.
+ Se transfiere al activo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Gasto
+\series default
+: afecta el resultado del período.
+ Se genera con los egresos realizados a partir de que los productos abandonan
+ la línea de producción.
+\end_layout
+
+\begin_layout Subsection
+Variaciones Patrimoniales
+\end_layout
+
+\begin_layout Standard
+Las 
+\series bold
+variaciones patrimoniales 
+\series default
+son los aumentos o disminuciones de algún elemento de la ecuación estática
+ 
+\begin_inset Formula $A=P+Kn$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Se registran contablemente a través del método de 
+\series bold
+partida doble
+\series default
+, que se fundamenta en tres convenciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Clasificación de las cuentas: 
+\emph on
+patrimoniales
+\emph default
+ y 
+\emph on
+de resultado
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+División de las cuentas en 
+\emph on
+debe
+\emph default
+ y 
+\emph on
+haber
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Cuenta T
+\series default
+: forma de registrar los movimientos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+(Título de la cuenta)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Haber
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\downarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
++
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Egresos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+= 
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pasivo
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\downarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
++
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0.6cm">
+<column alignment="center" valignment="top" width="0.6cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pat Neto
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\downarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
++
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ingresos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Registración simultánea balanceante: cada 
+\emph on
+débito
+\emph default
+ se corresponde con un 
+\emph on
+crédito
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Principio de Partida Doble
+\series default
+: cada operación o movimiento afecta a, por lo menos, dos cuentas.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Se clasifican en:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Permutativas
+\series default
+: varían cualitativamente el Activo, Pasivo o Patrimonio Neto, pero no en
+ forma cuantitativa.
+ No varía el total del Patrimonio Neto.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+Ejemplos
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+Compra de mercadería al contado (cambio de un activo -caja- por otro activo
+ -mercaderías-)
+\end_layout
+
+\begin_layout Itemize
+Se salda una deuda en efectivo (disminución de un activo -caja- y disminución
+ de pasivo -deudas-)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Modificativas
+\series default
+: varían el Patrimonio Neto en forma cuantitativa.
+ Puede ser Ganancia o Pérdida.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+Ejemplo
+\bar default
+: cobranza de intereses en efectivos (aumento de activo -caja- y aumento
+ de patrimonio neto -ganancias-)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Mixtas
+\series default
+: varían el Patrimonio Neto en forma cuali y cuantitativa.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+Ejemplo
+\bar default
+: se venden acciones a mayor precio que el actual (variación permutativa
+ porque se cambia un activo por otro; variación modificativa porque aparece
+ una ganancia)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Ejemplo de estado contable
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="9cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+01/03/2001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se compra mercadería para revender a $5000 a crédito.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Asiento en el diario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Haber
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mercadería
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a Deudas Comerciales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pasivo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="9cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+02/03/2001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se compra mercadería por $5000 en cuenta corriente con IVA.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Asiento en el diario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Haber
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mercadería
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IVA Crédito Fiscal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1050
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a Deudas Comerciales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6050
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pasivo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="9cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+03/03/2001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se vende mercadería con IVA por un valor de $1000.
+ Se cobra en efectivo.
+ Costo de mercadería $1000.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Asiento en el diario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Haber
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Caja
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2420
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a Ventas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ingresos 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a IVA Débito Fiscal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+420
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pasivo 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Haber
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo de mercadería vendida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Egresos 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a Mercadería
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo 
+\begin_inset Formula $\downarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bancos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cuenta Corriente
+\series default
+: es el producto básico del sistema bancario; este contrato comprende una
+ tarjeta de débito y la posibilidad que conlleva ello de extraer dinero
+ de cajeros automáticos y de realizar compras con débito directo sobre el
+ saldo de la cuenta.
+ La tasa de interés ofrecida por conservar pesos en la caja de ahorro es
+ la más baja de todos los productos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Caja de Ahorro
+\series default
+: contrato que amplia al anterior, o sea se tiene una Caja de ahorro más
+ una Cuenta Corriente.
+ A la antes mencionada tarjeta de débito, se le agrega la chequera, y la
+ posibilidad de obtener dinero financiado hasta un tope preestablecido por
+ el banco.
+ El cheque es el documento más utilizado por los poseedores de la cuenta
+ corriente, y con él podemos realizar compras con pagos diferidos (30, 60
+ o más días).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Plazo Fijo
+\series default
+: son depósitos que se formalizan entre el cliente y el banco por medio
+ de un documento o certificado; se pactan por un monto y plazo determinado
+ y de os mismos no pueden hacerse retiros ni incrementarse ante del vencimiento
+ del plazo pactado.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Conciliación bancaria
+\series default
+: proceso que permite confrontar y conciliar los valores que la empresa
+ tiene registrados con los valores que el banco suministra por medio del
+ extracto bancario.
+\end_layout
+
+\begin_layout Section
+Presupuestos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Presupuesto
+\series default
+: conjunto coordinado de estándares de operación para un período determinado,
+ que permite prever el funcionamiento de la organización, involucrando a
+ cada una de sus áreas.
+\end_layout
+
+\begin_layout Standard
+Presupuesto como 
+\series bold
+herramienta de control
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+Interpreta los objetivos de la empresa para el período considerado
+\end_layout
+
+\begin_layout Itemize
+Asegura un programa equilibrado
+\end_layout
+
+\begin_layout Itemize
+Permite comparar la realidad con lo pronosticado; sirve para detectar desvíos
+\end_layout
+
+\begin_layout Itemize
+Permite una dirección eficiente
+\end_layout
+
+\begin_layout Verse
+
+\emph on
+Principios para presupuestar:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+Toda decisión técnica tiene consecuencias económicas y financieras
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Los planes deben adecuarse a la capacidad financiera de la empresa
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Hacer un esfuerzo para conservar la libertad de acción
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+No se trata de prever el futuro, sino de prevenir las consecuencias y las
+ respuestas posibles a esas consecuencias
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Los presupuestos no son rígidos e inmutables; son flexibles
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Adaptar el presupuesto a la realidad, no la realidad al presupuesto
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Objetivos organizacionales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mbox{Objetivos Estratégicos \to\ensuremath{\mbox{ Objetivos Tácticos}}}\to\mbox{Planificación }\to\mbox{ Programación }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Objetivo
+\series default
+: razón de ser de la organización.
+ 
+\bar under
+Ejemplo
+\bar default
+: producir y vender bienes para satisfacer las exigencias del mercado, obteniend
+o utilidades.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Criterios de clasificación de los objetivos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Criterio general
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Criterio según el tiempo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivos 
+\series bold
+generales
+\series default
+: hacen a la existencia de la organización
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivos a 
+\series bold
+largo plazo
+\series default
+: son conceptuales y modificables; sirven de guía
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivos 
+\series bold
+derivados
+\series default
+: son objetivos concretos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivos a 
+\series bold
+corto plazo
+\series default
+: están definidos en todo su alcance y a menor plazo, mayor precisión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Requisitos que debe cumplir todo objetivo:
+\end_layout
+
+\begin_layout Itemize
+Deben estar determinados en función de las necesidades de la empresa
+\end_layout
+
+\begin_layout Itemize
+Deben coordinarse
+\end_layout
+
+\begin_layout Itemize
+Deben estar formulados en forma clara (en cifras, costos, precios, etc.)
+\end_layout
+
+\begin_layout Itemize
+Deben ser conocidos por todos
+\end_layout
+
+\begin_layout Itemize
+Deben ser alcanzables con esfuerzos razonables
+\end_layout
+
+\begin_layout Itemize
+Deben estar definidas las contribuciones de cada sector al logro
+\end_layout
+
+\begin_layout Standard
+Proceso de Planeamiento: analiza la proyección de la empresa y sus proyectos
+ en el corto y largo plazo.
+ Tiene dos etapas básicas.
+\end_layout
+
+\begin_layout Itemize
+Etapa de 
+\series bold
+Planificación
+\series default
+: responde a las preguntas de QUÉ se hará (selección de actividades), CUÁNTO
+ se hará (capital a asignar a las actividades) y CÓMO se hará (tecnología,
+ procesos, ingeniería de proyecto).
+ Se formula en base al 
+\series bold
+presupuesto económico
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Establecer el grado de importancia de los objetivos
+\end_layout
+
+\begin_layout Enumerate
+Prever las variables que pueden afectar en el período
+\end_layout
+
+\begin_layout Enumerate
+Decidir la sucesión entre las actividades a realizar.
+ Seleccionar entre los recursos disponibles y establecer en qué medida se
+ usarán
+\end_layout
+
+\begin_layout Enumerate
+Determinar las modalidades de empleo de los recursos
+\end_layout
+
+\begin_layout Enumerate
+Definir los plazos para la ejecución de cada tarea
+\end_layout
+
+\begin_layout Enumerate
+Determinar los estándares de rendimiento aceptables
+\end_layout
+
+\begin_layout Enumerate
+Asignar tareas a cada persona
+\end_layout
+
+\begin_layout Enumerate
+Establecer la forma de control y darla a conocer
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Etapa de 
+\series bold
+Programación
+\series default
+: asignación de recursos y tiempos a las tareas reales en las que se han
+ descompuesto o transformado los objetivos.
+ Responde a las preguntas de DÓNDE (localización del proyecto), CUÁNDO (especifi
+cación del factor tiempo) y QUIÉN (asignación de tareas).
+ Se formula en base al 
+\series bold
+presupuesto financiero
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Etapa de 
+\series bold
+Realimentación
+\series default
+: se ajusta el programa original según los resultados de los programas prelimina
+res.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Decisión
+\series default
+: elegir entre varias alternativas, considerando el objetivo propuesto,
+ tratando de eliminar el azar y de minimizar el riesgo.
+\end_layout
+
+\begin_layout Itemize
+Las decisiones pueden ser personales u organizativas, estratégicas o tácticas.
+\end_layout
+
+\begin_layout Itemize
+El riesgo en la toma de decisiones está asociado a la incertidumbre y ésta
+ depende de:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No se conoce la frecuencia relativa de los sucesos
+\end_layout
+
+\begin_layout Itemize
+No hay registros anteriores de las consecuencias de adoptar una decisión
+\end_layout
+
+\begin_layout Itemize
+El problema es muy complejo o poco conocido
+\end_layout
+
+\begin_layout Itemize
+Las consecuencias futuras no se pueden vincular a datos históricos
+\end_layout
+
+\end_deeper
+\begin_layout Quotation
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Dirigir es decidir.
+ Todo lo que hace un directivo, lo hace tomando decisiones.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Peter Drucker
+\end_layout
+
+\begin_layout Standard
+Proceso de Toma de Decisión:
+\end_layout
+
+\begin_layout Enumerate
+Identificar las alternativas
+\end_layout
+
+\begin_layout Enumerate
+Adoptar una escala de valores
+\end_layout
+
+\begin_layout Enumerate
+Comparar las alternativas según la escala
+\end_layout
+
+\begin_layout Enumerate
+Prevenir las consecuencias de cada alternativa
+\end_layout
+
+\begin_layout Enumerate
+Comparar y valorizar las consecuencias de cada alternativa
+\end_layout
+
+\begin_layout Subsection
+Presupuesto económico
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+presupuesto económico
+\series default
+ se visualiza en su 
+\series bold
+contribución al crecimiento patrimonial y su rentabilidad resultante
+\series default
+.
+ Analiza sólo las ganancias, pérdidas, descapitalizaciones o aumentos patrimonia
+les.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pronóstico de Ventas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Pronóstico de Costos (materias primas, mano de obra, maquinarias)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Margen de Contribución
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Gastos (administrativos y de producción)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad Bruta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Impuestos (35% de la Utilidad Bruta)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad Neta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Presupuesto financiero
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+presupuesto financiero
+\series default
+ permite administrar la 
+\series bold
+liquidez
+\series default
+ de la empresa, es decir, su capacidad para armonizar ingresos con egresos
+ en efectivo.
+ Muestra la probable evolución de la capacidad de pago mensual de la empresa,
+ detectando déficits o superávits estacionales o totales.
+\end_layout
+
+\begin_layout Itemize
+Analiza sólo los ingresos y egresos en efectivo
+\end_layout
+
+\begin_layout Itemize
+Los cobros y pagos resultantes del plan previsto se asientan en el momento
+ en que se hagan efectivos, no cuando se pacta la operación
+\end_layout
+
+\begin_layout Itemize
+Se utiliza moneda constante, a fin de no tener que estimar la inflación
+ futura
+\end_layout
+
+\begin_layout Itemize
+Normalmente se hace coincidir el presupuesto financiero con la duración
+ del ejercicio (Enero a Diciembre)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Flujo de fondos}=\mbox{Ingresos + Egresos (en efectivo)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Ingresos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Egresos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Venta de productos o de bienes de uso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compra de insumos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cobro de créditos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pago de sueldos, cargas sociales, impuestos, intereses
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aportes de socios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inversiones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pago por servicios o asesoramiento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Liquidez de un bien
+\series default
+: capacidad de éste de transformarse en dinero en efectivo, sin pérdida
+ significativa de su valor.
+ Los bienes que poseen una gran capacidad líquida en el corto plazo (hasta
+ un año) son los 
+\series bold
+bienes de cambio
+\series default
+.
+ Los bienes que son ilíquidos son 
+\series bold
+activos fundiarios
+\series default
+ (edificios y terrenos), 
+\series bold
+capital de explotación fijo 
+\series default
+(maquinarias, vehículos) o 
+\series bold
+bienes de uso
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Diferencias entre presupuestos económico y financiero
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Presupuesto Económico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Presupuesto Financiero
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+¿Gastos del ejercicio anterior?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Incluye gastos ya efectuados
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No incluye gastos, ingresos o egresos fuera del período
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+¿Necesidades de insumos cubiertas con stock existente?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Incluye como gastos el consumo de stock de Almacenes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solo se computan insumos comprados y pagados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+¿Compra de insumos para usar después?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No se incluyen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se incluyen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+¿Preparación de partes a fabricar en otro ejercicio?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No se incluyen; aparecen como 
+\begin_inset Quotes eld
+\end_inset
+
+gasto
+\begin_inset Quotes erd
+\end_inset
+
+ en el ejercicio siguiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si genera egresos en efectivo en el período a presupuestar, deben incluirse
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+¿Intercambios internos de insumos entre actividades?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se incluyen, porque son el 
+\begin_inset Quotes eld
+\end_inset
+
+gasto
+\begin_inset Quotes erd
+\end_inset
+
+ de una actividad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No se incluyen; solo se generan implicancias financieras por los gastos
+ de flete, etc.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+¿Se incluyen los impuestos?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salvo el IVA, los impuestos son gastos de capital
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Todos los impuestos que generan ingresos o egresos deben presupuestarse
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sistemas ERP
+\end_layout
+
+\begin_layout Standard
+Un 
+\series bold
+sistema ERP
+\series default
+ (por sus siglas en inglés, 
+\emph on
+Enterprise Resource Planning
+\emph default
+) es un 
+\series bold
+conjunto de programas integrados que apoya las principales actividades organizac
+ionales
+\series default
+, tales como producción y logística, finanzas y contabilidad, ventas y recursos
+ humanos.
+ Es un programa que trata de satisfacer las necesidades de todos los departament
+os de la organización.
+\end_layout
+
+\begin_layout Standard
+Lo que el ERP hace es combinar todos los sistemas de cada departamento en
+ un solo programa de software que se ejecuta en una sola base de datos,
+ de manera que los departamentos pueden intercambiar, acceder y actualizar
+ información y comunicarse con otros departamentos más fácilmente.
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+Disponibilidad de toda la información, para toda la empresa, todo el tiempo.
+\end_layout
+
+\begin_layout Standard
+Características de un ERP:
+\end_layout
+
+\begin_layout Itemize
+Integral
+\end_layout
+
+\begin_layout Itemize
+Modular (es extensible)
+\end_layout
+
+\begin_layout Itemize
+Adaptable (es parametrizable)
+\end_layout
+
+\begin_layout Standard
+Breve historia de ERP:
+\end_layout
+
+\begin_layout Enumerate
+Sistemas a medida
+\end_layout
+
+\begin_layout Enumerate
+Sistemas preprogramados puramente funcionales
+\end_layout
+
+\begin_layout Enumerate
+Sistemas preprogramados para procesos específicos 
+\end_layout
+
+\begin_layout Enumerate
+1960: 
+\series bold
+MRP
+\series default
+ (
+\emph on
+Material Requirements Planning
+\emph default
+): control de inventarios
+\end_layout
+
+\begin_layout Enumerate
+1980: 
+\series bold
+MRP II
+\series default
+ (
+\emph on
+Manufacturing Resources Planning
+\emph default
+): reconocen que hay interrupciones y limitaciones de recursos
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ERP
+\series default
+ (
+\emph on
+Enterprise Resources Planning
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+1990: 
+\series bold
+Extended ERP
+\series default
+ (
+\emph on
++ Business Support functionality
+\emph default
+): manejo con proveedores
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Enhanced ERP
+\series default
+ (+ 
+\emph on
+eBusiness facilities
+\emph default
+): integración con Internet
+\end_layout
+
+\begin_layout Standard
+Las prioridades de las empresas que implementan un sistema ERP son:
+\end_layout
+
+\begin_layout Itemize
+Mejor toma de decisiones gerenciales
+\end_layout
+
+\begin_layout Itemize
+Mejor gestión financiera
+\end_layout
+
+\begin_layout Itemize
+Mejor servicio y retención de clientes
+\end_layout
+
+\begin_layout Itemize
+Mayor flexibilidad
+\end_layout
+
+\begin_layout Itemize
+Reducción de tiempos, de personal, de recursos físicos
+\end_layout
+
+\begin_layout Itemize
+Transacciones más rápidas y más precisas
+\end_layout
+
+\begin_layout Itemize
+Mayores ingresos
+\end_layout
+
+\begin_layout Standard
+Componentes principales de un sistema ERP:
+\end_layout
+
+\begin_layout Itemize
+CRM
+\end_layout
+
+\begin_layout Itemize
+RR.HH.
+\end_layout
+
+\begin_layout Itemize
+Finanzas y Contaduría, Manejo de Activos
+\end_layout
+
+\begin_layout Itemize
+Planeamiento de la Producción, Administración de Materiales, Ventas y Logística
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Project Management
+\end_layout
+
+\begin_layout Standard
+Un ERP crea valor de dos maneras:
+\end_layout
+
+\begin_layout Enumerate
+Conecta y gestiona los flujos de información en organizaciones complejas,
+ para que el personal de gestión y operativo pueda tomar decisiones en base
+ a información 
+\begin_inset Quotes eld
+\end_inset
+
+perfecta
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Automatiza procesos complejos de transacciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Ventajas de ERP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Desventajas de ERP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Centralizan la información (no hay redundancia)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo elevado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Evitan errores en la transferencia de datos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede llevar años para implementarlo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ayudan al control interno en las organizaciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Necesidad de capacitar al personal sobre su uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Optimizan los procesos empresariales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proveedores de ERP más conocidos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Empresa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Producto ERP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SAP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SAP (
+\emph on
+Systems, Applications and Products in Data Processing
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oracle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oracle e-Business Suite, People Soft, JD Edwards
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Microsoft
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Microsoft Dynamics
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Causas de fallos
+\end_layout
+
+\begin_layout Standard
+Una cantidad importante de empresas han finalizado la implementación de
+ sus sistemas ERP con gran expectativa.
+ Sin embargo, muchas de ellas no logran los beneficios esperados.
+ ¿Por qué sucede esto?
+\end_layout
+
+\begin_layout Itemize
+Falsa expectativa de que la mera implementación genera beneficios
+\end_layout
+
+\begin_layout Itemize
+El cambio es más que la implementación tecnológica
+\end_layout
+
+\begin_layout Itemize
+La mayoría de los beneficios se logran con el tiempo, no inmediatamente
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="6cm">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Un ERP es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Un ERP no es
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólo software
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Una visión estratégica u operativa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sofisticado, muy flexible
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un sustituto de una buena planificación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un modelo de datos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los mejores procesos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Una plataforma técnica común
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un sustituto del apoyo gerencial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sistemas CRM
+\end_layout
+
+\begin_layout Standard
+CRM (
+\emph on
+Customer Relationship Management
+\emph default
+) es una 
+\series bold
+filosofía
+\series default
+ corporativa en la que se busca entender y anticipar las necesidades de
+ los clientes existentes, y de identificar, atraer y fidelizar los potenciales
+ clientes.
+ Actualmente se apoya en soluciones tecnológicas que facilitan su aplicación,
+ desarrollo y aprovechamiento.
+ En pocas palabras, se trata de una 
+\series bold
+estrategia de negocios enfocada en el cliente y sus necesidades
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+¿Quiénes son mis mejores clientes?
+\end_layout
+
+\begin_layout Itemize
+¿Qué debo ofrecerles?
+\end_layout
+
+\begin_layout Itemize
+¿Cómo aumento el número de clientes rentables? ¿Cómo los retengo?
+\end_layout
+
+\begin_layout Standard
+Una implantación efectiva de CRM permite mejorar las relaciones con los
+ clientes, conociéndolos mejor y permitiendo disminuir los costos en la
+ consecución de nuevos clientes y aumentar la fidelidad de los ya existentes,
+ lo cual, en ambos casos, significa 
+\series bold
+mayores ventas y más rentabilidad para el negocio
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Además, también se obtienen beneficios relacionados con mejores resultados
+ en el lanzamiento de nuevos productos o marcas con campañas que permiten
+ identificar cuáles son las formas de marketing que realmente llegan a nuestros
+ clientes y cuáles son las que permiten atraer nuevos.
+ Permite determinar si se pueden realizar campañas de correo directo, de
+ email masivo, de contacto directo en puntos de venta, etc.
+\end_layout
+
+\begin_layout Standard
+Finalmente, CRM se refiere a la administración de todas las 
+\series bold
+interacciones
+\series default
+ que pueden tener un negocio y sus clientes.
+ Se enfoca en la optimización del ciclo de vida del cliente en su totalidad.
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Yo no necesito saber demasiado acerca de mis competidores, pero necesito
+ saber todo acerca de mis principales clientes.
+ La única cosa a la cual le temo, es que mis competidores sepan más de mis
+ clientes que yo
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+Jeff Bezos, fundador de Amazon.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="7cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Customer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estrategia enfocada en el cliente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Relationship
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sacar provecho de la relación con el cliente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Management
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aprender del cliente, anticipar sus necesidades
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Características de una organización centrada en el cliente:
+\end_layout
+
+\begin_layout Itemize
+Cultura organizacional enfocada hacia el cliente
+\end_layout
+
+\begin_layout Itemize
+Satisfacción de empleados 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ Satisfacción del cliente
+\end_layout
+
+\begin_layout Itemize
+Visión del cliente
+\end_layout
+
+\begin_layout Itemize
+Repositorio de información de los clientes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Modelo Organizacional Tradicional
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Organización Centrada en el Cliente 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eficiencia en costos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crecimiento sostenido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3 olas de la administración de las relaciones con el cliente:
+\end_layout
+
+\begin_layout Enumerate
+Ola 1: Call Center / ventas / fuerza de la eficacia
+\end_layout
+
+\begin_layout Enumerate
+Ola 2: Interacción multicanal
+\end_layout
+
+\begin_layout Enumerate
+Ola 3: Reinventar el marketing / Transformando el CRM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Ventajas de CRM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Desventajas de CRM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aumento de la información sobre los clientes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elevados costos que tiene la aplicación de CRM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aumento del grado de satisfacción de los clientes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Riesgo de invadir la privacidad del cliente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aumento de las ventas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proveedores de software CRM:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="4.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Empresa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Producto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Netsuite
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Netsuite
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oracle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oracle CRM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SAP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mySAP CRM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Siebel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Siebel CRM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SugarCRM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SugarCRM (open source)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Causas de fallos
+\end_layout
+
+\begin_layout Enumerate
+Implementar una solución de CRM antes de establecer una estrategia de cliente
+\end_layout
+
+\begin_layout Enumerate
+Implementar una solución de CRM antes de alinear a la organización con la
+ nueva estrategia de cliente
+\end_layout
+
+\begin_layout Enumerate
+Asumir que más tecnología CRM es siempre mejor
+\end_layout
+
+\begin_layout Enumerate
+Perseguir en vez de atraer y desarrollar clientes
+\end_layout
+
+\begin_layout Standard
+Recomendaciones para evitar fracasos:
+\end_layout
+
+\begin_layout Enumerate
+Definir objetivos antes de iniciar la implementación de CRM
+\end_layout
+
+\begin_layout Enumerate
+Determinar cómo se medirá el éxito (los indicadores)
+\end_layout
+
+\begin_layout Enumerate
+Estimar tiempo para obtener beneficios
+\end_layout
+
+\begin_layout Enumerate
+Considerar todas las partes involucradas (estrategia, procesos, gente y
+ tecnología)
+\end_layout
+
+\begin_layout Enumerate
+Desarrollar un plan de acción realista
+\end_layout
+
+\begin_layout Section
+Business Intelligence
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Business Intelligence
+\emph default
+ (BI)
+\series default
+: definiciones.
+\end_layout
+
+\begin_layout Enumerate
+Proceso de transformar los datos de las empresas en información útil para
+ tomar decisiones de negocio.
+\end_layout
+
+\begin_layout Enumerate
+Herramienta tecnológica para apoyar a los decisores de las empresas para
+ la generación y obtención de información relevante, en el momento apropiado,
+ en el lugar correcto, para evaluar indicadores de negocio, para tomar mejores
+ decisiones.
+\end_layout
+
+\begin_layout Standard
+Perfiles de usuarios:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Usuarios con necesidad de análisis con posibilidad de llegar a nivel transaccion
+al.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Afinidad de productos, análisis de clientes, logística de envíos
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Usuarios con análisis muy resumidos y altamente repetitivos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Seguimiento de presupuesto y planeamiento, análisis de demanda
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Usuarios de alertas y excepciones.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Avisos sobre estados de cuentas
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Usuarios que buscan patrones de comportamiento.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Análisis de créditos, análisis impositivos
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Usuarios de informes y consultas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Análisis financieros, balances, inventarios, ventas
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Mercados de BI para cada tipo de usuario:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ROLAP (
+\emph on
+Relational OnLine Analytical Processing
+\emph default
+)
+\series default
+: permite agilizar la consulta de muchos datos usando cubos multidimensionales
+ que contienen datos resumidos de los sistemas transaccionales.
+ Análisis de mucha información con posibilidad de almacenamiento a nivel
+ detallado.
+ Tienen baja performance y está limitado por las funcionalidades de SQL.Hay
+ 3 variantes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ROLAP (
+\emph on
+Relational OLAP
+\emph default
+): 
+\end_layout
+
+\begin_layout Enumerate
+HOLAP (
+\emph on
+Hybrid OLAP
+\emph default
+): combina ventaja de MOLAP y ROLAP.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+MOLAP (
+\emph on
+Multidimensional OnLine Analytical Processing
+\emph default
+)
+\series default
+: permite agilizar la consulta de muchos datos usando cubos multidimensionales
+ que contienen datos resumidos de los sistemas transaccionales.
+ Análisis de poca información a nivel resumido.
+ Tiene muy buena performance.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Broadcasting
+\series default
+\emph default
+: envío de información a dispositivos, como celulares.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Data Mining
+\series default
+\emph default
+: búsqueda automatizada de patrones de comportamiento.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Las herramientas de Data Mining son capaces de obtener tendencias, agrupaciones
+ de datos, identificar qué variables inciden más fuertemente, etc.
+ Debido a su carácter estadístico, estas herramientas requieren de grandes
+ volúmenes de información.
+ 
+\end_layout
+
+\begin_layout Standard
+Herramientas utilizadas: redes neuronales, programación genética, modelado
+ predictivo, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Enterprise Reporting
+\series default
+\emph default
+: confección de informes con una buena presentación.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La herramienta de consulta genera un llamado a una base datos, extrae los
+ datos pertinentes (por ejemplo, con SQL), efectúa cálculos adicionales,
+ manipula los datos y presenta los resultados de forma clara.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+EIS (
+\emph on
+Executive Information Systems
+\emph default
+)
+\series default
+: presenta vistas de los datos en forma simplificada.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La forma más común de EIS es el centro de comandos, 
+\emph on
+dashboard
+\emph default
+ o 
+\emph on
+balanced scorecard
+\emph default
+.
+ En él se presentan en forma gráfica y muy resumida los KPI
+\emph on
+ 
+\emph default
+(
+\emph on
+Key Performance Indicators
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+Los indicadores pueden ser, por ejemplo, la venta neta, los nuevos clientes,
+ los ingresos, etc.
+ Los KPI son:
+\end_layout
+
+\begin_layout Enumerate
+Específicos
+\end_layout
+
+\begin_layout Enumerate
+Medibles
+\end_layout
+
+\begin_layout Enumerate
+Alcanzables
+\end_layout
+
+\begin_layout Enumerate
+Realistas
+\end_layout
+
+\begin_layout Enumerate
+A Tiempo
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Plataforma de BI
+\series default
+: conjunto de componentes que interactúan entre sí permitiendo incorporar
+ los cinco estilos de BI de forma adecuada.
+\end_layout
+
+\begin_layout Subsection
+Data Warehousing
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Data Warehouse
+\series default
+: colección de datos en la cual se encuentra integrada la información de
+ la empresa y que se usa como soporte para el proceso de toma de decisiones
+ gerenciales.
+ La colección puede estar subdividida en repositorios más pequeños y específicos
+ de un área (
+\emph on
+Data Marts
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+Generalmente el ingreso de datos en el Data Warehouse viene del ambiente
+ operacional.
+\end_layout
+
+\begin_layout Standard
+Propiedades de un Data Warehouse:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Orientado al tema
+\series default
+: la información se clasifica en base a los aspectos que son de interés
+ para la empresa.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ejemplo: para una universidad, los sujetos son los estudiantes, las clases
+ y los profesores.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Integrado
+\series default
+: convención de nombres consistentes, medida uniforme de variables, estructuras
+ consistentes, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+No volátil
+\series default
+: la base de datos es estable y en ella solo se realizan 
+\begin_inset Quotes eld
+\end_inset
+
+inserciones
+\begin_inset Quotes erd
+\end_inset
+
+ de nuevos datos.
+ En un Data Warehouse los datos se cargan esporádica y masivamente.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+De tiempo variante
+\series default
+: la información almacenada en un Data Warehouse corresponde a un horizonte
+ largo de tiempo (de 5 a 10 años).
+ Esta información puede ser solicitada en cualquier momento.
+\end_layout
+
+\begin_layout Standard
+Reunir los elementos de datos apropiados desde diversas fuentes de aplicación
+ en un ambiente integral centralizado, simplifica el problema de acceso
+ a la información, acelera el proceso de análisis, y disminuye el tiempo
+ de uso de la información.
+\end_layout
+
+\begin_layout Standard
+Se requieren herramientas de gestión de datos para 
+\emph on
+extraer
+\emph default
+ datos desde fuentes de origen (ERP, CRM, planillas de cálculo, etc.), luego
+ hay que 
+\emph on
+transformar
+\emph default
+ esos datos (realizar correcciones, cálculos, etc.) antes de 
+\emph on
+cargar
+\emph default
+ los resultados en el Data Warehouse.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename businessIntelligence.jpg
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Componentes de un BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ETL
+\series default
+ (
+\emph on
+Extract, Transform & Load
+\emph default
+): proceso en el cual se migran datos desde una fuente hacia un destino.
+ Frecuentemente involucra convertir los datos en una forma legible para
+ la fuente (filtrar, ordenar, traducir, resumir, etc.) En relación a BI,
+ se usa para completar un Data Warehouse y/o Data Mart.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Data Warehousing
+\series default
+: centro de la arquitectura para los sistemas de información.
+\end_layout
+
+\begin_layout Subsection
+Costo
+\end_layout
+
+\begin_layout Standard
+El costo mínimo de una solución de BI, incluyendo hardware, oscila entre
+ 35.000 y 100.000 dólares.
+ Para que una empresa pueda pensar en un software de este tipo, debe tener
+ una 
+\begin_inset Quotes eld
+\end_inset
+
+cultura de bases de datos relacionales
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las soluciones de BI están más orientadas a incrementar las ventas que a
+ reducir los costos.
+ La utilidad depende las acciones que se realicen en base al análisis de
+ la información.
+ El retorno de inversión es de alrededor del 500%.
+ El tiempo de retorno de inversión varía entre 1 semana y 1 mes.
+\end_layout
+
+\end_body
+\end_document

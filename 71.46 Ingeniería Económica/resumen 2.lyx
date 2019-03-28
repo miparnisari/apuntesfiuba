@@ -1,0 +1,3884 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Ingenieria Economica"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 0
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[71.46] Ingeniería Económica
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Contabilidad
+\end_layout
+
+\begin_layout Section
+La empresa y la necesidad de la contabilidad
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Empresa
+\series default
+: organización elemental o compleja, que coordina los distintos 
+\series bold
+factores productivos
+\series default
+ (materias primas, trabajo y capital) con el fin de suministrar bienes y/o
+ servicios a la comunidad.
+ La actividad empresaria es una función social que encuentra su razón de
+ ser en el 
+\series bold
+bien común
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Ambiente externo de la empresa:
+\end_layout
+
+\begin_layout Itemize
+Proveedores
+\end_layout
+
+\begin_layout Itemize
+Competidores
+\end_layout
+
+\begin_layout Itemize
+Mercado de capitales (dinero)
+\end_layout
+
+\begin_layout Itemize
+Mercado de trabajo (mano de obra)
+\end_layout
+
+\begin_layout Itemize
+Mercado de consumidores
+\end_layout
+
+\begin_layout Itemize
+Estado
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Clasificación de las empresas según su función:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Primarias
+\series default
+ (establecimientos agropecuarios, compañías mineras)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+De elaboración
+\series default
+ (empresas industriales) 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+De servicios
+\series default
+ (de transporte, comunicación, bancos)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Comerciales
+\series default
+ (en las que no se produce una transformación de las materias primas)
+\end_layout
+
+\begin_layout Standard
+Para cumplir sus fines, una empresa debe tener claramente definidos sus
+ 
+\series bold
+objetivos
+\series default
+, así como las 
+\series bold
+políticas
+\series default
+ y 
+\series bold
+métodos
+\series default
+ para lograrlos.
+ La dirección de la empresa.
+ La 
+\series bold
+dirección
+\series default
+ de la empresa es la responsable de la determinación de los objetivos, de
+ la selección de las estrategias adecuadas para alcanzar esos objetivos
+ y de la implementación de los procedimientos convenientes para cumplimentar
+ las estrategias elegidas.
+\end_layout
+
+\begin_layout Standard
+La contabilidad es un medio para obtener información.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contabilidad
+\series default
+: técnica de registrar sistemáticamente (clasificando, ordenando, procesando,
+ analizando e interpretando) toda la información referida a transacciones
+ económicas de una empresa.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contabilidad de Eficiencia
+\series default
+: sistema unificado de información que satisface los requerimientos de:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Contabilidad financiera
+\series default
+: proveer información para terceros ajenos a la dirección de la empresa.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Control interno
+\end_layout
+
+\begin_layout Enumerate
+Determinación de utilidades
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contabilidad gerencial
+\series default
+: generar la información adicional necesaria para el correcto manejo del
+ negocio.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Costos fabriles
+\end_layout
+
+\begin_layout Enumerate
+Presupuestos
+\end_layout
+
+\begin_layout Enumerate
+Valuación de inventarios
+\end_layout
+
+\begin_layout Enumerate
+Costos
+\end_layout
+
+\begin_layout Enumerate
+Inversiones
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Planificación de la gestión
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pronósticos
+\end_layout
+
+\begin_layout Enumerate
+Investigación y desarrollo
+\end_layout
+
+\begin_layout Enumerate
+Financiamiento
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Principios contables
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Principios contables
+\series default
+: criterios y normas tendientes a lograr los objetivos de la contabilidad.
+ Estos criterios son:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Valuación de patrimonio:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+¿Qué bienes y obligaciones deben reconocerse contablemente? ¿Cómo deben
+ ser valuados estos bienes y obligaciones? ¿Cómo se deben computar, cuáles
+ y cuando?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Exposición de estados contables a terceros
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+¿Qué información mínima debemos exponer? ¿Cómo presentamos dicha información?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Requisitos de los estados contables
+\end_layout
+
+\begin_layout Enumerate
+Utilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+Importancia relativa
+\emph default
+: su información debe comunicar los hechos de mayor relevancia.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Integridad
+\emph default
+: la información debe ser completa.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Oportunidad
+\emph default
+: la información debe emitirse en tiempo y lugar conveniente para los usuarios.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Claridad
+\emph default
+: la información debe ser inteligible, fácil de comprender y accesible.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Uniformidad
+\emph default
+: la información debe basarse en normas de consecuencia y uniformidad, a
+ fin de que el usuario pueda efectuar comparaciones (dentro de la empresa
+ y fuera de ella).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Imparcialidad
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+Objetividad
+\emph default
+: la información debe presentarse tal cual es, sin deformaciones.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Verificabilidad
+\emph default
+: todo registro contable debe responder a un documento previo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Precisión
+\emph default
+: las cifras y las cantidades deben ser exactas, aunque se haya realizado
+ previamente una estimación.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prudencia
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La información debe expresarse con cautela y precaución.
+ La prudencia implica una estimación razonable de los riesgos, sin caer
+ en actitudes en exceso conservadoras que provoquen la subvaluación del
+ patrimonio.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Presupuestos generados en el medio económico
+\end_layout
+
+\begin_layout Standard
+Los 
+\series bold
+estados contables
+\series default
+ están referidos siempre a un 
+\series bold
+ente
+\series default
+ (persona de existencia física o jurídica).
+ Es necesario que el ente se encuentre en marcha o en desarrollo para poder
+ aplicar los principios contables.
+\end_layout
+
+\begin_layout Standard
+Los 
+\series bold
+estados contables
+\series default
+ se refieren siempre a 
+\series bold
+bienes y obligaciones económicas
+\series default
+, es decir bienes (materiales e inmateriales) y obligaciones que posean
+ valor económico y que sean susceptibles de ser valuados en términos monetarios.
+ Las condiciones básicas para que exista valor económico son:
+\end_layout
+
+\begin_layout Itemize
+utilidad
+\end_layout
+
+\begin_layout Itemize
+escasez
+\end_layout
+
+\begin_layout Itemize
+valor de cambio
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+ejercicio 
+\series default
+es el período de tiempo en que se fracciona subjetivamente la vida de un
+ ente.
+ En general se toman ejercicios de 
+\series bold
+un año de duración
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+En los estados contables se reducen todos los valores a una unidad de medida
+ denominada 
+\series bold
+moneda de cuenta
+\series default
+.
+ La moneda de cuenta a adoptar es la moneda de curso legal.
+\end_layout
+
+\begin_layout Subsection
+Principio de devengado
+\end_layout
+
+\begin_layout Standard
+Reglas básicas para la imputación de ingresos, costos y pérdidas:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Asignación de ingresos
+\emph default
+: los ingresos se computan cuando se facturan (ventas) y no cuando se cobran.
+\end_layout
+
+\begin_layout Enumerate
+Los costos vinculados con ingresos determinados deben imputarse al período
+ en que tales ingresos son reconocidos.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los costos no vinculados con ingresos pero sí con períodos, deben ser imputados
+ a éstos.
+\end_layout
+
+\begin_layout Enumerate
+Una pérdida debe ser cargada al período en que se produce el hecho que la
+ genera.
+\end_layout
+
+\begin_layout Subsection
+Principios de reconocimiento de activos y pasivos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Activo
+\series default
+: derechos del ente.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pasivo
+\series default
+: obligaciones del ente.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Patrimonio neto
+\series default
+: exceso de los derechos sobre las obligaciones.
+\end_layout
+
+\begin_layout Standard
+En todo momento se verifica la igualdad: 
+\begin_inset Formula 
+\[
+Activo=Pasivo+Patrimonio\, Neto
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Principio de exposición
+\end_layout
+
+\begin_layout Standard
+Información mínima que los estados contables deben incluir:
+\end_layout
+
+\begin_layout Enumerate
+Situación patrimonial a una fecha dada.
+\end_layout
+
+\begin_layout Enumerate
+Evolución del patrimonio neto.
+\end_layout
+
+\begin_layout Enumerate
+Evolución de la estructura financiera.
+\end_layout
+
+\begin_layout Standard
+Estados contables básicos necesarios:
+\end_layout
+
+\begin_layout Enumerate
+Estado de situación patrimonial (Balance)
+\end_layout
+
+\begin_layout Enumerate
+Estado de resultados
+\end_layout
+
+\begin_layout Enumerate
+Estado de evolución del patrimonio neto
+\end_layout
+
+\begin_layout Enumerate
+Estado de origen y aplicación de fondos
+\end_layout
+
+\begin_layout Subsection
+Principio de valuación de activos y pasivos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Costo de reposición
+\series default
+: valor de adquisición del mismo bien o de uno equivalente al momento de
+ la tenencia (cierre del ejercicio).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Valor neto de reposición
+\series default
+: Es el costo de reposición deduciendo las respectivas arnortizaciones.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Valor neto de realización
+\series default
+: Es el precio de venta menos gastos de venta (comisiones, descuentos, fletes,
+ etc.).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Valor de utilización económica
+\series default
+: se entiende que la valuación de un bien no excede al de su utilización
+ económica, cuando su tenencia generare ingresos suficientes para absorber
+ la depreciación de dicho bien y los otros costos necesarios para la obtención
+ de dichos ingresos.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Bienes de uso
+\series default
+.
+ Se consideran dos momentos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+Adquisición del activo fijo
+\emph default
+: el valor corriente del bien de uso es su valor de contado.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Tenencia al cierre del ejercicio
+\emph default
+, en que se distinguen dos situaciones: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No interesa corno activo operativo: en este caso el valor corriente será
+ el menor entre el costo de reposición y el valor neto de realización
+\end_layout
+
+\begin_layout Enumerate
+Interesa como activo operativo: el valor corriente será el menor entre el
+ valor de utilización económica y el valor neto de reposición.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Bienes de cambio
+\series default
+.
+ El valor corriente de los mismos está dado por el menor valor entre el
+ costo de reposición y el valor de mercado.
+\end_layout
+
+\begin_layout Subsection
+Valuación de inventarios
+\end_layout
+
+\begin_layout Subsubsection
+Existencias de bienes de cambio
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sistema de inventario permanente
+\series default
+: en todo momento la cantidad (unidades) que hay en stock, puede llevarse
+ un registro donde se asientan las entradas, las salidas y el saldo correspondie
+nte.
+ Esta es la llamada 
+\series bold
+ficha de almacén
+\series default
+, existiendo una para cada producto o ítem en stock.
+ Cuando la empresa lleva estos registros que permiten conocer las existencias
+ de stock en todo mornento, se dice que lleva un sistema de inventario permanent
+e.
+ Si no se llevan estos registros, las existencias sólo podrán conocerse
+ efectuando 
+\series bold
+recuentos fisicos
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Valorización de existencias
+\end_layout
+
+\begin_layout Standard
+La valorización de los inventarios se hace en base al costo de las unidades
+ que ingresan al almacén, o bien mediante un sistema de Costos Standard.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Método del costo promedio
+\series default
+: asigna a cada una de las unidades existentes en stock un único valor independi
+entemente del valor al cual hubieran ingresado.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Método FIFO
+\series default
+ (
+\emph on
+First In, First Out
+\emph default
+): establece que las unidades que salen lo hacen al valor de las mas antiguas,
+ hasta agotarla, continuando luego con el valor de la partida siguiente,
+ y así sucesivamente.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Método LIFO
+\series default
+ (
+\emph on
+Last In, First Out
+\emph default
+): las unidades que primero salen lo hacen al valor de las ultimas entradas.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Método NIFO
+\series default
+ (
+\emph on
+Next In, First Out
+\emph default
+): todas las unidades deben valorizarse al costo que demandaría su reposición.
+ 
+\end_layout
+
+\begin_layout Section
+Las cuentas
+\end_layout
+
+\begin_layout Standard
+Cuenta: hechos económicos de igual o semejantes características.
+\end_layout
+
+\begin_layout Standard
+Las cuentas se clasifican, de acuerdo a su naturaleza, en: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Cuentas Patrimoniales o Reales
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Reflejan el conjunto de derechos y obligaciones de la empresa.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Activo
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Conjunto de bienes y derechos que la empresa tiene a su favor.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Corrientes
+\series default
+ (convertibles a dinero en menos de un año)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+Disponibilidades
+\emph default
+: poder cancelatorio legal ilimitado (dinero, cheques, depósitos bancarios...)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Inversiones
+\emph default
+: colocaciones de capital al margen de la actividad específica de la empresa.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Créditos
+\emph default
+: derechos que la empresa tiene contra terceros para percibir dinero, bienes
+ o servicios.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Créditos por ventas
+\end_layout
+
+\begin_layout Itemize
+Otros créditos
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Bienes de cambio
+\emph default
+: bienes tangibles destinados a la venta
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Materias primas
+\end_layout
+
+\begin_layout Itemize
+Productos en proceso
+\end_layout
+
+\begin_layout Itemize
+Productos terminados
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Bienes de uso
+\emph default
+ 
+\emph on
+/ activo fijo
+\emph default
+: bienes tangibles que se usan en la empresa, con una vida útil de más de
+ un año (terrenos, edificios, maquinarias, rodados...)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Bienes inmateriales
+\emph default
+: derechos y valores nominales que tienen un plazo de existencia limitado
+ por ley o por contrato y aquellos bienes abstractos de valor económico
+ explotable (llave de negocio, marcas, patentes, derechos de autor...)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Cargos diferidos
+\emph default
+: gastos o cargos que deben incidir en ejercicios futuros.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+No corrientes
+\series default
+ (convertibles a dinero en más de un año)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Pasivo
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cargas u obligaciones que gravan el activo.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Deudas
+\series default
+ (comerciales, bancarias, financieras, otras.)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Provisiones
+\series default
+: obligaciones ciertas que deben incidir en los resultados del ejercicio
+ pero no constituyen obligaciones exigibles a la fecha del balance.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Previsiones
+\series default
+: cargos de ocurrencia eventual y calculo estimativo, que deben incidir
+ en los resultados del ejercicio.
+ El monto se calcula utilizando un porcentaje que representa la probabilidad
+ de ocurrencia durante el ejercicio.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Patrimonio Neto
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Recursos internos o propios de los dueños o accionistas.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Capital
+\series default
+: suscripto por los dueños de la empresa.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reservas
+\series default
+: parte de las utilidades no distribuídas.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Reservas de utilidades
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Reservas de capital
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Reserva de revalúo
+\emph default
+: surge por el incremento de valor del Activo.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Reserva prima de emisión
+\emph default
+: surge cuando los accionistas interpretan que los suscriptores a incorporarse
+ en el futuro deben abonar una 
+\begin_inset Quotes eld
+\end_inset
+
+prima
+\begin_inset Quotes erd
+\end_inset
+
+ o valor superior por su alícuota de capital al valor nominal de la acción.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Resultados
+\series default
+: saldo de las ganancias o pérdidas acumuladas sin asignación específica.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Cuentas Transitorias
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Sólo operan durante el ejercicio; al finalizar el mismo, mediante asientos
+ de cierre se transfiere su saldo a otras cuentas Patrimoniales, quedando
+ por lo tanto con saldo nulo.
+ Por esta razón no aparecen en el Balance.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+De Resultado
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+Ingresos
+\emph default
+ R+ (ventas, alquileres ganados, intereses ganados)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Egresos
+\emph default
+ R- (sueldos, impuestos, amortizaciones, gastos, alquileres, costo de ventas)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Ganancias y Pérdidas
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cuenta transitoria en la que se vuelcan las cuentas de ingreso y egreso,
+ si luego de estos movimientos la cuenta posee saldo positivo (acreedor)
+ el ejercicio habrá producido ganancias.
+ Si su saldo fuera negativo (deudor) se tendrá una pérdida.
+ Por último el saldo de la cuenta Ganancias y Pérdidas se transfiere a Utilidade
+s del Ejercicio.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+De Producción 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Materia prima en proceso
+\end_layout
+
+\begin_layout Enumerate
+Mano de obra en proceso
+\end_layout
+
+\begin_layout Enumerate
+Gastos generales de fabricación en proceso
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Cuentas de Orden
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se utilizan para registrar efectos eventuales o contingentes de determinadas
+ situaciones, como: 
+\end_layout
+
+\begin_layout Enumerate
+Bienes de propiedad de terceros cuya tenencia por parte de la empresa expone
+ a ésta a afrontar las eventuales contingencias derivadas de destrucción,
+ roturas, etc.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Otras contingencias como las derivadas de asumir compromisos de garantizar
+ deudas de terceros a otras personas.
+ 
+\end_layout
+
+\begin_layout Standard
+Las cuentas de orden no pertenecen al activo, pasivo o patrimonio neto,
+ apareciendo en el balance como una nota al pie y se mueven entre sí por
+ una simple identidad.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Amortizaciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Amortización
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+Distribución en el tiempo del valor de los bienes: 
+\begin_inset Quotes eld
+\end_inset
+
+La amortización consiste en la conversión gradual del activo fijo en gastos
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Pérdida de valor que sufre un bien material.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Es la expresión contable de la disminución sucesiva de valor a que están
+ sometidos por varias razones los activos
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Causas de amortización de activos:
+\end_layout
+
+\begin_layout Itemize
+Consumo de material propiamente dicho.
+ 
+\end_layout
+
+\begin_layout Itemize
+Limitación de la vida física del activo (desgaste, envejecimiento).
+\end_layout
+
+\begin_layout Itemize
+Limitación de la vida económica del activo (tiempo de utilización limitado,
+ obsolescencia).
+\end_layout
+
+\begin_layout Standard
+Métodos para determinar la amortización de activos:
+\end_layout
+
+\begin_layout Enumerate
+Amortización lineal en función del tiempo.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El método de amortización lineal supone un desgaste uniforme y lineal entre
+ el valor de ingreso del bien y el valor residual al fin de la vida útil.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\frac{VO-VR}{VU}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $VO=$
+\end_inset
+
+valor original, 
+\begin_inset Formula $VR=$
+\end_inset
+
+valor residual (dinero que esperamos obtener al vender el producto al final
+ de su vida útil), 
+\begin_inset Formula $VU=$
+\end_inset
+
+vida útil.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Amortización lineal en función del uso.
+\end_layout
+
+\begin_layout Enumerate
+Amortización de porcentaje constante.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Amortización por suma de los dígitos.
+\end_layout
+
+\begin_layout Enumerate
+Fondo amortizante (sinking fund).
+ 
+\end_layout
+
+\begin_layout Section
+Estados contables
+\end_layout
+
+\begin_layout Standard
+Los estados contables comprenden:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Balance General
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Son útiles para evaluar y comparar el estado de diferentes empresas en un
+ mismo momento, o en una empresa a lo largo del tiempo.
+ Refleja el estado contable de la empresa en un momento determinado.
+ Es una 
+\begin_inset Quotes eld
+\end_inset
+
+foto
+\begin_inset Quotes erd
+\end_inset
+
+ que se toma de la empresa al final del ejercicio.
+ Se debe presentar anualmente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo
+\size scriptsize
+ (todo lo que hay en la empresa)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pasivo
+\size scriptsize
+ (cómo se dispone el activo)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Patrimonio Neto 
+\size scriptsize
+(todo lo que queda a favor de los socios)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Egresos (R
+\begin_inset Formula $^{-}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ingresos (R
+\begin_inset Formula $^{+}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Estado de Resultados
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Dar la expresión monetaria más clara posible de la actividad comercial desarroll
+ada en el ejercicio.
+ Resume los cambios sucedidos entre dos fechas.
+\end_layout
+
+\begin_layout Standard
+El orden de sus ítems comienza con la 
+\emph on
+actividad principal
+\emph default
+ de la empresa y se sigue con las 
+\emph on
+actividades marginales
+\emph default
+ (aquellas no comprendidas dentro de la actividad específica de la empresa).
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventas brutas totales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Bonificaciones otorgadas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Ventas netas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Costos variables y costos fijos imputables
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad bruta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Costos fijos no imputables (
+\size small
+gastos de adm.
+ y ventas
+\size default
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad de explotación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++ Ingresos secundarios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Gastos secundarios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad operativa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Cargas financieras
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad neta operativa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm$
+\end_inset
+
+ Resultado de operaciones extraordinarias (ejemplo: alquileres de inmuebles)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad neta del ejercicio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm$
+\end_inset
+
+ Ajuste de ejercicios anteriores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad neta antes del IG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- IG (Impuesto a las Ganancias)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+= Utilidad neta después del IG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cuadro de resultados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El resultado final del cuadro, la Utilidad Neta después del Impuesto a las
+ Ganancias, aparecerá en el Balance dentro del Patrimonio Neto.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Estado de Resultados Acumulados
+\end_layout
+
+\begin_layout Itemize
+Bienes de Uso
+\end_layout
+
+\begin_layout Itemize
+Bienes Inmateriales
+\end_layout
+
+\begin_layout Itemize
+Inversiones: acciones, debentures y otros títulos emitidos en serie
+\end_layout
+
+\begin_layout Itemize
+Otras inversiones
+\end_layout
+
+\begin_layout Itemize
+Previsiones y Reservas
+\end_layout
+
+\begin_layout Itemize
+Costo de mercaderías 
+\end_layout
+
+\begin_layout Itemize
+Activos y pasivos en moneda extranjera
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ejercicio
+\series default
+: período de doce meses consecutivos, que finaliza cuando la actividad comercial
+ de la empresa llega al punto más bajo de su estacionalidad anual.
+\end_layout
+
+\begin_layout Section
+Registros contables
+\end_layout
+
+\begin_layout Subsection
+Partida doble.
+ Debe y haber.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Ecuación Estática
+\emph default
+: 
+\begin_inset Formula 
+\[
+\mbox{\mbox{Activo = Pasivo + PatNeto}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Ecuación
+\emph default
+ 
+\emph on
+Dinámica
+\emph default
+: 
+\begin_inset Formula 
+\[
+\mbox{\mbox{Activo + Egr = Pasivo + PatNeto + Ing}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Principio de partida doble
+\series default
+:
+\end_layout
+
+\begin_layout Enumerate
+Significa que cada operación o movimiento tiene un doble efecto.
+ Cada operación afecta a por lo menos dos cuentas.
+\end_layout
+
+\begin_layout Enumerate
+Los aumentos en los saldos de las cuentas a la izquierda del signo igual
+ en la expresión (activos y egresos) se anotan en el debe; las disminuciones
+ en el haber.
+\end_layout
+
+\begin_layout Enumerate
+Los aumentos en los saldos de las cuentas a la derecha del signo igual en
+ la expresión (pasivo, patrimonio e ingresos) se anotan en el haber; las
+ disminuciones en el debe.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cuenta T
+\series default
+: es la forma de registrar los movimientos.
+ Título de cuenta, debe y haber.
+\end_layout
+
+\begin_layout Subsection
+Tipos de registros contables: Diario y mayor
+\end_layout
+
+\begin_layout Standard
+Existen dos tipos de registros contables.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Registros cronológicos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los efectos de las operaciones se registran en el orden en que ellas se
+ presentan en el tiempo.
+ Los registros cronológicos típicos son los 
+\series bold
+diarios
+\series default
+: cuando la magnitud del ente es reducida, basta con utilizar un único diario,
+ pero cuando el número de operaciones es considerable, resulta necesario
+ apelar al empleo de 
+\series bold
+subdiarios
+\series default
+ para el registro de ciertas aplicaciones de carácter repetitivo (cobranzas,
+ pagos, ventas, etc.) cuyo resumen es volcado periódicamente al diario principal.
+\end_layout
+
+\begin_layout Standard
+En general, los datos que aparecen en todo diario incluyen, para cada asiento:
+ 
+\end_layout
+
+\begin_layout Itemize
+Número de orden
+\end_layout
+
+\begin_layout Itemize
+Fecha
+\end_layout
+
+\begin_layout Itemize
+Nombres y códigos de las cuentas utilizadas 
+\end_layout
+
+\begin_layout Itemize
+Importes debitados y acreditados 
+\end_layout
+
+\begin_layout Itemize
+Referencia a la documentación respaldatoria del asiento.
+\end_layout
+
+\begin_layout Standard
+Se anota en primer término las cuentas que se debitan y luego, precedidas
+ tradicionalmente por la letra “a”, las cuentas a acreditar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Fecha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Detalle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Cuenta n°
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Haber
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/05/1999
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+05-26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mercaderías
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1032
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a Proveedores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factura de xx n° 5376
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+05-27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diario.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Registros sistemáticos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los registros sistemáticos resumen las anotaciones efectuadas en cada cuenta.
+ Los mismos comprenden a los 
+\series bold
+mayores
+\series default
+, que constituyen el conjunto de cuentas utilizadas en la contabilidad.
+ Cuando existen cuentas como deudores varios o acreedores varios la apertura
+ de estas cuentas se archiva en 
+\series bold
+submayores
+\series default
+, que en los casos mencionados reflejan los saldos de cada deudor o acreedor.
+\end_layout
+
+\begin_layout Standard
+En el libro mayor, tendremos aislados el movimiento de cada cuenta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Fecha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Referencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Debe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Haber
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Saldo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Saldo inicial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+700
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+02/05/1999
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asiento n° 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+900
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/05/1999
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asiento n° 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+600
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28/05/1999
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asiento n° 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+650
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Mayor.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part
+Dinámica económico-financiera
+\end_layout
+
+\begin_layout Standard
+Gestión empresaria:
+\end_layout
+
+\begin_layout Itemize
+Aspecto económico: principio de devengado.
+\end_layout
+
+\begin_layout Itemize
+Aspecto financiero: principio de percibido / pagado.
+\end_layout
+
+\begin_layout Standard
+Objetivos de la gestión empresaria:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Liquidez
+\series default
+: capacidad de afrontar compromisos a corto plazo.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Tener mucha liquidez implica exponerla a la inflación.
+\end_layout
+
+\begin_layout Enumerate
+Tener poca liquidez puede implicar pérdidas de oportunidad.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Solvencia
+\series default
+: capacidad de afrontar compromisos a largo plazo.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Rentabilidad
+\series default
+: calidad de la utilidad.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Rentabilidad=\frac{Utilidad}{Inversión}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Métodos de análisis:
+\end_layout
+
+\begin_layout Enumerate
+Evolución de rubros
+\end_layout
+
+\begin_layout Standard
+Análisis vertical
+\end_layout
+
+\begin_layout Enumerate
+Análisis horizontal
+\end_layout
+
+\begin_layout Enumerate
+Índices: sólo sirven cuando se los compara entre períodos o entre empresas.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Liquidez
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Corriente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{LC}=\frac{AC}{PC}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seca
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{SL}=\frac{AC-Bienes\, Cambio}{PC}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ácida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{AL}=\frac{Disponibilidades}{PC}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Endeudamiento
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{ET}=\frac{P}{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Corriente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{EC}=\frac{PC}{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solvencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{S}=\frac{PN}{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Operación
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Productos terminados inmovilizados
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{PT}=\frac{PT}{CM}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activo fijo inmovilizado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{AF}=\frac{AF}{Ventas}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rotación sobre activos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{ROT}=\frac{Ventas}{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plazo promedio de cobranzas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $PPC=\frac{Créditos}{Ventas}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rentabilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rentabilidad sobre patrimonio neto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{Ut.\, Neta}{PN}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rentabilidad operativa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{Ut.\, Op.}{A-Inversiones}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Margen neto sobre ventas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{Ut.\, Neta}{Ventas}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Part
+Costos
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+Utilidades:
+\end_layout
+
+\begin_layout Enumerate
+Valorizar inventarios, cerrar balances
+\end_layout
+
+\begin_layout Enumerate
+Determinar precio de venta
+\end_layout
+
+\begin_layout Enumerate
+Estimar la rentabilidad de los productos
+\end_layout
+
+\begin_layout Enumerate
+Facilita a la gerencia la realización de planeación, dirección y control
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contabilidad de costos
+\series default
+.
+ Es el proceso de medir, analizar, calcular e informar sobre el costo, la
+ rentabilidad y la ejecución de las operaciones.
+\end_layout
+
+\begin_layout Standard
+Costos:
+\end_layout
+
+\begin_layout Itemize
+Consumidos: gastos incurridos para obtener ingresos
+\end_layout
+
+\begin_layout Itemize
+No consumidos: activos con posibilidad futura de producir ingresos.
+\end_layout
+
+\begin_layout Standard
+Si el sacrificio económico no tiene posibilidad presente o futura de producir
+ ingresos es una pérdida (un gasto).
+\end_layout
+
+\begin_layout Standard
+Dados:
+\end_layout
+
+\begin_layout Enumerate
+Un 
+\series bold
+elemento
+\series default
+ cuyo costo se desea medir (sea: un bien, un servicio o una actividad);
+\end_layout
+
+\begin_layout Enumerate
+Un 
+\series bold
+momento
+\series default
+ al cual se desea practicar la medición (sea: el cierre de un período contable
+ o la fecha en que se vendieron determinados bienes).
+\end_layout
+
+\begin_layout Section
+Clasificación de costos
+\end_layout
+
+\begin_layout Enumerate
+Por función
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De producción
+\end_layout
+
+\begin_layout Enumerate
+De marketing
+\end_layout
+
+\begin_layout Enumerate
+Administrativos
+\end_layout
+
+\begin_layout Enumerate
+Financieros
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por elementos
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Materiales directos
+\end_layout
+
+\begin_layout Enumerate
+Mano de obra directa
+\end_layout
+
+\begin_layout Enumerate
+Gastos de fabricación
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por producto
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Directos: se cargan al producto y no requieren prorrateo.
+\end_layout
+
+\begin_layout Enumerate
+Indirectos: se prorratean.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por departamento
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Producción: sus operaciones se ejecutan sobre la parte o el producto, sin
+ requerir un prorrateo posterior.
+\end_layout
+
+\begin_layout Enumerate
+Servicio: sus costos se prorratean en última instancia a una unidad de producció
+n.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Costos que se cargan al ...
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Producto: se incluyen en el costo de ventas.
+\end_layout
+
+\begin_layout Enumerate
+Período: asociados al transcurso del tiempo.
+ Se cierran contra la cuenta 
+\begin_inset Quotes eld
+\end_inset
+
+egresos
+\begin_inset Quotes erd
+\end_inset
+
+ de cada período.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por relación al volumen:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Variables: varían en proporción directa a los cambios en el nivel de actividad.
+\end_layout
+
+\begin_layout Enumerate
+Fijos: no varían a lo largo de un gran volumen de producción.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Tiempo en que se determinan:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Predeterminados
+\series default
+: costos que se determinan antes de que sean realizados.
+ Permiten conocer por anticipado el costo de la producción.
+ En cualquier momento se puede obtener el costo de ventas.
+ Aportan un mayor control interno.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Estándar
+\series default
+.
+ Se establecen mucho antes de que se inicie la producción.
+ Proporcionan una meta a alcanzar.
+ Se basan en la eficiencia normal de la empresa.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Estimados
+\series default
+.
+ Se basan en la experiencia habida.
+ Al final del período se ajusta a los costos reales.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Históricos
+\series default
+: costos que se determinan luego de que se realizaron.
+ Son los realmente incurridos en momentos no posteriores al de la medición.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Costos estándar
+\end_layout
+
+\begin_layout Standard
+Tuvo su origen a principios del siglo XX con el 
+\emph on
+taylorismo
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Es la 
+\series bold
+técnica más avanzada
+\series default
+ de las existentes, ya que sirve de instrumento de medición de la eficiencia.
+ Su determinación está basada en la eficiencia del trabajo.
+\end_layout
+
+\begin_layout Standard
+El costo estándar indica lo que debe costar un artículo, con 
+\series bold
+base en la eficiencia del trabajo normal de una empresa
+\series default
+, por lo que al comparar el costo histórico con el estándar, resultan las
+ desviaciones que indican las deficiencias o superaciones.
+\end_layout
+
+\begin_layout Standard
+A la diferencia entre los costos estándar y los reales se la llama 
+\series bold
+desviación
+\series default
+, porque da idea de que se salió de una línea o medida.
+\end_layout
+
+\begin_layout Subsubsection
+Determinación de costo estándar
+\end_layout
+
+\begin_layout Enumerate
+Determinación del costo de la materia prima
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Costo_{MP}=Cantidad_{STD}\cdot Precio_{STD}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determinación del costo de la mano de obra directa
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Costo_{MOD}=Cantidad_{STD}\cdot Precio_{STD}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determinación de los gastos generales de fabricación (indirectos)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Por sistema de absorción
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Costo_{GGF}=\underset{\beta}{\underbrace{\frac{GGFV+GGFF}{NivelAct_{NORMAL}}}}\cdot Std_{MOD}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es el sistema tradicional.
+\end_layout
+
+\begin_layout Standard
+Las utilidades dependen de las ventas y de los niveles de producción.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por sistema directo
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Costo_{GGF}=\underset{\alpha}{\underbrace{\frac{GGFV}{NivelAct_{NORMAL}}}}\cdot Std_{MOD}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este sistema apareció durante la Gran Depresión de EE.UU.
+ Es más realista que el anterior.
+\end_layout
+
+\begin_layout Standard
+Las utilidades dependen sólo de las ventas.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Costos estimados
+\end_layout
+
+\begin_layout Standard
+A la diferencia entre los costos estimados y los históricos se la llama
+ 
+\series bold
+variación
+\series default
+.
+\end_layout
+
+\begin_layout Part
+Análisis Marginal
+\end_layout
+
+\begin_layout Standard
+Objetivo: determinar el efecto de ciertos acontecimientos sobre las utilidades
+ de la empresa, siguiendo los conceptos de costeo directo.
+\end_layout
+
+\begin_layout Standard
+Diferencias:
+\end_layout
+
+\begin_layout Itemize
+Costro promedio: 
+\begin_inset Formula $\frac{\mbox{costo total en 1 mes}}{\mbox{cantidad de unidades vendidas en 1 mes}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Costo marginal: 
+\begin_inset Formula $\mbox{costo de una unidad adicional vendida}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo fijo unitario del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $\frac{\$}{u.}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo variable unitario del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $\frac{\$}{u.}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{i}=w_{i}+f_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo unitario total del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $\frac{\$}{u.}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Precio de venta unitario del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $\frac{\$}{u.}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cantidad total vendida del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $u.$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $v_{i}=p_{i}q_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventas totales del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $\$$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{i}=p_{i}-w_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utilidad marginal unitaria del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\frac{\$}{u.}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u_{i}=\left(p_{i}-w_{i}\right)q_{i}-f_{i}=e_{i}q_{i}-f_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utilidad operativa del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (en 
+\begin_inset Formula $\$$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m_{i}=\frac{e_{i}}{p_{i}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tasa de utilidad marginal del producto 
+\begin_inset Formula $i$
+\end_inset
+
+ (adimensional)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m=\frac{\sum_{\forall i}m_{i}v_{i}}{V}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tasa de utilidad marginal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V=\sum_{\forall i}v_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventas totales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C=F+W=\sum_{\forall i}f_{i}+\sum_{\forall i}w_{i}q_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costos totales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U=V-C=E-F=m_{i}v_{i}-f_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utilidad operativa total
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E=\sum_{\forall i}e_{i}q_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si 
+\begin_inset Formula $E>F\Longrightarrow$
+\end_inset
+
+hay utilidad.
+ Si 
+\begin_inset Formula $E<F\Longrightarrow$
+\end_inset
+
+hay pérdida.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,3537 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Inteligencia Artificial"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[75.50] Introducción a los Sistemas Inteligentes
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inteligencia Artificial
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inteligencia: 
+\series default
+habilidad para adquirir, comprender y aplicar conocimiento; aptitud para
+ recordar, pensar y razonar.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inteligencia Artificial: 
+\series default
+armar sistemas para resolver problemas que tratan de utilizar métodos similares
+ a los que utilizaría una persona.
+ 
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones
+\end_layout
+
+\begin_layout Itemize
+Juegos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+General Problem Solving
+\shape default
+ (GPS).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Problema del viajante.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Para 
+\begin_inset Formula $n$
+\end_inset
+
+ ciudades se desea obtener el camino más corto que recorre las 
+\begin_inset Formula $n$
+\end_inset
+
+ ciudades.
+ El algoritmo óptimo tiene orden 
+\begin_inset Formula $O(n!)$
+\end_inset
+
+, es decir, tarda 1 billón de años para resolver el problema para 30 ciudades.
+ Con algoritmos genéticos, se puede obtener una solución buena para 106
+ ciudades en 1 minuto.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Procesamiento de Imágenes.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Imágenes de Medicina.
+ 
+\end_layout
+
+\begin_layout Itemize
+Fotos Satelitales.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Procesamiento del Lenguaje Natural.
+ 
+\end_layout
+
+\begin_layout Itemize
+Procesamiento del Sonido.
+ 
+\end_layout
+
+\begin_layout Itemize
+Demostración de Teoremas.
+ 
+\end_layout
+
+\begin_layout Section
+Método CRISP (
+\emph on
+CRoss-Industry Standard Process for Data Mining
+\emph default
+)
+\end_layout
+
+\begin_layout Description
+Fase
+\begin_inset space ~
+\end_inset
+
+1 Entendimiento del negocio
+\end_layout
+
+\begin_layout Itemize
+Comprensión estática del negocio
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename comprension_estatica_negocio.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comprensión estática del negocio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Evaluación de los objetivos del negocio
+\end_layout
+
+\begin_layout Description
+Fase
+\begin_inset space ~
+\end_inset
+
+2 Entendimiento de los datos
+\end_layout
+
+\begin_layout Description
+Fase
+\begin_inset space ~
+\end_inset
+
+3 Preparación de los datos
+\end_layout
+
+\begin_layout Description
+Fase
+\begin_inset space ~
+\end_inset
+
+4 Modelado
+\end_layout
+
+\begin_layout Description
+Fase5 Evaluación
+\end_layout
+
+\begin_layout Description
+Fase
+\begin_inset space ~
+\end_inset
+
+6 Implementación
+\end_layout
+
+\begin_layout Section
+Algoritmos Genéticos
+\end_layout
+
+\begin_layout Standard
+Los algoritmos genéticos intentan copiar la forma en que evoluciona una
+ población.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Individuo
+\series default
+ / 
+\series bold
+Cromosoma
+\series default
+: solución posible a un problema.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Un individuo se lo representa como una tira de 
+\series bold
+genes
+\series default
+, cada uno de los cuales pueden tomar varios valores (los 
+\series bold
+alelos
+\series default
+).
+ La posición de un gen se llama el 
+\series bold
+locus
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Genes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Locus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Población
+\series default
+: Conjunto de individuos.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename genetic_algorithm.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Algoritmo genético.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo algoritmo genético debe tener una 
+\series bold
+función de aptitud
+\series default
+ que recibe como parámetro un individuo y devuelve cuán apto es dicho individuo.
+\end_layout
+
+\begin_layout Subsection
+Operadores
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Selección
+\series default
+.
+ Consiste en elegir a los individuos más aptos de una población.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Rueda de ruleta
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Construir una ruleta particionada en ranuras de igual tamaño, las cuales
+ se numeran.
+ A cada individuo de la población se le asigna una cantidad de ranuras proporcio
+nal a su aptitud.
+ Este método de selección otorga mayor probabilidad de contribuir a la siguiente
+ generación a los individuos con mayor aptitud.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Por torneo
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Dos individuos son elegidos al azar de la población actual y el mejor o
+ más apto de los dos se coloca en la generación siguiente.
+ Esto continúa hasta que se complete la nueva población.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Por ranking
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se coloca toda la población por orden de aptitud, y los 
+\begin_inset Formula $n$
+\end_inset
+
+ menos aptos son eliminados.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Cruza
+\series default
+ / 
+\series bold
+Reproducción
+\series default
+: combina dos inviduos para generar dos nuevos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Simple
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se elige un único punto de cruza en ambos padres.
+ Cada hijo tendrá datos de ambos padres intercambiados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename SinglePointCrossover.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cruza simple.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename TwoPointCrossover.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cruza multipunto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cruza.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Multipunto
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se eligen dos o más puntos de cruza en ambos padres.
+ Cada hijo tendrá datos de ambos padres intercambiados.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Binomial
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Para generar un cromosoma hijo por cruza binomial, se define la probabilidad
+ 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ como la probabilidad de que el alelo de cualquier posición del descendiente
+ se herede del padre, y 
+\begin_inset Formula $1-P_{0}$
+\end_inset
+
+ como la probabilidad de que lo herede de la madre.
+\end_layout
+
+\begin_layout Standard
+Cuando existe igual probabilidad de heredar del padre como de la madre (
+\begin_inset Formula $P_{0}=0.5$
+\end_inset
+
+) la cruza se denomina uniforme.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Mutación
+\series default
+: fuerza el cambio en un individuo.
+ En la evolución, una mutación es un suceso bastante poco común (sucede
+ aproximadamente una de cada mil replicaciones), en la mayoría de los casos
+ las mutaciones son letales, pero en promedio, contribuyen a la diversidad
+ genética de la especie.
+ En un algoritmo genético tendrán el mismo papel, y la misma frecuencia
+ (es decir, muy baja).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Simple
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se muta cada 
+\begin_inset Formula $n$
+\end_inset
+
+ ciclos de ejecución.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mutacion_simple(individuo indiv, int umbral):
+\end_layout
+
+\begin_layout Plain Layout
+
+	generar numero aleatorio
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (numero aleatorio > umbral):
+\end_layout
+
+\begin_layout Plain Layout
+
+		mutar(indiv)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Adaptativa por convergencia
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Si los individuos de una población son muy similares, se mutan algunos para
+ generar diversidad.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Adaptativa por temperamento
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mutacion_adapatativa_por_temperamento(individuo indiv, int umbral):
+\end_layout
+
+\begin_layout Plain Layout
+
+	generar numero aleatorio
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (numero aleatorio > umbral):
+\end_layout
+
+\begin_layout Plain Layout
+
+		mutar(indiv)
+\end_layout
+
+\begin_layout Plain Layout
+
+	else:
+\end_layout
+
+\begin_layout Plain Layout
+
+		bajar umbral	
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Redes Neuronales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Red neuronal
+\series default
+: modelo matemático o computacional que está inspirado en la estructura
+ y aspectos funcionales de redes neuronales biológicas.
+ Una red neuronal consiste en un grupo de neuronas interconectadas, que
+ forman 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+capas
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+, que procesan la información.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sinapsis
+\series default
+: relaciona la salida de una neurona con la entrada de otra.
+ Estas sinapsis almacenan parámetros o 
+\begin_inset Quotes eld
+\end_inset
+
+pesos
+\begin_inset Quotes erd
+\end_inset
+
+ que manipulan la información.
+\end_layout
+
+\begin_layout Subsection
+Tipos de parámetros
+\end_layout
+
+\begin_layout Itemize
+El 
+\series bold
+patrón de interconexión
+\series default
+ entre distintas capas de neuronas.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Monocapas: una sola capa.
+\end_layout
+
+\begin_layout Itemize
+Bicapas: dos capas.
+\end_layout
+
+\begin_layout Itemize
+Multicapas: poseen capas ocultas.
+ Cuantas más tenga, más inteligente será la red, pero tomará más tiempo
+ para entrenarla.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Artificial_neural_network.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Red neuronal artificial
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Two_layer_ann.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Red de dos capas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+El 
+\series bold
+proceso de entrenamiento 
+\series default
+para actualizar el peso de la interconexión.
+ Tipos de aprendizaje:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Según si tiene un supervisor:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Aprendizaje Supervisado
+\series default
+: 
+\family roman
+\series medium
+\shape up
+Quiere decir que hay una asistente.
+
+\family sans
+\series bold
+\shape italic
+ 
+\family roman
+\series medium
+\shape up
+Se asignan ciertos pesos y se definen pares de entrada - salida, luego se
+ ingresan las entradas y se comparan las salidas con las salidas esperadas,
+ si no coinciden los pesos deberán ser modificados.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Por corrección de error: la red aprende a base de prueba y error.
+\end_layout
+
+\begin_layout Itemize
+Por refuerzo: la red aprende a base de recompensas y castigos.
+\end_layout
+
+\begin_layout Itemize
+Estocástico: cuando el resultado de la red no es el esperado, los pesos
+ se cambian en forma aleatoria.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Aprendizaje No Supervisado
+\series default
+: 
+\family roman
+\series medium
+\shape up
+Se le da una gran cantidad de datos de entrada y la red intenta realizar
+ asociaciones.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hebbiano: 
+\end_layout
+
+\begin_layout Itemize
+Cooperativo: cuando una neurona se activa, trata de activar a sus vecinas.
+\end_layout
+
+\begin_layout Itemize
+Competitivo: cuando una neurona se activa, trata de inhibir a sus vecinas.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Según el momento de recepción del 
+\emph on
+feedback
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Online: durante el proceso de entrenamiento.
+\end_layout
+
+\begin_layout Itemize
+Offline: al finalizar el proceso de entrenamiento.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+La
+\series bold
+ función de activación
+\series default
+ que convierte la entrada de una neurona a su salida.
+ Esta función en general no es lineal y acota los valores de salida.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Función Escalón
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Función Sigmoide
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\begin{cases}
+0 & \mbox{si }0\leq x\leq1\\
+1 & \mbox{si }1\leq x\leq\infty
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\frac{1}{1+e^{-x}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename funcionEscalon.jpg
+	width 6.316cm
+	height 4.064cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename funcionSigmoide.jpg
+	width 6.772cm
+	height 3.281cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tipos de redes
+\end_layout
+
+\begin_layout Itemize
+Back Propagation: realiza clas
+\end_layout
+
+\begin_layout Itemize
+SOM (Self Organizing Map)
+\end_layout
+
+\begin_layout Subsection
+Perceptrón
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Perceptrón
+\series default
+: Red más elemental.
+ Consta de una sola neurona con 
+\emph on
+n
+\emph default
+ cantidad de entradas.
+ El perceptrón sirve para resolver problemas que son linealmente separables.
+\end_layout
+
+\begin_layout Standard
+Función de activación: Función escalón.
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones
+\end_layout
+
+\begin_layout Itemize
+Aproximación de funciones o análisis regresivo
+\end_layout
+
+\begin_layout Itemize
+Clasificación (reconocimiento de patrones)
+\end_layout
+
+\begin_layout Itemize
+Procesamiento de datos (filtros, compresión)
+\end_layout
+
+\begin_layout Itemize
+Robótica
+\end_layout
+
+\begin_layout Itemize
+Detección de objetos en imágenes.
+ Cada punto de la imagen es una entrada.
+ Las salidas son los posibles elementos que puede detectar la red.
+\end_layout
+
+\begin_layout Section
+Algoritmos de inducción
+\end_layout
+
+\begin_layout Standard
+Se utilizan en Minería de Datos para 
+\series bold
+modelar las clasificaciones en los datos
+\series default
+ mediante árboles de decisión.
+ Forman parte del grupo de sistemas de aprendizaje 
+\series bold
+supervisado
+\series default
+.
+ Han tenido muy buena performance en aplicaciones de dominio médico, artificiale
+s y el análisis de juegos de ajedrez.
+ Posee un nivel alto de precisión en la clasificación, pero no hace uso
+ del conocimiento del dominio.
+\end_layout
+
+\begin_layout Standard
+Aprenden 
+\series bold
+a partir de ejemplos preclasificados
+\series default
+.
+ Se genera un 
+\series bold
+árbol de decisión
+\series default
+ a partir de los datos mediante particiones realizadas recursivamente, aplicando
+ la estrategia de profundidad-primero (
+\emph on
+depth-first
+\emph default
+).
+ 
+\end_layout
+
+\begin_layout Standard
+El algoritmo considera todas las pruebas posibles que pueden dividir el
+ conjunto de datos y selecciona la prueba que resulta en la mayor ganancia
+ de información.
+ Para cada atributo discreto, se considera una prueba con 
+\begin_inset Formula $n$
+\end_inset
+
+ resultados, siendo 
+\begin_inset Formula $n$
+\end_inset
+
+ el número de valores posibles que puede tomar el atributo.
+ Para cada atributo continuo, se realiza una prueba binaria sobre cada uno
+ de los valores que toma el atributo en los datos.
+ 
+\end_layout
+
+\begin_layout Section
+SBC
+\end_layout
+
+\begin_layout Standard
+Los SBC (
+\series bold
+sistemas basados en conocimiento
+\series default
+) en un sentido general y los SE (
+\series bold
+sistemas expertos
+\series default
+) mas concretamente.
+ 
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+A Knowledge-based system is a computer program that reasons and uses knowledge
+ to solve complex problems.
+ Knowledge is acquired and represented using various knowledge representation
+ techniques rules, frames and scripts.
+ The basic advantages offered by such system are documentation of knowledge,
+ intelligent decision support, self learning, reasoning and explanation.
+ Knowledge-based systems are systems based on the methods and techniques
+ of Artificial Intelligence.
+ Their core components are: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+knowledge base
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+acquisition mechanisms
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+inference mechanisms
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Sistema_experto.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Arquitectura de un Sistema Experto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A la actividad de construir estos sistemas, se la denomina 
+\series bold
+Ingeniería del Conocimiento
+\series default
+, cuya misión es adquirir, formalizar, representar y usar grandes cantidades
+ de conocimientos de la más alta calidad y específicos de una tarea.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+SBC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sistema convencional
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Declarativos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Procedimentales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se refieren a una tarea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se refieren a varias tareas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Paralelos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Secuenciales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flexibles (pueden aprender nuevas reglas)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rígidos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No deterministas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Deterministas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La solución está en la base de conocimiento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La solución está en el código del programa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datos, reglas y control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datos y programas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tipos de conocimiento
+\end_layout
+
+\begin_layout Standard
+Se clasifican según diferentes dimensiones: 
+\end_layout
+
+\begin_layout Itemize
+Operatividad: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conocimientos descriptivos: qué son las cosas y describen el dominio de
+ la aplicación en términos de conceptos, objetos, atributos, valores y relacione
+s entre las mismas.
+\end_layout
+
+\begin_layout Itemize
+Conocimientos procedimentales: describen como funcionan las cosas.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Privacidad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Públicos
+\end_layout
+
+\begin_layout Itemize
+Privados
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Definición del problema
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estructurantes: se expresan de manera declarativa.
+ Representa una definición de los objetos del dominio y las reglas o relaciones
+ entre los mismos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ejemplo: saber jugar al ajedrez.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Heurísticos: Representan la experiencia bien organizada e indexada en la
+ memoria del experto.
+ Tiene las pautas para enfrentarse y resolver numerosos problemas diarios.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ejemplo: saber ganar al ajedrez.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Aspectos de la información 
+\end_layout
+
+\begin_layout Enumerate
+Sintáctico, técnico o de datos: se refiere a los signos que se emplean en
+ la comunicación.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Semántico o de noticias: se refiere a las relaciones entre los signos; el
+ sentido de las palabras.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Pragmático o de conocimiento: se refiere a la relación entre los signos
+ y sus usos; la utilidad de la información.
+ 
+\end_layout
+
+\begin_layout Subsection
+Expertos
+\end_layout
+
+\begin_layout Standard
+Un experto es reconocido como alguien que es capaz de resolver un tipo de
+ problema que otras personas no pueden resolverla efectiva y eficientemente.
+ 
+\end_layout
+
+\begin_layout Standard
+Características de un experto:
+\end_layout
+
+\begin_layout Enumerate
+Pericia: dimensión vinculada a su alta prestación y/o rendimiento.
+ Resolver problemas que son de su competencia o conocimiento, con éxito;
+ y/o en forma veloz.
+\end_layout
+
+\begin_layout Enumerate
+Capacidad para manipular símbolos.
+\end_layout
+
+\begin_layout Enumerate
+Capacidad para resolver problemas de un dominio, complejos y con cierto
+ grado de dificultad: los problemas deben ser lo suficientemente complicados
+ como para necesitar un experto.
+\end_layout
+
+\begin_layout Enumerate
+Capacidad para reformular o reutilizar su conocimiento.
+\end_layout
+
+\begin_layout Enumerate
+Capacidad para razonar sobre sí mismo: sobre sus propios procesos, sus propias
+ decisiones.
+\end_layout
+
+\begin_layout Enumerate
+Realiza una tarea en particular: interpreta, diagnostica, monitoriza, predice,
+ instruye, planifica, diseña, etc.
+\end_layout
+
+\begin_layout Standard
+Tareas de un experto:
+\end_layout
+
+\begin_layout Enumerate
+Clasificación: seleccionar un objeto a partir de un conjunto.
+\end_layout
+
+\begin_layout Enumerate
+Predicción, pronóstico: en base a información actual, prevé uno o múltiples
+ futuros posibles.
+\end_layout
+
+\begin_layout Enumerate
+Diseño y síntesis: diseñar un sistema que satisfaga restricciones pero que
+ alcance objetivos.
+\end_layout
+
+\begin_layout Enumerate
+Catalogación y planificación: organizar tareas con recursos y en el tiempo.
+\end_layout
+
+\begin_layout Enumerate
+Monitorización: observar una situación en curso.
+\end_layout
+
+\begin_layout Enumerate
+Control: a diferencia de la monitorización, tiene un alcance global.
+\end_layout
+
+\begin_layout Standard
+Subyacente al comportamiento de los expertos, está el cuerpo de conocimientos
+ operativos, que se denomina 
+\series bold
+experiencia
+\series default
+.
+ Cuando se pretende desarrollar un sistema experto, se debe representar
+ la experiencia que hace posible el comportamiento que lleva a cabo un experto
+ para resolver una situación problemática.
+ La transferencia de conocimientos de un experto a un sistema está condicionada
+ y dificultada por una serie de circunstancias.
+\end_layout
+
+\begin_layout Enumerate
+Dependemos del tiempo del experto, su disponibilidad para transferir su
+ conocimiento, y su buena voluntad.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los conocimientos del experto son inconscientes.
+\end_layout
+
+\begin_layout Enumerate
+Los conocimientos del experto se adquieren gradualmente.
+\end_layout
+
+\begin_layout Enumerate
+Los conocimientos del experto suelen estar distribuidos entre varias personas.
+\end_layout
+
+\begin_layout Enumerate
+Los conocimientos del experto son declarativos.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="7cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sistema experto artificial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sistema experto natural
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Siempre disponible, fácil transferencia.
+ Genera resultados reproducibles más consistentes y completos (no tiene
+ errores).
+ Fácil de documentar.
+ Costo de operación bajo.
+ Independiente de la ubicación.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Creatividad, capacidad de aprender y de adaptarse.
+ Usan sus sentidos y el sentido común (saber generalmente aceptado).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo de desarrollo muy caro.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Estudio de viabilidad
+\end_layout
+
+\begin_layout Standard
+Características que hacen que un problema sea adecuado para resolverlo mediante
+ un Sistema Experto:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollo es posible
+\series default
+: expertos disponibles, expertos pueden articular sus métodos, hay suficientes
+ casos de prueba, la tarea depende de los conocimientos y no del sentido
+ común.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollo está justificado
+\series default
+: tarea útil y necesaria, se va a usar en territorios hostiles, hay escasez
+ humana, concurrencia de necesidad de información, se espera alta tasa de
+ recuperación de la inversión, los conocimientos pueden perderse.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollo es apropiado
+\series default
+: la tarea requiere experiencia, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollo va a tener éxito
+\series default
+: los directivos apoyan el proyecto, los usuarios lo usarán.
+\end_layout
+
+\begin_layout Subsection
+Conceptualización
+\end_layout
+
+\begin_layout Standard
+Permite modelar el comportamiento del experto en la solución de los problemas
+ de su competencia, en dos modelos: 
+\end_layout
+
+\begin_layout Itemize
+el estático (que se corresponde con la estructura del sistema),
+\end_layout
+
+\begin_layout Itemize
+el dinámico (que se corresponde con la funcionalidad del sistema).
+\end_layout
+
+\begin_layout Standard
+La conceptualización establece qué conocimientos maneja el experto, cómo
+ los utiliza, dónde los emplea y cuándo los usa.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Modelo estático
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conocimiento fáctico
+\series default
+: conceptos, atributos y valores asociados.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diccionario de conceptos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Concepto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Función
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sinónimos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Atributos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Derivado de
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pieza dentaria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Masticar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diente, muela
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coloración, tipo de cavidad, estado de la pulpa, sensibilidad, síntomas
+ de dolor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Afección dentaria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dañar piezas dentarias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Infección, enfermedad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Características de la pieza dentaria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tabla concepto-atributo-valor (TCAV): por cada atributo de cada concepto.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Concepto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Atributo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Valor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sigla
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pieza dentaria
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coloración
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manchas localizadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ML
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manchas difusas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo de dolor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fugaz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FU
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Persistente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PER
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localizado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ninguno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Afección dentaria
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atrofia pulpar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hiperemia pulpar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pulpitis infiltrativa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PI
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pólipo pulpar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Mapa de relaciones entre conceptos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\mbox{Pieza dentaria}\underrightarrow{\mbox{ Tiene una }}\mbox{Afección dentaria}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mbox{Afección dentaria}\underrightarrow{\mbox{ Resulta de }}\mbox{Pieza dentaria}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Definición de atributos: por cada uno de los atributos de cada uno de los
+ conceptos identificados.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Información
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Descripción
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre de atributo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Concepto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Afección dentaria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo de valor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atrofia pulpar, Hiperemia pulpar, Pulpitis infiltrativa, Pólipo pulpar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rango de valores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(No aplica porque no son numéricos)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número de valores por caso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fuente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Palabras del experto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detalle acerca del método para obtener información
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Análisis de protocolo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inferencia de tipo de afección dentaria que se diagnosticará
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Formato de los resultados de salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+String
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Conocimiento estratégico
+\series default
+: estrategias que sigue el experto para hacer una tarea.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Árbol de descomposición funcional
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename arbol_descomposicion_funcional.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Árbol de descomposición funcional
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Conocimiento táctico
+\series default
+: pasos seguidos en cada estrategia.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tabla de decisión
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Condición
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regla 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regla 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regla 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regla 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coloración
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ML
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ML
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ML
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ML
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo de cavidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo de dolor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PER-LOC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Acción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo de afección dentaria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fórmulas
+\end_layout
+
+\begin_layout Itemize
+Pseudorreglas
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regla
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Texto de la regla
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SI coloracion = manchas localizadas
+\end_layout
+
+\begin_layout Plain Layout
+
+ Y tipo de dolor = fugaz
+\end_layout
+
+\begin_layout Plain Layout
+
+ENTONCES
+\end_layout
+
+\begin_layout Plain Layout
+
+ tipo = atrofia pulpar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Modelo dinámico
+\end_layout
+
+\begin_layout Standard
+Es la integración de los conocimientos fácticos, estratégicos y tácticos
+ en:
+\end_layout
+
+\begin_layout Itemize
+Árbol de estrategias
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename arbol_estrategias.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Árbol de estrategias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Mapa de conocimientos
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename mapa de conocimientos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Árbol de estrategias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

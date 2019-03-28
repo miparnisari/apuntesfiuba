@@ -1,0 +1,7956 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Algoritmos y Programación III"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\footnotesize\ttfamily},commentstyle={\color{blue}},keywordstyle={\color{red}},language={Java},tabsize=2"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Algoritmos y Programación III
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Resumen
+\end_layout
+
+\begin_layout Section
+Notación UML
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Modelo
+\series default
+: captura de una vista o perspectiva de un sistema, destinado a comunicar
+ algo a un público determinado.
+ Para un mismo sistema puede haber distintos modelos para distintas perspectivas.
+ Es una abstracción.
+ Se suelen representar mediante diagramas.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+UML (
+\emph on
+Unified Modeling Language
+\emph default
+)
+\series default
+: lenguaje para la visualización, especificación y documentación de software.
+ Define una notación que se expresa con diagramas.
+ UML define 13 tipos de diagramas.
+\end_layout
+
+\begin_layout Standard
+Usos de UML:
+\end_layout
+
+\begin_layout Itemize
+Para discutir el diseño antes del código
+\end_layout
+
+\begin_layout Itemize
+Para generar documentos que sirvan después de la construcción
+\end_layout
+
+\begin_layout Subsection
+Diagrama de estados
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 12
+placement r
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename diagrama de estados.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de estados.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Diagrama de estados
+\series default
+: modelo dinámico que muestra los cambios de estado que sufre un objeto
+ a través del tiempo.
+ La representación gráfica consiste en un grafo con nodos para los estados
+ y arcos para las transiciones.
+\end_layout
+
+\begin_layout Standard
+Los diagramas de estado son útiles para diseño, programación y pruebas,
+ pero debe balancearse la información que incluyen para que sean útiles.
+ Se utilizan para modelar:
+\end_layout
+
+\begin_layout Itemize
+Comportamiento complejo de objetos
+\end_layout
+
+\begin_layout Itemize
+Estados concurrentes
+\end_layout
+
+\begin_layout Itemize
+Pruebas de caja blanca
+\end_layout
+
+\begin_layout Standard
+Para realizar un diagrama de estados:
+\end_layout
+
+\begin_layout Enumerate
+Decidir a qué eventos puede responder el objeto.
+\end_layout
+
+\begin_layout Enumerate
+Definir precondiciones y postcondiciones de los estados inicial y final.
+\end_layout
+
+\begin_layout Enumerate
+Definir los estados estables.
+\end_layout
+
+\begin_layout Enumerate
+Probar el diagrama, haciendo un seguimiento manual de los eventos, transiciones
+ y estados.
+\end_layout
+
+\begin_layout Subsection
+Diagrama de clases
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 10
+placement o
+overhang 0in
+width "7cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename agregacion.svg
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Agregación de clases
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename clase.svg
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Clase en notación UML
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Diagrama de clases
+\series default
+: modelo estático del sistema a construir o de parte del mismo.
+ En él se muestran las 
+\bar under
+clases
+\bar default
+, sus relaciones y sus jerarquías.
+ 
+\end_layout
+
+\begin_layout Itemize
+Los atributos, métodos y propiedades precedidos por un 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+ son privados, los precedidos por un 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+ son públicos, y los precedidos por un 
+\begin_inset Quotes eld
+\end_inset
+
+#
+\begin_inset Quotes erd
+\end_inset
+
+ son protegidos (sólo pueden utilizarlos clases descendientes).
+\end_layout
+
+\begin_layout Itemize
+Las líneas que vinculan clases se llaman asociaciones.
+ Las asociaciones pueden tener cardinalidad, lo cual indica de cuántos atributos
+ estamos hablando.
+ Si la línea no tiene punta, entonces ambas clases se conocen entre sí;
+ si no, la que no tiene la flecha conoce a la que sí.
+\end_layout
+
+\begin_layout Itemize
+Una clase se representa con un rectángulo con tres divisiones: el nombre
+ de la clase, los atributos, y los métodos.
+\end_layout
+
+\begin_layout Itemize
+Los atributos y métodos de clase se pueden representar subrayados.
+\end_layout
+
+\begin_layout Itemize
+La agregación se representa con un rombo vacío del lado de la clase contenedora.
+\end_layout
+
+\begin_layout Itemize
+La composición se representa con un rombo lleno del lado de la clase contenedora.
+\end_layout
+
+\begin_layout Itemize
+La herencia se representa con flechas vacías hacia las clases ancestros.
+\end_layout
+
+\begin_layout Itemize
+Las clases y métodos abstractos van en 
+\emph on
+cursiva
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Las interfaces se heredan con líneas discontinuas, y se representan con
+ el estereotipo 
+\family typewriter
+<<interfaz>>
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Algunas cuestiones prácticas:
+\end_layout
+
+\begin_layout Itemize
+No es necesario representar todas las clases con todos sus detalles.
+\end_layout
+
+\begin_layout Itemize
+Conviene representar siempre clases, asociaciones y generalización.
+\end_layout
+
+\begin_layout Itemize
+Conviene mantenerlos actualizados.
+\end_layout
+
+\begin_layout Itemize
+No suelen mostrarse las relaciones de dependencia débil (ejemplo: excepciones).
+\end_layout
+
+\begin_layout Subsection
+Diagrama de secuencia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 10
+placement r
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename diagrama de secuencia.gif
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de secuencia.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Diagrama de secuencia
+\series default
+: modelo dinámico que muestra cómo interactúan un conjunto de 
+\bar under
+objetos
+\bar default
+ en un escenario determinado.
+\end_layout
+
+\begin_layout Itemize
+Los objetos participantes se representan como rectángulos arriba de su línea
+ de vida.
+\end_layout
+
+\begin_layout Itemize
+Los mensajes son flechas entre objetos.
+ El objeto que recibe la punta de la flecha es el que responde al mensaje.
+\end_layout
+
+\begin_layout Itemize
+El orden de los mensajes está dado por el eje vertical, de arriba hacia
+ abajo.
+\end_layout
+
+\begin_layout Itemize
+La destrucción de un objeto se representa con una 
+\begin_inset Quotes eld
+\end_inset
+
+X
+\begin_inset Quotes erd
+\end_inset
+
+ en la línea de vida.
+\end_layout
+
+\begin_layout Itemize
+Los mensajes asíncronos se representan con flechas de punta vacía.
+\end_layout
+
+\begin_layout Itemize
+Conviene colocar los objetos más importantes a la izquierda del diagrama.
+\end_layout
+
+\begin_layout Section
+Programación orientada a objetos (POO)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Programación estructurada o procedural
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Programación orientada a objetos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abstracción de procesos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abstracción de datos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipos por valor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipos por referencia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Funciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Métodos dentro de clases
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseñar la solución
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseñar el modelo del dominio del problema
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+La 
+\series bold
+programación orientada a objetos
+\series default
+ es un conjunto de disciplinas que desarrollan y modelizan software que
+ facilitan la construcción de sistemas complejos a partir de componentes:
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align block
+Modulariza en base a las entidades del dominio del problema.
+ Esto permite una representación más directa del modelo de mundo real en
+ el código.
+\end_layout
+
+\begin_layout Itemize
+Comparado con la programación estructurada, las reducciones de código van
+ desde un 40%.
+\end_layout
+
+\begin_layout Itemize
+Suele trabajar con 
+\series bold
+tipos por referencia
+\series default
+.
+ Una variable de este tipo no contiene directamente los datos almacenados,
+ sino la dirección de memoria del lugar donde están esos datos.
+\end_layout
+
+\begin_layout Itemize
+Se basa en un conjunto de objetos que se envían mensajes.
+ Estos objetos son agregados de otros objetos.
+\end_layout
+
+\begin_layout Itemize
+Los objetos deben tener una clase, y se crean en tiempo de ejecución.
+\end_layout
+
+\begin_layout Itemize
+Todos los objetos de una misma clase admiten los mismos mensajes.
+\end_layout
+
+\begin_layout Itemize
+Los lenguajes orientados a objetos (Java, C#, Smalltalk, etc.) suelen tener
+ mecanismos de 
+\series bold
+recolección de basura
+\series default
+: se eliminan los objetos que no están siendo referenciados por nadie.
+\end_layout
+
+\begin_layout Standard
+Los tres pilares de POO son:
+\end_layout
+
+\begin_layout Enumerate
+Clases
+\end_layout
+
+\begin_layout Enumerate
+Herencia
+\end_layout
+
+\begin_layout Enumerate
+Polimorfismo
+\end_layout
+
+\begin_layout Subsection
+Objetos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Objeto
+\series default
+: entidad capaz de almacenar estado y responder a comportamiento.
+ Son instancias de clases, es decir, cada uno de los individuos que pertenecen
+ a una determinada clase.
+ Se crean en tiempo de ejecución y son referenciados por variables.
+ Sus características son:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Estado
+\emph default
+: conjunto de valores internos que representa la situación en la que está.
+ Puede ser observable u oculto.
+ Se lo almacena en variables internas dentro de los objetos - los 
+\series bold
+atributos
+\series default
+.
+ Los cambios de estado que sufren los objetos se deben a estímulos o mensajes
+ recibidos de otros objetos, cuyos efectos son eventos.
+ Un
+\series bold
+ evento
+\series default
+ es un estímulo que puede disparar una transición de estados.
+ Un evento puede ser:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Asíncrono cuando el emisor de la señal puede seguir trabajando sin esperar
+ una respuesta,
+\end_layout
+
+\begin_layout Itemize
+Síncrono cuando debe quedarse esperando la respuesta del receptor.
+\end_layout
+
+\begin_layout Standard
+Una 
+\series bold
+transición
+\series default
+ entre estados es el paso de un estado a otro.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Comportamiento
+\emph default
+: conjunto de respuestas que un método exhibe ante solicitudes de otros
+ objetos.
+ Describe los servicios que brinda.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Identidad
+\emph default
+: es lo que diferencia a objetos de una misma clase.
+ Se otorga una identidad al objeto en el momento de la creación del mismo,
+ y se mantiene durante toda la vida del mismo.
+ Es única para cada objeto, aunque tengan los mismos atributos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Interfaz de un objeto
+\series default
+: conjunto de métodos y propiedades aplicables a ese objeto.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Implementación de un objeto
+\series default
+: definición de las operaciones y las estructuras de datos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mensaje
+\series default
+: invocación de un método sobre un objeto.
+ Para que un objeto le envíe un mensaje a otro, debería conocerlo.
+ El objeto que envía la solicitud se llama 
+\series bold
+cliente
+\series default
+, y el que la recibe y responde a ella es el 
+\series bold
+servidor
+\series default
+.
+\end_layout
+
+\begin_layout Corollary
+Los objetos deben manejar su propio comportamiento; no deberíamos poder
+ manipular su estado desde afuera.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedades
+\series default
+: atributos conceptuales.
+\end_layout
+
+\begin_layout Subsection
+Clases
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Clase
+\series default
+: tipo de un objeto.
+ Conjunto de objetos con la misma estructura y el mismo comportamiento.
+ Molde desde el que se crean los objetos.
+ Es un módulo fundamental de las aplicaciones orientadas a objetos.
+ Si son definidas por el programador su implementación requiere de:
+\end_layout
+
+\begin_layout Enumerate
+Determinación de las operaciones necesarias sobre el tipo.
+\end_layout
+
+\begin_layout Enumerate
+Elección de una estructura de datos sobre el cual se materializa la implementaci
+ón.
+\end_layout
+
+\begin_layout Enumerate
+Implementación de la estructura de datos y las operaciones.
+\end_layout
+
+\begin_layout Standard
+Precauciones:
+\end_layout
+
+\begin_layout Itemize
+Cada clase debe tener un propósito simple y claro: 
+\begin_inset Quotes eld
+\end_inset
+
+una clase por abstracción y una abstracción por clase
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Los nombres de las clases deberían ser sustantivos y no verbos.
+\end_layout
+
+\begin_layout Itemize
+Cuidado con las clases sin estado o sin comportamiento.
+\end_layout
+
+\begin_layout Itemize
+Clase = interfaz + implementación.
+\end_layout
+
+\begin_layout Corollary
+Lo realmente importante es que la interfaz de una clase sea chica y sencilla.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paquete
+\series default
+: agrupamiento de clases.
+\end_layout
+
+\begin_layout Subsubsection
+Métodos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Constructor
+\series default
+: método de clase que, al ser invocado, crea un objeto en memoria.
+ Se los utiliza para inicializar los valores de los atributos y dejar al
+ objeto que está siendo creado en un estado válido.
+\end_layout
+
+\begin_layout Standard
+Uso de los métodos y propiedades en POO:
+\end_layout
+
+\begin_layout Itemize
+Definir y obtener comportamiento del objeto actual.
+\end_layout
+
+\begin_layout Itemize
+Consultar y cambiar el estado del objeto actual.
+\end_layout
+
+\begin_layout Itemize
+Devolver un valor calculado a partir del objeto actual.
+\end_layout
+
+\begin_layout Standard
+Cuestiones a tener en cuenta al diseñar métodos de una clase:
+\end_layout
+
+\begin_layout Itemize
+Evitar código duplicado.
+\end_layout
+
+\begin_layout Itemize
+Ocultar el manejo de punteros dentro de un método (si el lenguaje maneja
+ punteros).
+\end_layout
+
+\begin_layout Itemize
+Utilizar nombres descriptivos, sin que nos asuste la longitud.
+\end_layout
+
+\begin_layout Itemize
+Si se define una operación, debería existir la operación inversa.
+\end_layout
+
+\begin_layout Itemize
+Si existen relaciones de orden entre los objetos, debería haber métodos
+ que los comparan.
+\end_layout
+
+\begin_layout Itemize
+En lo posible, los parámetros de una función deben ser pocos.
+\end_layout
+
+\begin_layout Itemize
+Tratar de que la cantidad de métodos de una clase sea lo más chico posible.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Acoplamiento
+\series default
+: interdependencia entre módulos.
+\end_layout
+
+\begin_layout Corollary
+El bajo acoplamiento garantiza que los módulos de un sistema sean relativamente
+ independientes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cohesión
+\series default
+: necesidad de que un módulo haga o se refiera a una sola cosa simple.
+\end_layout
+
+\begin_layout Corollary
+Los módulos de un sistema exhiben alta cohesión cuando cada entidad y proceso
+ está representado por un módulo aislado.
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Situaciones que afectan negativamente al acoplamiento y a la cohesión:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+“Envidia de características”: Surge cuando diseñamos una clase que llama
+ en gran parte a métodos y propiedades de otras clases.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+“Cambios divergentes”: Una clase se cambia por más de una razón de cambio
+ funcional.
+\end_layout
+
+\end_deeper
+\begin_layout Quotation
+
+\emph on
+\noun on
+Martin Fowler
+\end_layout
+
+\begin_layout Standard
+Calificadores de métodos:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Abstract
+\emph default
+: nunca deben ser invocados, no tienen implementación.
+ Deben ser redefinidos en algún nivel inferior de la jerarquía.
+ Deben ser virtuales.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Virtual
+\emph default
+: son vinculados dinámicamente o tardíamente.
+ Agregan ineficiencias pero garantizan la reutilización de código.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Override
+\emph default
+: redefinen los métodos virtuales de las clases ancestros.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Sealed
+\emph default
+: no se pueden heredar.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Static
+\emph default
+: método de clase.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sobrecarga
+\series default
+: una clase admite un método con distintas firmas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public String toString (Double d) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	return Double.toString(d);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+public String toString(Integer i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	return Integer.toString(i);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sobrecarga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Redefinición
+\series default
+: una clase modifica un método de su clase base.
+\end_layout
+
+\begin_layout Subsection
+RTTI (Run-Time Type Information)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+RTTI
+\series default
+: sistema que proporciona información de tipos en tiempo de ejecución.
+ La clase debe conocerse en tiempo de compilación.
+ El compilador abre y examina el archivo .class en tiempo de compilación.
+\end_layout
+
+\begin_layout Standard
+Desventajas:
+\end_layout
+
+\begin_layout Itemize
+Compromete la extensibilidad
+\end_layout
+
+\begin_layout Itemize
+Evita el uso de polimorfismo
+\end_layout
+
+\begin_layout Subsection
+Reflexión
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reflexión
+\series default
+: sistema que proporciona información de tipos en tiempo de ejecución, aun
+ cuando ésta no fuera conocida en tiempo de compilación.
+ El archivo .class se abre y examina en tiempo de ejecución.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Sin reflexion
+\end_layout
+
+\begin_layout Plain Layout
+
+new Foo().hello(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// Con reflexion
+\end_layout
+
+\begin_layout Plain Layout
+
+Class<?> cls = Class.forName("Foo"); 
+\end_layout
+
+\begin_layout Plain Layout
+
+cls.getMethod("hello").invoke(cls.newInstance());
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Reflexión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El código con reflexión tiende a ser más lento que el que no lo tiene.
+\end_layout
+
+\begin_layout Standard
+Ejemplos de uso:
+\end_layout
+
+\begin_layout Itemize
+Herramientas que construyen diagramas UML a partir de código compilado.
+\end_layout
+
+\begin_layout Section
+Delegación, agregación y composición
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reutilización
+\series default
+: uso de clases u objetos, desarrollados y probados en un determinado contexto,
+ para incorporar esa funcionalidad en una aplicación diferente a la de origen.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Extensión
+\series default
+: aprovechar las clases desarrolladas para una aplicación, utilizándolas
+ en la construcción de nuevas clases para la misma u otra aplicación.
+ La delegación y la herencia son herramientas claves para lograrla.
+ La extensión es una forma de reutilización.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Delegación
+\series default
+: mecanismo de reutilización por el cual una clase implementa parte de su
+ funcionalidad delegando la misma en otra clase.
+ El mecanismo se materializa cada vez que un método delega parte de su implement
+ación en un método de otra clase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public class Segmento {
+\end_layout
+
+\begin_layout Plain Layout
+
+	int p1;
+\end_layout
+
+\begin_layout Plain Layout
+
+	int p2;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	public int longitud() {
+\end_layout
+
+\begin_layout Plain Layout
+
+		return p1.distanciaA(p2);
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Delegación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Agregación
+\emph default
+: hay una relación de contenido a contenedor, o del tipo 
+\begin_inset Quotes eld
+\end_inset
+
+tiene
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+agrupa
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Ejemplo: una inmobiliaria es una agregación de inmuebles.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Composición
+\emph default
+: hay una relación de contenido a contenedor, del tipo 
+\begin_inset Quotes eld
+\end_inset
+
+es parte de
+\begin_inset Quotes erd
+\end_inset
+
+.
+ El contenedor es responsable del ciclo de vida de la parte, y la destrucción
+ del contenedor implica la desaparición de sus partes constitutivas.
+ Ejemplo: no tiene sentido un domicilio si no existe un inmueble.
+\end_layout
+
+\begin_layout Corollary
+Se usa delegación cuando se necesitan algunos aspectos de la clase contenida,
+ pero no su comportamiento completo.
+ Se reutiliza sin mantener la interfaz.
+\end_layout
+
+\begin_layout Section
+Herencia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 6
+placement r
+overhang 0in
+width "4.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename herencia.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Herencia.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Herencia
+\series default
+: mecanismo por el cual se define un caso particular de una clase, agregándole
+ métodos, propiedades y atributos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Representa relaciones del tipo 
+\begin_inset Quotes eld
+\end_inset
+
+es un
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Cada clase puede tener una clase 
+\series bold
+ancestro
+\series default
+ (base o superclase) y clases 
+\series bold
+descendientes
+\series default
+ (derivadas o subclases) que heredan atributos y operaciones de su clase
+ ancestro.
+ Las subclases pueden redefinir métodos o agregar nuevos, pero no pueden
+ eliminar métodos o atributos de sus superclases.
+\end_layout
+
+\begin_layout Itemize
+Responde al mecanismo de especialización y generalización.
+ 
+\end_layout
+
+\begin_layout Itemize
+Las clasificaciones no tienen que ser completas, pero sí excluyentes.
+\end_layout
+
+\begin_layout Itemize
+Algunas clases pueden no tener instancias: son 
+\series bold
+clases abstractas
+\series default
+.
+ Su finalidad es declarar atributos, métodos y propiedades comunes que luego
+ se utilizarán en las clases descendientes.
+\end_layout
+
+\begin_layout Itemize
+Las clases que no se pueden heredar se denominan 
+\series bold
+selladas
+\series default
+ o finales.
+\end_layout
+
+\begin_layout Itemize
+En muchos lenguajes existe una clase base por omisión.
+ En Pharo, esa clase es 
+\family typewriter
+ProtoObject
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Los constructores no se heredan: cada clase tiene el suyo.
+ Conviene llamar al inicializador de la clase ancestro al comienzo del inicializ
+ador propio.
+\end_layout
+
+\begin_layout Corollary
+Se usa herencia cuando se quiere tener la misma interfaz de la clase ancestro.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Herencia múltiple
+\series default
+: admitimos más de una clase ancestro por cada descendiente.
+ Es una herramienta que debe utilizarse con cuidado.
+ No todos los lenguajes la admiten.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Redefinición
+\series default
+: mecanismo de volver a definir un método o propiedad en una clase especializada.
+ Se utiliza cuando el comportamiento de la clase ancestro no debería ser
+ exactamente igual para la descendiente.
+\end_layout
+
+\begin_layout Itemize
+Es obligatoria cuando el comportamiento de una clase descendiente debe ser
+ distinto al de la clase ancestro.
+\end_layout
+
+\begin_layout Itemize
+Es opcional cuando, por razones de eficiencia o claridad, queremos modificar
+ la implementación del método del ancestro.
+\end_layout
+
+\begin_layout Itemize
+Debe preservar la semántica de la definición del método del ancestro (misma
+ cantidad y tipo de parámetros, mismo tipo de valor devuelto).
+\end_layout
+
+\begin_layout Itemize
+Se pueden redefinir métodos y propiedades, pero no atributos.
+\end_layout
+
+\begin_layout Subsection
+Mecanismos de abstracción
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Abstracción
+\series default
+: es uno de los medios más importantes mediante el cual nos enfrentamos
+ a la complejidad inherente al software.
+ Es la propiedad que permite representar las características esenciales
+ de un objeto, sin preocuparse de las restantes características.
+ Una abstracción se centra en la vista externa de un objeto.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Clasificación
+\emph default
+: define un objeto como perteneciente a una clase.
+ Ejemplo: Argentina es un país.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Agrupación
+\emph default
+: define un objeto como una agregación de otros.
+ Ejemplo: curso es un conjunto de alumnos y un profesor.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Composición
+\emph default
+: define un objeto como compuesto por otros objetos; si el objeto compuesto
+ muere los objetos componentes también.
+ Ejemplo: empleados en una empresa.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Generalización
+\emph default
+: define una clase como un caso general de varias clases.
+ Ejemplo: los paralelogramos, los rectángulos y los rombos son cuadriláteros.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Especialización
+\emph default
+: es la inversa de la generalización.
+\end_layout
+
+\begin_layout Section
+Polimorfismo
+\end_layout
+
+\begin_layout Subsection
+Basado en implementación
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Polimorfismo
+\series default
+: posibilidad que tienen los métodos y propiedades de mantener una respuesta
+ unificada, con la misma semántica, aunque con distinta implementación,
+ a través de la jerarquía de clases.
+ Es decir: un mismo mensaje puede provocar la invocación de operaciones
+ distintas.
+\end_layout
+
+\begin_layout Standard
+El polimorfismo está asociado a la 
+\series bold
+vinculación tardía
+\series default
+: se retarda la decisión sobre el tipo de objeto hasta el momento en que
+ vaya a ser utilizado el método o propiedad (es decir, en tiempo de ejecución).
+ Los compiladores de los lenguajes orientados a objetos aseguran que la
+ función existe y realizan verificaciones de tipos de los argumentos y del
+ valor de retorno, pero no conocen el código exacto a ejecutar.
+\end_layout
+
+\begin_layout Corollary
+La esencia del polimorfismo es que, en vez de preguntarle a un objeto su
+ estado e invocar uno u otro comportamiento según la respuesta, debemos
+ invocar ese comportamiento y que el polimorfismo lo resuelva según el tipo.
+\end_layout
+
+\begin_layout Standard
+El polimorfismo se da en dos grados:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+A nivel del objeto actual
+\emph default
+ (con herencia y redefinición): un método actúa, no sólo sobre objetos de
+ la clase para la cual fue declarado, sino para cualquier clase descendiente
+ de aquella.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+A nivel del código del método
+\emph default
+ (con métodos virtuales y vinculación tardía): se demora hasta el tiempo
+ de ejecución la decisión sobre qué métodos invocar dentro del código de
+ otro método.
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Multiple Dispatch
+\end_layout
+
+\begin_layout Standard
+Es una característica de algunos lenguajes OO en la que una función o método
+ se despacha dinámicamente dependiendo del tipo de su argumento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+interface Collideable { 
+\end_layout
+
+\begin_layout Plain Layout
+
+	void collideWith(Collideable other); 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Asteroid implements Collideable {
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void collideWith(Collideable other) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (other instanceof Asteroid) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+			// handle Asteroid-Asteroid collision 
+\end_layout
+
+\begin_layout Plain Layout
+
+		} else if (other instanceof Spaceship) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+			// handle Asteroid-Spaceship collision
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Spaceship implements Collideable { 
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void collideWith(Collideable other) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (other instanceof Asteroid) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+			// handle Spaceship-Asteroid collision 
+\end_layout
+
+\begin_layout Plain Layout
+
+		} else if (other instanceof Spaceship) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+			// handle Spaceship-Spaceship collision 
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Double Dispatch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Basado en interfaces
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Interfaz
+\series default
+: clase abstracta sin atributos, con todos sus métodos abstractos, que puede
+ ser heredada (o implementada) por una clase que ya sea descendiente de
+ otras clases.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sirven para encapsular un conjunto de métodos y propiedades, sin asignar
+ esta funcionalidad a ningún objeto en particular ni expresar nada respecto
+ del código que los va a implementar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Una interfaz 
+\begin_inset Quotes eld
+\end_inset
+
+expone
+\begin_inset Quotes erd
+\end_inset
+
+ métodos y propiedades, pero no restringe su uso a ninguna clase en particular.
+\end_layout
+
+\begin_layout Corollary
+Una clase implementa una interfaz cuando la clase se compromete a implementar
+ los métodos de la interfaz.
+\end_layout
+
+\begin_layout Section
+Genericidad y tipos como parámetros
+\end_layout
+
+\begin_layout Standard
+Necesitamos poder escribir el mismo texto cuando podemos hacer la misma
+ implementación de un concepto, aplicada a distintos tipos de objetos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Genericidad
+\series default
+: paradigma de desarrollo de software en donde clases y métodos admiten
+ tipos como parámetros.
+ Sus ventajas:
+\end_layout
+
+\begin_layout Itemize
+Permite definir colecciones heterogéneas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Facilita la construcción de jerarquías de iteradores.
+\end_layout
+
+\begin_layout Itemize
+Permite la reusabilidad.
+\end_layout
+
+\begin_layout Itemize
+Permite el polimorfismo.
+\end_layout
+
+\begin_layout Itemize
+Soportada por muchos lenguajes.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+C++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+C#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Java
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Templates
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+template <T>
+\end_layout
+
+\begin_layout Plain Layout
+
+class xyz {
+\end_layout
+
+\begin_layout Plain Layout
+
+private: T a, b;
+\end_layout
+
+\begin_layout Plain Layout
+
+public: method (T p, T q) { a = p; b = q}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class List <T> {....}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public interface Iterator <T> {
+\end_layout
+
+\begin_layout Plain Layout
+
+T next ();
+\end_layout
+
+\begin_layout Plain Layout
+
+Boolean hasNext();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se implementa en la versión 5, mantiene compatibilidad con las versiones
+ anteriores.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No mantiene compatibilidad con las versiones anteriores a la 2.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Durante la compilación se instancian tantas clases como tipos aparezcan;
+ mecanismo de Search & Replace.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Durante la compilación del tipo genérico, las instrucciones de lenguaje
+ generadas contienen espacios en blanco para los tipos.
+ La información de genericidad no se elimina luego de tiempo de compilación.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Durante la compilación se genera un archivo de clase único.
+ Se transforma el código fuente en bytecode, y sustituye 
+\family typewriter
+<T>
+\family default
+ por 
+\family typewriter
+<Object>
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Durante la ejecución, si se referencia a un tipo genérico, se chequea si
+ ya existe una instancia de ese tipo; si no, se la instancia.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Durante la ejecución se realizan casteos de tipos.
+ No hay manera de conocer nada de los tipos genéricos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+xyz<Foo>
+\family default
+ no es subclase de 
+\family typewriter
+xyz<Bar>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+xyz<Foo>
+\family default
+ no es subclase de 
+\family typewriter
+xyz<Bar>
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pueden ponerse restricciones a los tipos: 
+\family typewriter
+class List <T> where T: Icomparable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los tipos genéricos pueden ser por referencia o primitivos.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los tipos genéricos no pueden primitivos (pues no heredan de 
+\family typewriter
+Object
+\family default
+).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Son débilmente tipados.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Son fuertemente tipadas.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene excepciones chequeadas.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene excepciones chequeadas y no chequeadas.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Excepciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Excepción
+\series default
+: objeto, instancia de la clase 
+\family typewriter
+Exception
+\family default
+.
+ Sirven para manejar situaciones en las que no tenemos suficiente información
+ de contexto en un método para manejar un problema previsto, pero que no
+ podemos dejar pasar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Las excepciones se 
+\begin_inset Quotes eld
+\end_inset
+
+arrojan
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+elevan
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+lanzan
+\begin_inset Quotes erd
+\end_inset
+
+ ante situaciones inesperadas o inusuales, y son 
+\begin_inset Quotes eld
+\end_inset
+
+atrapadas
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+capturadas
+\begin_inset Quotes erd
+\end_inset
+
+ por el módulo que invocó al método que está corriendo.
+\end_layout
+
+\begin_layout Itemize
+Si viene un dato incorrecto, el programa sólo se interrumpe si nadie se
+ hace cargo de la excepción.
+\end_layout
+
+\begin_layout Itemize
+Surgieron como solución al problema de los mensajes de error poco amigables
+ y que cortaban la ejecución de un programa.
+\end_layout
+
+\begin_layout Itemize
+Se provocan cuando no se cumple una precondición, una postcondición o un
+ invariante.
+\end_layout
+
+\begin_layout Itemize
+La mayoría de las clases de excepciones son vacías, sin atributos ni métodos.
+\end_layout
+
+\begin_layout Itemize
+La jerarquía influye en la captura.
+\end_layout
+
+\begin_layout Standard
+Cuestiones prácticas:
+\end_layout
+
+\begin_layout Itemize
+Capturar las excepciones en el primer nivel que se pueda.
+\end_layout
+
+\begin_layout Itemize
+Lanzar excepciones en constructores sólo para indicar que éste no terminó
+ bien.
+\end_layout
+
+\begin_layout Itemize
+Prever un mecanismo de registro de excepciones para permitir análisis posteriore
+s (
+\emph on
+logs
+\emph default
+).
+\end_layout
+
+\begin_layout Corollary
+Cuando todo falle, lance una excepción.
+\end_layout
+
+\begin_layout Standard
+Hay dos tipos de excepciones:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+De negocio
+\emph default
+: provocadas por problemas de concepción de la aplicación (ejemplo: división
+ por cero).
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Técnicas
+\emph default
+: provocadas por problemas imprevisibles durante la ejecución del programa
+ (ejemplo: interrupción de la conexión a Internet).
+\end_layout
+
+\begin_layout Standard
+Hay cinco formas de tratar excepciones:
+\end_layout
+
+\begin_layout Enumerate
+Finalización súbita: cuando estamos seguros de que el problema hace fallar
+ a toda la actividad; cuando los objetos implicados no van a ser utilizados
+ nunca más; cuando la pretensión de seguir trabajando puede empeorar las
+ cosas.
+\end_layout
+
+\begin_layout Enumerate
+Continuación ignorando las fallas: cuando la falla no tiene consecuencias
+ relevantes.
+\end_layout
+
+\begin_layout Enumerate
+Vuelta atrás: cuando el estado del objeto puede ser modificado a su estado
+ antes de la falla.
+\end_layout
+
+\begin_layout Enumerate
+Avance y recuperación: cuando no es factible la vuelta atrás.
+ Se sigue adelante, tratando de restablecer el estado de los objetos implicados.
+\end_layout
+
+\begin_layout Enumerate
+Nuevo intento: cuando se espera que la falla sea transitoria o reversible.
+ Se vuelve a probar luego de que se restablecieron los estados de los objetos.
+ Se puede utilizar la técnica de retardo exponencial, o abandonar luego
+ de un número de intentos o tiempo transcurrido.
+\end_layout
+
+\begin_layout Enumerate
+No resolverla y enviar la misma u otra excepción al contexto invocante.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Manejador de excepciones
+\series default
+: porción de código que decide qué hacer con la excepción que recibe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+try {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// codigo que puede provocar excepciones
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+catch (ClaseExcepcion1 e1) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// codigo que maneja las excepciones de un tipo 1
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+catch (ClaseExcepcion2 e2) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// codigo que maneja las excepciones de un tipo 2
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+finally {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// codigo que se ejecuta siempre, haya habido excepciones o no
+\end_layout
+
+\begin_layout Plain Layout
+
+	// sirve para liberar recursos
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Manejador de excepciones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public int division (int a, int b) throws ZeroDivisionException {
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (b == 0)
+\end_layout
+
+\begin_layout Plain Layout
+
+		throw new ZeroDivisionException();
+\end_layout
+
+\begin_layout Plain Layout
+
+	else
+\end_layout
+
+\begin_layout Plain Layout
+
+		return (a / b);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family default
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lanzador de excepciones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ventajas de trabajar con excepciones:
+\end_layout
+
+\begin_layout Itemize
+Hace a los programas más robustos y seguros.
+\end_layout
+
+\begin_layout Itemize
+Le da más cohesión a los métodos.
+\end_layout
+
+\begin_layout Itemize
+En proyectos grandes, hace al código más legible.
+\end_layout
+
+\begin_layout Corollary
+Un módulo nunca debe dar la impresión de que no pasó nada cuando algo falló.
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Excepciones Chequeadas
+\end_layout
+
+\begin_layout Standard
+Son un tipo especial de excepciones que necesitan que la firma del método
+ que las lanza contenga a una referencia a ella.
+ Ejemplo:
+\family typewriter
+ public int dividir(int a, int b) throws ZeroDivisionException {...}
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Son seguras.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Molesta tener que capturarlas siempre.
+\end_layout
+
+\begin_layout Itemize
+Limita la redefinición al no poder agregar nuevas excepciones.
+\end_layout
+
+\begin_layout Itemize
+No tienen sentido en lenguajes interpretados.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Disciplinas y metodología
+\end_layout
+
+\begin_layout Subsection
+Disciplinas operativas
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Captura de requisitos
+\series default
+: qué quiere el cliente (generalmente no está claro).
+ Aquí trabajan los 
+\begin_inset Quotes eld
+\end_inset
+
+analistas funcionales
+\begin_inset Quotes erd
+\end_inset
+
+ (deben decirle al usuario qué es factible de realizar y qué no).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Diagnóstico de la situación y de la necesidad
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Requisitos funcionales: procesos que debe hacer el sistema
+\end_layout
+
+\begin_layout Enumerate
+Requisitos operativos: escalabilidad, seguridad, facilidad de mantenimiento,
+ desempeño, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprensión del problema
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename useCaseOnlineShopping.gif
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Caso de uso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Casos de uso
+\begin_inset Quotes erd
+\end_inset
+
+: diagrama que muestra la interacción entre uno o más usuarios y el sistema.
+ Los actores o roles se representan como personas, los casos de uso como
+ elipses, y las comunicaciones con líneas.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Decisión de qué tiene que hacer el sistema
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Análisis
+\series default
+: qué se debe desarrollar, qué vamos a construir.
+ Es independiente de la tecnología.
+ Aquí trabajan los 
+\begin_inset Quotes eld
+\end_inset
+
+analistas funcionales
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Estructura de los objetos, cómo se relacionan, cómo se organizan, jerarquías
+\end_layout
+
+\begin_layout Enumerate
+Comportamiento de los objetos: estados posibles, transiciones y eventos
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename crcCardStudent.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tarjeta CRC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Tarjetas CRC
+\begin_inset Quotes erd
+\end_inset
+
+: herramienta para la búsqueda de clases de análisis y su comportamiento.
+ Muestra a cada objeto con sus responsabilidades y colaboradores.
+ Deben ser papeles lo más chicos posibles.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Diseño
+\series default
+: cómo vamos a realizar lo que definimos en el análisis.
+ Es dependiente de la tecnología.
+ Aquí trabajan los 
+\begin_inset Quotes eld
+\end_inset
+
+diseñadores
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Es necesario el diseño? Si, y más en los proyectos grandes.
+\end_layout
+
+\begin_layout Enumerate
+¿Por qué se diseña? Para manejar la complejidad, aislar detalles de implementaci
+ón, agrupar operaciones...
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es el resultado del diseño? Diagramas.
+\end_layout
+
+\begin_layout Enumerate
+¿Qué se define en el diseño? Subsistemas o componentes de software, despliegue
+ en hardware, integración con otros sistemas, interfaz de usuario, estructuras
+ de datos y algoritmos, persistencia, definiciones tecnológicas...
+\end_layout
+
+\begin_layout Enumerate
+¿Cuáles son los niveles de diseño?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arquitectura macro
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arquitectura de paquetes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseño de clases
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseño 
+\begin_inset Quotes eld
+\end_inset
+
+micro
+\begin_inset Quotes erd
+\end_inset
+
+ (atributos y métodos de las clases)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Implementación
+\series default
+: construcción del producto.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Pruebas
+\series default
+: determinar que el producto construido responde a los requisitos del cliente.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Despliegue
+\series default
+: poner la aplicación en la computadora del cliente.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mantenimiento
+\series default
+: reparar, extender, mejorar el producto o adaptarlo a nuevos ambientes.
+\end_layout
+
+\begin_layout Subsection
+Métodos
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cascadeDesign.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Método en cascada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Método en 
+\begin_inset Quotes eld
+\end_inset
+
+cascada
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ (ver 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Método-de-cascada"
+
+\end_inset
+
+): método de desarrollo de software que toma como base el modelo de cadena
+ de montaje de la industria manufacturera.
+ Se basa en cumplir una serie de etapas, cada una separada de las otras,
+ y sólo se empieza una tarea cuando terminó la anterior.
+\end_layout
+
+\begin_layout Standard
+Desventajas:
+\end_layout
+
+\begin_layout Itemize
+El proceso es lento
+\end_layout
+
+\begin_layout Itemize
+Cuesta cambiar algo de una etapa ya terminada
+\end_layout
+
+\begin_layout Itemize
+Las pruebas sólo vienen después de terminada la programación
+\end_layout
+
+\begin_layout Itemize
+El usuario sólo ve el sistema luego de que está terminado
+\end_layout
+
+\begin_layout Itemize
+La comunicación, mediante documentos, no siempre funciona bien
+\end_layout
+
+\begin_layout Itemize
+No acepta cambios de requisitos frecuentes
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Método en espiral
+\series default
+: desarrollo incremental.
+\end_layout
+
+\begin_layout Standard
+Ventajas:
+\end_layout
+
+\begin_layout Itemize
+Podemos mostrar al usuario final versiones parciales del sistema
+\end_layout
+
+\begin_layout Itemize
+Los programadores trabajan más tranquilos
+\end_layout
+
+\begin_layout Itemize
+Permite cambios de requisitos
+\end_layout
+
+\begin_layout Itemize
+Los errores aparecen antes
+\end_layout
+
+\begin_layout Itemize
+Una persona puede participar en más de una fase
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Desarrollo con prototipos
+\series default
+: se construye un prototipo del sistema, siguiendo todas las etapas (incluso
+ pruebas y entrega al usuario).
+ Luego se prueba el sistema y se detectan errores, y se itera nuevamente,
+ corrigiendo las fallas y se sigue adelante.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prototipo
+\series default
+: versión preliminar del sistema, incompleta y en menor escala.
+ Se deben desarrollar en poco tiempo, debe ser fácil de modificar, y el
+ usuario debe poder probarlo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Métodos formales y ágiles
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Formales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ágiles (XP, Scrum...)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atención a procesos y documentación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atención a personas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comunicación formal y escrita
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comunicación informal y cara a cara
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Documentación de requisitos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Colaboración con el cliente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seguimiento de planes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agilidad en respuesta a los cambios de planes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Documentación completa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software que funciona
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Scrum
+\series default
+: 
+\begin_inset Quotes eld
+\end_inset
+
+marco
+\begin_inset Quotes erd
+\end_inset
+
+ (no define el proceso ni los entregables) para métodos de desarrollo ágil,
+ iterativo e incremental.
+ Scrum estructura el desarrollo del producto en ciclos que se llaman 
+\emph on
+sprints
+\emph default
+.
+ Un 
+\emph on
+sprint
+\emph default
+ fija objetivos y el trabajo acordado debe estar terminado al finalizar
+ el mismo.
+ Los 
+\emph on
+sprints
+\emph default
+ son de longitud fija (1 a 4 semanas).
+ Durante un 
+\emph on
+sprint
+\emph default
+ no se pueden cambiar ni los integrantes ni las tareas; lo único que se
+ puede hacer es cancelar el 
+\emph on
+sprint
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Wrap figure
+lines 0
+placement r
+overhang 0in
+width "9cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename agile-scrum-process.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scrum.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hay 3 roles:
+\end_layout
+
+\begin_layout Enumerate
+Dueño del producto: hace las veces del cliente.
+ Elabora la lista de requisitos (
+\emph on
+product backlog
+\emph default
+) y les asigna prioridades.
+ Define qué requisitos habrá que desarrollar en un 
+\emph on
+sprint
+\emph default
+ (
+\emph on
+sprint backlog
+\emph default
+).
+\end_layout
+
+\begin_layout Enumerate
+Scrum Master: el líder del equipo.
+\end_layout
+
+\begin_layout Enumerate
+Miembros del equipo: diseñan, codifican y prueban las funcionalidades.
+\end_layout
+
+\begin_layout Standard
+Algunas características:
+\end_layout
+
+\begin_layout Itemize
+Se realizan reuniones diarias de scrum para analizar el avance del día.
+\end_layout
+
+\begin_layout Itemize
+Día a día se actualiza el 
+\emph on
+sprint burndown chart
+\emph default
+, que muestra cuánto trabajo falta realizar dentro del sprint.
+\end_layout
+
+\begin_layout Itemize
+Al finalizar el 
+\emph on
+sprint
+\emph default
+ se realiza una reunión para sacar conclusiones de lo aprendido.
+\end_layout
+
+\begin_layout Subsection
+Disciplinas de soporte
+\end_layout
+
+\begin_layout Enumerate
+Administración del proyecto
+\end_layout
+
+\begin_layout Enumerate
+Gestión de cambios
+\end_layout
+
+\begin_layout Enumerate
+Administración de la configuración
+\end_layout
+
+\begin_layout Enumerate
+Gestión de RR.HH.
+\end_layout
+
+\begin_layout Enumerate
+Gestión del ambiente de trabajo
+\end_layout
+
+\begin_layout Enumerate
+Gestión de calidad
+\end_layout
+
+\begin_layout Section
+Diseño
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ocultamiento de implementación
+\series default
+: técnica de desarrollo de software mediante la cual impedimos que el usuario
+ del programa haga un uso indebido de los datos u algoritmos.
+ Permitimos usar la interface de los tipos de datos pero no su implementación.
+ Implica separar el
+\emph on
+ qué 
+\emph default
+hace el módulo del 
+\emph on
+cómo 
+\emph default
+lo hace
+\emph on
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Reglas del ocultamiento:
+\end_layout
+
+\begin_layout Itemize
+Atributos: privados.
+\end_layout
+
+\begin_layout Itemize
+Propiedades y métodos: públicos.
+\end_layout
+
+\begin_layout Standard
+Las ventajas del ocultamiento son:
+\end_layout
+
+\begin_layout Itemize
+Permite cambios de implementación.
+\end_layout
+
+\begin_layout Itemize
+Impide violaciones de restricciones entre datos internos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Encapsulamiento
+\series default
+: conjunción de abstracción y ocultamiento de implementación.
+\end_layout
+
+\begin_layout Standard
+Las ventajas del encapsulamiento son:
+\end_layout
+
+\begin_layout Itemize
+Evita errores, como por ejemplo cuando invocamos un programa con un dato
+ de otro tipo.
+\end_layout
+
+\begin_layout Itemize
+Permite la división de un programa en módulos, es decir, permite aumentar
+ la complejidad de los sistemas sin abrumar al cliente de la clase.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Refactorización (
+\emph on
+refactoring
+\emph default
+)
+\series default
+: cambio de un diseño una vez que se desarrolló una funcionalidad y la misma
+ ya está codificada.
+\end_layout
+
+\begin_layout Itemize
+Son riesgosas: estamos cambiando código que sabemos que funciona por otro
+ que, aunque presumimos que será de mejor calidad, no sabemos si funcionará.
+\end_layout
+
+\begin_layout Itemize
+Son beneficiosas: mejoran la legibilidad del código, eliminan código duplicado,
+ mantienen alta la calidad del diseño.
+\end_layout
+
+\begin_layout Itemize
+Conviene trabajar con pruebas unitarias automatizadas.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Modularidad
+\series default
+: propiedad que permite subdividir una aplicación en partes más pequeñas,
+ llamadas 
+\begin_inset Quotes eld
+\end_inset
+
+módulos
+\begin_inset Quotes erd
+\end_inset
+
+, cada una de las cuales debe ser tan independiente como sea posible de
+ la aplicación en sí y de las demás partes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Granularidad fina: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Principios SOLID
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Single Responsibility
+\emph default
+: una clase debe tener una sola responsabilidad, para mantener alta la cohesión.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Open-Closed
+\emph default
+: clases cerradas para modificación y abiertas para reutilización.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Liskov
+\emph default
+: las clases base no deberían saber de la existencia de sus subclases para
+ funcionar.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Interface Segregation
+\emph default
+: los clientes no deberían depender de métodos que no utilizan.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Dependency Investment
+\emph default
+: preferir clases abstractas o interfaces por sobre clases concretas.
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Programe contra interfaces, no contra implementaciones.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Diseño con delegación, herencia e interfaces
+\end_layout
+
+\begin_layout Itemize
+Si las clases comparten datos pero no comportamiento => Delegación.
+\end_layout
+
+\begin_layout Itemize
+Si las clases comparten comportamiento pero no datos => Clase abstracta.
+\end_layout
+
+\begin_layout Itemize
+Si en el ejemplo anterior, el comportamiento compartido es abstracto, debiendo
+ implementarlo en las clases descendientes solamente => Interfaz.
+\end_layout
+
+\begin_layout Itemize
+Si las clases comparten tanto datos como comportamiento => Herencia.
+\end_layout
+
+\begin_layout Subsection
+Diseño de clases por contrato
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programadores clientes
+\series default
+: utilizan las clases que les proveen los 
+\series bold
+programadores proveedores
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+La clase que usa los servicios de otra es una clase cliente.
+ A la que provee los servicios la llamamos servidora.
+ Una clase u objeto pueden ser clientes y servidores, dependiendo del momento.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contrato
+\series default
+: define todo lo que un cliente debe conocer de su servidor y todo lo que
+ debe cumplir el cliente si pretende que el proveedor lo sirva.
+ Un contrato está formado por:
+\end_layout
+
+\begin_layout Itemize
+Firma de métodos: constructores y parámetros.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Precondiciones
+\emph default
+: condiciones bajo las cuales es válido llamar a una operación.
+ Asegura que el cliente cumpla su parte del contrato.
+ Se chequean en los métodos, y si no se cumplen se lanza una excepción.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Postcondiciones
+\emph default
+: estado en que deben quedar los datos a la salida de la operación, suponiendo
+ que a la entrada se cumplían las precondiciones.
+ Asegura que el proveedor del servicio cumpla su parte al retornar de la
+ operación que está implementando.
+ Se chequean con tests unitarios.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Invariantes
+\emph default
+: condiciones que deben cumplirse 
+\bar under
+siempre
+\bar default
+ para los datos del tipo.
+\end_layout
+
+\begin_layout Subsection
+Diseño de clases por TDD
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Test-Driven Development
+\series default
+\emph default
+: técnica de programación en la que se escriben las pruebas primero y luego
+ los programas.
+ 
+\bar under
+No se escribe código hasta que las pruebas no fallan
+\bar default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Test-First: se escribe el código de prueba antes del código productivo.
+\end_layout
+
+\begin_layout Enumerate
+Automatización: las pruebas se corren luego de cada cambio al código productivo,
+ y deben poder crecer en el tiempo.
+\end_layout
+
+\begin_layout Enumerate
+Refactorización: mejora de calidad del diseño sin cambiar la funcionalidad.
+\end_layout
+
+\begin_layout Standard
+Sus ventajas son:
+\end_layout
+
+\begin_layout Itemize
+No hay una sugestión causada por haber escrito el código funcional en forma
+ previa.
+\end_layout
+
+\begin_layout Itemize
+Permite determinar la interfaz de un método o de toda una clase cuando ésta
+ no está del todo clara.
+\end_layout
+
+\begin_layout Itemize
+Suele llevar a pensar en nuevas capacidades o restricciones del uso de las
+ clases.
+\end_layout
+
+\begin_layout Subsection
+Patrones de diseño
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Patrón
+\series default
+: solución a un problema en un determinado contexto.
+ Indica cómo utilizar clases y objetos de formas ya conocidas.
+ Es el concepto de reutilización llevado al diseño (no se reutiliza código,
+ sino experiencia de otras personas).
+\end_layout
+
+\begin_layout Standard
+Un patrón debe:
+\end_layout
+
+\begin_layout Itemize
+Ser concreto
+\end_layout
+
+\begin_layout Itemize
+Resolver problemas técnicos
+\end_layout
+
+\begin_layout Itemize
+Utilizarse en situaciones frecuentes
+\end_layout
+
+\begin_layout Itemize
+Favorecer la reutilización
+\end_layout
+
+\begin_layout Subsubsection
+Patrones de implementación directa
+\end_layout
+
+\begin_layout Standard
+Suelen estar disponibles en los lenguajes en forma nativa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="8cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Iterator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Template Method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Observer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un objeto recorre colecciones sin ser parte de las mismas.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Una clase abstracta que contiene la lógica principal de un algoritmo, y
+ clases descendientes que implementan cuestiones particulares.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dos objetos desacoplados deben actuar al unísono (Observado y Observador).
+ Paradigma de suscripción y notificación.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementado como interfaz.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se utiliza una interfaz Observador.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maneras de notificar: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Pull
+\series default
+: El observado avisa a los observadores que cambió sin más datos adicionales.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Push
+\series default
+: El observado avisa a los observadores que cambió y proporciona dicha informaci
+ón.
+ 
+\end_layout
+
+\begin_layout Itemize
+Listas con diferentes temas para los observadores, y se notifican sólo los
+ cambios importantes para cada lista.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Patrones de creación
+\end_layout
+
+\begin_layout Standard
+Tienen como objetivo crear objetos de maneras no convencionales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Factory Method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Singleton
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Null Object
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Encapsular la creación de objetos descendientes de una clase, o que implementen
+ una interfaz.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permitir una sola instancia para la clase, y dar un punto de acceso global
+ a la misma.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definir una clase que redefine los métodos que ameritan un comportamiento
+ diferente en el caso de tener el atributo con una referencia nula.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crear un solo objeto y reutilizarlo, manteniendo el constructor privado.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Patrones de cambio de comportamiento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Strategy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Decorator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Command
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+State
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Container
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Incluir una referencia a un tipo interfaz dentro de un objeto, que permite
+ variar el comportamiento interno de un método de forma dinámica.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agregar comportamiento a uno más métodos de una clase en forma dinámica.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Encapsular un método en un objeto sin estado.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permitir que un objeto cambie su comportamiento cuando cambia su estado,
+ de modo que parezca que cambia su clase.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representar componentes y contenedores mediante una interfaz común.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Patrones estructurales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Adaptor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Proxy
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dar a una clase una interfaz diferente a la que tiene.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un objeto Proxy aplica la misma interfaz de los objetos a los que representa.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+El cliente se comunica con el adaptador.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Patrones de diseño macro
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="10cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+MVC (Model-View-Controller)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Separación en capas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\series bold
+Modelo
+\series default
+: conjunto de clases correspondientes a la lógica de la aplicación.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vista
+\series default
+: parte del sistema que administra la visualización y presentación de la
+ información.
+ Representa el estado del modelo.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Controlador
+\series default
+: responsable de manejar el comportamiento global de la aplicación.
+ Recibe los eventos del usuario y decide qué hacer.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cada módulo o 
+\series bold
+capa
+\series default
+ depende de una capa inferior y brinda servicios a una o más capas superiores.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ciclo MVC: 
+\end_layout
+
+\begin_layout Enumerate
+El controlador captura los eventos del usuario.
+\end_layout
+
+\begin_layout Enumerate
+Interpreta las acciones y envía mensajes al modelo para generar cambios
+ de estado.
+ 
+\end_layout
+
+\begin_layout Enumerate
+El modelo actúa en consecuencia.
+\end_layout
+
+\begin_layout Enumerate
+El controlador o el modelo envían una notificación a la vista informando
+ que el modelo se actualizó.
+\end_layout
+
+\begin_layout Enumerate
+La vista refleja dicho cambio.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mecanismos de notificación:
+\end_layout
+
+\begin_layout Enumerate
+Consulta al estado y respuesta
+\end_layout
+
+\begin_layout Enumerate
+Mediante eventos
+\end_layout
+
+\begin_layout Enumerate
+Con observadores o vistas asociadas, conocidos por el modelo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Depuración de programas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pruebas automatizadas
+\series default
+: pruebas que ejecuta la computadora en forma automática, en 
+\series bold
+frameworks
+\series default
+ (programas que invocan nuestro código desde afuera).
+\end_layout
+
+\begin_layout Itemize
+Garantiza la independencia del factor humano.
+\end_layout
+
+\begin_layout Itemize
+Facilita correr las pruebas en forma conjunta, incluyendo todas las escritas
+ hasta el momento.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Aserciones
+\series default
+: expresiones que se incluyen para facilitar la depuración de los programas,
+ y para documentar estados particulares de objetos.
+ Son aseveraciones lógicas que deben ser verdaderas en un punto determinado
+ del programa.
+\end_layout
+
+\begin_layout Itemize
+Se utilizan para errores que nunca deberían ocurrir.
+\end_layout
+
+\begin_layout Itemize
+Ejemplo de uso: 
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Debug.Assert (b == 0, 
+\begin_inset Quotes eld
+\end_inset
+
+La variable b debe valer cero antes de comenzar
+\begin_inset Quotes erd
+\end_inset
+
+);
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Comprobación de estados
+\series default
+: condiciones que deben cumplir los estados de ciertos objetos antes o después
+ de realizar una operación.
+ Hay dos maneras de enfocar el problema:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Enfoque conservador
+\emph default
+: 
+\begin_inset Quotes eld
+\end_inset
+
+comprobar primero, actuar después
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Sólo se puede aplicar a la verificación de precondiciones.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Enfoque optimista
+\emph default
+: 
+\begin_inset Quotes eld
+\end_inset
+
+actuar primero, analizar después
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A menudo se utilizan para verificar postcondiciones.
+ La manera más común de manejar la dependencia de estados con este enfoque
+ es mediante excepciones.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pruebas
+\series default
+: constan de tres partes.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Arrange
+\emph default
+: declaro las variables y creo los objetos.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Act
+\emph default
+: ejecuto el código que voy a probar.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Assert
+\emph default
+: verifico que el resultado obtenido sea correcto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Lecturas obligatorias
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+What's a Model For?
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ (Martin Fowler)
+\end_layout
+
+\begin_layout Standard
+El desarrollo de UML es un importante avance.
+ Sin embargo, a los clientes no les interesa: ellos solo quieren ver el
+ software.
+ Si el modelo mejora la calidad o reduce el costo del software, entonces
+ tiene valor.
+\end_layout
+
+\begin_layout Standard
+Modelar lleva tiempo.
+ Existen herramientas que transforman texto en diagramas.
+ Sin embargo, hay que ser cuidadoso con el nivel de detalle que se incluyen
+ en los diagramas.
+ Conviene usar un 
+\begin_inset Quotes eld
+\end_inset
+
+modelo esquelético
+\begin_inset Quotes erd
+\end_inset
+
+ que muestre los huesos del sistema.
+ Este modelo es más fácil de mantener, porque los detalles importantes no
+ cambian seguido.
+ Pero este tipo de modelo hay que hacerlo uno mismo, pues las computadoras
+ no saben distinguir los detalles que son importantes de los que no lo son.
+\end_layout
+
+\begin_layout Standard
+Funciones de un modelo:
+\end_layout
+
+\begin_layout Enumerate
+Dar mayor entendimiento del problema
+\end_layout
+
+\begin_layout Enumerate
+Resaltar detalles importantes: modelo esquelético
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Extreme Programming
+\begin_inset CommandInset label
+LatexCommand label
+name "XP"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename xp.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es un conjunto de prácticas ágiles de desarrollo.
+\end_layout
+
+\begin_layout Standard
+Principios del XP:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Test-Driven Design
+\emph default
+: Primero escribir los programas de prueba y después la aplicación.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Pair Programming
+\emph default
+: programar de a dos.
+ Uno escribe y el otro observa el trabajo.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Continuous Integration
+\emph default
+: ver 
+\emph on
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "CI"
+
+\end_inset
+
+.
+ 
+\emph default
+Integraciones frecuentes y una máquina especial para las integraciones.
+\end_layout
+
+\begin_layout Enumerate
+Pruebas unitarias, de integración y de aceptación.
+\end_layout
+
+\begin_layout Enumerate
+Refactorizaciones al final.
+\end_layout
+
+\begin_layout Enumerate
+Estándares de codificación precisos y estrictos.
+\end_layout
+
+\begin_layout Enumerate
+Desarrollo incremental.
+\end_layout
+
+\begin_layout Enumerate
+Comunicación frecuente con el cliente.
+ Le mostramos el software y nos adaptamos a los cambios pedidos, y no a
+ la inversa.
+\end_layout
+
+\begin_layout Enumerate
+Implementar primero lo que tenga mayor valor para el cliente.
+\end_layout
+
+\begin_layout Enumerate
+No escribir código por adelantado, ni código que no sabe si se usará.
+ Se escribirá lo que se pida.
+\end_layout
+
+\begin_layout Enumerate
+Compilaciones rápidas (10 minutos).
+\end_layout
+
+\begin_layout Enumerate
+Documentación actualizada.
+\end_layout
+
+\begin_layout Standard
+¿Cuándo usar XP?
+\end_layout
+
+\begin_layout Itemize
+Cuando los requerimientos del cliente no son claros, cuando la funcionalidad
+ del software pedido será cambiante.
+\end_layout
+
+\begin_layout Itemize
+Cuando la fecha de entrega sea muy cercana, cuando haya mucho riesgo.
+\end_layout
+
+\begin_layout Itemize
+Cuando el grupo de programadores sea pequeño (entre 2 y 12).
+\end_layout
+
+\begin_layout Itemize
+Cuando haya comunicación constante entre todos (programadores y clientes).
+\end_layout
+
+\begin_layout Itemize
+Cuando puedan realizarse pruebas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+Documentación y Pruebas
+\begin_inset Quotes erd
+\end_inset
+
+ (Pablo Suárez, Carlos Fontela)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Documentación
+\series default
+: es muy importante.
+ 
+\end_layout
+
+\begin_layout Standard
+Clasificada según las personas a las cuales está dirigida:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Para los desarrolladores
+\emph default
+: comunican estructura y comportamiento del sistema y sus partes.
+ Se deben documentar todas las fases de desarrollo.
+ Los diagramas UML son muy útiles, siempre y cuando se mantengan actualizados.
+ Al documentar debemos cuidar el nivel de detalle, y hacer diagramas que
+ se concentren en un aspecto a la vez.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Para los usuarios
+\emph default
+: todo aquello que necesita el usuario para la instalación, aprendizaje
+ y uso del producto.
+ Incluye guías de instalación, guías del usuario, manuales de referencia
+ y guías de mensajes.
+ Si bien es cierto que hay que hacer manuales, su existencia no nos libera
+ de la responsabilidad de hacer productos amigables.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Para los administradores o soporte técnico (manual de operaciones)
+\emph default
+: contiene toda la información sobre el sistema terminado, que describe
+ errores posibles y los procedimientos de reparación.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Calidad
+\series default
+: no se la puede agregar al software después de desarrollado.
+ La calidad puede ser objeto de pruebas que determinan su grado.
+\end_layout
+
+\begin_layout Standard
+Tiene que ver con:
+\end_layout
+
+\begin_layout Itemize
+Ausencia de errores
+\end_layout
+
+\begin_layout Itemize
+Usabilidad
+\end_layout
+
+\begin_layout Itemize
+Costo
+\end_layout
+
+\begin_layout Itemize
+Consistencia
+\end_layout
+
+\begin_layout Itemize
+Confiabilidad
+\end_layout
+
+\begin_layout Itemize
+Compatibilidad
+\end_layout
+
+\begin_layout Itemize
+Utilidad
+\end_layout
+
+\begin_layout Itemize
+Eficiencia
+\end_layout
+
+\begin_layout Itemize
+Apego a los estándares
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Error
+\series default
+: comportamiento distinto del que espera un usuario razonable.
+ No necesariamente un apego a los requisitos y un perfecto seguimiento de
+ las etapas nos lleva a un producto sin errores.
+ Puede haber errores de diseño y errores de implementación, e incluso errores
+ en la etapa de pruebas y depuración.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pruebas
+\series default
+: determinan que un programa esté libre de errores.
+ Suelen determinar la presencia de errores, pero nunca su ausencia.
+ No tienen el objeto de prevenir errores sino de detectarlos.
+ Se efectúan sobre el trabajo realizado.
+ En lo posible, las pruebas deben ser realizadas por gente que disfrute
+ de encontrar errores.
+ En los sistemas triviales conviene generar casos de prueba para cubrir
+ todas las posibles entradas y salidas, pero en los sistemas complejos conviene
+ hacer pruebas sobre las partes en las que un error represente un mayor
+ riesgo.
+ Las pruebas son la mejor descripción de los requerimientos.
+\end_layout
+
+\begin_layout Corollary
+Pague por la prueba ahora, o pague por el mantenimiento después.
+\end_layout
+
+\begin_layout Standard
+Clasificadas según lo que se está controlando:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Pruebas centradas en la verificación
+\emph default
+: para chequear que cumplimos con las expectativas del cliente.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Pruebas centradas en la validación
+\emph default
+: para chequear que cumplimos con las especificaciones que realizó el analista.
+\end_layout
+
+\begin_layout Standard
+Clasificadas según sobre qué actúan:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+De caja blanca
+\emph default
+: evalúan el contenido de los módulos.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+De caja negra
+\emph default
+: se trata a los módulos como cajas cerradas, sirven para verificar especificaci
+ones.
+\end_layout
+
+\begin_layout Standard
+Tipos de prueba (no son intercambiables):
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Revisiones de código
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pruebas de escritorio: rinden muy poco.
+ Se usan para buscar anomalías típicas (variables u objetos no inicializados,
+ bucles infinitos, etc.)
+\end_layout
+
+\begin_layout Itemize
+Recorridos de código: rinden mucho más.
+ Son exposiciones del código escrito frente a pares.
+ Se usan para encontrar errores.
+\end_layout
+
+\begin_layout Itemize
+Inspecciones de código: son reuniones en conjunto entre los programadores
+ y testers.
+ Se usan para chequear que el código escrito cumpla con las normas y para
+ verificar la eficiencia.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Pruebas unitarias
+\series default
+: se realizan para controlar el funcionamiento de pequeñas porciones código.
+ Se puede confeccionar un grafo de flujo con la lógica del código a probar.
+ Así se determinan todos los caminos por los que el hilo de ejecución puede
+ llegar a pasar.
+ Luego de elaborar el grafo de flujo, se identifican los caminos independientes,
+ y luego preparar los casos que fuercen la ejecución de estos caminos.
+ Se procede a probar el código, documentando todas las salidas y dejando
+ constancia de los errores.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Un grafo de flujo está compuesto por:
+\end_layout
+
+\begin_layout Itemize
+Nodos: acciones del módulo.
+ Los nodos predicados contienen condiciones, por lo que de ellos emergen
+ varias aristas (
+\family typewriter
+if
+\family default
+, 
+\family typewriter
+while
+\family default
+, 
+\family typewriter
+repeat
+\family default
+, 
+\family typewriter
+case
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+Aristas: flujo de control entre los nodos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Pruebas de integración
+\series default
+: se toma a cada módulo como una caja negra.
+ Tienen como base las pruebas unitarias.
+ Consisten en una progresión ordenada de testeos para los cuales los módulos
+ son ensamblados y probados hasta integrar el sistema completo.
+ No es necesario terminar todas las pruebas unitarias para comenzar con
+ las de integración.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hay dos tipos de integración:
+\end_layout
+
+\begin_layout Itemize
+Integración incremental: combinar el conjunto de módulos ya probados con
+ los siguientes módulos a probar.
+ Luego se va incrementando progresivamente el número de módulos unidos hasta
+ formar el sistema completo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ascendente: se comienza integrando primero los módulos de más bajo nivel.
+ Se eligen los módulos de bajo nivel y se escribe un módulo 
+\begin_inset Quotes eld
+\end_inset
+
+impulsor
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Descendente: parte del módulo de mayor nivel para luego incorporar los módulos
+ subordinados progresivamente.
+ El módulo mayor hace de 
+\begin_inset Quotes eld
+\end_inset
+
+impulsor
+\begin_inset Quotes erd
+\end_inset
+
+ y se escriben módulos 
+\begin_inset Quotes eld
+\end_inset
+
+ficticios
+\begin_inset Quotes erd
+\end_inset
+
+ simulando a los subordinados.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Integración no incremental: se combinan todos los módulos de una vez.
+\end_layout
+
+\begin_layout Itemize
+Integración incremental sándwich: combina facetas de los métodos ascendente
+ y descendente.
+ Consiste en integrar una parte del sistema en forma ascendente y la restante
+ en forma descendente, uniendo ambas partes en un punto intermedio.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Pruebas de sistema
+\series default
+: se realizan una vez integrados todos los componentes.
+ Su objetivo es ver la respuesta del sistema en su conjunto frente a diversas
+ situaciones.
+ Se simulan situaciones y se prueba la eficacia y eficiencia de la respuesta
+ obtenida.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Negativas
+\end_layout
+
+\begin_layout Itemize
+De recuperación
+\end_layout
+
+\begin_layout Itemize
+De rendimiento
+\end_layout
+
+\begin_layout Itemize
+De estrés
+\end_layout
+
+\begin_layout Itemize
+De seguridad
+\end_layout
+
+\begin_layout Itemize
+De instalación
+\end_layout
+
+\begin_layout Itemize
+De compatibilidad
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Pruebas de aceptación
+\series default
+: se realizan una vez integrados todos los componentes.
+ Están concebidas para que sea un usuario final quien detecte los posibles
+ errores.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pruebas 
+\emph on
+Alfa
+\emph default
+: se realizan por un cliente en un entorno controlado.
+ Primero se crea un ambiente con las mismas condiciones que se encontrarán
+ en las instalaciones del cliente.
+ Luego se realizan las pruebas y se documentan los resultados.
+\end_layout
+
+\begin_layout Itemize
+Pruebas 
+\emph on
+Beta
+\emph default
+: se realizan en las instalaciones propias de los clientes.
+ La elección de los 
+\emph on
+beta testers
+\emph default
+ debe realizarse con cuidado.
+ Cada usuario realiza sus propias pruebas, documenta errores, y realiza
+ sugerencias.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Depuración
+\series default
+: corrección de errores que sólo afectan a la programación (no provienen
+ de fallas en el análisis o el diseño).
+ Existen herramientas de depuración que facilitan esta tarea:
+\end_layout
+
+\begin_layout Itemize
+Invariantes
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Asserts
+\end_layout
+
+\begin_layout Itemize
+Herramientas de recorrido hacia atrás
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Logs
+\end_layout
+
+\begin_layout Standard
+Pasos de la depuración:
+\end_layout
+
+\begin_layout Enumerate
+Reproducir el error.
+\end_layout
+
+\begin_layout Enumerate
+Diagnosticar la causa.
+\end_layout
+
+\begin_layout Enumerate
+Corregirla (cuidado: a menudo se introducen nuevos errores).
+\end_layout
+
+\begin_layout Enumerate
+Verificar la corrección.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+Principios de Diseño de Smalltalk
+\begin_inset Quotes erd
+\end_inset
+
+ (Daniel Ingalls)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Dominio personal
+\series default
+: si un sistema es para servir al espíritu creativo, debe ser entendible
+ para un individuo.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cualquier barrera entre el sistema y el usuario es una barrera a la expresión
+ creativa.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Buen diseño
+\series default
+: un sistema debe ser construido con un mínimo conjunto de partes no modificable
+s; esas partes deben ser genéricas, y todas las partes deben estar mantenidas
+ en un esquema uniforme.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Propósito del lenguaje
+\series default
+: proveer un esquema para la comunicación (implícita y explícita).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los modelos de computación deben ser compatibles con la mente.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Alcance
+\series default
+: el diseño de un lenguaje debe tratar con modelos internos, medios externos,
+ y con la interacción entre ellos tanto en el humano como en la computadora.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Objetos
+\series default
+: un lenguaje debe soportar el concepto de 
+\begin_inset Quotes eld
+\end_inset
+
+objeto
+\begin_inset Quotes erd
+\end_inset
+
+ y proveer una manera de referirse a ellos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El administrador de almacenamiento de Smalltalk asocia un entero único a
+ cada objeto del sistema.
+ Cuando todas las referencias a un objeto desaparecen, el objeto se esfuma,
+ y se recupera su espacio en memoria.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Administrador de almacenamiento
+\series default
+: para ser orientado a objetos, un sistema debe proveer administración 
+\begin_inset Quotes eld
+\end_inset
+
+automática
+\begin_inset Quotes erd
+\end_inset
+
+ del almacenamiento.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mensajes
+\series default
+: la computación es una capacidad de los objetos que pueden ser invocados
+ enviándoles mensajes.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En Smalltalk: envía el nombre de la operación deseada, con los parámetros
+ necesarios, entendiendo que el receptor sabe cómo realizar esa operación.
+ Tenemos un universo de objetos que cortésmente se piden unos a otros realizar
+ sus deseos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Metáfora uniforme
+\series default
+: un lenguaje debe ser diseñado alrededor de una metáfora que pueda ser
+ aplicada uniformemente en todas las áreas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ejemplo: Smalltalk está construido sobre el modelo de objetos que se comunican.
+ Todo objeto en Smalltalk tiene un conjunto de mensajes, un protocolo, que
+ define la comunicación a la que ese objeto puede responder.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Modularidad
+\series default
+: ningún componente de un sistema debe depender de los detalles internos
+ de otro componente.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Al incrementarse la cantidad de componentes de un sistema, aumenta la probabilid
+ad de interacciones no deseadas.
+ Los lenguajes deberían minimizar la probabilidad de estas interdependencias.
+ El acceso al estado interno de un objeto es a través de su interfaz de
+ mensajes.
+\end_layout
+
+\begin_layout Standard
+La complejidad de un sistema puede ser reducido agrupando componentes similares:
+ en Smalltalk esto se da a través de clases.
+ Una clase describe otros objetos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Clasificación
+\series default
+: un lenguaje debe proveer un medio para clasificar objetos similares, y
+ para agregar nuevas clases de objetos.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Polimorfismo
+\series default
+: un programa sólo debería especificar el comportamiento esperado de los
+ objetos, no su representación.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Factorización
+\series default
+: cada componente independiente de un sistema sólo debería aparecer en un
+ solo lugar.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Una falla en la factorización implica una violación a la modularidad.
+ Smalltalk promueve diseños bien factorizados a través de la herencia.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Reaprovechamiento
+\series default
+: cuando un sistema está bien factorizado, un gran reaprovechamiento está
+ disponible.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Máquina virtual
+\series default
+: una especificación de máquina virtual establece un marco para la aplicación
+ de tecnología.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En Smalltalk: modelo orientado a objetos para almacenamiento, modelo orientado
+ a mensajes para procesamiento, modelo de mapa de bits para despliegue visual
+ de información.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Principio reactivo
+\series default
+: cada componente accesible al usuario debe ser capaz de presentarse de
+ manera entendible.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La interfaz al usuario es un lenguaje visual.
+ La estética y la flexibilidad son esenciales.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Sistema operativo
+\series default
+: es una colección de cosas que no encajan dentro de un lenguaje.
+ No debería existir.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Selección natural
+\series default
+: los lenguajes y sistemas que son de buen diseño persistirán, sólo para
+ ser reemplazados por otros mejores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Continuous Integration
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ (Martin Fowler)
+\begin_inset CommandInset label
+LatexCommand label
+name "CI"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuous Integration
+\series default
+: práctica de desarrollo de software donde los miembros de un equipo integran
+ su trabajo frecuentemente, generalmente a diario.
+ Cada integración es verificada por una compilación y testeos automatizados
+ para detectar errores de integración lo más rápido posible.
+\end_layout
+
+\begin_layout Itemize
+Es muy útil utilizar servidores de integración, por ejemplo, CruiseControl.
+\end_layout
+
+\begin_layout Itemize
+Un programa con errores no debe mantenerse así por mucho tiempo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mainline
+\series default
+: rama del proyecto que está siendo desarrollado.
+ Pueden existir ramas aparte, pero conviene que no sean muchas.
+\end_layout
+
+\begin_layout Standard
+Explicación del funcionamiento:
+\end_layout
+
+\begin_layout Enumerate
+Tomar una copia del código fuente integrado actual en la máquina de desarrollo.
+\end_layout
+
+\begin_layout Enumerate
+Modificar el archivo con los cambios necesarios (alterar el código + alterar
+ las pruebas).
+\end_layout
+
+\begin_layout Enumerate
+Compilar en nuestra máquina.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si hay errores, corregirlos.
+\end_layout
+
+\begin_layout Enumerate
+Si no hay errores:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Actualizar nuestra copia con el código fuente del 
+\emph on
+mainline
+\emph default
+ (pudo haber cambiado mientras trabajábamos).
+\end_layout
+
+\begin_layout Enumerate
+Actualizar el mainline con nuestro código.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Prácticas del 
+\emph on
+Continuous Integration
+\emph default
+:
+\end_layout
+
+\begin_layout Enumerate
+Mantener un repositorio único.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Existen herramientas que permiten administrar el código fuente, por ejemplo,
+ Subversion.
+ Todos los archivos deben estar en este único lugar.
+\end_layout
+
+\begin_layout Corollary
+Se debe poder copiar el proyecto del mainline a una máquina cualquiera y
+ compilarlo sin problemas.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Automatizar la compilación.
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Se debe poder copiar el proyecto del mainline a una máquina cualquiera y
+ compilarlo sin problemas, con un solo comando.
+\end_layout
+
+\begin_layout Standard
+Existen herramientas para reducir el tiempo de compilación que comparan
+ las fechas de modificación de los archivos y solo compilan si la fecha
+ es más reciente.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Automatizar las pruebas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se necesita una 
+\emph on
+suite
+\emph default
+ de pruebas automatizadas que busquen errores, y que indiquen si alguna
+ prueba falló.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Todos integran con el 
+\emph on
+mainline
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El desarrollador actualiza su copia actual con el 
+\emph on
+mainline
+\emph default
+, resuelve conflictos, y luego compila en su máquina.
+ Si la compilación resulta exitosa, se puede actualizar la copia del 
+\emph on
+mainline
+\emph default
+.
+ Conviene integrar de forma diaria, pues cuanto más rápido se integra, más
+ rápido se encuentran los errores.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Todas las compilaciones se hacen en una máquina de integración.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Conviene tener una máquina de integración.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Compilación manual: el desarrollador va a la máquina de integración, saca
+ su copia, y compila.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Servidor de CI: cuando un desarrollador actualiza la copia del programa
+ en la máquina de integración, ésta lo compila y le avisa al programador
+ el resultado.
+\end_layout
+
+\begin_layout Standard
+Muchas empresas realizan compilaciones programadas, por ejemplo, todas las
+ noches.
+ Esto tiene una desventaja: los errores no se detectan hasta el día siguiente.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mantener rápida la compilación.
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+10 minutos para una compilación.
+\end_layout
+
+\begin_layout Standard
+El cuello de botella en las compilaciones suele darse en las pruebas.
+ Conviene hacer compilaciones en partes:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Commit build
+\emph default
+: compilación + pruebas unitarias.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Secondary build
+\emph default
+: pruebas de integración (por ejemplo, con accesos a bases de datos).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Probar en máquinas clones.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Diseñar un ambiente para correr las pruebas que sean una réplica exacta
+ de la máquina del usuario final (misma base de datos, mismas versiones,
+ mismo sistema operativo, mismos puertos, mismas direcciones IP, mismo hardware,
+ etc.) Hoy en día es útil la virtualización.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Fácil acceso al ejecutable.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Todos los involucrados en el desarrollo de software (incluyendo el cliente)
+ deben poder obtener una copia del último ejecutable, para demostraciones,
+ pruebas, y para ver cambios recientes.
+ Esto sucede porque es más fácil ver qué cambios hacerle al programa una
+ vez que lo vemos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Todos ven lo que sucede.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Todos deben poder ver cómo está avanzando el desarrollo del programa y los
+ cambios recientes.
+ Esto puede hacerse posible mediante herramientas que informan visualmente
+ el estado del proyecto.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Automatizar el despliegue de archivos.
+\end_layout
+
+\begin_layout Standard
+Ventajas:
+\end_layout
+
+\begin_layout Itemize
+Todo el tiempo se sabe lo que anda, lo que no, y los errores del sistema.
+\end_layout
+
+\begin_layout Itemize
+Es más fácil encontrar errores, y más rápido arreglarlos.
+\end_layout
+
+\begin_layout Itemize
+Hay menos errores.
+\end_layout
+
+\begin_layout Itemize
+Hay menos barreras entre los usuarios y los desarrolladores.
+\end_layout
+
+\begin_layout Standard
+Cómo introducir 
+\emph on
+Continuous Integration
+\emph default
+:
+\end_layout
+
+\begin_layout Enumerate
+Automatizar la compilación.
+\end_layout
+
+\begin_layout Enumerate
+Automatizar las pruebas.
+\end_layout
+
+\begin_layout Enumerate
+Aumentar la velocidad de compilación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Domain-Driven Design
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ (Eric Evans)
+\end_layout
+
+\begin_layout Standard
+Método de modelización efectiva:
+\end_layout
+
+\begin_layout Enumerate
+Vincular el modelo con la implementación.
+\end_layout
+
+\begin_layout Enumerate
+Usar un lenguaje basado en el modelo.
+\end_layout
+
+\begin_layout Enumerate
+Desarrollar un modelo rico en información.
+\end_layout
+
+\begin_layout Enumerate
+Refinar el modelo (entidades + actividades + reglas).
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Brainstorming
+\emph default
+ y experimentación.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Knowledge crunching
+\series default
+: transformar la información en modelos valiosos que le den sentido al problema.
+ No es una actividad solitaria: los expertos del dominio y los desarrolladores
+ trabajan en conjunto.
+ Ambos equipos ganan conocimientos: los desarrolladores conocimiento técnico
+ y habilidad para modelar, y los expertos entienden más acerca del tema
+ que están tratando.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "Método-de-cascada"
+
+\end_inset
+
+Método de cascada
+\series default
+: los expertos hablan con los analistas, los analistas digieren y abstraen,
+ y los programadores codifican el software.
+ A este modelo le falta 
+\emph on
+feedback
+\emph default
+.
+ La información va en una dirección, y no se acumula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Design in Construction
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ (Steve McConnell)
+\end_layout
+
+\begin_layout Subsection
+Desafíos del diseño
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Diseño
+\series default
+: actividad que enlaza los requerimientos con la codificación y el debugging.
+\end_layout
+
+\begin_layout Standard
+Todos los proyectos, grandes o pequeños, se benefician con el diseño.
+ En los pequeños es útil, en los grandes es indispensable.
+\end_layout
+
+\begin_layout Enumerate
+El diseño es 
+\begin_inset Quotes eld
+\end_inset
+
+malvado
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Es un problema que se puede resolver sólo cuando lo resuelves.
+\end_layout
+
+\begin_layout Enumerate
+El diseño es un proceso 
+\begin_inset Quotes eld
+\end_inset
+
+desprolijo
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Se cometen muchos errores.
+ Es difícil saber cuándo llegamos a un buen diseño.
+\end_layout
+
+\begin_layout Enumerate
+El diseño requiere 
+\begin_inset Quotes eld
+\end_inset
+
+compromisos y prioridades
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Se requiere un balance entre todas las características.
+\end_layout
+
+\begin_layout Enumerate
+El diseño requiere 
+\begin_inset Quotes eld
+\end_inset
+
+restricciones
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Debido a que los recursos son limitados, se deben restringir posibilidades.
+\end_layout
+
+\begin_layout Enumerate
+El diseño es 
+\begin_inset Quotes eld
+\end_inset
+
+no determinista
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Hay muchas formas distintas de diseñar un programa.
+\end_layout
+
+\begin_layout Enumerate
+El diseño es un proceso 
+\begin_inset Quotes eld
+\end_inset
+
+heurístico
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Las técnicas de diseño suelen ser heurísticas.
+\end_layout
+
+\begin_layout Enumerate
+El diseño es 
+\begin_inset Quotes eld
+\end_inset
+
+emergente
+\begin_inset Quotes erd
+\end_inset
+
+.
+ No surgen directamente en el cerebro humano, sino que evolucionan y mejoran.
+\end_layout
+
+\begin_layout Subsection
+Conceptos de diseño
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Administrar la complejidad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Es el tema más importante del desarrollo de software.
+ Se refiera a concentrarse en una parte a la vez.
+ La complejidad de un problema se reduce cuando dividimos el sistema en
+ subsistemas.
+\end_layout
+
+\begin_layout Standard
+Hay dos clases de problemas:
+\end_layout
+
+\begin_layout Itemize
+Esenciales: surgen cuando hay que interactuar con el mundo real.
+\end_layout
+
+\begin_layout Itemize
+Accidentales: la mayoría ya fueron solucionados.
+ Ejemplo: sintaxis torpes.
+\end_layout
+
+\begin_layout Standard
+Cómo atacar la complejidad:
+\end_layout
+
+\begin_layout Itemize
+Minimizar la complejidad que el programador tiene que soportar en cualquier
+ momento.
+\end_layout
+
+\begin_layout Itemize
+Impedir que la complejidad accidental se prolifere.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Características de un buen diseño
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Complejidad mínima: hacer diseños simples y fáciles de entender.
+\end_layout
+
+\begin_layout Itemize
+Fácil mantenimiento: hacer diseños obvios.
+\end_layout
+
+\begin_layout Itemize
+Alta cohesión: disminuir al mínimo la cantidad de responsabilidades de una
+ clase.
+\end_layout
+
+\begin_layout Itemize
+Bajo acoplamiento: diseñar clases con la menor cantidad posible de interconexion
+es.
+\end_layout
+
+\begin_layout Itemize
+Extensibilidad y encapsulamiento: diseñar clases de modo tal que un cambio
+ en una no afecte a las demás.
+\end_layout
+
+\begin_layout Itemize
+Reusabilidad: diseñar clases de modo tal que luego puedan ser reutilizadas.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+High fan-in
+\emph default
+: hacer un buen uso de clases de utilidad en los niveles más bajos.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Low-to-medium fan-out
+\emph default
+: una clase dada debe usar pocas clases.
+\end_layout
+
+\begin_layout Itemize
+Portabilidad: diseñar el sistema de modo que pueda ser fácilmente llevado
+ a otros entornos.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Leanness
+\emph default
+: diseñar el sistema para que no tenga partes demás.
+\end_layout
+
+\begin_layout Itemize
+Estratificación: mantener los niveles de descomposición estratificados.
+\end_layout
+
+\begin_layout Itemize
+Técnicas estándar: utilizar técnicas comunes y estandarizadas.
+\end_layout
+
+\begin_layout Itemize
+Principio 
+\begin_inset Quotes eld
+\end_inset
+
+abierto-cerrado
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\emph on
+Bertrand Meyer
+\emph default
+): las clases deben ser cerradas para la modificación, pero abiertas a la
+ reutilización.
+\end_layout
+
+\begin_layout Itemize
+Favorecer la delegación sobre la herencia.
+\end_layout
+
+\begin_layout Itemize
+Principio de sustitución de Liskov: los subtipos deben ser sustituibles
+ en todas partes por sus tipos base.
+ La aplicación mas elemental de este principio es el chequeo de la relación
+ “es un”.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Precondiciones no pueden ser más estrictas que las de su ancestro
+\end_layout
+
+\begin_layout Itemize
+Postcondiciones no pueden ser más laxas que las de su ancestro
+\end_layout
+
+\begin_layout Itemize
+Invariantes deben ser los mismos
+\end_layout
+
+\begin_layout Itemize
+Excepciones deben ser las mismas, o derivadas
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Niveles de diseño
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Software de sistema
+\end_layout
+
+\begin_layout Enumerate
+Paquetes: cuidar la cantidad de comunicaciones entre los paquetes.
+\end_layout
+
+\begin_layout Enumerate
+Clases: identificar todas las clases y definir las interacciones entre ellas.
+\end_layout
+
+\begin_layout Enumerate
+Rutinas.
+\end_layout
+
+\begin_layout Enumerate
+Diseño interno de las rutinas.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Malos olores
+\begin_inset Quotes erd
+\end_inset
+
+ en el diseño
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ciclos muy anidados.
+ 
+\end_layout
+
+\begin_layout Itemize
+Código duplicado, que causa modificaciones paralelas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Métodos complejos o muy largos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Clases muy grandes o con varias responsabilidades.
+ 
+\end_layout
+
+\begin_layout Itemize
+Abundancia de sentencias 
+\family typewriter
+switch
+\family default
+ o 
+\family typewriter
+if
+\family default
+ anidados.
+\end_layout
+
+\begin_layout Itemize
+Largas secuencias de llamados a métodos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Clases sin comportamiento (solo con atributos).
+ 
+\end_layout
+
+\begin_layout Itemize
+Atributos no encapsulados.
+ 
+\end_layout
+
+\begin_layout Itemize
+Uso de tipos primitivos o básicos para conceptos diversos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Comentarios que explican código difícil de leer.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+
+\series bold
+Heurísticas de diseño
+\end_layout
+
+\begin_layout Enumerate
+Encontrar objetos del mundo real: sus atributos, sus responsabilidades y
+ tareas, sus interacciones con otros objetos (contención y herencia), sus
+ partes visibles y ocultas, su interfaz.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formar abstracciones consistentes: 
+\begin_inset Quotes eld
+\end_inset
+
+puedes mirar a un objeto desde un nivel de detalle alto
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Encapsular detalles de implementación: 
+\begin_inset Quotes eld
+\end_inset
+
+no puedes mirar a un objeto desde un nivel de detalle que no sea alto
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Heredar cuando corresponda: definir diferencias y similitudes entre objetos.
+ El mayor beneficio de la herencia es que es compatible con la abstracción.
+\end_layout
+
+\begin_layout Enumerate
+Ocultar secretos y complejidad: la interfaz de una clase debería mostrar
+ lo menor posible acerca de su interior.
+ Su uso está recomendado en todos los niveles (desde el uso de constantes
+ y literales hasta el diseño de un sistema).
+ Es útil porque hace a los programas más fáciles de modificar e inspira
+ soluciones efectivas.
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Preguntarse frecuentemente: 
+\begin_inset Quotes eld
+\end_inset
+
+¿qué información debo ocultar?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Identificar áreas con alta probabilidad de cambiar y separarlas del resto.
+ Ejemplos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Reglas generales
+\end_layout
+
+\begin_layout Enumerate
+Dependencias de hardware
+\end_layout
+
+\begin_layout Enumerate
+Entrada y salida
+\end_layout
+
+\begin_layout Enumerate
+Características del lenguaje que no son estándar
+\end_layout
+
+\begin_layout Enumerate
+Áreas de diseño difíciles
+\end_layout
+
+\begin_layout Enumerate
+Variables de estado (usar 
+\family typewriter
+enum
+\family default
+ en vez de 
+\family typewriter
+boolean
+\family default
+; usar rutinas de acceso en vez de acceder a la variable directamente)
+\end_layout
+
+\begin_layout Enumerate
+Restricciones de tamaño
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mantener bajo el acoplamiento.
+ Criterios a tener en cuenta:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Número de conexiones entre módulos
+\end_layout
+
+\begin_layout Enumerate
+Prominencia de las conexiones
+\end_layout
+
+\begin_layout Enumerate
+Facilidad de cambio a las conexiones
+\end_layout
+
+\begin_layout Corollary
+Las clases y rutinas deberían ayudarnos a reducir la complejidad.
+ Si no lo hacen, no están haciendo su trabajo.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Utilizar patrones de diseño.
+ Sus ventajas:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Reducen la complejidad
+\end_layout
+
+\begin_layout Enumerate
+Reducen los errores
+\end_layout
+
+\begin_layout Enumerate
+Tienen valor heurístico
+\end_layout
+
+\begin_layout Enumerate
+Aumentan la agilidad de la comunicación entre programadores que ya saben
+ de patrones de diseño
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Otras técnicas:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Alta cohesión: una clase debe concentrarse en un propósito único.
+\end_layout
+
+\begin_layout Enumerate
+Jerarquías: representaciones generales o abstractas en la cima, y representacion
+es especializadas o detalladas en la base.
+\end_layout
+
+\begin_layout Enumerate
+Diseño por contrato: definir precondiciones y postcondiciones.
+\end_layout
+
+\begin_layout Enumerate
+Asignar responsabilidades a objetos.
+\end_layout
+
+\begin_layout Enumerate
+Diseñar para las pruebas
+\end_layout
+
+\begin_layout Enumerate
+Considerar posibles errores futuros
+\end_layout
+
+\begin_layout Enumerate
+Considerar usar la fuerza bruta
+\end_layout
+
+\begin_layout Enumerate
+Dibujar diagramas
+\end_layout
+
+\begin_layout Enumerate
+Modularizar
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Guía para el uso de heurísticas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Entender el problema.
+\end_layout
+
+\begin_layout Enumerate
+Diseñar un plan.
+ Encontrar la conexión entre los datos y las incógnitas.
+\end_layout
+
+\begin_layout Enumerate
+Llevar a cabo el plan.
+\end_layout
+
+\begin_layout Enumerate
+Mirar atrás.
+ Examinar la solución.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Prácticas de diseño
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Iterar
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+División y conquista
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Diseño 
+\emph on
+top-down & bottom-up
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definición
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Top-down
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comenzar con niveles de abstracción altos y aumentar progresivamente el
+ nivel de detalle.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil, permite postergar los detalles.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un cambio en los detalles puede afectar todo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bottom-up
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comenzar con los detalles y aumentar progresivamente hacia generalidades.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diseño compacto y bien factorizado.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es difícil de usar exclusivamente, en algunos casos no puede aplicarse.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Prototipos experimentales
+\series default
+: escribir el código mínimo necesario para responder a una pregunta de diseño.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+La pregunta debe ser específica.
+\end_layout
+
+\begin_layout Enumerate
+Los programadores deben escribir lo mínimo necesario, y no pensar si el
+ prototipo será utilizado.
+\end_layout
+
+\begin_layout Enumerate
+Los programadores deben recordar que el código debe ser fácilmente eliminado.
+ Posible solución: programarlo en otro lenguaje que el sistema productivo.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Diseño colaborativo
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Dos cabezas piensan mejor que una.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Epílogo
+\end_layout
+
+\begin_layout Corollary
+¿Como minimizar la complejidad?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Encapsular detalles
+\end_layout
+
+\begin_layout Itemize
+Minimizar la cantidad de interconexiones
+\end_layout
+
+\begin_layout Itemize
+Formar abstracciones consistentes
+\end_layout
+
+\begin_layout Itemize
+Ocultar secretos
+\end_layout
+
+\begin_layout Itemize
+Utilizar clases y rutinas
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Usabilidad (Carlos Fontela)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Usabilidad / Experiencia del Usuario (UX)
+\series default
+: es un campo multidisciplinario.
+\end_layout
+
+\begin_layout Itemize
+Facilidad con que los usuarios aprenden y utilizan una aplicación + comodidad
+ en el uso
+\end_layout
+
+\begin_layout Itemize
+Grado de efectividad de interacción entre máquina y usuario
+\end_layout
+
+\begin_layout Itemize
+Ausencia de frustración del usuario mientras usa algo, para lo que se supone
+ que sirve
+\end_layout
+
+\begin_layout LyX-Code
+\noindent
+\align center
+\begin_inset Formula $\mbox{Usabilidad }\neq\mbox{Desempeño}\neq\mbox{Funcionalidad}\neq\mbox{Estética}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Por qué es importante?
+\end_layout
+
+\begin_layout Itemize
+Malas interfaces cuestan dinero, o incluso vidas
+\end_layout
+
+\begin_layout Itemize
+Malas interfaces están acompañadas de enormes manuales que nadie lee
+\end_layout
+
+\begin_layout Itemize
+Costos de soporte al cliente
+\end_layout
+
+\begin_layout Itemize
+Improductividad en empresas clientes
+\end_layout
+
+\begin_layout Itemize
+Frustración de usuarios
+\end_layout
+
+\begin_layout Itemize
+Los usuarios no son todos iguales, hay discapacidades (físicas, intelectuales,
+ etc.) y diferencias culturales o intelectuales
+\end_layout
+
+\begin_layout Itemize
+El usuario lo valora ante la competencia y antes de comprar, y si no le
+ gusta nos puede abandonar
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Quotes eld
+\end_inset
+
+Don't make me think!
+\begin_inset Quotes erd
+\end_inset
+
+ (Steve Krug)
+\end_layout
+
+\begin_layout Standard
+Malos ejemplos de usabilidad:
+\end_layout
+
+\begin_layout Itemize
+Mensajes al usuario que no aportan información.
+ Ejemplos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+El servicio no está disponible, intente luego
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+No se pudo procesar el pedido
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Mensajes al usuario que no le permiten interactuar.
+\end_layout
+
+\begin_layout Itemize
+Mensajes al usuario falsos.
+\end_layout
+
+\begin_layout Itemize
+Ventanas emergentes.
+\end_layout
+
+\begin_layout Itemize
+Problemas de consistencia en los diálogos.
+\end_layout
+
+\begin_layout Itemize
+Programas que no son compatibles con uno o más sistemas operativos.
+\end_layout
+
+\begin_layout Standard
+Tipos de usuarios:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Según el tiempo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Según la experiencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Según la aplicación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Early-adopter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Experto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cautivo o semi-cautivo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usuario común
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intermedio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Libre para comprar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Novato
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Independiente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La elección de la interfaz del usuario depende de:
+\end_layout
+
+\begin_layout Itemize
+Tipo de usuario
+\end_layout
+
+\begin_layout Itemize
+Tipo de tarea
+\end_layout
+
+\begin_layout Itemize
+Medios de control disponibles
+\end_layout
+
+\begin_layout Subsection
+Estilos de interfaces
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="6cm">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lenguaje de comandos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rápido y flexible para expertos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Difícil para novatos, requiere memorización, alta tasa de error
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Menúes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Organización y agrupación de la información, reduce la necesidad de teclear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lento para expertos, molesto si hay muchas opciones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Atajos de teclado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil de implementar y aprender
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Requiere memorización, disponibilidad limitada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Wizards
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil de implementar, fácil para todo tipo de usuarios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A veces es imposible volver atrás, lento para expertos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Formularios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simplifica la entrada de datos, organización de información
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consume espacio en pantalla, lento para expertos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Manipulación directa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intuitivo, ameno, rápido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Limitado, difícil de implementar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+WYSIWYG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Correspondencia con el resultado real
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Difícil de implementar, no muestra la estructura subyacente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hipermedia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil navegación, independencia de la secuencialidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dependencia de un buen diseño, abuso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Rich web
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil de usar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Problemas de usabilidad, mucho ruido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dispositivos móviles
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Movilidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gráficos de poca calidad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Computadoras embebidas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Información contextual
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Limitaciones para entrada de datos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aspectos de usabilidad
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Accesibilidad
+\series default
+: diseño flexible, para todas las configuraciones posibles, para usuarios
+ con carencias
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Navegabilidad
+\series default
+: múltiples formas de acceder a la información o a la funcionalidad; consistenci
+a con el resto de la aplicación
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Productividad
+\series default
+: minimizar el esfuerzo del usuario
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Contenido de calidad
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Optimización
+\series default
+: tiempos de descarga, ejecución, respuesta; uso de recursos
+\end_layout
+
+\begin_layout Standard
+Características de los usuarios:
+\end_layout
+
+\begin_layout Itemize
+NO leen todo lo que ven
+\end_layout
+
+\begin_layout Itemize
+NO analizan todas las opciones disponibles, sino que eligen la primera opción
+ razonable
+\end_layout
+
+\begin_layout Itemize
+SI valoran la velocidad
+\end_layout
+
+\begin_layout Itemize
+NO les interesa el porqué de la lentitud
+\end_layout
+
+\begin_layout Itemize
+SI están apurados
+\end_layout
+
+\begin_layout Itemize
+SI usan las cosas sin saber cómo funciona ni para qué están realmente hechas
+\end_layout
+
+\begin_layout Subsection
+Consejos
+\end_layout
+
+\begin_layout Itemize
+Identificar el tipo de nuestro usuario y hablar su lenguaje
+\end_layout
+
+\begin_layout Itemize
+Utilizar los principios del diseño gráfico, la simbología, y metáforas
+\end_layout
+
+\begin_layout Itemize
+Prevenir errores, informarlos detalladamente, y facilitar su corrección
+\end_layout
+
+\begin_layout Itemize
+Los detalles importan
+\end_layout
+
+\begin_layout Itemize
+Hacer programas autoexplicativos pues la ayuda no se tiene en cuenta
+\end_layout
+
+\begin_layout Itemize
+Ser intuitivos, consistentes, flexibles, cómodos, correctos y útiles
+\end_layout
+
+\begin_layout Itemize
+No complicar la tarea del usuario, y más si es novato
+\end_layout
+
+\begin_layout Itemize
+Promover el aprendizaje
+\end_layout
+
+\begin_layout Itemize
+No hagas pensar al usuario y no hagas que pierda su tiempo
+\end_layout
+
+\begin_layout Itemize
+Hacer fácil volver atrás
+\end_layout
+
+\begin_layout Itemize
+Utilizar jerarquías de información apropiadas
+\end_layout
+
+\begin_layout Itemize
+No poner varias formas de hacer lo mismo
+\end_layout
+
+\begin_layout Itemize
+Proveer feedback
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+User-Centered Design
+\end_layout
+
+\begin_layout Standard
+Pilares:
+\end_layout
+
+\begin_layout Enumerate
+Enfocarse tempranamente en el usuario y sus tareas: entender cómo trabajan
+ y piensan
+\end_layout
+
+\begin_layout Enumerate
+Hacer que los usuarios evalúen el producto: se trabaja con él durante todo
+ el diseño
+\end_layout
+
+\begin_layout Enumerate
+Diseñar iterativamente
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Enumerate
+Prototipación: producir prototipo, mostrárselo a los usuarios, corregir
+ errores, producir nuevo prototipo...
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Usability Testing
+\emph default
+: realizar sesiones con 3 a 5 usuarios reales, en donde ellos prueban tareas,
+ y los diseñadores observan para exponer defectos
+\end_layout
+
+\begin_layout Enumerate
+Evaluación por expertos
+\end_layout
+
+\begin_layout Enumerate
+Estudios de seguimiento
+\end_layout
+
+\begin_layout Enumerate
+Encuestas
+\end_layout
+
+\end_body
+\end_document

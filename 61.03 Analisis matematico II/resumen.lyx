@@ -1,0 +1,10001 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding iso8859-15
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Análisis Matemático II"
+\pdf_author "Maria Inés Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headsep 1cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Análisis Matemático II
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introducción al espacio 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coordenadas cilíndricas, esféricas y polares
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Cilíndricas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Esféricas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Polares
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\in\mathbb{R}\text{³}$
+\end_inset
+
+, 
+\begin_inset Formula $p=(r,\theta,\bar{z})$
+\end_inset
+
+ con 
+\begin_inset Formula $r\geq0,\theta\in[0,2\pi]$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\in\mathbb{R}\text{³}$
+\end_inset
+
+, 
+\begin_inset Formula $p=(\rho,\theta,\varphi)$
+\end_inset
+
+ con 
+\begin_inset Formula $\rho\geq0,\varphi\in[0,\pi],\theta\in[0,2\pi]$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\in\mathbb{R}\text{²},\,p=(r,\theta)$
+\end_inset
+
+ con 
+\begin_inset Formula $r\geq0,\theta\in[0,2\pi]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cilindricas.png
+	scale 40
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename esfericas.png
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename polares.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r=c\Rightarrow$
+\end_inset
+
+ cilindro vertical recto
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta=c\Rightarrow$
+\end_inset
+
+ semiplano vertical
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{z}=c\Rightarrow$
+\end_inset
+
+ plano horizontal 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r=c\Rightarrow$
+\end_inset
+
+ esfera concéntrica
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi=c\Rightarrow$
+\end_inset
+
+ semicono
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta=c\Rightarrow$
+\end_inset
+
+ semiplano 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r=c\Rightarrow$
+\end_inset
+
+ circunferencia
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta=c\Rightarrow$
+\end_inset
+
+ semirrecta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+De cilíndricas a cartesianas:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+x=r\cdot cos(\theta)\\
+y=r\cdot sin(\theta)\\
+z=\bar{z}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+De cartesianas a cilíndricas:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+r=\sqrt{x\text{²}+y\text{²}}\\
+\theta=arctan(\frac{y}{x})\\
+\bar{z}=z
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+De esféricas a cartesianas:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+x=\rho\cdot sin(\varphi)cos(\theta)\\
+y=\rho\cdot sin(\varphi)sin(\theta)\\
+z=\rho\cdot cos(\varphi)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+De cartesianas a esféricas:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+\rho=\sqrt{x\text{²}+y\text{²}+z\text{²}}\\
+\theta=arctan(\frac{y}{x})\\
+\varphi=arccos(\frac{z}{r})
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+De polares a cartesianas:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+x=r\cdot cos(\theta)\\
+y=r\cdot sin(\theta)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+De cartesianas a polares:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+r=\sqrt{x\text{²}+y\text{²}}\\
+\theta=arctan(\frac{y}{x})
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Secciones cónicas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Circunferencia
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Elipse
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parábola
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hipérbola
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(x-x_{0})^{2}+(y-y_{0})^{2}=r^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{(x-x_{0})^{2}}{a^{2}}+\frac{(y-y_{0})^{2}}{b^{2}}=1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=ax\text{²}+bx+c$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{(x-x_{0})^{2}}{a^{2}}-\frac{(y-y_{0})^{2}}{b^{2}}=1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename circle.png
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename elipse.png
+	scale 60
+	BoundingBox 0bp 0bp 120bp 130bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename parabola.png
+	scale 60
+	BoundingBox 0bp 10bp 120bp 119bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename hiperbola.png
+	scale 60
+	BoundingBox 0bp 0bp 120bp 100bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Superficies cuádricas
+\end_layout
+
+\begin_layout Enumerate
+Cilindro:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Elliptic_Cylinder.jpg
+	scale 50
+
+\end_inset
+
+Elíptico: 
+\begin_inset Formula $(\frac{x}{a})^{2}+(\frac{y}{b})^{2}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Elliptic_Paraboloid.jpg
+	scale 50
+
+\end_inset
+
+Parabólico: 
+\begin_inset Formula $x^{2}+2rz=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Hyperbolic_Cylinder.jpg
+	scale 50
+
+\end_inset
+
+Hiperbólico:
+\begin_inset Formula $(\frac{x}{a})^{2}-(\frac{y}{b})^{2}=1$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Cone.jpg
+	scale 50
+
+\end_inset
+
+Cono: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hiperboloide:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Hyperboloid_1.jpg
+	scale 50
+
+\end_inset
+
+De una hoja: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Hyperboloid_2.jpg
+	scale 50
+
+\end_inset
+
+De dos hojas: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Ellipsoid.jpg
+	scale 50
+
+\end_inset
+
+Elipsoide:
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}+\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Paraboloide:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Elliptic_Paraboloid.jpg
+	scale 50
+
+\end_inset
+
+Elíptico: 
+\begin_inset Formula $z=\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename Hyperbolic_Paraboloid.jpg
+	scale 50
+
+\end_inset
+
+Hiperbólico: 
+\begin_inset Formula $z=\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Áreas y volúmenes
+\end_layout
+
+\begin_layout Standard
+Algunas fórmulas de áreas y volúmenes que conviene recordar:
+\end_layout
+
+\begin_layout Itemize
+Área de una elipse de semiejes 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+: 
+\series bold
+
+\begin_inset Formula $\pi ab$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Área de una circunferencia de radio 
+\begin_inset Formula $r$
+\end_inset
+
+: 
+\begin_inset Formula $\pi r\text{²}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volumen de una esfera de radio 
+\begin_inset Formula $r$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{4}{3}\pi r\text{³}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volumen de un elipsoide de semiejes 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{4}{3}\pi abc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volumen de un cilindro de radio 
+\begin_inset Formula $r$
+\end_inset
+
+ y altura 
+\begin_inset Formula $h$
+\end_inset
+
+: 
+\begin_inset Formula $\pi r\text{²}h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volumen de un cono de radio 
+\begin_inset Formula $r$
+\end_inset
+
+ y altura 
+\begin_inset Formula $h$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{1}{3}\pi r^{2}h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Funciones de varias variables
+\end_layout
+
+\begin_layout Subsection
+Funciones de varias variables
+\end_layout
+
+\begin_layout Standard
+Puntos y conjuntos de puntos en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Entorno de 
+\begin_inset Formula $A\in\mathbb{R}^{n}$
+\end_inset
+
+
+\series default
+: es todo conjunto capaz de incluir una esfera abierta de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ con centro en A y radio mayor a cero.
+ Se denota como 
+\begin_inset Formula $E(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Entorno reducido de 
+\begin_inset Formula $A\in\mathbb{R}^{n}$
+\end_inset
+
+
+\series default
+: 
+\begin_inset Formula $E^{*}(A)=E(A)-\{A\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Punto aislado
+\series default
+: 
+\begin_inset Formula $A\in S$
+\end_inset
+
+ es un punto aislado de S cuando existe un 
+\begin_inset Formula $E^{*}(A)$
+\end_inset
+
+ que no tiene puntos de S.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Punto de acumulación
+\series default
+: A es un punto de acumulación de S cuando en todo 
+\begin_inset Formula $E^{*}(A)$
+\end_inset
+
+ existe algún punto de S.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto abierto
+\series default
+: aquel que todos sus puntos son interiores.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto cerrado
+\series default
+: contiene a todos sus puntos de acumulación.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto acotado
+\series default
+: cuando se lo puede incluir en una esfera abierta con radio finito.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto compacto
+\series default
+: cuando es cerrado y acotado.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto convexo
+\series default
+: S es convexo cuando 
+\begin_inset Formula $\forall A,B\in S$
+\end_inset
+
+, el segmento 
+\begin_inset Formula $\overline{AB}$
+\end_inset
+
+ está incluido en S.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto conexo
+\series default
+: S es conexo cuando 
+\begin_inset Formula $\forall A,B\in S$
+\end_inset
+
+ se puede pasar de A a B desplazándose por S.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjunto simplemente conexo
+\series default
+: S conexo es simplemente conexo cuando toda curva cerrada trazada en él
+ puede, por deformación continua, transformarse en un punto, manteniéndose
+ en el conjunto.
+ En 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, simplemente conexo 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ conexo sin 
+\begin_inset Quotes eld
+\end_inset
+
+agujeros
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename convexidad.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Convexidad.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename conexidad.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A es conexo, B no es conexo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename simplemente conexo.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+El tubo no es simplemente conexo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto 
+\begin_inset Formula $S\subset\mathbb{R}^{n}$
+\end_inset
+
+ y un punto 
+\begin_inset Formula $A\in\mathbb{R}^{n}$
+\end_inset
+
+, pueden ocurrir tres cosas: 
+\end_layout
+
+\begin_layout Enumerate
+A es un punto interior a S, cuando existe 
+\begin_inset Formula $E(A)$
+\end_inset
+
+ incluido en S, 
+\end_layout
+
+\begin_layout Enumerate
+A es un punto exterior a S, cuando existe 
+\begin_inset Formula $E(A)$
+\end_inset
+
+ que no tiene puntos de S, 
+\end_layout
+
+\begin_layout Enumerate
+A es un punto frontera de S, cuando para todo 
+\begin_inset Formula $E(A)$
+\end_inset
+
+ hay puntos en S y puntos que no están en S.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Función escalar
+\series default
+: 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Regla que asocia a cada n-ada ordenada de números reales, (o bien a cada
+ vector 
+\begin_inset Formula $x$
+\end_inset
+
+ de U), un número real.
+ El conjunto U es el dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+, su codominio es 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, y el rango de 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Formula $\{z\in\mathbb{R}:\,z=f\left(x\right),\,x\in U\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 8
+placement l
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename campo vectorial.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Campo vectorial en 
+\begin_inset Formula $R\text{²}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Campo vectorial
+\series default
+: 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$
+\end_inset
+
+ (
+\begin_inset Formula $m>1)$
+\end_inset
+
+.
+ Regla que asocia a cada n-ada ordenada de números reales un vector de 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Operaciones entre funciones de varias variables 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $g:V\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+suma de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+: 
+\begin_inset Formula $f+g:U\cap V\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(f+g\right)\left(x\right)=f\left(x\right)+g\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+producto de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+: 
+\begin_inset Formula $f\cdot g:U\cap V\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(fg\right)\left(x\right)=f\left(x\right)\cdot g\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+cociente de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{f}{g}:W\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(\frac{f}{g}\right)\left(x\right)=\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+, donde 
+\begin_inset Formula $W=U\cap V-\{x\in V:g\left(x\right)=0\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Geometría de las funciones de varias variables
+\end_layout
+
+\begin_layout Standard
+Se define la gráfica de 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $\{(x_{1},x_{2},\ldots,x_{n},y)\in\mathbb{R}^{n+1}:\overline{x}\in U,y=f(x_{1},x_{2},\ldots,x_{n})\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 13
+placement o
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename curvas de nivel.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x,y)=-x\text{²}-2y\text{²}$
+\end_inset
+
+ y sus curvas de nivel.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+La gráfica de la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ es la gráfica de la superficie 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+.
+ Para 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+, la gráfica no puede ser visualizada.
+\end_layout
+
+\begin_layout Standard
+Para graficar, hay que cortar la superficie 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ con los planos del tipo 
+\begin_inset Formula $y=kx$
+\end_inset
+
+ y estudiar el tipo de curvas resultantes.
+ En particular, se estudian las curvas resultantes de cortar la superficie
+ con los planos 
+\begin_inset Formula $y=0$
+\end_inset
+
+ y 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Otro concepto importante que también se usa como ayuda para obtener gráficos
+ de funciones de dos variables es el de 
+\begin_inset Quotes eld
+\end_inset
+
+nivel constante
+\begin_inset Quotes erd
+\end_inset
+
+ de una función: dada la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ y el número 
+\begin_inset Formula $c\in\mbox{rango de f}$
+\end_inset
+
+, se define el 
+\begin_inset Quotes eld
+\end_inset
+
+nivel 
+\begin_inset Formula $c$
+\end_inset
+
+ de la función 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ como el conjunto 
+\begin_inset Formula $N_{c}=\{x\in U:\,f\left(x\right)=c\}.$
+\end_inset
+
+ Cuando 
+\begin_inset Formula $n=2$
+\end_inset
+
+, la curva se llama 
+\shape italic
+curva de nivel
+\shape default
+.
+ Cuando 
+\begin_inset Formula $n=3$
+\end_inset
+
+, la curva se llama
+\shape italic
+ superficie de nivel
+\shape default
+.
+ El nivel 
+\shape italic
+c 
+\shape default
+de la superficie 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ se puede interpretar geométricamente como la intersección de la función
+ con el plano 
+\begin_inset Formula $z=c$
+\end_inset
+
+.
+ Estas curvas nos dan idea de la imagen de la función.
+\end_layout
+
+\begin_layout Subsection
+Limites y continuidad
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bola abierta
+\series default
+: sea 
+\begin_inset Formula $x_{0}\in\mathbb{R}^{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $r>0.$
+\end_inset
+
+ La bola abierta de centro 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ y radio 
+\begin_inset Formula $r$
+\end_inset
+
+, denotada por 
+\begin_inset Formula $B\left(x_{0},r\right)$
+\end_inset
+
+ es el conjunto de puntos de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ que distan de 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ en menos que 
+\begin_inset Formula $r.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Conjunto abierto
+\series default
+: un conjunto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ es un conjunto abierto de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ si para cada 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+ existe un 
+\begin_inset Formula $r>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $B\left(x_{0},r\right)\subset U.$
+\end_inset
+
+ Esto es, el conjunto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ será abierto si cuando tomamos un punto 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ en él, este siempre tiene vecinos que siguen viviendo dentro de U.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Frontera de un conjunto
+\series default
+: sea 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ un subconjunto de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Un punto 
+\begin_inset Formula $x_{0}\in\mathbb{R}^{n}$
+\end_inset
+
+ es un punto frontera de U si toda bola abierta 
+\begin_inset Formula $B(x_{0},r)$
+\end_inset
+
+ contiene puntos en U y fuera de él.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Límite
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto abierto U.
+ Si 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ es un punto de U o un punto frontera de U, se dice que el límite de 
+\begin_inset Formula $f$
+\end_inset
+
+ cuando 
+\begin_inset Formula $x$
+\end_inset
+
+ tiende a 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ es L, lo cual se escribe como 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f\left(x\right)=L$
+\end_inset
+
+ si dado cualquier 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ existe 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x\in B\left(x_{0},\delta\right)\cap U\left(x\neq x_{0}\right)\Rightarrow f\left(x\right)\in B(L,\varepsilon)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Límite por curva
+\series default
+: una condición 
+\shape italic
+necesaria
+\shape default
+ (pero no suficiente) para que el límite 
+\begin_inset Formula $\lim_{\left(x,y\right)\rightarrow(x_{0},y_{0})}f\left(x,y\right)$
+\end_inset
+
+ exista y sea L, es que si los límites 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f\left(x,\phi\left(x\right)\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f\left(x,\psi\left(x\right)\right)$
+\end_inset
+
+ existen (donde 
+\begin_inset Formula $y=\phi\left(x\right)$
+\end_inset
+
+ e 
+\begin_inset Formula $y=\psi\left(x\right)$
+\end_inset
+
+ son curvas que pasan por 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+) deben valer L.
+ El único argumento que concluye que un límite existe requiere la aplicación
+ directa de la definición.
+ Para calcular límites también es útil expresar la función en coordenadas
+ polares.
+ 
+\shape italic
+Ejemplo
+\shape default
+: 
+\begin_inset Formula $\lim_{\left(x,y\right)\rightarrow(0,0)}\frac{x^{3}y}{x^{2}+y^{2}}=\lim_{r\rightarrow0}\frac{(rcos\theta)^{3}(rsen\theta)}{(rcos\theta)^{2}+(rsen\theta)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: Sean 
+\begin_inset Formula $f,g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ dos funciones definidas en el abierto U y sea 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ un punto de U o un punto frontera de U.
+ Si 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f\left(x\right)=L$
+\end_inset
+
+ y 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}g\left(x\right)=M$
+\end_inset
+
+, entonces: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\left(f+g\right)\left(x\right)=L+M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}\left(f\cdot g\right)\left(x\right)=L\cdot M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $M\neq0,\lim_{x\rightarrow x_{0}}\left(\frac{f}{g}\right)\left(x\right)=\frac{L}{M}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ es una función polinomial, entonces 
+\begin_inset Formula $\lim_{\left(x,y\right)\rightarrow(x_{0},y_{0})}f\left(x,y\right)=f(x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuidad en un punto
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función definida en el abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, y sea 
+\begin_inset Formula $x_{0}\in U.$
+\end_inset
+
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función continua en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ si 
+\begin_inset Formula $f\left(x_{0}\right)=\lim_{x\rightarrow x_{0}}f(x)$
+\end_inset
+
+.
+ Las funciones polinomiales son continuas en cualquier punto 
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuidad en un abierto
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función definida en el abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en U si lo es para todos y cada uno de los puntos 
+\begin_inset Formula $\left(x,y\right)\in U.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuidad de un campo escalar
+\series default
+: 
+\begin_inset Formula $f:D\subset\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ es continuo en un punto 
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in D$
+\end_inset
+
+ si 
+\begin_inset Formula $\lim_{\left(x,y\right)\to(x_{0},y_{0})}f\left(x,y\right)=f\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuidad de un campo vectorial
+\series default
+: Los conceptos de continuidad y diferenciabilidad para funciones 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+, 
+\begin_inset Formula $m>1$
+\end_inset
+
+, se establecen en términos de las funciones coordenadas de la función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Esto es, se dirá que la función 
+\begin_inset Formula $f=\left(f_{1},f_{2},\ldots,f_{m}\right)$
+\end_inset
+
+ es continua (respectivamente, diferenciable) en el punto 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+ sí y solo si las funciones coordenadas 
+\begin_inset Formula $f_{i}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $i=1,2,\ldots,m,$
+\end_inset
+
+ lo son.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sean 
+\begin_inset Formula $f,g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ funciones definidas en el abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ son continuas, entonces, 
+\end_layout
+
+\begin_layout Enumerate
+la función 
+\begin_inset Formula $f+g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}=f\left(x\right)+g(x)$
+\end_inset
+
+ es continua.
+ 
+\end_layout
+
+\begin_layout Enumerate
+la función 
+\begin_inset Formula $f\cdot g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}=f\left(x\right)\cdot g(x)$
+\end_inset
+
+ es continua.
+ 
+\end_layout
+
+\begin_layout Enumerate
+la función 
+\begin_inset Formula $\frac{f}{g}:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}=\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ es continua en todo punto 
+\begin_inset Formula $x\in U$
+\end_inset
+
+, donde 
+\begin_inset Formula $g(x)\neq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+la composición 
+\begin_inset Formula $g\circ f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ es continua.
+ 
+\end_layout
+
+\begin_layout Subsection
+Derivadas parciales
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Para una función de una variable
+\bar default
+: 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el intervalo abierto I, se define la 
+\shape italic
+derivada
+\shape default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+, denotada por 
+\begin_inset Formula $f'\left(x_{0}\right)$
+\end_inset
+
+, como el valor del límite 
+\begin_inset Formula $\lim_{h\rightarrow0}\frac{f\left(x_{0}+h\right)-f(x_{0})}{h}=f'(x_{0})$
+\end_inset
+
+ cuando éste existe (en cuyo caso decimos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+).
+ Si 
+\begin_inset Formula $f'\left(x_{0}\right)$
+\end_inset
+
+ existe, su valor nos da la pendiente de la recta tangente a la gráfica
+ de la función 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+.
+ Para este tipo de funciones, diferenciabilidad equivale a existencia de
+ derivada, y la diferenciabilidad en un punto implica la continuidad de
+ la función en ese punto.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Para una función de dos variable
+\bar default
+: 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el abierto U, con 
+\begin_inset Formula $p=(x_{0},y_{0})$
+\end_inset
+
+ un punto de U, se define la 
+\shape italic
+derivada parcial 
+\shape default
+de 
+\begin_inset Formula $f$
+\end_inset
+
+ con respecto de 
+\begin_inset Formula $x$
+\end_inset
+
+ (la primera derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+) en el punto 
+\begin_inset Formula $p$
+\end_inset
+
+, denotada por 
+\begin_inset Formula $\frac{\partial f}{\partial x}\left(p\right)$
+\end_inset
+
+ o 
+\begin_inset Formula $f'_{x}(p)$
+\end_inset
+
+ como el límite 
+\begin_inset Formula $\frac{\partial f}{\partial x}\left(p\right)=\lim_{h\rightarrow0}\frac{f\left(x_{0}+h,y_{0}\right)-f(x_{0},y_{0})}{h}$
+\end_inset
+
+.
+ Del mismo modo, la derivada 
+\shape italic
+parcial 
+\shape default
+de 
+\begin_inset Formula $f$
+\end_inset
+
+ con respecto de 
+\begin_inset Formula $y$
+\end_inset
+
+ es el límite (si existe) 
+\begin_inset Formula $\frac{\partial f}{\partial y}\left(p\right)=\lim_{h\rightarrow0}\frac{f\left(x_{0},y_{0}+h\right)-f(x_{0},y_{0})}{h}$
+\end_inset
+
+.
+ Para este tipo de funciones, la existencia de derivadas parciales un punto
+ no implica que la función sea continua en ese punto, por lo que tampoco
+ implica que sea diferenciable en ese punto.
+\end_layout
+
+\begin_layout Standard
+Las derivadas parciales de una función 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ en un punto 
+\begin_inset Formula $p=(x_{0},y_{0})$
+\end_inset
+
+ nos hablan del comportamiento geométrico (la inclinación) de las superficie
+ que tal función representa, en las direcciones de los ejes 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Las derivadas parciales de una función se obtienen 
+\begin_inset Quotes eld
+\end_inset
+
+derivando parcialmente
+\begin_inset Quotes erd
+\end_inset
+
+ cada una de las variables, y dejando las otras como constantes.
+
+\shape italic
+ Ejemplo
+\shape default
+: sea la función 
+\begin_inset Formula $f(x,y)=5x\text{³}+4xy+y\text{²}$
+\end_inset
+
+.
+ Se tiene que 
+\begin_inset Formula $f'_{x}=15x\text{²}+4y$
+\end_inset
+
+ y que 
+\begin_inset Formula $f'_{y}=4x+2y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Derivadas direccionales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Derivada direccional
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto abierto U, y sea 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $v\in\mathbb{R}^{n}$
+\end_inset
+
+ un vector 
+\noun on
+unitario
+\noun default
+ dado.
+ Se define la derivada de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ en la dirección del vector 
+\begin_inset Formula $v$
+\end_inset
+
+, denotada por 
+\begin_inset Formula $\frac{\partial f}{\partial v}\left(x_{0}\right)$
+\end_inset
+
+ como el límite 
+\begin_inset Formula $\lim_{t\rightarrow0}\frac{f\left(x_{0}+tv\right)-f\left(x_{0}\right)}{t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+El vector unitario 
+\begin_inset Formula $v$
+\end_inset
+
+ se puede escribir como 
+\begin_inset Formula $v=(cos(\theta),sin(\theta))$
+\end_inset
+
+, 
+\begin_inset Formula $0\leq\theta\leq2\pi$
+\end_inset
+
+, con lo que la derivada direccional se reescribiría como 
+\begin_inset Formula $\frac{\partial f}{\partial v}\left(x_{0},y_{0}\right)=\lim_{t\rightarrow0}\frac{f\left(x_{0}+tcos(\theta),y_{0}+tsin(\theta)\right)-f\left(x_{0},y_{0}\right)}{t}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Notar que si 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ se tiene 
+\begin_inset Formula $\frac{\partial f}{\partial v}=\frac{\partial f}{\partial x}$
+\end_inset
+
+, y si 
+\begin_inset Formula $\theta=\frac{\pi}{2}$
+\end_inset
+
+ se tiene 
+\begin_inset Formula $\frac{\partial f}{\partial v}=\frac{\partial f}{\partial y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Diferenciabilidad
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Para funciones de una variable
+\bar default
+: la función 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ es 
+\shape italic
+diferenciable
+\shape default
+ en 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ si existe una constante A tal que 
+\begin_inset Formula $f\left(x_{0}+h\right)=f\left(x_{0}\right)+Ah+r\left(h\right)$
+\end_inset
+
+, donde 
+\begin_inset Formula $lim_{h\rightarrow0}\frac{r\left(h\right)}{h}=0$
+\end_inset
+
+ (el residuo 
+\begin_inset Formula $r(h)$
+\end_inset
+
+ tiende a 0 más rápidamente que 
+\begin_inset Formula $h$
+\end_inset
+
+).
+ Despejando A, obtenemos que 
+\begin_inset Formula $A=\frac{f\left(x_{0}+h\right)-f(x_{0})}{h}-\frac{r(h)}{h}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Para funciones de dos variable
+\bar default
+: la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ es 
+\shape italic
+diferenciable
+\shape default
+ en el punto 
+\begin_inset Formula $p=(x_{0},y_{0})$
+\end_inset
+
+ si hay constantes 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $f\left(\left(x_{0},y_{0}\right)+\left(h_{1},h_{2}\right)\right)=f\left(x_{0},y_{0}\right)+A_{1}h_{1}+A_{2}h_{2}+r(h_{1},h_{2})$
+\end_inset
+
+ donde 
+\begin_inset Formula $lim_{\left(h_{1},h_{2}\right)\rightarrow(0,0)}=\frac{r(h_{1},h_{2})}{\left|(h_{1},h_{2})\right|}$
+\end_inset
+
+.
+ Despejando 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, obtenemos que 
+\begin_inset Formula $A_{1}=\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{2}=\frac{\partial f}{\partial y}(x_{0},y_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: Se dice que la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el abierto U es diferenciable en el punto 
+\begin_inset Formula $p=\left(x_{0},y_{0}\right)\in U$
+\end_inset
+
+, si existen las derivadas parciales de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $p:$
+\end_inset
+
+ 
+\begin_inset Formula $A_{1}=\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{2}=\frac{\partial f}{\partial y}(x_{0},y_{0})$
+\end_inset
+
+, y si el residuo 
+\begin_inset Formula $r(h_{1},h_{2})$
+\end_inset
+
+ definido en 
+\begin_inset Formula $f\left(\left(x_{0},y_{0}\right)+\left(h_{1},h_{2}\right)\right)=f\left(x_{0},y_{0}\right)+A_{1}h_{1}+A_{2}h_{2}+r(h_{1},h_{2})$
+\end_inset
+
+ tiene la propiedad 
+\begin_inset Formula $lim_{\left(h_{1},h_{2}\right)\rightarrow(0,0)}\frac{r(h_{1},h_{2})}{\left|(h_{1},h_{2})\right|}=0$
+\end_inset
+
+.
+ Si la función es diferenciable en 
+\begin_inset Formula $p$
+\end_inset
+
+, es continua en ese punto.
+\end_layout
+
+\begin_layout Standard
+Una función 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ es diferenciable en un punto 
+\begin_inset Formula $P=(x_{0},y_{0})$
+\end_inset
+
+ si
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+lim_{\left(x,y\right)\to(x_{0},y_{0})}\frac{f(x,y)-\left[\frac{\partial f}{\partial x}\left(p\right)\left(x-x_{0}\right)+\frac{\partial f}{\partial y}\left(p\right)\left(y-y_{0}\right)+f(x_{0},y_{0})\right]}{\sqrt{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las funciones polinomiales 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ son diferenciables en todo punto.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sean 
+\begin_inset Formula $f,g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ dos funciones definidas en U, y diferenciables en 
+\begin_inset Formula $p\in U.$
+\end_inset
+
+ Entonces: 
+\end_layout
+
+\begin_layout Enumerate
+la suma 
+\begin_inset Formula $f+g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}=f\left(p\right)+g(p)$
+\end_inset
+
+ es una función diferenciable en 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+el producto 
+\begin_inset Formula $f\cdot g:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}=f\left(p\right)\cdot g(p)$
+\end_inset
+
+ es una función diferenciable en 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+si 
+\begin_inset Formula $g(p)\neq0$
+\end_inset
+
+, el cociente 
+\begin_inset Formula $\frac{f}{g}:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}=\frac{f\left(p\right)}{g\left(p\right)}$
+\end_inset
+
+ es una función diferenciable en 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+la composición 
+\begin_inset Formula $g\circ f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Si las derivadas parciales son continuas en el punto 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+, entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diferenciabilidad y derivadas direccionales
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ 
+\shape italic
+\emph on
+\noun on
+diferenciable
+\shape default
+\emph default
+\noun default
+, definida en el conjunto abierto U.
+ Sea 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\check{v}\in\mathbb{R}^{n}$
+\end_inset
+
+ el vector unitario en cuya dirección queremos calcular la derivada de la
+ función 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+ Entonces:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial\check{v}}(x_{0})=\sum_{i=1}^{n}\frac{\partial f}{\partial x_{i}}(x_{0})\cdot\check{v}_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Ejemplo
+\shape default
+: dada 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2},$
+\end_inset
+
+ queremos calcular la derivada de la función en un punto arbitrario 
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in\mathbb{R}^{2}$
+\end_inset
+
+ en la dirección del vector unitario 
+\begin_inset Formula $v=(cos(\theta),sin(\theta)).$
+\end_inset
+
+ Dado que la función es polinomial, es diferenciable en todo el dominio.
+ Entonces según la fórmula se tiene que 
+\begin_inset Formula $\frac{\partial f}{\partial v}(x_{0},y_{0})=\frac{\partial f}{\partial x}(x_{0},y_{0})cos(\theta)+\frac{\partial f}{\partial y}(x_{0},y_{0})sen(\theta)=2x_{0}cos(\theta)+2y_{0}sen(\theta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Gradiente
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 14
+placement l
+overhang 0in
+width "4.6cm"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename campo de gradientes.png
+	scale 23
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+El gradiente apunta a la dirección de mayor variación.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función diferenciable definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Se define el vector gradiente de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+, denotado por 
+\begin_inset Formula $grad\:f\left(x_{0}\right)$
+\end_inset
+
+ o 
+\begin_inset Formula $\nabla f(x_{0})$
+\end_inset
+
+, como el vector de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ dado por: 
+\begin_inset Formula 
+\[
+\nabla f(x_{0})=\left(f'_{x_{1}}(x_{0}),f'_{x_{2}}(x_{0}),\ldots,f'_{x_{n}}(x_{0})\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla f(x_{0})\cdot\check{v}=f'_{\check{v}}(x_{0})
+\]
+
+\end_inset
+
+El vector 
+\begin_inset Formula $\nabla f(x_{0})$
+\end_inset
+
+ nos dice en qué dirección se tiene la mayor variación (el mayor crecimiento)
+ de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+ Además, se tiene que el vector 
+\begin_inset Formula $\nabla f(x_{0})$
+\end_inset
+
+ es un vector ortogonal a la curva de nivel que pasa por 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable, la dirección de la derivada direccional puede ser: 
+\end_layout
+
+\begin_layout Enumerate
+Máxima: 
+\begin_inset Formula $v=\frac{\nabla f}{\left|\nabla f\right|}$
+\end_inset
+
+, y su valor es 
+\begin_inset Formula $\left|\nabla f\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mínima: 
+\begin_inset Formula $v=-\frac{\nabla f}{\left|\nabla f\right|}$
+\end_inset
+
+, y su valor es 
+\begin_inset Formula $-\left|\nabla f\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Nula: 
+\begin_inset Formula $v\bot\nabla f$
+\end_inset
+
+, y su valor es 0 
+\end_layout
+
+\begin_layout Subsection
+Vectores normales 
+\end_layout
+
+\begin_layout Standard
+Dada una función diferenciable 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+, y dado un punto 
+\begin_inset Formula $p=(x_{0},y_{0},f\left(x_{0},y_{0}\right))$
+\end_inset
+
+, el vector normal 
+\begin_inset Formula $N_{p}$
+\end_inset
+
+ a la superficie de la función en el punto 
+\begin_inset Formula $p$
+\end_inset
+
+ se obtiene mediante
+\begin_inset Formula 
+\[
+N_{P}=det\left[\begin{array}{ccc}
+i & j & k\\
+1 & 0 & f'_{x}(x_{0},y_{0})\\
+0 & 1 & f'_{y}(x_{0},y_{0})
+\end{array}\right]=\left(-f'_{x}(x_{0},y_{0}),-f'_{y}(x_{0},y_{0}),1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota
+\bar default
+: recordar que la superficie 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ se puede ver como el nivel 0 de la función 
+\begin_inset Formula $F\left(x,y,z\right)=z-f(x,y)$
+\end_inset
+
+.
+ De allí el porqué de la última coordenada del vector.
+\end_layout
+
+\begin_layout Subsection
+Planos tangentes y rectas normales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement R
+overhang 0in
+width "4.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plano tangente.png
+	scale 40
+	BoundingBox 0bp 10bp 300bp 300bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Plano tangente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Si la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ es diferenciable en el punto 
+\begin_inset Formula $p=\left(x_{0},y_{0}\right)$
+\end_inset
+
+, entonces la siguiente ecuación define al 
+\series bold
+plano tangente 
+\series default
+a la superficie 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0},f\left(x_{0},y_{0}\right))$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+z=f(x_{0},y_{0})+f'_{x}(x_{0},y_{0})(x-x_{0})+f'_{y}(x_{0},y_{0})(y-y_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De la ecuación anterior se deduce que el plano tangente en un punto 
+\begin_inset Formula $p$
+\end_inset
+
+ es un plano que pasa por el punto y contiene a las rectas tangentes en
+ el punto.
+ Es decir, tiene como vector normal al vector 
+\begin_inset Formula $(\nabla f(p),-1)$
+\end_inset
+
+ calculado anteriormente.
+\end_layout
+
+\begin_layout Standard
+Dada una función diferenciable 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ cuya gráfica es una superficie S, se define la 
+\series bold
+recta normal
+\series default
+ a la superficie S en el punto 
+\begin_inset Formula $p=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ de ella, como la recta que pasa por 
+\begin_inset Formula $p$
+\end_inset
+
+ y contiene al vector normal a la superficie en 
+\begin_inset Formula $p.$
+\end_inset
+
+ Su ecuación está dada por: 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $L:\:(x,y,z)=t\left(f'_{x}(x_{0},y_{0}),f'_{y}(x_{0},y_{0}),-1\right)+\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ con 
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Diferencial
+\end_layout
+
+\begin_layout Standard
+Dada la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ diferenciable, la diferencial de 
+\begin_inset Formula $f$
+\end_inset
+
+ se define como:
+\begin_inset Formula 
+\[
+df=\sum_{i=1}^{n}\frac{\partial f}{\partial x_{i}}\partial x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Ejemplo
+\shape default
+: la diferencial de 
+\begin_inset Formula $f\left(x\right)=sen^{3}(x^{2})$
+\end_inset
+
+ es 
+\begin_inset Formula $df=3sen^{2}\left(x^{2}\right)cos(x^{2})2x\,dx=6xsen^{2}\left(x^{2}\right)cos\left(x^{2}\right)\,dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Derivadas parciales de órdenes superiores
+\end_layout
+
+\begin_layout Standard
+Dada una función 
+\begin_inset Formula $f:U\subset\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Si la función es diferenciable, entonces existen las derivadas parciales
+ 
+\begin_inset Formula $\frac{\partial f}{\partial x}$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{\partial f}{\partial y}$
+\end_inset
+
+ en cualquier punto 
+\begin_inset Formula $\left(x,y\right)\in U$
+\end_inset
+
+.
+ Puede ocurrir que estas derivadas sean lo suficientemente 
+\begin_inset Quotes eld
+\end_inset
+
+bien portadas
+\begin_inset Quotes erd
+\end_inset
+
+ en U como para que podamos obtener de ellas sus derivadas parciales 
+\begin_inset Formula $\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right),\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right),\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right),\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de Schwarz
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{2}\rightarrow R$
+\end_inset
+
+ una función definida en el abierto U de 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Si las derivadas parciales cruzadas 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial x\partial y}:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial y\partial x}:U\subseteq\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+ existen y son funciones continuas en U, entonces son iguales.
+\end_layout
+
+\begin_layout Subsection*
+Apéndice I: Funciones de clase 
+\begin_inset Formula $\mathcal{C}^{\mathbf{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ una función diferenciable.
+ Si la función derivada 
+\begin_inset Formula $f'$
+\end_inset
+
+ es continua, se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+.
+ Si esta función 
+\begin_inset Formula $f'$
+\end_inset
+
+ es, a su vez, una función diferenciable, decimos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función dos veces diferenciable.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+En general
+\bar default
+: una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función 
+\begin_inset Formula $k$
+\end_inset
+
+ veces diferenciable si la función 
+\begin_inset Formula $f^{(k-1)}:I\subseteq\mathbb{R}\mathbb{\rightarrow R}$
+\end_inset
+
+ es diferenciable.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Formula $k$
+\end_inset
+
+ veces diferenciable para todo 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, se dice ser infinitamente diferenciable, o bien, de clase 
+\begin_inset Formula $\mathcal{C}^{\infty}$
+\end_inset
+
+.
+ En el caso de funciones de varias variables, se dice que una función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en U es de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ si sus derivadas parciales existen y son funciones continuas en U.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Corolario
+\series default
+: si la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ es de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable.
+\end_layout
+
+\begin_layout Section
+Funciones compuestas, inversas e implícitas
+\end_layout
+
+\begin_layout Subsection
+Composición de funciones
+\end_layout
+
+\begin_layout Standard
+Si tenemos las funciones 
+\begin_inset Formula $g:I\subseteq\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $f:J\subseteq\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ (tales que 
+\begin_inset Formula $g\left(I\right)\subseteq J$
+\end_inset
+
+), podemos formar la composición 
+\begin_inset Formula $f\circ g:I\subseteq\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ El resultado más importante es que si 
+\begin_inset Formula $g$
+\end_inset
+
+ es diferenciable en un punto 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ y 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $g\left(x_{0}\right)\in J$
+\end_inset
+
+, entonces la composición 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, es decir, que 
+\begin_inset Formula $\left(f\circ g\right)'(x)$
+\end_inset
+
+ existe, y 
+\begin_inset Formula $\left(f\circ g\right)'\left(x\right)=f^{'}\left(g\left(x\right)\right)g^{'}(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para el caso de dos variables, tenemos que 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+.
+ Para 
+\begin_inset Quotes eld
+\end_inset
+
+componer
+\begin_inset Quotes erd
+\end_inset
+
+ esta función tendremos que sustituir las 
+\shape italic
+dos variables
+\shape default
+ (
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+) por 
+\shape italic
+dos funciones
+\shape default
+, digamos 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, que conecten a éstas con 
+\shape italic
+otras
+\shape default
+ variables, digamos 
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Así, si consideramos las funciones 
+\begin_inset Formula $x=g_{1}(u,v)$
+\end_inset
+
+ e 
+\begin_inset Formula $y=g_{2}(u,v)$
+\end_inset
+
+, podemos sustituir éstas en la función 
+\begin_inset Formula $f$
+\end_inset
+
+ y obtener la 
+\series bold
+función compuesta
+\series default
+ 
+\begin_inset Formula $y=f(g_{1}\left(u,v\right),g_{2}\left(u,v\right))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+En general
+\bar default
+: Si tenemos la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el conjunto U, y la función 
+\begin_inset Formula $g:V\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el conjunto V, cuyo rango está contenido en U (i.e.
+ tal que 
+\begin_inset Formula $g\left(V\right)\subseteq U$
+\end_inset
+
+) entonces podemos formar la composición 
+\begin_inset Formula $f\circ g:V\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+, como 
+\begin_inset Formula $\left(f\circ g\right)\left(v\right)=f\left(g\left(v\right)\right),v\in V.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Regla de la cadena
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema (regla de la cadena)
+\series default
+: sea 
+\begin_inset Formula $g:V\subseteq\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+ una función definida en el conjunto abierto V de 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+, diferenciable en 
+\begin_inset Formula $x_{0}\in V$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, tal que 
+\begin_inset Formula $g\left(V\right)\subseteq U$
+\end_inset
+
+, diferenciable en el punto 
+\begin_inset Formula $g\left(x_{0}\right)\in U$
+\end_inset
+
+.
+ Entonces, la composición 
+\begin_inset Formula $f\circ g:V\subseteq\mathbb{R}^{m}\to\mathbb{R}$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ y sus derivadas parciales son 
+\begin_inset Formula $\frac{\partial}{\partial x_{j}}\left(f\circ g\right)\left(x_{0}\right)=\sum_{i=1}^{n}\frac{\partial f}{\partial y_{i}}\left(g\left(x_{0}\right)\right)\frac{\partial g_{i}}{\partial x_{j}}(x_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,2,\ldots,m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Regla de la cadena: perspectiva general
+\end_layout
+
+\begin_layout Standard
+Sea la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, y sea 
+\begin_inset Formula $x_{0}\in U.$
+\end_inset
+
+ Se dice que esta función es diferenciable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ si existe una transformación lineal 
+\begin_inset Formula $f^{'}\left(x_{0}\right):\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+, llamada derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(x_{0}+h\right)=f\left(x_{0}\right)+f^{'}\left(x_{0}\right)h+r(h)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\lim_{h\to0}\frac{r\left(h\right)}{\left|\left|h\right|\right|}=0$
+\end_inset
+
+ (para 
+\begin_inset Formula $h\in\mathbb{R}^{n}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x_{0}+h\in U$
+\end_inset
+
+).
+ La matriz de esta transformación 
+\begin_inset Formula $f^{'}\left(x_{0}\right):\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ es 
+\begin_inset Formula $\left[\begin{array}{ccc}
+\frac{\partial f_{1}}{\partial x_{1}}(x_{0}) & \cdots & \frac{\partial f_{1}}{\partial x_{n}}(x_{0})\\
+\vdots & \ddots & \vdots\\
+\frac{\partial f_{m}}{\partial x_{1}}(x_{0}) & \cdots & \frac{\partial f_{m}}{\partial x_{n}}(x_{0})
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta matriz de 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ se llama 
+\series bold
+matriz jacobiana
+\series default
+ de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ y se denota 
+\begin_inset Formula $Jf(x_{0})$
+\end_inset
+
+.
+ Esta es, entonces, la derivada de la función diferenciable 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ En el caso de que 
+\begin_inset Formula $m=1$
+\end_inset
+
+, la matriz jacobiana se identifica de manera natural con el vector gradiente
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Ejemplo
+\shape default
+: sea 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+ dada por 
+\begin_inset Formula $f\left(x,y\right)=(\overbrace{sen\left(x+y\right)}^{f_{1}}\overbrace{,xe^{x+y}}^{f_{2}},\overbrace{x+y}^{f_{3}})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en todo su dominio, y su derivada en el punto (0,0) está
+ dada por la matriz 
+\begin_inset Formula 
+\[
+Jf\left(0,0\right)=\left[\begin{array}{cc}
+\frac{\partial f_{1}}{x}\left(0,0\right) & \frac{\partial f_{1}}{y}\left(0,0\right)\\
+\frac{\partial f_{2}}{x}\left(0,0\right) & \frac{\partial f_{2}}{y}\left(0,0\right)\\
+\frac{\partial f_{3}}{x}\left(0,0\right) & \frac{\partial f_{3}}{y}\left(0,0\right)
+\end{array}\right]=\left[\begin{array}{cc}
+cos\left(x+y\right) & cos\left(x+y\right)\\
+e^{x+y}\left(x+1\right) & xe^{x+y}\\
+1 & 1
+\end{array}\right]_{\begin{array}{c}
+x=0\\
+y=0
+\end{array}}=\left[\begin{array}{cc}
+1 & 1\\
+1 & 0\\
+1 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+ 
+\series bold
+Teorema
+\series default
+: Sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{p}$
+\end_inset
+
+ una función definida en el abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, y 
+\begin_inset Formula $g:V\subseteq\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+ una función definida en el abierto V de 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $g\left(V\right)\subseteq U.$
+\end_inset
+
+ Si 
+\begin_inset Formula $g$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x_{0}\in V$
+\end_inset
+
+ y 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $g\left(x_{0}\right)\in U$
+\end_inset
+
+, entonces la función 
+\begin_inset Formula $f\circ g:V\subseteq\mathbb{R}^{m}\to\mathbb{R}^{p}$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ y su derivada viene dada por la matriz 
+\begin_inset Formula 
+\[
+J(f\circ g)(x_{0})=Jf(g(x_{0}))\cdot Jg(x_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Funciones Implícitas (I)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de la función implícita (1er versión)
+\series default
+: sea 
+\begin_inset Formula $z=F(x,y)$
+\end_inset
+
+, y sea 
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in\mathbb{R}^{2}$
+\end_inset
+
+ un punto.
+ Si:
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $F\left(x_{0},y_{0}\right)=0$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+b) la función F tiene derivadas parciales continuas en un entorno de 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ y
+\end_layout
+
+\begin_layout Standard
+c) 
+\begin_inset Formula $\frac{\partial F}{\partial y}(x_{0},y_{0})\ne0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Entonces 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+ se puede resolver para 
+\begin_inset Formula $y$
+\end_inset
+
+ en términos de 
+\begin_inset Formula $x$
+\end_inset
+
+ y definir así una función 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ con dominio en una vecindad de 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, tal que 
+\begin_inset Formula $y_{0}=f(x_{0})$
+\end_inset
+
+, la cual tiene derivadas continuas en V que pueden calcularse como 
+\begin_inset Formula $y^{'}=f^{'}\left(x\right)=-\frac{\frac{\partial F}{\partial x}(x,y)}{\frac{\partial F}{\partial y}(x,y)}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota 1
+\bar default
+: este teorema es de 
+\shape italic
+existencia
+\shape default
+, es decir, nos puede decir si existe una función 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ definida implícitamente por 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+, pero 
+\shape italic
+no
+\shape default
+ nos dice cómo se determina tal función.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota 2
+\bar default
+: este teorema es 
+\shape italic
+local
+\shape default
+.
+ Nos asegura la existencia de la función 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+, o nos asegura la posibilidad del despeje de 
+\begin_inset Formula $y$
+\end_inset
+
+ en términos de 
+\begin_inset Formula $x$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+ 
+\shape italic
+solamente en las cercanías del punto 
+\shape default
+
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+
+\shape italic
+.
+
+\shape default
+ Fuera de la vecindad V, el teorema no se responsabiliza por la existencia
+ de la función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La ecuación de la recta tangente a la curva 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+ en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ está dada por 
+\begin_inset Formula 
+\[
+\frac{\partial F}{\partial x}\left(x_{0},y_{0}\right)\left(x-x_{0}\right)+\frac{\partial F}{\partial y}\left(x_{0},y_{0}\right)\left(y-y_{0}\right)=0.
+\]
+
+\end_inset
+
+ La ecuación de la recta normal a la curva 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+ en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ está dada por 
+\begin_inset Formula 
+\[
+\frac{\partial F}{\partial x}\left(x_{0},y_{0}\right)\left(x-x_{0}\right)-\frac{\partial F}{\partial y}\left(x_{0},y_{0}\right)\left(y-y_{0}\right)=0.
+\]
+
+\end_inset
+
+
+\series bold
+Teorema de la función implícita (2da versión)
+\series default
+: sea la función 
+\begin_inset Formula $z=F(x_{1},x_{2},\ldots,x_{n},y)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $p=\left(\overline{x_{1}},\overline{x_{2}},\ldots,\overline{x_{n}},\overline{y}\right)\in\mathbb{R}^{n+1}$
+\end_inset
+
+ un punto tal que 
+\begin_inset Formula $F\left(p\right)=0$
+\end_inset
+
+.
+ Suponemos que la función F tiene derivadas parciales 
+\begin_inset Formula $\frac{\partial F}{\partial x_{i}},i=1,2,\ldots,n$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{\partial F}{\partial y}$
+\end_inset
+
+ continuas en alguna bola B con centro en 
+\begin_inset Formula $p$
+\end_inset
+
+ y que 
+\begin_inset Formula $\frac{\partial F}{\partial y}(p)\ne0$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $F\left(x_{1},x_{2},\ldots,x_{n},y\right)=0$
+\end_inset
+
+ puede resolverse para 
+\begin_inset Formula $y$
+\end_inset
+
+ en términos de 
+\begin_inset Formula $x$
+\end_inset
+
+ y definir así una vecindad V (de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+) del punto 
+\begin_inset Formula $\left(\overline{x_{1}},\overline{x_{2}},\ldots,\overline{x_{n}},\overline{y}\right)$
+\end_inset
+
+, una función 
+\begin_inset Formula $y=f(x_{1},x_{2},\ldots,x_{n})$
+\end_inset
+
+ la cual tiene derivadas parciales continuas en V que se pueden calcular
+ con las fórmulas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial x_{i}}(x_{1},x_{2},\ldots,x_{n})=\frac{\frac{\partial F}{\partial x_{i}}(x_{1},x_{2},\ldots,x_{n},y)}{\frac{\partial F}{\partial y}(x_{1},x_{2},\ldots,x_{n},y)}$
+\end_inset
+
+ con 
+\begin_inset Formula $\left(x_{1},x_{2},\ldots,x_{n}\right)\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de la función implícita (3ra versión):
+\series default
+ sean 
+\begin_inset Formula $z_{1}=F(x,y,u,v)$
+\end_inset
+
+ y 
+\begin_inset Formula $z_{2}=G(x,y,u,v)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $p=\left(x_{0},y_{0},u_{0},v_{0}\right)\in\mathbb{R}^{4}$
+\end_inset
+
+ un punto tal que 
+\begin_inset Formula $F\left(p\right)=G\left(p\right)=0$
+\end_inset
+
+, las funciones F y G tienen todas sus derivadas parciales continuas en
+ un entorno de p, y que 
+\begin_inset Formula $\frac{\partial\left(F,G\right)}{\partial\left(u,v\right)}\left(p\right)\ne0$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ definen funciones implícitas 
+\begin_inset Formula $u=\varphi_{1}(x,y)$
+\end_inset
+
+ y 
+\begin_inset Formula $v=\varphi_{2}(x,y)$
+\end_inset
+
+, definidas en una una vecindad V de 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+, las cuales tienen derivadas parciales continuas en V que se pueden calcular
+ con las fórmulas: 
+\begin_inset Formula 
+\[
+\frac{\partial u}{\partial x}=-\frac{\frac{\partial\left(F,G\right)}{\partial\left(x,v\right)}}{\frac{\partial\left(F,G\right)}{\partial\left(u,v\right)}},\frac{\partial u}{\partial y}=-\frac{\frac{\partial\left(F,G\right)}{\partial\left(y,v\right)}}{\frac{\partial\left(F,G\right)}{\partial\left(u,v\right)}},\frac{\partial v}{\partial x}=-\frac{\frac{\partial\left(F,G\right)}{\partial\left(u,x\right)}}{\frac{\partial\left(F,G\right)}{\partial\left(u,v\right)}},\frac{\partial v}{\partial y}=-\frac{\frac{\partial\left(F,G\right)}{\partial\left(u,y\right)}}{\frac{\partial\left(F,G\right)}{\partial\left(u,v\right)}}
+\]
+
+\end_inset
+
+Notación: si X e Y son funciones de las variables 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, se llama jacobiano de X e Y respecto de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, denotado por 
+\begin_inset Formula $J\left(\frac{X,Y}{x,y}\right)=\frac{\partial\left(X,Y\right)}{\partial\left(x,y\right)}$
+\end_inset
+
+ al determinante 
+\begin_inset Formula $\frac{\partial\left(X,Y\right)}{\partial\left(x,y\right)}=det\left[\begin{array}{cc}
+\frac{\partial X}{\partial x} & \frac{\partial X}{\partial y}\\
+\frac{\partial Y}{\partial x} & \frac{\partial Y}{\partial y}
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de la función implícita (4ta versión)
+\series default
+: considere las 
+\shape italic
+n
+\shape default
+ funciones 
+\begin_inset Formula $u_{i}=F_{i}(x_{1},\ldots,x_{m},y_{1},\ldots,y_{n})$
+\end_inset
+
+ con 
+\begin_inset Formula $i=1,2,\ldots,n.$
+\end_inset
+
+ Sea 
+\begin_inset Formula $p=\left(\overline{x_{1}},\ldots,\overline{x_{m}},\overline{y_{1}},\ldots,\overline{y_{m}}\right)\in\mathbb{R}^{m+n}$
+\end_inset
+
+ un punto tal que 
+\begin_inset Formula $F_{i}\left(p\right)=0$
+\end_inset
+
+ con 
+\begin_inset Formula $i=1,2,\ldots,n$
+\end_inset
+
+.
+ Suponga que 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ tiene sus 
+\begin_inset Formula $m+n$
+\end_inset
+
+ derivadas parciales continuas en un entorno de 
+\series bold
+
+\begin_inset Formula $p$
+\end_inset
+
+
+\series default
+.
+ Si el jacobiano 
+\begin_inset Formula $\frac{\partial\left(F_{1},F_{2},\ldots,F_{n}\right)}{\partial\left(y_{1},y_{2},\ldots,y_{n}\right)}(p)\ne0$
+\end_inset
+
+, entonces las expresiones 
+\begin_inset Formula $F_{i}(x_{1},\ldots,x_{m},y_{1},\ldots,y_{n})$
+\end_inset
+
+ definen funciones implícitas 
+\begin_inset Formula $y_{i}=\varphi_{i}(x_{1},\ldots,x_{m})$
+\end_inset
+
+ con 
+\begin_inset Formula $i=1,2,\ldots,n$
+\end_inset
+
+ definidas en una vecindad V de (
+\begin_inset Formula $\overline{x_{1}},\ldots,\overline{x_{m}})$
+\end_inset
+
+, las cuales tienen derivadas parciales continuas en V que se pueden calcular
+ como 
+\begin_inset Formula $\frac{\partial y_{i}}{\partial x_{j}}=-\frac{\frac{\partial(F_{1},F_{2},\ldots,F_{n})}{\partial\left(y_{1},\ldots,y_{i-1},x_{j},y_{i+1},\ldots,y_{n}\right)}}{\frac{\partial(F_{1},F_{2},\ldots,F_{n})}{\partial(y_{1},y_{2},\ldots,y_{n})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Curvas como intersección de superficies
+\series default
+: dado el sistema de ecuaciones 
+\begin_inset Formula $\left\{ \begin{array}{c}
+F\left(x,y,z\right)=0\\
+G\left(x,y,z\right)=0
+\end{array}\right.$
+\end_inset
+
+ y el punto 
+\begin_inset Formula $A=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+.
+ Cuando: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F(A)=0$
+\end_inset
+
+ y 
+\begin_inset Formula $G(A)=0$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla F,\nabla G\in C^{1}\left(E\left(A\right)\right),$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla F(A)\neq0$
+\end_inset
+
+ y 
+\begin_inset Formula $\nabla G(A)\ne0$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+el sistema define una curva 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ que pasa por A, y que admite recta tangente y plano normal en A, siendo
+ 
+\begin_inset Formula $d_{0}=\nabla F\left(A\right)\times\nabla G(A)$
+\end_inset
+
+ el vector director de la recta tangente.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Superficies definidas en forma implícita
+\series default
+: sea 
+\begin_inset Formula $F\left(x,y,z\right)=0$
+\end_inset
+
+ con F escalar y un punto 
+\begin_inset Formula $A=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+, tal que: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(A\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla F$
+\end_inset
+
+ es 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $E(A),$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla F\left(A\right)\ne0,$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Entonces 
+\begin_inset Formula $F\left(x,y,z\right)=0$
+\end_inset
+
+ es la ecuación de una superficie que pasa por A y admite recta normal y
+ plano tangente en A.
+ Además, se tiene que si 
+\begin_inset Formula $\frac{\partial F}{\partial z}\left(A\right)\ne0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $F\left(x,y,z\right)=0$
+\end_inset
+
+ define a 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ en un entorno de A.
+\end_layout
+
+\begin_layout Subsection
+Funciones inversas
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $F:U\subseteq\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ es una función tal que 
+\begin_inset Formula $F\left(\overline{u},\overline{v}\right)=(\overline{x},\overline{y})$
+\end_inset
+
+ y en un entorno de 
+\begin_inset Formula $\left(\overline{u},\overline{v}\right)$
+\end_inset
+
+ las derivadas parciales 
+\begin_inset Formula $\frac{\partial f}{\partial u},\frac{\partial f}{\partial v},\frac{\partial g}{\partial u},\frac{\partial g}{\partial v}$
+\end_inset
+
+ de las funciones coordenadas de F son continuas (i.e.
+ F es de clase 
+\begin_inset Formula $\mathcal{C}^{1})$
+\end_inset
+
+, se tiene que siendo el determinante de 
+\begin_inset Formula $JF\left(\overline{u},\overline{v}\right)\ne0$
+\end_inset
+
+, entonces existe un entorno de 
+\begin_inset Formula $(\overline{x},\overline{y})$
+\end_inset
+
+ en la que existe la inversa 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ de la función F, la cual tiene continuas las derivadas parciales de sus
+ funciones coordenadas en el entorno, y su matriz jacobiana es 
+\begin_inset Formula $JF^{-1}\left(x,y\right)=\left(JF\left(u,v\right)\right)^{-1}$
+\end_inset
+
+ donde 
+\begin_inset Formula $\left(x,y\right)=\left(f\left(u,v\right),g\left(u,v\right)\right)\in E(\left(\overline{x},\overline{y}\right))$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+(F^{-1})'(x,y)=\left(F'(u,v)\right)^{-1}
+\]
+
+\end_inset
+
+
+\series bold
+Teorema de la función inversa
+\series default
+: Sea 
+\begin_inset Formula $F:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $F\left(p\right)=q,\:p=\left(x_{1},x_{2},\ldots,x_{n}\right),\:q=(y_{1},y_{2},\ldots,y_{n})$
+\end_inset
+
+.
+ Suponga que en un entorno B de 
+\begin_inset Formula $p$
+\end_inset
+
+ la función F es de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ y que el determinante 
+\begin_inset Formula $JF(p)\ne0.$
+\end_inset
+
+ Entonces hay un entorno 
+\begin_inset Formula $B'$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ de 
+\begin_inset Formula $q$
+\end_inset
+
+ en la que se puede definir la función inversa de F, 
+\begin_inset Formula $F^{-1}:B^{'}\to B$
+\end_inset
+
+, la cual es de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $JF^{-1}\left(y\right)=\left(JF\left(x\right)\right)^{-1}$
+\end_inset
+
+ donde 
+\begin_inset Formula $y=F\left(x\right)\in B'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Extremos de funciones de varias variables
+\end_layout
+
+\begin_layout Subsection
+Definiciones y ejemplos preliminares
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Extremos relativos
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto abierto U de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un máximo relativo o local en el punto 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+ si 
+\begin_inset Formula $f\left(x_{0}\right)\ge f\left(x\right)$
+\end_inset
+
+ para un entorno de 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un mínimo relativo o local si
+\begin_inset Formula $f\left(x_{0}\right)\le f(x)$
+\end_inset
+
+ para un entorno de 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Una condición 
+\shape italic
+necesaria
+\shape default
+ (pero no suficiente) para que la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, diferenciable en 
+\begin_inset Formula $\overline{x}\in U$
+\end_inset
+
+, tenga en ese punto un extremo local es que todas sus derivadas parciales
+ se anulen en 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+.
+ Esto es necesario ya que si las derivadas parciales se anulan, el plano
+ tangente en el punto es horizontal.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Extremos absolutos
+\series default
+: dado 
+\begin_inset Formula $S\subset D,\,f(x_{0},y_{0})$
+\end_inset
+
+ es un máximo absoluto de los valores de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $S$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\forall x\in S-\left\{ \left(x_{0},y_{0}\right)\right\} \to f\left(x\right)<f\left(x_{0},y_{0}\right).$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x_{0},y_{0}\right)$
+\end_inset
+
+ será un mínimo absoluto cuando 
+\begin_inset Formula $x\in S-\left\{ \left(x_{0},y_{0}\right)\right\} \to f\left(x\right)>f\left(x_{0},y_{0}\right).$
+\end_inset
+
+ Se dice entonces que la función 
+\begin_inset Quotes eld
+\end_inset
+
+alcanza un mínimo/máximo
+\begin_inset Quotes erd
+\end_inset
+
+ en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+.
+ Su 
+\begin_inset Quotes eld
+\end_inset
+
+valor
+\begin_inset Quotes erd
+\end_inset
+
+ es 
+\begin_inset Formula $f(x_{0},y_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Punto crítico
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+.
+ A los puntos 
+\begin_inset Formula $\overline{x}\in U$
+\end_inset
+
+ en los que podría haber extremos se los llama puntos críticos.
+ Hay de dos tipos: 
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Puntos donde 
+\shape default
+
+\begin_inset Formula $f$
+\end_inset
+
+
+\shape italic
+ no es diferenciable
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Puntos estacionarios
+\shape default
+: puntos donde 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable y 
+\begin_inset Formula $\nabla f\left(p\right)=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Punto silla
+\series default
+: considere la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\overline{x}\in U$
+\end_inset
+
+.
+ Si un entorno de 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+ contiene puntos 
+\begin_inset Formula $x$
+\end_inset
+
+ tales que 
+\begin_inset Formula $f\left(x\right)>f\left(\overline{x}\right)$
+\end_inset
+
+ y puntos 
+\begin_inset Formula $y$
+\end_inset
+
+ tales que 
+\begin_inset Formula $f\left(y\right)>f\left(\overline{x}\right)$
+\end_inset
+
+ se dice que 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+ es un punto silla de la función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hessiano
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, y sea 
+\begin_inset Formula $\overline{x}\in U$
+\end_inset
+
+.
+ Suponga que las derivadas parciales de segundo orden 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial x_{i}\partial x_{j}}$
+\end_inset
+
+ existen en 
+\begin_inset Formula $\overline{x}.$
+\end_inset
+
+ Al determinante de la matriz cuadrada y simétrica de orden 
+\shape italic
+n
+\shape default
+, se la llama hessiano de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+ y es tal que: 
+\begin_inset Formula 
+\[
+Hf\left(\overline{x}\right)=det\left(\frac{\partial^{2}f}{\partial x_{i}\partial x_{j}}\left(\overline{x}\right)\right)_{i,j=1,2,\ldots,n}\underrightarrow{en}\:R\text{²}\left[\begin{array}{cc}
+f_{xx}^{''}\left(\overline{x}\right) & f_{xy}^{''}\left(\overline{x}\right)\\
+f_{yx}^{''}\left(\overline{x}\right) & f_{yy}^{''}\left(\overline{x}\right)
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta matriz es simétrica.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Criterio del hessiano
+\series default
+: sea 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ un punto estacionario de una función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Entonces: 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $H\left(x_{0},y_{0}\right)=0$
+\end_inset
+
+, el criterio no da información.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $H\left(x_{0},y_{0}\right)\ne0:$
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $H\left(x_{0},y_{0}\right)>0\mbox{ y }f_{xx}^{''}\left(x_{0},y_{0}\right)>0\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ es un 
+\series bold
+mínimo
+\series default
+ local.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $H\left(x_{0},y_{0}\right)>0\mbox{ y }f_{xx}^{''}\left(x_{0},y_{0}\right)<0\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ es un 
+\series bold
+máximo
+\series default
+ local.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $H\left(x_{0},y_{0}\right)<0\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ es un 
+\series bold
+punto silla
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+En otro caso, 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ no es un extremo de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Para funciones continuas: Para analizar si el extremo encontrado es relativo
+ o absoluto, puede verse la intersección entre el plano tangente en el punto
+ (que es horizontal, con lo cual su ecuación se reduce a 
+\begin_inset Formula $z=f(x_{0},y_{0})$
+\end_inset
+
+) y la función.
+ Si no hay intersección, el extremo es absoluto.
+\end_layout
+
+\begin_layout Subsection
+La fórmula de Taylor de segundo orden
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fórmula de aproximación lineal
+\series default
+: para una función 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+, en un punto 
+\begin_inset Formula $\left(x,y\right)\in E\left(x_{0},y_{0}\right)$
+\end_inset
+
+ vale que: 
+\begin_inset Formula 
+\[
+f(x,y)\approx f(x_{0},y_{0})+f'_{x}(x_{0},y_{0})(x-x_{0})+f'_{y}(x_{0},y_{0})(y-y_{0})
+\]
+
+\end_inset
+
+Las condiciones suficientes que garantizan la existencia de un extremo local
+ de una función 
+\begin_inset Formula $f$
+\end_inset
+
+ en un punto crítico de la misma se tendrá que plantear con la ayuda de
+ la fórmula de Taylor para la función 
+\begin_inset Formula $f$
+\end_inset
+
+ en un punto crítico.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Polinomio de Taylor de primer orden
+\series default
+: El polinomio de grado 1 de una función 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ con 
+\begin_inset Formula $f\in C^{1}$
+\end_inset
+
+ es el polinomio que define a su plano tangente.
+ El polinomio de grado 1 en el punto 
+\shape italic
+
+\begin_inset Formula $p$
+\end_inset
+
+
+\shape default
+ es: 
+\begin_inset Formula 
+\[
+P_{1}=f\left(x_{0},y_{0}\right)+\frac{\partial f}{\partial x}\left(p\right)\left(x-x_{0}\right)+\frac{\partial f}{\partial y}\left(p\right)(y-y_{0})
+\]
+
+\end_inset
+
+ 
+\series bold
+Polinomio de Taylor de segundo orden
+\series default
+: si 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ es una función 
+\begin_inset Formula $\mathcal{C}^{k+1}$
+\end_inset
+
+, en un punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ se puede aproximar 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ en un entorno de 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ por un polinomio de grado 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ El polinomio de grado 2 de una función 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ con 
+\begin_inset Formula $f\in C^{3}$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $P_{2}(x,y)=f\left(x_{0},y_{0}\right)+\frac{\partial f}{\partial x}\left(p\right)\left(x-x_{0}\right)+\frac{\partial f}{\partial y}\left(p\right)\left(y-y_{0}\right)+\frac{1}{2!}\left[\left(\frac{\partial^{2}f}{\partial x^{2}}\right)\left(x-x_{0}\right)^{2}+2\left(\frac{\partial^{2}f}{\partial y\partial x}\right)\left(x-x_{0}\right)\left(y-y_{0}\right)+\left(\frac{\partial^{2}f}{\partial y^{2}}\right)\left(y-y_{0}\right)^{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota
+\bar default
+: en 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ se cumple que 
+\begin_inset Formula $f\left(x_{0},y_{0}\right)=P\left(x_{0},y_{0}\right)$
+\end_inset
+
+, y además 
+\begin_inset Formula $\frac{\partial^{k}f}{\partial y^{k}}\left(x_{0},y_{0}\right)=\frac{\partial^{k}P}{\partial y^{k}}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ (i.e.
+ las derivadas de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto son iguales a las derivadas de 
+\begin_inset Formula $P$
+\end_inset
+
+ en el punto).
+ En un punto 
+\begin_inset Formula $(x_{1},y_{1})$
+\end_inset
+
+ cualquiera de un entorno de 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ se cumple que 
+\begin_inset Formula $f\left(x_{1},y_{1}\right)\approx P\left(x_{1},y_{1}\right)$
+\end_inset
+
+, y no se puede decir nada acerca de las derivadas.
+\end_layout
+
+\begin_layout Subsection
+Condiciones suficientes para la existencia de extremos locales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función definida en el conjunto abierto U que tiene en 
+\begin_inset Formula $\overline{x}\in U$
+\end_inset
+
+ un punto crítico.
+ Supongamos que en un entorno de 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+ las derivadas parciales de 
+\begin_inset Formula $f$
+\end_inset
+
+ de segundo orden son continuas.
+ Sea 
+\begin_inset Formula $H(\overline{x})$
+\end_inset
+
+ el hessiano de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+.
+ Entonces: 
+\end_layout
+
+\begin_layout Enumerate
+Si todas las submatrices angulares del hessiano tienen determinantes positivos,
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un mínimo local en 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si las submatrices angulares del hessiano tienen determinantes de signo
+ alternado (comenzando con un valor negativo, o sea 
+\begin_inset Formula $\frac{\partial^{n}f}{\partial x_{1}^{n}}<0$
+\end_inset
+
+), entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un máximo local en 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Extremos condicionados
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ definida en U.
+ Sean 
+\begin_inset Formula $g_{1},g_{2},\ldots,g_{m}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, 
+\shape italic
+m
+\shape default
+ funciones de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ en U (
+\begin_inset Formula $m>n$
+\end_inset
+
+).
+ Sea 
+\begin_inset Formula $S=\{x\in U:g_{i}\left(x\right)=0,i=1,2,\ldots,m\}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $x_{0}\in S$
+\end_inset
+
+ un punto de extremo condicionado de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Suponga que el determinante 
+\begin_inset Formula $det\left(\frac{\partial g_{i}}{\partial x_{j}}\left(x_{0}\right)\right)\ne0$
+\end_inset
+
+ para un conjunto de 
+\begin_inset Formula $m$
+\end_inset
+
+ variables 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+, tomadas del conjunto de 
+\begin_inset Formula $n$
+\end_inset
+
+ variables 
+\begin_inset Formula $\left\{ x_{1},x_{2},\ldots,x_{n}\right\} $
+\end_inset
+
+ de 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+.
+ Entonces existen 
+\begin_inset Formula $m$
+\end_inset
+
+ números reales 
+\begin_inset Formula $\lambda_{1},\lambda_{2},\ldots,\lambda_{m}$
+\end_inset
+
+ tales que se cumple: 
+\begin_inset Formula 
+\[
+\nabla f\left(x_{0}\right)+\sum_{k=1}^{m}\lambda_{k}\cdot\nabla g_{k}\left(x_{0}\right)=0
+\]
+
+\end_inset
+
+A los números 
+\begin_inset Formula $\lambda_{k},k=1,2,\ldots,m$
+\end_inset
+
+ se les llama multiplicadores de Lagrange.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Ejemplo
+\shape default
+: Se quieren hallar los extremos de la función 
+\begin_inset Formula $f\left(x,y,z\right)=xyz$
+\end_inset
+
+ sujeta a las restricciones 
+\begin_inset Formula $\left\{ \begin{array}{c}
+x^{2}+y^{2}+z^{2}=1\\
+x+y+z=0
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formamos la función de Lagrange: 
+\begin_inset Formula $F\left(x,y,z,\lambda_{1},\lambda_{2}\right)=xyz+\lambda_{1}\left(x^{2}+y^{2}+z^{2}-1\right)+\lambda_{2}(x+y+z)$
+\end_inset
+
+ y consideramos entonces el sistema: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\frac{\partial F}{\partial x}=yz+2\lambda_{1}x+\lambda_{2}=0\\
+\frac{\partial F}{\partial y}=xz+2\lambda_{1}y+\lambda_{2}=0\\
+\frac{\partial F}{\partial z}=xy+2\lambda_{1}z+\lambda_{2}=0\\
+\frac{\partial F}{\partial\lambda_{1}}=x^{2}+y^{2}+z^{2}-1=0\\
+\frac{\partial F}{\partial\lambda_{2}}=x+y+z=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, resolvemos el sistema para 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ y para los puntos obtenidos evaluamos en la función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Otro método:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Ejemplo
+\shape default
+: halle los extremos de 
+\begin_inset Formula $f\left(x,y\right)=3+x^{2}+y^{2}$
+\end_inset
+
+ sujetos a la restricción 
+\begin_inset Formula $x^{2}+\frac{1}{4}y^{2}=1$
+\end_inset
+
+.
+ Primero parametrizamos la elipse de la restricción: 
+\begin_inset Formula $\sigma\left(t\right)=(cos\left(t\right),2sin(t))$
+\end_inset
+
+ con 
+\begin_inset Formula $0\le t\le2\pi$
+\end_inset
+
+.
+ Luego armamos 
+\begin_inset Formula $h\left(t\right)=f\left(\sigma\left(t\right)\right)=3+cos^{2}\left(t\right)+4sin^{2}(t)$
+\end_inset
+
+.
+ Hallamos los puntos críticos de 
+\begin_inset Formula $h(t)$
+\end_inset
+
+ derivando e igualando a cero, y luego utilizamos el criterio de la derivada
+ segunda: si 
+\begin_inset Formula $h''\left(t_{0}\right)>0$
+\end_inset
+
+, 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ es un mínimo, y si 
+\begin_inset Formula $h''\left(t_{0}\right)<0$
+\end_inset
+
+ es un máximo.
+ Para ver los valores donde se alcanzan los máximos y mínimos, reemplazamos
+ los valores de 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ en la curva.
+\end_layout
+
+\begin_layout Subsection
+Extremos absolutos en regiones compactas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:K\subset\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función real definida en el conjunto compacto K de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua, existen puntos 
+\begin_inset Formula $x_{0},x_{1}\in K$
+\end_inset
+
+ tales que 
+\begin_inset Formula $f\left(x_{0}\right)\ge f\left(x\right)\forall x\in K$
+\end_inset
+
+ y 
+\begin_inset Formula $f\left(x_{1}\right)\le f\left(x\right)\forall x\in K.$
+\end_inset
+
+ Si además 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable, se puede demostrar que los extremos absolutos de 
+\begin_inset Formula $f$
+\end_inset
+
+ ocurren: 
+\end_layout
+
+\begin_layout Enumerate
+En la frontera de K, ó 
+\end_layout
+
+\begin_layout Enumerate
+En puntos interiores de K, donde las derivadas parciales de 
+\begin_inset Formula $f$
+\end_inset
+
+ se deben anular.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Ejemplo
+\emph default
+: se quiere extremar la función 
+\begin_inset Formula $f(x,y)=x^{2}+3y^{2}$
+\end_inset
+
+ en la región 
+\begin_inset Formula $K=\{\bar{x}\in R^{2}:(x-1)^{2}+y\text{²}\leq4\}$
+\end_inset
+
+.
+ En principio, se localizan los puntos críticos de 
+\begin_inset Formula $f$
+\end_inset
+
+ dentro de 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ Resolviendo 
+\begin_inset Formula $f'_{x}=2y=0$
+\end_inset
+
+ y 
+\begin_inset Formula $f'_{y}=6y=0$
+\end_inset
+
+ se obtiene el punto 
+\begin_inset Formula $p_{1}=(0,0)\in K$
+\end_inset
+
+.
+ Luego se determinan los extremos de 
+\begin_inset Formula $f$
+\end_inset
+
+ en la frontera de 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ Para ello se resuelve el problema de extremos condicionados de 
+\begin_inset Formula $f$
+\end_inset
+
+ sujeto a 
+\begin_inset Formula $(x-1)^{2}+y^{2}=4$
+\end_inset
+
+.
+ Para ello se forma la función de Lagrange 
+\begin_inset Formula $F(x,y,\lambda)=x^{2}+3y^{2}+\lambda(x^{2}-2x+y^{2}-3)$
+\end_inset
+
+ y se resuelve 
+\begin_inset Formula $F'_{x}=0$
+\end_inset
+
+, 
+\begin_inset Formula $F'_{y}=0$
+\end_inset
+
+ y 
+\begin_inset Formula $F'_{\lambda}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Curvas en el espacio
+\end_layout
+
+\begin_layout Subsection
+Introducción.
+ Límites y continuidad.
+\end_layout
+
+\begin_layout Standard
+Una función vectorial de una variable real es una función del tipo 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+, la cual a cada número real 
+\begin_inset Formula $t\in I$
+\end_inset
+
+ le asocia un único valor 
+\begin_inset Formula $f(t)$
+\end_inset
+
+ en el espacio 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Así, podemos escribir 
+\begin_inset Formula $f\left(t\right)=\left(x_{1\left(t\right)},x_{2\left(t\right)},\ldots,x_{n\left(t\right)}\right)\in\mathbb{R}^{n}$
+\end_inset
+
+ donde 
+\begin_inset Formula $x_{i}:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ con 
+\begin_inset Formula $i=1,2,\ldots,n$
+\end_inset
+
+ son funciones reales de la variable real 
+\shape italic
+
+\begin_inset Formula $t$
+\end_inset
+
+
+\shape default
+, llamadas funciones coordenadas de la función 
+\shape italic
+
+\begin_inset Formula $f$
+\end_inset
+
+
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Límite
+\series default
+: sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ una función definida en el intervalo abierto I de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ un punto de I o un punto frontera de I.
+ Se dice que el límite de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ cuando 
+\shape italic
+
+\begin_inset Formula $t$
+\end_inset
+
+
+\shape default
+ tiende a 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ es L
+\begin_inset Formula $\in\mathbb{R}^{n}$
+\end_inset
+
+, lo cual se escribe como 
+\begin_inset Formula $\lim_{t\to t_{0}}f\left(t\right)=L$
+\end_inset
+
+ si dado cualquier 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ existe un 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $t\in I,\:0<\left|t-t_{0}\right|<\delta\Rightarrow\left|f\left(t\right)-L\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ como en la definición anterior.
+ Entonces 
+\begin_inset Formula $\lim_{t\to t_{0}}f\left(t\right)=L=(\ell_{1},\ell_{2},\ldots,\ell_{n})\in\mathbb{R}^{n}$
+\end_inset
+
+ si y sólo si 
+\begin_inset Formula $\lim_{t\to t_{0}}x_{i}\left(t\right)=\ell_{i}$
+\end_inset
+
+, donde 
+\begin_inset Formula $f\left(t\right)=\left(x_{1\left(t\right)},x_{2\left(t\right)},\ldots,x_{n\left(t\right)}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuidad
+\series default
+: sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ una función definida en el subconjunto abierto I de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $t_{0}\in I$
+\end_inset
+
+.
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ si 
+\begin_inset Formula $\lim_{t\to t_{0}}f\left(t\right)=f(t_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+una función definida en el intervalo abierto I de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, digamos que 
+\begin_inset Formula $f\left(t\right)=\left(x_{1\left(t\right)},x_{2\left(t\right)},\ldots,x_{n\left(t\right)}\right)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $t_{0}\in I$
+\end_inset
+
+, La función 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ si y sólo si sus funciones coordenadas 
+\begin_inset Formula $x_{i}:I\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ lo son.
+\end_layout
+
+\begin_layout Subsection
+Caminos en 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+.
+ Consideraciones y ejemplos preliminares
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 12
+placement R
+overhang 0in
+width "4cm"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename curva.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hélice de ecuación 
+\begin_inset Formula $\vec{\lambda}(t)=(4cos(t),4sin(t),t)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Una función 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ continua, definida en el intervalo I de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, se llama 
+\series bold
+camino
+\series default
+ o 
+\series bold
+trayectoria
+\series default
+ en el espacio 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Si la función está definida en el intervalo cerrado 
+\begin_inset Formula $I=[a,b]$
+\end_inset
+
+, diremos que el punto 
+\begin_inset Formula $f\left(a\right)\in\mathbb{R}^{n}$
+\end_inset
+
+ es el 
+\shape italic
+punto inicial
+\shape default
+ del camino, y 
+\begin_inset Formula $f\left(b\right)\in\mathbb{R}^{n}$
+\end_inset
+
+ es el 
+\shape italic
+punto final
+\shape default
+ de él.
+ Si 
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+, diremos que el camino 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\shape italic
+cerrado
+\shape default
+.
+ Si la función 
+\begin_inset Formula $f$
+\end_inset
+
+ es inyectiva en I, diremos que
+\series bold
+ 
+\series default
+
+\begin_inset Formula $f$
+\end_inset
+
+ es un 
+\shape italic
+camino simple
+\shape default
+.
+ Si se tiene que 
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+ y la función 
+\begin_inset Formula $f$
+\end_inset
+
+ restringida al intervalo 
+\begin_inset Formula $[a,b)$
+\end_inset
+
+ es inyectiva, diremos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es un 
+\shape italic
+camino
+\shape default
+ 
+\shape italic
+cerrado simple
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Traza
+\series default
+: Se llama traza del camino 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ al conjunto de las imágenes de 
+\begin_inset Formula $f$
+\end_inset
+
+, es decir: traza de 
+\begin_inset Formula $f=\{f\left(t\right)\in\mathbb{R}^{n}|t\in I\}$
+\end_inset
+
+ 
+\begin_inset Formula $\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Curva
+\series default
+: Designaremos con la palabra curva (en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+) a la traza de un camino 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+.
+ Si el camino 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{2},\,f\left(t\right)=(x_{t},y_{t})$
+\end_inset
+
+ es simple, podremos decir que la curva 
+\begin_inset Formula $\{f\left(t\right)\in\mathbb{R}^{2}:t\in[a,b]$
+\end_inset
+
+} es una 
+\shape italic
+curva simple
+\shape default
+.
+ Una curva es 
+\shape italic
+plana
+\shape default
+ si hay un plano 
+\begin_inset Formula $S$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(t\right)\in S\:\forall t\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Curva suave
+\series default
+: curva que no posee puntos angulosos.
+ Una curva 
+\begin_inset Formula $C$
+\end_inset
+
+ representada por 
+\begin_inset Formula $\lambda:I\rightarrow R^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda(t)=(\lambda_{1},\ldots\lambda_{n})$
+\end_inset
+
+ es suave si sus derivadas son continuas en el intervalo 
+\begin_inset Formula $I$
+\end_inset
+
+ y no son simultáneamente nulas, excepto posiblemente en los puntos terminales
+ del intervalo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Curva suave a trozos
+\series default
+: Una curva 
+\begin_inset Formula $C$
+\end_inset
+
+ es suave a trozos si es suave en todo intervalo de alguna partición de
+ 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ O sea que el intervalo puede dividirse en un número finito de subintervalos,
+ en cada uno de los cuales 
+\begin_inset Formula $C$
+\end_inset
+
+ es suave.
+\end_layout
+
+\begin_layout Subsection
+Diferenciabilidad.
+ Curvas regulares
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Derivada
+\series default
+: Sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ un camino definido en el intervalo abierto I de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $t_{0}\in I$
+\end_inset
+
+.
+ Se define la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, denotada por 
+\begin_inset Formula $f'(t_{0})$
+\end_inset
+
+ o 
+\begin_inset Formula $\frac{\partial f}{\partial t}(t_{0})$
+\end_inset
+
+ como el límite 
+\begin_inset Formula $f'\left(t_{0}\right)=\lim_{h\to0}\frac{f\left(t_{0}+h\right)-f(t_{0})}{h}$
+\end_inset
+
+ cuando éste existe.
+ En tal caso se dice que el camino 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Si la función es diferenciable en todos los puntos 
+\begin_inset Formula $t_{0}\in I$
+\end_inset
+
+, decimos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en I.
+ Tener en cuenta que la derivada 
+\begin_inset Formula $f^{'}(t_{0})$
+\end_inset
+
+ es un vector de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, y además que éste es tangente a la curva en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, y que apunta en dirección al recorrido de la curva.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Vector velocidad
+\series default
+: Sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ un camino diferenciable.
+ Al vector 
+\begin_inset Formula $f'(t)$
+\end_inset
+
+ se le llama vector velocidad del camino en el punto 
+\begin_inset Formula $f\left(t\right)\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Camino regular
+\series default
+: Sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{3}$
+\end_inset
+
+ un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es un camino regular si 
+\begin_inset Formula $f'\left(t\right)\ne\overline{0}\:\forall t\in I.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Recta tangente
+\series default
+: Sea 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{3}$
+\end_inset
+
+ un camino regular.
+ La recta tangente a la curva en 
+\begin_inset Formula $f(t_{0})$
+\end_inset
+
+ es la recta en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ que pasa por 
+\begin_inset Formula $f(t_{0})$
+\end_inset
+
+ y tiene como vector director a uno paralelo a 
+\begin_inset Formula $f'(t_{0})$
+\end_inset
+
+.
+ Es decir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L:\:(x,y,z)=k\left(f'_{x}(t_{0}),f'_{y}(t_{0}),f'_{z}(t_{0})\right)+\left(x(t_{0}),y(t_{0}),z(t_{0})\right)\mbox{ con \ensuremath{k\in R}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Plano normal
+\series default
+: para el camino 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{3}$
+\end_inset
+
+ el plano normal a la curva correspondiente en 
+\begin_inset Formula $f(t_{0})$
+\end_inset
+
+ es el plano en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ que pasa por 
+\begin_inset Formula $f(t_{0})$
+\end_inset
+
+ y tiene por vector normal al vector 
+\begin_inset Formula $f^{'}(t_{0})$
+\end_inset
+
+.
+ Este plano tiene como ecuación: 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}\left(t_{0}\right)\left(x-x\left(t_{0}\right)\right)+\frac{\partial f}{\partial y}\left(t_{0}\right)\left(y-y\left(t_{0}\right)\right)+\frac{\partial f}{\partial z}\left(t_{0}\right)\left(z-z\left(t_{0}\right)\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reparametrizaciones 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ un camino regular.
+ Sea 
+\begin_inset Formula $k$
+\end_inset
+
+ una constante positiva.
+ Para recorrer la curva descrita por 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+ veces más rápido, podemos tomar la función 
+\begin_inset Formula $\varphi:\left[0,\frac{b-a}{k}\right]\to[a,b]$
+\end_inset
+
+ dada por 
+\begin_inset Formula $\varphi\left(s\right)=ks+a$
+\end_inset
+
+.
+ La reparametrización 
+\begin_inset Formula $\overline{f}:\left[0,\frac{b-a}{k}\right]\to\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{f}\left(s\right)=\left(f\circ\varphi\right)\left(s\right)=f(ks+a)$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $k$
+\end_inset
+
+ es negativa, la reparametrización recorre 
+\begin_inset Formula $f$
+\end_inset
+
+ con una velocidad en módulo 
+\begin_inset Formula $k$
+\end_inset
+
+ veces mayor, pero en sentido inverso al de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $k=-1$
+\end_inset
+
+, el camino 
+\begin_inset Formula $\overline{f}:\left[0,b-a\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ dado por 
+\begin_inset Formula $\overline{f}\left(s\right)=f(b-s)$
+\end_inset
+
+ recorre la curva descrita por 
+\begin_inset Formula $f$
+\end_inset
+
+ con la misma velocidad -en módulo- de 
+\begin_inset Formula $f$
+\end_inset
+
+, pero en sentido inverso al de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Longitud de un camino
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Rapidez
+\series default
+: llamamos rapidez de un camino 
+\begin_inset Formula $f:I\subseteq\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $f(t_{0})$
+\end_inset
+
+ al número no negativo 
+\begin_inset Formula $\left\Vert f'(t_{0})\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Longitud de un camino
+\series default
+: sea 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+.
+ La longitud de 
+\begin_inset Formula $f$
+\end_inset
+
+ entre 
+\begin_inset Formula $t=a$
+\end_inset
+
+ y 
+\begin_inset Formula $t=b$
+\end_inset
+
+, denotada por 
+\begin_inset Formula $\ell(f)$
+\end_inset
+
+, se define como: 
+\begin_inset Formula $\ell\left(f\right)=\int_{a}^{b}\left\Vert f'(t)\right\Vert \:dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ecuaciones diferenciales
+\end_layout
+
+\begin_layout Subsection
+Introducción y definiciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ecuación diferencial
+\series default
+: una ecuación se llama 
+\emph on
+ecuación diferencial
+\emph default
+ si contiene derivadas o diferenciales de una o más variables dependientes
+ de una o más variables independientes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ecuación diferencial ordinaria
+\series default
+: son las ecuaciones diferenciales en las que figuran derivadas de diferentes
+ órdenes de la función desconocida 
+\begin_inset Formula $y(x)$
+\end_inset
+
+, que depende solo de una variable independiente.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Orden de una ecuación diferencial
+\series default
+: se llama 
+\emph on
+orden
+\emph default
+ de una ecuación diferencial al de la derivada de mayor orden que figura
+ en dicha ecuación.
+ 
+\emph on
+Ejemplo
+\emph default
+: el orden de la ecuación 
+\begin_inset Formula $y''+y'=x\text{²}$
+\end_inset
+
+ es 2.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ecuación diferencial lineal
+\series default
+: una ecuación diferencial es 
+\emph on
+lineal
+\emph default
+ cuando es lineal en 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ y en sus derivadas.
+ Es decir que los términos que contienen la función incógnita y sus derivadas
+ 
+\begin_inset Formula $y',y'',...y^{(n)}$
+\end_inset
+
+ aparecen como combinación lineal de 
+\begin_inset Formula $y,y',...y^{(n)}.$
+\end_inset
+
+ Su forma general es 
+\begin_inset Formula $a_{1}(x)y+a_{2}(x)y'+\ldots+a_{n}(x)y^{(n)}=f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problema de valor inicial
+\series default
+: es el problema de encontrar una solución de la ecuación diferencial 
+\begin_inset Formula $y'=f(x,y)$
+\end_inset
+
+ sujeto a una condición inicial 
+\begin_inset Formula $y(x_{0})=y_{0}$
+\end_inset
+
+.
+ Para que la solución a este problema sea única, debe verificarse que haya
+ tantas condiciones iniciales como el orden de la ecuación diferencial.
+\end_layout
+
+\begin_layout Subsection
+Ecuaciones de variables separables
+\end_layout
+
+\begin_layout Standard
+Una ecuación diferencial separable se puede escribir de la forma 
+\begin_inset Formula $N(y)y'=M(x)$
+\end_inset
+
+.
+ Esta ecuación se puede reescribir como 
+\begin_inset Formula $N(y)dy=M(x)dx$
+\end_inset
+
+, e integrando ambos miembros se obtiene una solución.
+\end_layout
+
+\begin_layout Subsection
+Ecuaciones homogéneas
+\end_layout
+
+\begin_layout Standard
+Son de la forma 
+\begin_inset Formula $y'=f(x,y)$
+\end_inset
+
+, donde 
+\begin_inset Formula $f(x,y)=f(tx,ty)$
+\end_inset
+
+.
+ Este tipo de ecuaciones se pueden resolver haciendo el cambio de variables
+ 
+\begin_inset Formula $y=zx$
+\end_inset
+
+, donde 
+\begin_inset Formula $z=z(x)$
+\end_inset
+
+.
+ Entonces reemplazamos 
+\begin_inset Formula $y'$
+\end_inset
+
+ por 
+\begin_inset Formula $z+xz'$
+\end_inset
+
+ y resolvemos.
+\end_layout
+
+\begin_layout Subsection
+Ecuaciones lineales de 1er orden
+\end_layout
+
+\begin_layout Standard
+Sea la ecuación 
+\begin_inset Formula $y'+p(x)y=q(x)$
+\end_inset
+
+.
+ La solución general de esta ecuación diferencial se obtiene multiplicando
+ toda la ecuación por el factor integrante de Lagrange: 
+\begin_inset Formula $u(x)=e^{\int p(x)dx}.$
+\end_inset
+
+ Entonces la ecuación a resolver es 
+\begin_inset Formula $\left(u(x)y\right)'=u(x)q(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ecuaciones diferenciales exactas
+\end_layout
+
+\begin_layout Standard
+Una ecuación diferencial 
+\begin_inset Formula $P(x,y)dx+Q(x,y)dy=0$
+\end_inset
+
+ se dice ser 
+\emph on
+exacta
+\emph default
+ si exista una función 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ tal que la diferencial total de esta función (es decir, 
+\begin_inset Formula $df\left(x,y\right)=\frac{\partial f}{\partial x}\left(x,y\right)dx+\frac{\partial f}{\partial y}\left(x,y\right)dy$
+\end_inset
+
+) sea 
+\begin_inset Formula $df\left(x,y\right)=P\left(x,y\right)dx+Q\left(x,y\right)dy$
+\end_inset
+
+.
+ En el caso de que la ED sea exacta, la ecuación se puede escribir como
+ 
+\begin_inset Formula $df\left(x,y\right)=0$
+\end_inset
+
+, de modo que la familia de curvas en el plano 
+\begin_inset Formula $f\left(x,y\right)=c$
+\end_inset
+
+ es la solución general.
+\end_layout
+
+\begin_layout Standard
+Se puede asociar la ED al campo vectorial 
+\begin_inset Formula $\vec{F}\left(x,y\right)=(P_{(x,y)},Q_{\left(x,y\right)})$
+\end_inset
+
+, con lo que la propiedad de exactitud de la ecuación es equivalente a la
+ propiedad del campo 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ de ser conservativo.
+ Es decir, la ecuación es exacta si y solo si 
+\begin_inset Formula $\frac{\partial Q}{\partial x}=\frac{\partial P}{\partial y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Factor integrante
+\series default
+: algunas EDs no exactas se pueden convertir en exactas multiplicándolas
+ por un factor adecuado.
+ En general, para la ecuación 
+\begin_inset Formula $P\left(x,y\right)dx+Q\left(x,y\right)dy=0$
+\end_inset
+
+ se dice que la función no nula 
+\begin_inset Formula $\mu:U\subseteq\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+, de clase 
+\begin_inset Formula $\mathcal{C}^{k}$
+\end_inset
+
+, es un factor de integración si la ecuación 
+\begin_inset Formula $\mu P\left(x,y\right)dx+\mu Q\left(x,y\right)dy=0$
+\end_inset
+
+.
+ En general, la función 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ser 
+\begin_inset Formula $\mu=\mu(x)$
+\end_inset
+
+ o 
+\begin_inset Formula $\mu=\mu(y)$
+\end_inset
+
+, aunque también existen 
+\begin_inset Formula $\mu=\mu(x,y)$
+\end_inset
+
+ para ecuaciones más complicadas.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Ejemplo
+\emph default
+: sea la ecuación 
+\begin_inset Formula $\underbrace{(3yx\text{²})}_{P}dx+\underbrace{(x\text{³}+sen(y))}_{Q}dy=0$
+\end_inset
+
+.
+ Se puede ver que 
+\begin_inset Formula $P'_{y}=Q'_{x}$
+\end_inset
+
+, con lo que resulta que la ecuación es total exacta.
+ Entonces designamos 
+\begin_inset Formula $\vec{F}=(P,Q)=\nabla\phi$
+\end_inset
+
+, con lo que resulta el sistema
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $\begin{cases}
+\phi'_{x}=3yx\text{²} & (I)\\
+\phi'_{y}=x\text{³}+sen(y) & (II)
+\end{cases}\overset{integrar}{\Rightarrow}\begin{cases}
+\phi=yx\text{³}+g(y) & (*)\\
+\phi=yx\text{³}-cos(y)+h(x) & (\#)
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Derivando (*) respecto de 
+\begin_inset Formula $y$
+\end_inset
+
+ e igualando a (II), se obtiene que 
+\begin_inset Formula $\phi'_{y}=x\text{³}+g'_{y}=x\text{³}+sen(y)$
+\end_inset
+
+, y despejando e integrando se obtiene 
+\begin_inset Formula $g(y)=-cos(y)$
+\end_inset
+
+.
+ Entonces la solución general de la ecuación es 
+\begin_inset Formula $\phi=yx\text{³}-cos(y)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Trayectorias ortogonales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 8
+placement r
+overhang 0in
+width "4cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename curvas_ortogonales.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Círculos concéntricos (
+\color red
+rojo
+\color inherit
+) y rectas que pasan por el origen (
+\color blue
+azul
+\color inherit
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Trayectorias ortogonales
+\series default
+: Dos familias uniparamétricas de curvas 
+\begin_inset Formula $F_{1}(x,y,c_{1})=0$
+\end_inset
+
+ y 
+\begin_inset Formula $F_{2}(x,y,c_{2})=0$
+\end_inset
+
+ se dicen que son 
+\emph on
+trayectorias ortogonales
+\emph default
+ si todas las curvas de una familia cortan perpendicularmente a todas las
+ curvas de la otra familia.
+ En otras palabras, en cada punto de intersección de ambas curvas la recta
+ tangente al punto de una curva es ortogonal a la tangente de la otra curva.
+\end_layout
+
+\begin_layout Standard
+El procedimiento para hallar la familia de curvas 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ ortogonales a una familia 
+\begin_inset Formula $F_{1}:\,y=f(x,c)$
+\end_inset
+
+ es el siguiente:
+\end_layout
+
+\begin_layout Enumerate
+Derivar la expresión de 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $x$
+\end_inset
+
+, obteniendo 
+\begin_inset Formula $F_{1}^{'}:\,y'=\frac{\partial f}{\partial x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Despejar 
+\begin_inset Formula $c$
+\end_inset
+
+ de 
+\begin_inset Formula $F_{1}^{'}$
+\end_inset
+
+, y reemplazarlo en 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+En la nueva expresión obtenida para 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ reemplazar 
+\begin_inset Formula $y'$
+\end_inset
+
+ por 
+\begin_inset Formula $-\frac{1}{y'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Resolver esta nueva ecuación diferencial.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota
+\bar default
+: cuando la familia 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ viene dada de forma implícita (ejemplo: 
+\begin_inset Formula $x^{2}+y^{2}=c$
+\end_inset
+
+) el método es el mismo, pero se saltea el paso 2.
+\end_layout
+
+\begin_layout Section
+Integrales de línea
+\end_layout
+
+\begin_layout Subsection
+Curvas en el espacio: Resumen de hechos importantes
+\end_layout
+
+\begin_layout Standard
+Una función 
+\begin_inset Formula $\lambda:I\to\mathbb{R}^{n}$
+\end_inset
+
+ continua, definida en el intervalo I, se llama camino en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ El camino se escribe como 
+\begin_inset Formula $\lambda=\left(\lambda_{1},\lambda_{2},\ldots,\lambda_{n}\right).$
+\end_inset
+
+ Si 
+\begin_inset Formula $I=[a,b]$
+\end_inset
+
+, diremos que 
+\begin_inset Formula $\lambda\left(a\right)\in\mathbb{R}^{n}$
+\end_inset
+
+ es el punto inicial del camino, y 
+\begin_inset Formula $\lambda\left(b\right)\in\mathbb{R}^{n}$
+\end_inset
+
+ es el punto final.
+ Si 
+\begin_inset Formula $\lambda\left(a\right)=\lambda(b)$
+\end_inset
+
+ es un camino cerrado.
+ Si 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es una función inyectiva, es un camino simple.
+ Si 
+\begin_inset Formula $\lambda\left(a\right)=\lambda\left(b\right)$
+\end_inset
+
+ y la restricción de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ al intervalo 
+\begin_inset Formula $[a,b)$
+\end_inset
+
+ es inyectiva, es un camino cerrado simple.
+ El camino se dice diferenciable en 
+\begin_inset Formula $t$
+\end_inset
+
+ cuando existe la derivada 
+\begin_inset Formula $\lambda^{'}(t)$
+\end_inset
+
+, la cual se define como 
+\begin_inset Formula $\lambda^{'}\left(t\right)=(x_{1}^{'}\left(t\right),x_{2}^{'}\left(t\right),\ldots,x_{n}^{'}\left(t\right))$
+\end_inset
+
+.
+ En otras palabras, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ será un camino diferenciable si y solo si sus funciones coordenadas son
+ diferenciables.
+ Al vector 
+\begin_inset Formula $\lambda^{'}\left(t\right)$
+\end_inset
+
+ se le llama vector velocidad.
+ El camino diferenciable 
+\begin_inset Formula $\lambda:I\to\mathbb{R}^{n}$
+\end_inset
+
+ es regular si 
+\begin_inset Formula $\lambda^{'}\left(t\right)\ne0\:\forall t\in I.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Campos vectoriales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 14
+placement R
+overhang 0in
+width "4cm"
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Graphics
+	filename lineas_de_campo.png
+	scale 30
+
+\end_inset
+
+
+\series default
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Línea de campo (
+\color blue
+azul
+\color inherit
+) y línea equipotencial (
+\color red
+rosa
+\color inherit
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Campo vectorial
+\series default
+: Una función del tipo 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ se llama campo vectorial (en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+).
+ Este campo asocia a cada punto 
+\begin_inset Formula $x$
+\end_inset
+
+ de 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ el vector 
+\begin_inset Formula $\vec{F}(x)$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Se dice que el campo vectorial 
+\begin_inset Formula $\vec{F}=(F_{1},F_{2},\ldots,F_{n})$
+\end_inset
+
+ es continuo (diferenciable, o de clase 
+\begin_inset Formula $\mathcal{C}^{k}$
+\end_inset
+
+) si todas las funciones coordenadas son continuas (diferenciables, o de
+ clase 
+\begin_inset Formula $\mathcal{C}^{k})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Líneas de campo
+\series default
+: para tener imágenes geométricas de campos en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, es útil considerar las 
+\shape italic
+líneas de campo
+\shape default
+.
+ Para un campo 
+\begin_inset Formula $\vec{F}:\mathbb{R}^{2}\to\mathbb{R}^{2}$
+\end_inset
+
+, una línea de campo es una curva en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ cuya propiedad es que en cada punto de ella su tangente va en dirección
+ al campo 
+\begin_inset Formula $F$
+\end_inset
+
+, es decir que 
+\begin_inset Formula $\vec{F}(\lambda(t))=\lambda'(t)$
+\end_inset
+
+.
+ En general, para un campo 
+\begin_inset Formula $\vec{F}:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+, las líneas de campo satisfacen que 
+\begin_inset Formula $\frac{dx_{1}}{F_{1}}=\frac{dx_{2}}{F_{2}}=\ldots=\frac{dx_{n}}{F_{n}}$
+\end_inset
+
+.
+ 
+\bar under
+
+\begin_inset Newline newline
+\end_inset
+
+Propiedad
+\bar default
+: las líneas de campo de un campo vectorial 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ son perpendiculares a las líneas equipotenciales (i.e.
+ las curvas de nivel de la función potencial de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Campo gradiente
+\series default
+: sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ diferenciable, podemos construir con ella el 
+\shape italic
+campo vectorial gradiente 
+\shape default
+de 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $\nabla f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+, que asocia a cada punto 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ el vector 
+\begin_inset Formula $\nabla f\left(x\right)\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Integrales de línea sobre campo vectorial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 12
+placement r
+overhang 0in
+width "6cm"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\series bold
+\begin_inset Graphics
+	filename integral de linea de campo vectorial.png
+	scale 30
+
+\end_inset
+
+
+\series default
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circulación de un campo a través de una hélice.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Integral de línea (circulación)
+\series default
+: sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n},\:\vec{F}=(F_{1},F_{2},\ldots,F_{n})$
+\end_inset
+
+ un campo vectorial continuo, y sea 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{n},\lambda=(\lambda_{1},\lambda_{2},\ldots,\lambda_{n})$
+\end_inset
+
+ un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\lambda\left(\left[a,b\right]\right)\subset U$
+\end_inset
+
+.
+ La integral de línea del campo 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ a lo largo del camino 
+\begin_inset Formula $C$
+\end_inset
+
+, o la 
+\series bold
+\shape italic
+\emph on
+circulación
+\series default
+\shape default
+\emph default
+ del campo 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ alrededor de (o lo largo de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+), se define como: 
+\begin_inset Formula 
+\[
+\int_{\lambda}\vec{F}\cdot d\vec{l}=\int_{a}^{b}\vec{F}\left(\lambda(t)\right)\cdot\lambda'(t)\:dt
+\]
+
+\end_inset
+
+Cuando el camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es cerrado, se suele usar la notación 
+\begin_inset Formula $\oint_{\lambda}\vec{F}\cdot d\vec{l}$
+\end_inset
+
+.
+\bar under
+
+\begin_inset Newline newline
+\end_inset
+
+Una aplicación
+\bar default
+: si 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ es la fuerza que actúa sobre una partícula moviéndose a lo largo de la
+ curva, entonces la integral sería la cantidad total de trabajo que realiza
+ esa fuerza sobre la partícula.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{-\lambda}F\cdot d\lambda=-\int_{\lambda}F\cdot d\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Una integral de línea es invariante por reparametrizaciones del camino sobre
+ el que se integra el campo 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $F,G:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ son dos campos continuos y 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda\left(\left[a,b\right]\right)\subset U$
+\end_inset
+
+, un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\int_{\lambda}\left(F+kG\right)\cdot d\lambda=\int_{\lambda}F\cdot d\lambda+k\int_{\lambda}G\cdot d\lambda$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\lambda=\lambda_{1}+\lambda_{2}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\int_{\lambda}F\cdot d\lambda=\int_{\lambda_{1}}F\cdot d\lambda+\int_{\lambda_{2}}F\cdot d\lambda$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mu$
+\end_inset
+
+ es una reparametrización de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ que conserva la orientación entonces 
+\begin_inset Formula $\int_{\mu}F\cdot d\mu=\int_{\lambda}F\cdot d\lambda$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mu$
+\end_inset
+
+ es una reparametrización de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ que invierte la orientación entonces 
+\begin_inset Formula $\int_{\mu}F\cdot d\mu=-\int_{\lambda}F\cdot d\lambda$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Independencia del camino, campos conservativos y funciones potenciales
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ un campo de clase 
+\begin_inset Formula $\mathcal{C}^{k}\:(k\ge0)$
+\end_inset
+
+ definido en el conjunto abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+.
+ Las afirmaciones siguientes son equivalentes (esto es, o son todas verdaderas
+ o todas falsas): 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F$
+\end_inset
+
+ es el 
+\emph on
+campo gradiente
+\emph default
+ de una función 
+\begin_inset Formula $\phi:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ de clase 
+\begin_inset Formula $\mathcal{C}^{k+1}$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $\vec{F}=\nabla\phi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+La integral 
+\begin_inset Formula $\int_{\lambda}\vec{F}\:d\lambda$
+\end_inset
+
+ a lo largo de un camino 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ seccionalmente 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ depende solamente del punto inicial 
+\begin_inset Formula $\lambda\left(a\right)$
+\end_inset
+
+ y final 
+\begin_inset Formula $\lambda(b)$
+\end_inset
+
+ del camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+: 
+\begin_inset Formula $\int_{\lambda}\vec{F}\cdot d\lambda=\phi\left(b\right)-\phi(a)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+La integral 
+\begin_inset Formula $\int_{\lambda}\vec{F}\:d\lambda$
+\end_inset
+
+ a lo largo de un camino 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ cerrado seccionalmente 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ es cero.
+ 
+\end_layout
+
+\begin_layout Enumerate
+El campo 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ es 
+\shape italic
+conservativo
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La función 
+\begin_inset Formula $\phi:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ de clase 
+\begin_inset Formula $\mathcal{C}^{k+1}$
+\end_inset
+
+ es la 
+\shape italic
+función potencial
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Condición necesaria pero no suficiente para que un campo sea conservativo:
+\bar under
+ 
+\bar default
+sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{F}=(F_{1},F_{2},\ldots,F_{n})$
+\end_inset
+
+ un campo de clase 
+\begin_inset Formula $\mathcal{C}^{k}(k\ge1)$
+\end_inset
+
+ definido en el conjunto abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ es conservativo entonces 
+\begin_inset Formula $\frac{\partial F_{i}}{\partial x_{j}}(x)=\frac{\partial F_{j}}{\partial x_{i}}(x)$
+\end_inset
+
+ para 
+\begin_inset Formula $x\in U$
+\end_inset
+
+, 
+\begin_inset Formula $1\le i<j\le n.$
+\end_inset
+
+ Es decir que la matriz jacobiana de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ debe ser simétrica.
+ 
+\shape italic
+Nota
+\shape default
+: si la matriz es simétrica, el campo puede o no ser conservativo.
+ Si no lo es, podemos concluir que no es conservativo.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedad
+\bar default
+: si la matriz jacobiana de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ es 
+\noun on
+continua
+\noun default
+ y simétrica en un U 
+\noun on
+simplemente conexo
+\noun default
+, entonces existe función potencial.
+\end_layout
+
+\begin_layout Subsection
+Integrales de línea de campo escalar
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función real continua definida en el abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+, y sea 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\lambda\left(\left[a,b\right]\right)\subset U$
+\end_inset
+
+.
+ La integral de línea respecto a la longitud de arco de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ a lo largo del camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es 
+\begin_inset Formula 
+\[
+\int_{\lambda}\,f\:dl=\int_{a}^{b}f\left(\lambda(t)\right)\cdot\left\Vert \lambda'(t)\right\Vert dt
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $dl=\left\Vert \lambda'(t)\right\Vert dt$
+\end_inset
+
+ es la diferencial de la longitud de arco del camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Una aplicación
+\bar default
+: conociendo la densidad lineal de un alambre en el espacio, digamos que
+ dada por la función 
+\begin_inset Formula $\rho=\rho(x,y,z)$
+\end_inset
+
+ (en gr/cm), y el camino 
+\begin_inset Formula $C:\left[a,b\right]\to\mathbb{R}^{3}$
+\end_inset
+
+ en cuya imagen 
+\begin_inset Quotes eld
+\end_inset
+
+se encuentra el alambre
+\begin_inset Quotes erd
+\end_inset
+
+, entonces su masa total se calcula como 
+\begin_inset Formula $M=\int_{C}\rho\:dl$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f,g:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ son dos funciones continuas definidas en el abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $C:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ es un camino seccionalmente 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\int_{C}\left(f+kg\right)\cdot ds=\int_{C}f\cdot ds+k\int_{C}g\cdot ds$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Sea
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ una función continua definida en el abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\lambda\left(\left[a,b\right]\right)\subset U$
+\end_inset
+
+, y sea 
+\begin_inset Formula $\mu:\left[c,d\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ una reparametrización de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\int_{\lambda}f\:ds=\int_{\mu}f\:ds$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+La perspectiva de la física
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Trabajo: 
+\series default
+Sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{2}$
+\end_inset
+
+ (o 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+) 
+\begin_inset Formula $\to\mathbb{R}^{2}$
+\end_inset
+
+ (o 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+) un campo de clase 
+\begin_inset Formula $\mathcal{C}^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+, y sea 
+\begin_inset Formula $\lambda:\left[a,b\right]\to\mathbb{R}^{2}$
+\end_inset
+
+ (o 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+) un camino seccionalmente 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ cuya imagen está contenida en 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ El trabajo que hay que realizar para llevar un cuerpo de masa 
+\begin_inset Formula $m$
+\end_inset
+
+ del punto 
+\begin_inset Formula $p=\lambda(a)$
+\end_inset
+
+ al punto 
+\begin_inset Formula $q=\lambda(b)$
+\end_inset
+
+ por el camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ a través del campo 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ es 
+\begin_inset Formula 
+\[
+W_{pq}=\int_{\lambda}\vec{F}\cdot d\lambda=\int_{a}^{b}\vec{F}\left(\lambda\left(t\right)\right)\cdot\lambda^{'}\left(t\right)dt=m\int_{a}^{b}\lambda^{''}(t)\cdot\lambda^{'}\left(t\right)dt=\frac{1}{2}m\left|\lambda^{'}\left(b\right)\right|^{2}-\frac{1}{2}m\left|\lambda^{'}\left(a\right)\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema del valor medio:
+\series default
+ sea una función continua 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ definida en el abierto 
+\begin_inset Formula $U$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, y un camino de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda:[a,b]\rightarrow\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda([a,b])\subset U$
+\end_inset
+
+, definimos el valor medio de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ sobre el camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, como:
+\begin_inset Formula 
+\[
+\bar{f}_{\lambda}=\frac{1}{L_{\lambda}}\cdot\int_{\lambda}\,f\,dl=\frac{1}{\int_{a}^{b}\left\Vert \lambda'(t)\right\Vert dt}\cdot\int_{a}^{b}f(\lambda(t))\cdot\left\Vert \lambda'(t)\right\Vert dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El valor 
+\begin_inset Formula $\bar{f}$
+\end_inset
+
+ es un tipo de promedio de los valores que toma la función a lo largo del
+ camino 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Integrales múltiples
+\end_layout
+
+\begin_layout Subsection
+Integrales dobles
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Integral doble
+\series default
+: sea 
+\begin_inset Formula $f:Q\subset\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ una función escalonada definida en el rectángulo Q de 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Digamos que Q está dividido en 
+\begin_inset Formula $nm$
+\end_inset
+
+ subrectángulos 
+\begin_inset Formula $Q_{ij}$
+\end_inset
+
+.
+ Se define la integral doble de la función 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ sobre el rectángulo Q, como: 
+\begin_inset Formula 
+\[
+\iint_{Q}f\left(x,y\right)\:dxdy=\sum_{i=1}^{n}\sum_{j=1}^{m}c_{ij}\left(x_{i}-x_{i-1}\right)(y_{j}-y_{j-1})
+\]
+
+\end_inset
+
+Notar que si 
+\begin_inset Formula $f\left(x,y\right)=k$
+\end_inset
+
+ para 
+\begin_inset Formula $\left(x,y\right)\in Q=\left[a,b\right]\times[c,d]$
+\end_inset
+
+ se tiene 
+\begin_inset Formula $\iint_{Q}f\left(x,y\right)dxdy=k\cdot(área\:de\:Q)$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $k>0$
+\end_inset
+
+, el valor de esta integral representa el volumen de un paralepípedo rectangular
+ con base Q y altura 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: si la función 
+\begin_inset Formula $f:Q\subset\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ definida en el rectángulo 
+\begin_inset Formula $Q=\left[a,b\right]\times[c,d]$
+\end_inset
+
+ es continua, entonces es integrable, y la integral doble de ella sobre
+ Q se puede calcular como 
+\begin_inset Formula 
+\[
+\iint_{Q}f\left(x,y\right)\:dxdy=\int_{c}^{d}\left(\int_{a}^{b}f\left(x,y\right)dx\right)dy=\int_{a}^{b}\left(\int_{c}^{d}f\left(x,y\right)\,dy\right)\,dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De forma geométrica, la integral doble de la función 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ sobre Q es el volumen del paralepípedo cuya tapa es la gráfica de la función
+ 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ sobre Q.
+ Consideremos el cuerpo 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ que queda limitado entre la gráfica de 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+, el plano 
+\begin_inset Formula $xy$
+\end_inset
+
+ y el área limitada por Q.
+ Entonces se tiene que:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $\iint_{Q}f(x,y)\,dxdy=$
+\end_inset
+
+ volumen de 
+\begin_inset Formula $\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Integrales dobles de funciones sobre regiones más generales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regiones del tipo (I)
+\series default
+ son regiones limitadas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="6.3cm">
+<column alignment="left" valignment="bottom" width="11cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tipo1.png
+	scale 42
+	BoundingBox 0bp 0bp 275bp 210bp
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+por la recta vertical 
+\begin_inset Formula $x=a$
+\end_inset
+
+ por la izquierda, 
+\end_layout
+
+\begin_layout Enumerate
+por la recta vertical 
+\begin_inset Formula $x=b$
+\end_inset
+
+ por la derecha, 
+\end_layout
+
+\begin_layout Enumerate
+por la gráfica de la función de 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y=g_{1}(x)$
+\end_inset
+
+ por debajo, 
+\end_layout
+
+\begin_layout Enumerate
+por la gráfica de la función de 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y=g_{2}(x)$
+\end_inset
+
+ por encima.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regiones del tipo (II)
+\series default
+ son regiones limitadas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="6.3cm">
+<column alignment="left" valignment="middle" width="11cm">
+<row>
+<cell alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tipo2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+por la recta horizontal 
+\begin_inset Formula $y=c$
+\end_inset
+
+ por debajo, 
+\end_layout
+
+\begin_layout Enumerate
+por la recta horizontal 
+\begin_inset Formula $y=d$
+\end_inset
+
+ por encima, 
+\end_layout
+
+\begin_layout Enumerate
+por la gráfica de la función de 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $x=h_{1}(y)$
+\end_inset
+
+ por la izquierda, 
+\end_layout
+
+\begin_layout Enumerate
+por la gráfica de la función de 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $x=h_{2}(y)$
+\end_inset
+
+ por la derecha.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regiones del tipo (III)
+\series default
+: son aquellas regiones que debemos dividir para verlas como la unión de
+ varias regiones de tipo (I) o tipo (II).
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f:R\subset\mathbb{R}^{2}\to R$
+\end_inset
+
+.
+ Si la región R es de tipo (I), es decir, si 
+\begin_inset Formula $R=\{\left(x,y\right):\,a\le x\le b,\,\phi_{1}\left(x\right)\le y\le\phi_{2}\left(x\right)\}$
+\end_inset
+
+ entonces la integral doble de 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ sobre R se puede calcular como: 
+\begin_inset Formula 
+\[
+\iint_{R}\left(x,y\right)\,dxdy=\int_{a}^{b}\left(\int_{\phi_{1}\left(x\right)}^{\phi_{2}\left(x\right)}f\left(x,y\right)\,dy\right)dx.
+\]
+
+\end_inset
+
+Si la región R es de tipo (II), es decir, si 
+\begin_inset Formula $R=\{\left(x,y\right):\,\psi_{1}\left(y\right)\le x\le\psi_{2}\left(y\right),\,c\le y\le d\}$
+\end_inset
+
+, entonces la integral doble de 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ sobre R se puede calcular como: 
+\begin_inset Formula 
+\[
+\iint_{R}f\left(x,y\right)dxdy=\int_{c}^{d}\left(\int_{\psi_{1}\left(y\right)}^{\psi_{2}\left(y\right)}f\left(x,y\right)dx\right)dy.
+\]
+
+\end_inset
+
+ 
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+Si la región 
+\begin_inset Formula $R$
+\end_inset
+
+ está subdividida en dos subregiones 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ (es decir, 
+\begin_inset Formula $R=R_{1}\cup R_{2}$
+\end_inset
+
+), entonces 
+\begin_inset Formula $\iint_{R}f\left(x,y\right)\,dxdy=\iint_{R_{1}}f\left(x,y\right)\,dxdy+\iint_{R_{2}}f\left(x,y\right)\,dxdy$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Cambio de variable en integrales dobles
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:R\subset\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ una función continua de las variables 
+\begin_inset Formula $x,y$
+\end_inset
+
+ definida en la región 
+\begin_inset Formula $R\subset\mathbb{R}^{2}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $F:R^{'}\subset\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $F\left(u,v\right)=(\phi_{\left(u,v\right)},\psi_{\left(u,v\right)})$
+\end_inset
+
+ una función que manda de manera inyectiva los puntos 
+\begin_inset Formula $\left(u,v\right)\in R'$
+\end_inset
+
+ en los puntos 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ del plano 
+\begin_inset Formula $xy$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $F\in\mathcal{C}^{1}$
+\end_inset
+
+ y la derivada 
+\begin_inset Formula $F^{'}(u,v)$
+\end_inset
+
+ es una matriz inversible para todo 
+\begin_inset Formula $\left(u,v\right)\in R'$
+\end_inset
+
+, entonces la fórmula de cambio de variables en integrales dobles es: 
+\begin_inset Formula 
+\[
+\iint_{R}f(x,y)\,dxdy=\iint_{R'}f\left(\phi(u,v),\psi(u,v)\right)\cdot\left|\frac{\partial(\phi,\psi)}{\partial(u,v)}\right|dudv
+\]
+
+\end_inset
+
+ En general, cuando en la región de integración se presentan anillos circulares,
+ y/o cuando en la función a integrar aparezca de alguna forma las expresiones
+ 
+\begin_inset Formula $\left(x^{2}+y^{2}\right),\frac{y}{x}$
+\end_inset
+
+ puede resultar conveniente intentar el cálculo de la integral haciendo
+ previamente el cambio a coordenadas polares: 
+\begin_inset Formula $\begin{cases}
+x=rcos(\theta)\\
+y=rsin(\theta)
+\end{cases}$
+\end_inset
+
+.
+ En este caso, el jacobiano de la transformación que aparece en la fórmula
+ de cambio de variables es 
+\begin_inset Formula $\frac{\partial\left(x,y\right)}{\partial\left(r,\theta\right)}=r$
+\end_inset
+
+.
+ Entonces la fórmula es
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iint_{R}f(x,y)\:dxdy=\iint_{R'}f\left(rcos(\theta),rsin(\theta)\right)\cdot r\:drd\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones de las integrales dobles
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 13
+placement R
+overhang 0in
+width "4cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename integral doble es volumen.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Volumen bajo la gráfica de 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+1) El volumen V encerrado entre una superficie 
+\begin_inset Formula $z=f(x,y)$
+\end_inset
+
+ (
+\begin_inset Formula $>0$
+\end_inset
+
+) y una región 
+\begin_inset Formula $R$
+\end_inset
+
+ en el plano 
+\begin_inset Formula $xy$
+\end_inset
+
+ es: 
+\begin_inset Formula 
+\[
+V=\iint_{R}f\left(x,y\right)\:dxdy
+\]
+
+\end_inset
+
+ 2) El área de una región plana 
+\shape italic
+\emph on
+
+\begin_inset Formula $R$
+\end_inset
+
+
+\emph default
+ 
+\shape default
+en el plano
+\shape italic
+ 
+\begin_inset Formula $xy$
+\end_inset
+
+ 
+\shape default
+viene dada por una integral doble.
+ 
+\begin_inset Formula 
+\[
+area\left(R\right)=\iint_{R}\:dxdy
+\]
+
+\end_inset
+
+ 3) Sea 
+\begin_inset Formula $\rho(x,y)$
+\end_inset
+
+ la función de densidad (=masa por unidad de área) de una distribución de
+ masa en el plano
+\shape italic
+ 
+\begin_inset Formula $xy$
+\end_inset
+
+
+\shape default
+.
+ Entonces la masa total de un trozo plano 
+\shape italic
+
+\begin_inset Formula $R$
+\end_inset
+
+ 
+\shape default
+es 
+\begin_inset Formula 
+\[
+M=\iint_{R}\rho\left(x,y\right)\:dxdy
+\]
+
+\end_inset
+
+ 4) Centro de masa y momentos de figuras planas.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+Momentos estáticos =
+\begin_inset Formula $\left\{ \begin{array}{c}
+M_{x}=\iint_{R}y\cdot\rho\left(x,y\right)\:dxdy\\
+M_{y}=\iint_{R}x\cdot\rho\left(x,y\right)\:dxdy
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CM=\left(\overline{x},\overline{y}\right)=\left(\frac{M_{x}}{M},\frac{M_{y}}{M}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Integrales triples
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $f:Q\subset\mathbb{R}^{3}\to\mathbb{R}$
+\end_inset
+
+ una función continua definida en el rectángulo 
+\begin_inset Formula $Q=\left[a,b\right]\times\left[c,d\right]\times[e,g]$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es integrable en 
+\begin_inset Formula $Q$
+\end_inset
+
+ y 
+\begin_inset Formula 
+\[
+\iiint_{Q}f\left(x,y,z\right)\:dxdydz=\int_{a}^{b}\int_{c}^{d}\left(\int_{e}^{g}f\left(x,y,z\right)\,dz\right)dydx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las regiones que se pueden presentar serán, en general, subconjuntos de
+ 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ limitados por gráficas de funciones de dos variables.
+ De modo más preciso, si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una región del plano 
+\begin_inset Formula $xy$
+\end_inset
+
+, definamos 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Omega=\{\bar{x}\in R\text{³}:(x,y)\in R\:\wedge\:\phi_{1}(x,y)\leq z\leq\phi_{2}(x,y)\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $\phi_{1},\phi_{2}$
+\end_inset
+
+ son funciones continuas definidas en la región 
+\begin_inset Formula $R$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Más aún, esta integral se calcula como
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iiint_{\Omega}f(x,y,z)\,dxdydz=\iint_{R}\left[\int_{\phi_{1}}^{\phi_{2}}f(x,y,z)\,dz\right]dxdy
+\]
+
+\end_inset
+
+La integral triple de 
+\begin_inset Formula $f(x,y,z)$
+\end_inset
+
+ sobre 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ es la integral doble de una función 
+\begin_inset Formula $\xi(x,y)$
+\end_inset
+
+ sobre la región 
+\begin_inset Formula $R$
+\end_inset
+
+, la cual se puede ver como 
+\emph on
+la proyección de la región 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ sobre el plano 
+\begin_inset Formula $xy$
+\end_inset
+
+
+\emph default
+.
+ Esta proyección se obtiene expresando el cuerpo en función de las variables
+ 
+\begin_inset Formula $x,y$
+\end_inset
+
+.
+ También se pueden considerar regiones 
+\begin_inset Formula $R$
+\end_inset
+
+ en el plano 
+\begin_inset Formula $xz$
+\end_inset
+
+ e 
+\begin_inset Formula $yz$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Cambio de variable en integrales triples
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+
+\series bold
+Teorema
+\series default
+: consideremos una función de transformación de coordenadas 
+\begin_inset Formula $F:\Omega^{'}\subset\mathbb{R\text{³}}\to\mathbb{R\text{³}}$
+\end_inset
+
+ del tipo 
+\begin_inset Formula $F\left(u,v,w\right)=\left(x,y,z\right)=\left(x_{\left(u,v,w\right)},y_{\left(u,v,w\right)},z_{\left(u,v,w\right)}\right).$
+\end_inset
+
+ La fórmula de cambio de cambio de variables en integrales triples es: 
+\begin_inset Formula 
+\[
+\iiint_{\Omega}f(x,y,z)\:dxdydz=\iiint_{\Omega'}f\left(F(u,v,w)\right)\left|\frac{\partial(x,y,z)}{\partial(u,v,w)}\right|dudvdw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\paragraph_spacing single
+\noindent
+Coordenadas cilíndricas: Son útiles cuando aparecen cilindros o planos.
+ 
+\begin_inset Formula 
+\[
+\iiint_{\Omega}f\left(x,y,z\right)\:dxdydz=\iiint_{\Omega'}f\left(rcos(\theta),rsin(\theta),z\right)\cdot r\:drd\theta dz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\paragraph_spacing single
+\noindent
+Coordenadas cilíndricas generalizadas: 
+\begin_inset Formula 
+\[
+\iiint_{\Omega}f\left(x,y,z\right)\:dxdydz=\iiint_{\Omega'}f\left(a\cdot rcos(\theta),b\cdot rsin(\theta),c\widetilde{z}\right)\cdot abcr\:drd\theta dz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\paragraph_spacing single
+\noindent
+Coordenadas esféricas: 
+\begin_inset Formula 
+\[
+\iiint_{\Omega}f\left(x,y,z\right)\:dxdydz=\iiint_{\Omega'}f\left(rcos(\theta)sin(\phi),rsin(\theta)sin(\phi),rcos(\phi)\right)\cdot r^{2}sin(\phi)\:drd\theta d\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\paragraph_spacing single
+\noindent
+Coordenadas esféricas generalizadas:
+\begin_inset Formula 
+\[
+\iiint_{\Omega}f(x,y,z)\:dxdydz=\iiint_{\Omega'}f(a\cdot rcos(\theta)sin(\phi),b\cdot sin(\theta)sin(\phi),c\cdot rcos(\phi))\cdot abcr^{2}sin(\phi)\:drd\theta d\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones de las integrales triples
+\end_layout
+
+\begin_layout Standard
+1) Volúmenes de cuerpos en el espacio:
+\begin_inset Formula 
+\[
+V=\iiint_{\Omega}\,dxdydz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) Masa de cuerpos en el espacio.
+ Sea 
+\begin_inset Formula $d(x,y,z)$
+\end_inset
+
+ la función densidad, y 
+\begin_inset Formula $\Omega\in\mathbb{R}\text{³}$
+\end_inset
+
+.
+ Entonces: 
+\begin_inset Formula 
+\[
+M=\iiint_{\Omega}d\left(x,y,z\right)\:dxdydz=\mbox{masa de \Omega}
+\]
+
+\end_inset
+
+3) Centros de masa y momentos de cuerpos en el espacio:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+Momentos estáticos 
+\begin_inset Formula $=\begin{cases}
+M_{xy}=\iiint_{\Omega}z\cdot d(x,y,z)\,dxdydz\\
+M_{xz}=\iiint_{\Omega}y\cdot d(x,y,z)\,dxdydz\\
+M_{yz}=\iiint_{\Omega}x\cdot d(x,y,z)\,dxdydz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+Centro de masa 
+\begin_inset Formula $=(\bar{x},\bar{y},\bar{z})=\left(\frac{M_{yz}}{M},\frac{M_{xz}}{M},\frac{M_{xy}}{M}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Integrales de superficie
+\end_layout
+
+\begin_layout Subsection
+Superficies simples
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 13
+placement R
+overhang 0in
+width "3.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename integrales de sup.png
+	scale 33
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Superficie simple.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Una curva es un objeto unidimensional en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, es decir, una curva es la imagen de una cierta función definida 
+\shape italic
+en un subconjunto I
+\shape default
+ de la recta (espacio de dimensión 1).
+ De la misma manera, una superficie será la imagen en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ de una cierta función que está definida en 
+\shape italic
+un subconjunto D de 
+\shape default
+
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ (que es bidimensional).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Superficie simple
+\series default
+: sea 
+\begin_inset Formula $S\subseteq\mathbb{R}^{2}$
+\end_inset
+
+ una región del tipo I y del tipo II en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, y sea 
+\begin_inset Formula $f:S\subset\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(u,v\right)=\left(f_{1(u,v)},f_{2(u,v)},f_{3(u,v)}\right)$
+\end_inset
+
+ una función inyectiva (para que no haya puntos tales que 
+\begin_inset Formula $f(p_{1})=f(p_{2})\in K$
+\end_inset
+
+) de clase 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, de modo que los vectores 
+\begin_inset Formula $\frac{\partial f}{\partial u}$
+\end_inset
+
+y 
+\begin_inset Formula $\frac{\partial f}{\partial v}$
+\end_inset
+
+ son linealmente independientes en todo 
+\begin_inset Formula $\left(u,v\right)\in S$
+\end_inset
+
+.
+ A la imagen de la función 
+\series bold
+
+\begin_inset Formula $f$
+\end_inset
+
+
+\series default
+, 
+\begin_inset Formula $K=f(S)$
+\end_inset
+
+, se le llama superficie simple.
+ La región S, dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+, es una región cerrada y acotada del plano 
+\begin_inset Formula $\mathbb{R}^{2}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notación: 
+\begin_inset Formula $\partial K$
+\end_inset
+
+ es la frontera de K (
+\begin_inset Formula $\partial K=f(\partial S)$
+\end_inset
+
+ con 
+\begin_inset Formula $\partial S$
+\end_inset
+
+ la frontera de S, su dominio), y 
+\begin_inset Formula $Int\,K$
+\end_inset
+
+ es el interior de de la superficie simple K, siendo 
+\begin_inset Formula $Int\,K=f(Int\,S)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Superficie regular
+\series default
+: dada la superficie de ecuación 
+\begin_inset Formula $\bar{x}=\bar{F}(u,v)$
+\end_inset
+
+ con 
+\begin_inset Formula $(u,v)\in D$
+\end_inset
+
+, se dice que la misma es 
+\emph on
+regular
+\emph default
+ si 
+\begin_inset Formula $\bar{F}$
+\end_inset
+
+ es diferenciable y 
+\begin_inset Formula $\bar{F}'_{u},\bar{F}'_{v}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Superficie suave
+\series default
+: dada la superficie de ecuación 
+\begin_inset Formula $\bar{x}=\bar{F}(u,v)$
+\end_inset
+
+ con 
+\begin_inset Formula $(u,v)\in D$
+\end_inset
+
+, se dice que la misma es 
+\emph on
+suave
+\emph default
+ si es regular y 
+\begin_inset Formula $\bar{F}\in C\text{¹}$
+\end_inset
+
+.
+ Intuitivamente, una superficie suave no tiene “esquinas”.
+\end_layout
+
+\begin_layout Subsection
+Orientación de superficies
+\end_layout
+
+\begin_layout Standard
+De manera general, una superficie 
+\begin_inset Formula $K$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ se dirá 
+\begin_inset Quotes eld
+\end_inset
+
+orientable
+\begin_inset Quotes erd
+\end_inset
+
+ si es posible decidir sin ambigüedad cuál es cada uno de los lados de la
+ superficie, el 
+\begin_inset Quotes eld
+\end_inset
+
+interior
+\begin_inset Quotes erd
+\end_inset
+
+ y el 
+\begin_inset Quotes eld
+\end_inset
+
+exterior
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Decir que una superficie 
+\begin_inset Formula $K$
+\end_inset
+
+ es orientable, significa que podemos tener un campo de vectores normales
+ a 
+\begin_inset Formula $K$
+\end_inset
+
+, 
+\begin_inset Formula $N:K\to\mathbb{R}^{3}$
+\end_inset
+
+, de manera que los vectores normales apunten en la dirección de uno de
+ los lados de la superficie.
+ Se requiere que este campo 
+\begin_inset Formula $N$
+\end_inset
+
+ sea continuo en 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ Este campo es 
+\begin_inset Formula $N\left(x,y,z\right)=\frac{\frac{\partial f}{\partial u}\times\frac{\partial f}{\partial v}}{\left\Vert \frac{\partial f}{\partial u}\times\frac{\partial f}{\partial v}\right\Vert }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para obtener un vector normal a una superficie, se utiliza la 
+\emph on
+regla del pulgar: 
+\emph default
+si imaginamos que caminamos alrededor de 
+\begin_inset Formula $\partial S$
+\end_inset
+
+, la superficie debe quedar a nuestra izquierda, y nosotros seríamos el
+ vector normal 
+\begin_inset Formula $\breve{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Superficies definidas en forma implícita
+\series default
+: tenemos una superficie 
+\begin_inset Formula $S$
+\end_inset
+
+ dada por 
+\begin_inset Formula $z=4-x^{2}$
+\end_inset
+
+ y queremos obtener un vector normal en un punto 
+\begin_inset Formula $(x_{0},y_{0},z_{0})$
+\end_inset
+
+.
+ Si tomamos 
+\begin_inset Formula $F(x,y,z)=z-4+x^{2}$
+\end_inset
+
+, sabemos que la superficie 
+\begin_inset Formula $S$
+\end_inset
+
+ es la curva de nivel 
+\begin_inset Formula $0$
+\end_inset
+
+ de 
+\begin_inset Formula $F$
+\end_inset
+
+, y por lo tanto es perpendicular al gradiente de 
+\begin_inset Formula $F$
+\end_inset
+
+, que a su vez es paralelo al vector normal.
+ Entonces 
+\begin_inset Formula $\nabla F=(2x,0,1)$
+\end_inset
+
+, y tenemos que el vector normal al punto es 
+\begin_inset Formula $(2x_{0},0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Área de una superficie 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $S=f(D)$
+\end_inset
+
+ una superficie simple en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ parametrizada por la función 
+\begin_inset Formula $f:D\subset\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+.
+ El área de la superficie 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ se define como la integral doble: 
+\begin_inset Formula 
+\[
+\mbox{Area de S}=\iint_{D}\left\Vert \frac{\partial f}{\partial u}\times\frac{\partial f}{\partial v}\right\Vert \,dudv
+\]
+
+\end_inset
+
+
+\bar under
+Nota
+\bar default
+: el área de la superficie 
+\begin_inset Formula $S$
+\end_inset
+
+ es independiente de la parametrización que se tenga de ella.
+\end_layout
+
+\begin_layout Subsection
+Integrales de superficie de campos escalares
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $S$
+\end_inset
+
+ una superficie simple parametrizada por la función 
+\begin_inset Formula $\phi:D\subset\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\phi\left(u,v\right)=(\phi_{1},\phi_{2},\phi_{3})$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $f:S\to\mathbb{R}$
+\end_inset
+
+ una función escalar continua definida sobre la superficie 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ La integral de superficie de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ sobre 
+\begin_inset Formula $S$
+\end_inset
+
+ se define como:
+\begin_inset Formula 
+\[
+\iint_{S}f\,ds=\iint_{S}f\left(\phi(u,v)\right)\cdot\left\Vert \frac{\partial\phi}{\partial u}\times\frac{\partial\phi}{\partial v}\right\Vert \,dudv
+\]
+
+\end_inset
+
+
+\bar under
+Nota
+\bar default
+: si 
+\begin_inset Formula $f\left(x,y,z\right)=1$
+\end_inset
+
+, la integral 
+\begin_inset Formula $\iint_{S}\,f\,ds$
+\end_inset
+
+ no es más que la definición de área de la superficie 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Una aplicación
+\bar default
+: si la función 
+\begin_inset Formula $f$
+\end_inset
+
+ representa la densidad de una sábana, la integral sería la masa total de
+ la sábana.
+\end_layout
+
+\begin_layout Subsection
+Integrales de superficie de campos vectoriales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 16
+placement L
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename integral de superficie.png
+	scale 24
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Integral de superficie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Flujo
+\series default
+: Sea 
+\begin_inset Formula $S$
+\end_inset
+
+ una superficie simple parametrizada por la función 
+\begin_inset Formula $\phi:D\subset\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\phi\left(u,v\right)=(\phi_{1},\phi_{2},\phi_{3})$
+\end_inset
+
+ la cual proporciona una orientación que coincide con la del campo continuo
+ de vectores normales 
+\begin_inset Formula $N:S\to\mathbb{R}^{3}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{3}\to\mathbb{R}^{3}$
+\end_inset
+
+ un campo continuo definido en el abierto 
+\begin_inset Formula $U$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ que contiene a 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Se define la integral de superficie de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ sobre 
+\begin_inset Formula $S$
+\end_inset
+
+, llamada flujo de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ a través de 
+\begin_inset Formula $S$
+\end_inset
+
+, como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iint_{S}\vec{F}\cdot d\vec{s}=\iint_{D}\vec{F}\left(\phi(u,v)\right)\cdot\left(\frac{\partial\phi}{\partial u}\times\frac{\partial\phi}{\partial v}\right)\,dudv
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+Nota
+\bar default
+: la integral es invariante por reparametrizaciones que no cambian la orientació
+n de la superficie 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Si tomamos una reparametrización de 
+\begin_inset Formula $S$
+\end_inset
+
+ que cambie su orientación, esto sí se reflejará en un cambio de signo de
+ la integral.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Una aplicación
+\bar default
+: si el campo vectorial 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ representa el flujo de un líquido, entonces la integral de superficie de
+ 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ representa la cantidad de fluido que fluye a través de la superficie 
+\begin_inset Formula $S$
+\end_inset
+
+ por unidad de tiempo.
+\end_layout
+
+\begin_layout Section
+Teoremas integrales
+\end_layout
+
+\begin_layout Subsection
+Grad., Div., Rot: las fórmulas clásicas
+\end_layout
+
+\begin_layout Standard
+\align left
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ un campo escalar y 
+\begin_inset Formula $\vec{F}=\left(P,Q,R\right)$
+\end_inset
+
+ un campo vectorial: 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Formula $\nabla=\left(\frac{\partial}{\partial x_{1}},\frac{\partial}{\partial x_{2}},\cdots,\frac{\partial}{\partial x_{n}}\right)\in\mathbb{R}^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Formula $\nabla\cdot f=grad\left(f\right)=\left(\frac{\partial f}{\partial x_{1}},\frac{\partial f}{\partial x_{2}},\cdots,\frac{\partial f}{\partial x_{n}}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Formula $\nabla\cdot\vec{F}=div\left(\vec{F}\right)=P_{x}^{'}+Q_{y}^{'}+R_{z}^{'}=tr\left(J(\vec{F})\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Formula $\nabla\times\vec{F}=rot\left(\vec{F}\right)=\left(\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z},\frac{\partial R}{\partial x}-\frac{\partial P}{\partial z},\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset Formula $\nabla\cdot\nabla f=div\left(grad\left(f\right)\right)=\frac{\partial^{2}f}{\partial x_{1}^{2}}+\frac{\partial^{2}f}{\partial x_{2}^{2}}+\ldots+\frac{\partial^{2}f}{\partial x_{n}^{2}}=\mbox{Laplaciano de \ensuremath{f}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $div(rot(\vec{F}))=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $rot(grad(f))=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $div\left(grad(f)\times grad(g)\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+\series bold
+Función armónica
+\series default
+: se dice que la función 
+\begin_inset Formula $f:U\subseteq\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ de clase 
+\begin_inset Formula $\mathcal{C}^{2}$
+\end_inset
+
+ definida en U, es 
+\shape italic
+armónica
+\shape default
+ si satisface la ecuación de Laplace 
+\begin_inset Formula $\nabla^{2}f=0$
+\end_inset
+
+.
+ Es decir, si 
+\begin_inset Formula $\sum_{i=1}^{n}\frac{\partial^{2}f}{\partial x_{i}^{2}}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align left
+
+\series bold
+Función solenoidal
+\series default
+: un campo vectorial 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ se dice 
+\emph on
+solenoidal
+\emph default
+ si 
+\begin_inset Formula $div(\vec{F})\equiv0$
+\end_inset
+
+ para todo punto del dominio.
+ La integral de superficie o flujo de un campo solenoidal sobre cualquier
+ superficie cerrada es siempre cero.
+ Los campos solenoidales no tienen ni puntos fuentes (
+\begin_inset Formula $div(\vec{F})>0$
+\end_inset
+
+) ni puntos sumideros (
+\begin_inset Formula $div(\vec{F})<0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Función irrotacional
+\series default
+: un campo vectorial 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ se dice 
+\emph on
+irrotacional
+\emph default
+ si 
+\begin_inset Formula $rot(\vec{F})\equiv\overline{0}$
+\end_inset
+
+ para todo punto del dominio.
+ Un campo es irrotacional si y sólo si su matriz jacobiana es simétrica
+ en un dominio 
+\noun on
+convexo
+\noun default
+.
+ Esto quiere decir que el campo es conservativo, y por lo tanto admite función
+ potencial, por lo que la integral de línea sobre cualquier curva cerrada
+ es cero siempre.
+\end_layout
+
+\begin_layout Subsection
+Rotor de un campo vectorial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 11
+placement L
+overhang 0in
+width "3.9cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename rotor.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+El rotor de un campo (en 
+\color green
+verde
+\color inherit
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Rotor
+\series default
+: sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{3}\to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{F}=(F_{1},F_{2},F_{3})$
+\end_inset
+
+ diferenciable, definido en 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Se define el 
+\shape italic
+\emph on
+rotor
+\shape default
+\emph default
+ (o 
+\series bold
+\shape italic
+\emph on
+rotacional
+\series default
+\shape default
+\emph default
+) de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $p\in U$
+\end_inset
+
+, como: 
+\begin_inset Formula 
+\[
+rot(\vec{F})=det\left[\begin{array}{ccc}
+i & j & k\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+F_{1} & F_{2} & F_{3}
+\end{array}\right]=\left(\frac{\partial F_{3}}{\partial y}-\frac{\partial F_{2}}{\partial z},\frac{\partial F_{1}}{\partial z}-\frac{\partial F_{3}}{\partial x},\frac{\partial F_{2}}{\partial x}-\frac{\partial F_{1}}{\partial y}\right)
+\]
+
+\end_inset
+
+Geométricamente, el rotacional de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ es un vector que apunta al eje de rotación, y su longitud corresponde a
+ la velocidad de rotación.
+\end_layout
+
+\begin_layout Standard
+Un resultado importante es que una condición necesaria para que el campo
+ 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{3}\to\mathbb{R}^{3}$
+\end_inset
+
+ sea conservativo es que sea irrotacional: 
+\begin_inset Formula $rot\left(\vec{F}\left(p\right)\right)=0\:\forall p\in U$
+\end_inset
+
+.
+ Entonces se tiene: 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ conservativo 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ irrotacional.
+ La recíproca se da solamente en el caso de que 
+\begin_inset Formula $U$
+\end_inset
+
+ sea un conjunto simplemente conexo.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota
+\bar default
+: el concepto de rotacional se puede aplicar también a campos de 
+\begin_inset Formula $R\text{²}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\vec{F}=(P,Q)$
+\end_inset
+
+, se define el rotacional de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ como 
+\begin_inset Formula $rtc(\vec{F})=Q'_{x}-P'_{y}$
+\end_inset
+
+.
+ Nótese que este es un valor escalar.
+\end_layout
+
+\begin_layout Subsection
+Divergencia de un campo vectorial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 9
+placement l
+overhang 0in
+width "3.7cm"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename divergencia_0.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Divergencia positiva.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Divergencia
+\series default
+: sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{n}\to\mathbb{R}^{n},\,\vec{F}\left(\bar{x}\right)=(F_{1},F_{2},\ldots,F_{n})$
+\end_inset
+
+ un campo diferenciable definido en el abierto 
+\begin_inset Formula $U$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Se llama 
+\shape italic
+divergencia
+\shape default
+ de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+div(\vec{F})=\frac{\partial F_{1}}{\partial x_{1}}+\frac{\partial F_{2}}{\partial x_{2}}+\ldots+\frac{\partial F_{n}}{\partial x_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si el campo vectorial 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ representa el flujo de un líquido, entonces la divergencia de 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ representa la expansión o compresión del fluido.
+ Es una medida del 
+\begin_inset Quotes eld
+\end_inset
+
+flujo
+\begin_inset Quotes erd
+\end_inset
+
+ por unidad de área del líquido a través del punto 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Teorema de Green
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 5
+placement R
+overhang 0in
+width "3cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename green.png
+	scale 17
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Hipótesis:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{F}\in C\text{¹}$
+\end_inset
+
+ en todo punto de 
+\begin_inset Formula $D$
+\end_inset
+
+ y de 
+\begin_inset Formula $\partial D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D$
+\end_inset
+
+ es una región compacta de 
+\begin_inset Formula $\mathbb{R}\text{²}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\partial D$
+\end_inset
+
+ es una curva cerrada, suave a trozos, recorrida en sentido positivo
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $\vec{F}:U\subset\mathbb{R}\text{²}\rightarrow\mathbb{R}\text{²}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{F}(x,y)=(P,Q)$
+\end_inset
+
+ un campo de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ definido en 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $D\subset U$
+\end_inset
+
+ una región plana con su frontera una curva cerrada positivamente orientada
+ (contrario a las agujas del reloj).
+ Entonces:
+\begin_inset Formula 
+\[
+\oint_{\partial D^{+}}\vec{F}\cdot d\vec{l}=\iint_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\:dxdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Una aplicación
+\bar default
+: si 
+\begin_inset Formula $\vec{F}=(P,Q)$
+\end_inset
+
+ es tal que 
+\begin_inset Formula $Q'_{x}-P'_{y}=1$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\oint_{\partial D^{+}}\vec{F}\cdot d\vec{s}=\iint_{D}\,dxdy=$
+\end_inset
+
+ área de 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Teorema del rotor (Stokes)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 7
+placement r
+overhang 0in
+width "3.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename stokes.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Hipótesis:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{F}\in C\text{¹}$
+\end_inset
+
+ en todo punto de 
+\begin_inset Formula $S$
+\end_inset
+
+ y de 
+\begin_inset Formula $\partial S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ es una superficie abierta, suave a trozos, simple, parametrizada por una
+ función de clase 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\partial S$
+\end_inset
+
+ es una curva cerrada simple, suave a trozos, y está recorrida en sentido
+ positivo respecto a la superficie
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $S$
+\end_inset
+
+ una superficie simple orientable, parametrizada por 
+\begin_inset Formula $\phi:D\subset\mathbb{R}^{3}\to\mathbb{R}^{3}$
+\end_inset
+
+ de clase 
+\begin_inset Formula $\mathcal{C}^{2}$
+\end_inset
+
+, la cual proporciona la orientación de 
+\begin_inset Formula $S$
+\end_inset
+
+, y sea 
+\begin_inset Formula $\partial S$
+\end_inset
+
+ su frontera recorrida positivamente.
+ Sea 
+\begin_inset Formula $\vec{F}:U\subseteq\mathbb{R}^{3}\to\mathbb{R}^{3}$
+\end_inset
+
+ un campo vectorial de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ definido en 
+\begin_inset Formula $U$
+\end_inset
+
+ que contiene a 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Entonces:
+\begin_inset Formula 
+\begin{flalign*}
+\oint_{\partial S^{+}}\vec{F}\cdot d\vec{l} & =\iint_{S}rot(\vec{F})\cdot d\vec{s}=\iint_{S}rot\vec{F}\left(\phi(u,v)\right)\cdot n_{\phi(u,v)}\:dudv
+\end{flalign*}
+
+\end_inset
+
+El teorema del rotor es una generalización del teorema de Green.
+ Es importante destacar que para el cálculo de la circulación de una curva
+ 
+\begin_inset Formula $C$
+\end_inset
+
+ podemos elegir cualquier superficie 
+\begin_inset Formula $S$
+\end_inset
+
+ que tenga como borde a 
+\begin_inset Formula $C$
+\end_inset
+
+, y obviamente nos conviene elegir la superficie más 
+\begin_inset Quotes eld
+\end_inset
+
+sencilla
+\begin_inset Quotes erd
+\end_inset
+
+ posible.
+ 
+\emph on
+Ejemplo
+\emph default
+: si 
+\begin_inset Formula $C$
+\end_inset
+
+ es un círculo, 
+\begin_inset Formula $S$
+\end_inset
+
+ podría ser una circunferencia.
+\end_layout
+
+\begin_layout Subsection
+Teorema de la divergencia (Gauss)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 4
+placement r
+overhang 0in
+width "3cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename gauss.png
+	scale 21
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Hipótesis
+\series default
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{F}\in C\text{¹}$
+\end_inset
+
+ en todo punto de 
+\begin_inset Formula $W$
+\end_inset
+
+ y de 
+\begin_inset Formula $\partial W$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $W$
+\end_inset
+
+ un cuerpo compacto de 
+\begin_inset Formula $\mathbb{R}\text{³}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\partial W$
+\end_inset
+
+ suave a trozos y orientable, con sus normales hacia afuera
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sea 
+\begin_inset Formula $W$
+\end_inset
+
+ un cuerpo de 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\partial W$
+\end_inset
+
+ la frontera de 
+\begin_inset Formula $W$
+\end_inset
+
+, una superficie orientada con sus vectores normales apuntando hacia el
+ exterior del sólido.
+ Si 
+\begin_inset Formula $\vec{F}:U\subset\mathbb{R}\text{³}\rightarrow\mathbb{R}\text{³}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{F}(x,y,z)=(F_{1},F_{2},F_{3})$
+\end_inset
+
+ es un campo vectorial de clase 
+\begin_inset Formula $\mathcal{C}^{1}$
+\end_inset
+
+ definido en el abierto 
+\begin_inset Formula $U$
+\end_inset
+
+ que contiene a 
+\begin_inset Formula $W$
+\end_inset
+
+, entonces:
+\begin_inset Formula 
+\[
+\oiint_{\partial W}\vec{F}\cdot d\vec{s}=\iiint_{W}div(\vec{F})\:dxdydz
+\]
+
+\end_inset
+
+El integrando de la integral triple puede pensarse como la expansión de
+ un fluido.
+ El teorema de la divergencia dice que la expansión total de un fluido que
+ está dentro de un cuerpo 
+\begin_inset Formula $W$
+\end_inset
+
+ es igual al flujo total del fluido que sale por la frontera del cuerpo
+ 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document

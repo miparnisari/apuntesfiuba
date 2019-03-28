@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+<!-- changed the "1..n" association to the more common "1..*" -->
+<svg xmlns="http://www.w3.org/2000/svg" width="381" x="0" y="0" height="50" id="/tmp/play_with_uml/KP - UML - Aggregation - 20060325" >
+ <rect width="381" x="126" y="34" height="50" transform="translate(-126,-34)" style="stroke:rgb(0,0,0);stroke-width:0;fill:rgb(255,255,255);" />
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:none;" y1="60" y2="60" x1="274" x2="393" />
+ <polygon points="274 60 284 64 296 60 284 56" transform="translate(-126,-34)" style="stroke:rgb(0,0,0);stroke-width:0;fill:rgb(255,255,255);" />
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:none;" y1="64" y2="60" x1="284" x2="296" />
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:none;" y1="60" y2="64" x1="274" x2="284" />
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:none;" y1="60" y2="56" x1="296" x2="284" />
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:none;" y1="56" y2="60" x1="284" x2="274" />
+ <text x="370" y="57" transform="translate(-126,-34)" style="fill:rgb(50,50,50);stroke-width:0;font-size:11;font-style:normal;font-weight:400;font-family:Arial;" text-anchor="middle" >1..*</text>
+ <text x="300" y="57" transform="translate(-126,-34)" style="fill:rgb(50,50,50);stroke-width:0;font-size:11;font-style:normal;font-weight:400;font-family:Arial;" text-anchor="middle" >1</text>
+ <rect width="148" x="126" y="37" height="47" transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:rgb(255,255,192);" />
+ <text x="200" y="53" transform="translate(-126,-34)" style="fill:rgb(0,0,0);stroke-width:0;font-size:11;font-style:normal;font-weight:700;font-family:Arial;" text-anchor="middle" >Professor</text>
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:rgb(255,255,192);" y1="56" y2="56" x1="126" x2="273" />
+ <text x="131" y="72" transform="translate(-126,-34)" style="fill:rgb(0,0,0);stroke-width:0;font-size:11;font-style:normal;font-weight:400;font-family:Arial;" >+ listOfStudents : list</text>
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:rgb(255,255,192);" y1="75" y2="75" x1="126" x2="273" />
+ <rect width="114" x="393" y="37" height="47" transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:rgb(255,255,192);" />
+ <text x="450" y="53" transform="translate(-126,-34)" style="fill:rgb(0,0,0);stroke-width:0;font-size:11;font-style:normal;font-weight:700;font-family:Arial;" text-anchor="middle" >Class</text>
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:rgb(255,255,192);" y1="56" y2="56" x1="393" x2="506" />
+ <text x="398" y="72" transform="translate(-126,-34)" style="fill:rgb(0,0,0);stroke-width:0;font-size:11;font-style:normal;font-weight:400;font-family:Arial;" >+ Students : list</text>
+ <line transform="translate(-126,-34)" style="stroke:rgb(255,0,0);stroke-width:0.9;fill:rgb(255,255,192);" y1="75" y2="75" x1="393" x2="506" />
+</svg>

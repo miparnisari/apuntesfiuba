@@ -1,0 +1,8130 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{longtable}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Simulación"
+\pdf_author "María Inés Parnisari"
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation landscape
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\headheight 0cm
+\headsep 0cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle empty
+\listings_params "basicstyle={\footnotesize\ttfamily},emphstyle={\color{red}},frame=single,keywords={por,cada,para,si},keywordstyle={\color{red}},numbers=left,numbersep=5pt,stepnumber=1,tabsize=2"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[75.26] Simulación
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Section
+Definiciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sistema
+\series default
+: conjunto de elementos que interactúan entre si, que se aíslan del universo
+ para su estudio.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Modelo
+\series default
+: representación abstracta de un sistema real.
+\end_layout
+
+\begin_layout Itemize
+Se puede demostrar su 
+\series bold
+invalidez
+\series default
+ con una no concordancia entre los resultados obtenidos en el modelo y los
+ obtenidos en el sistema real.
+\end_layout
+
+\begin_layout Itemize
+Deben estar identificadas las 
+\series bold
+entidades
+\series default
+ y sus atributos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Entidades 
+\series bold
+permanentes
+\series default
+: 
+\emph on
+savevalues, functions, variables, SNAs, facilities, storages, queues, tables
+\end_layout
+
+\begin_layout Itemize
+Entidades 
+\series bold
+transitorias
+\series default
+: transacciones
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Debe incluir 
+\series bold
+variables
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Endógenas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Exógenas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Internas, controladas por el sistema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Externas, no controladas por el sistema
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Cualitativas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Cuantitativas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preferencia personal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frecuencia con que arriban clientes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tipos de variables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Compuesto por 
+\series bold
+bloques 
+\series default
+que representan las acciones que realizan las 
+\series bold
+transacciones
+\series default
+ en el sistema\SpecialChar \@.
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Numérico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Analítico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se conoce instante a instante el valor de las variables, pero no la relación
+ que hay entre ellas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se conoce la relación entre las variables
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Matemático
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Físico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representación abstracta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representación tangible
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dinámico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Estático
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Su estado varía en el tiempo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Su estado no varía en el tiempo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Discreto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Continuo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los cambios se producen de a saltos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los cambios se producen gradualmente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Estocástico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Determinístico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Existe azar en la ocurrencia de eventos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No existe azar en la ocurrencia de eventos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tipos de modelos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Simular
+\series default
+: ensayar en un modelo una alternativa para inferir lo que pasaría en el
+ sistema real si se aplica dicha alternativa.
+ Es predecir el futuro ante hipótesis ciertas.
+\end_layout
+
+\begin_layout Itemize
+Razones por las que puede fallar una simulación:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Modelo inválido: no representa fielmente al sistema real
+\end_layout
+
+\begin_layout Enumerate
+Las alternativas simuladas no son buenas
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivo: predicción
+\end_layout
+
+\begin_layout Itemize
+Fases:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Definir el sistema (aislar las partes a estudiar)
+\end_layout
+
+\begin_layout Enumerate
+Construir el modelo (representar el sistema)
+\end_layout
+
+\begin_layout Enumerate
+Simular (ensayar alternativas)
+\end_layout
+
+\begin_layout Enumerate
+Sacar conclusiones
+\end_layout
+
+\begin_layout Enumerate
+Estudiar las conclusiones y aconsejar la mejor alternativa
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ventajas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Permite adquirir una rápida experiencia a bajo costo y sin riesgos,
+\end_layout
+
+\begin_layout Itemize
+Permite identificar áreas con problemas en sistemas complejos,
+\end_layout
+
+\begin_layout Itemize
+Permite un estudio sistemático de alternativas,
+\end_layout
+
+\begin_layout Itemize
+Es ilimitado en cuanto a complejidad.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Desventajas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No supera a las técnicas analíticas,
+\end_layout
+
+\begin_layout Itemize
+No se puede asegurar que el modelo es válido,
+\end_layout
+
+\begin_layout Itemize
+No existe un criterio científico de selección de la estrategia de simulación,
+\end_layout
+
+\begin_layout Itemize
+Existe un riesgo de utilizar un modelo fuera de los límites para el cual
+ fue construido.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Estrategia de simulación
+\series default
+: conjunto de alternativas que se definen para un ensayo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Evento
+\series default
+: acción que provoca un cambio de estado, modificando los atributos de las
+ entidades.
+\end_layout
+
+\begin_layout Section
+Cadenas
+\end_layout
+
+\begin_layout Standard
+Las transacciones son temporariamente ligadas a entidades ocupando listas
+ vinculadas llamadas cadenas.
+\end_layout
+
+\begin_layout Itemize
+La 
+\series bold
+Cadena de Eventos Corrientes
+\series default
+ (CEC) es una lista encadenada de transacciones preparadas que ya tienen
+ bloques para ser ingresados antes que la simulación avance.
+ Cuando la transacción activa descansa en alguna cadena, la primer transacción
+ de mayor prioridad en la CEC se vuelve la transacción activa.
+ Si la CEC esta vacía, la transacción(s) más inminente en la Cadena de Eventos
+ Futuros (FEC) es o son movidas a la CEC.
+ Esta acción siempre causa un avance en el sistema de reloj.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La ubicación de la CEC puede ser modificada por los bloques PRIORITY y BUFFER.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+La 
+\series bold
+Cadena de Eventos Futuros 
+\series default
+(FEC) es una cadena ordenada en el tiempo que retiene transacciones que
+ deben esperar por un tiempo de simulación.
+ Cuando toda actividad de la simulación durante el tiempo de reloj corriente
+ es completada, la siguiente transacción es tomada de la FEC.
+ Los bloques ADVANCE y GENERATE son la única manera de colocar una transacción
+ en la FEC.
+\end_layout
+
+\begin_layout Itemize
+Cada entidad tiene una cadena de transacciones bloqueadas, llamada 
+\series bold
+Cadena de Reintento
+\series default
+ (RETRY CHAIN).
+ Las transacciones que fallan todos los testeos requeridos para entrar a
+ un bloque son colocadas en una Cadena de Reintento.
+ Estos testeos ocurren cuando una transacción intenta entrar en un bloque
+ GATE o TEST.
+\end_layout
+
+\begin_layout Itemize
+Las 
+\series bold
+Cadenas de Usuario 
+\series default
+(USER CHAIN) son listas encadenadas de transacciones que han sido removidas
+ de la Cadena de Eventos Corrientes por un bloque LINK.
+\end_layout
+
+\begin_layout Section
+Funcionamiento del GPSS
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+por cada GENERATE del modelo:
+\end_layout
+
+\begin_layout Plain Layout
+
+	crea una transacción
+\end_layout
+
+\begin_layout Plain Layout
+
+	pone la transacción en la FEC (Future Event Chain)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+mientras (cantidad de transacciones destruidas < parámetro n del START)
+\end_layout
+
+\begin_layout Plain Layout
+
+		ordena la FEC en orden cronológico
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		primer evento := FEC [0]
+\end_layout
+
+\begin_layout Plain Layout
+
+		reloj := hora del primer evento
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+		para cada transacción de la FEC:
+\end_layout
+
+\begin_layout Plain Layout
+
+			si (hora de transacción == reloj)
+\end_layout
+
+\begin_layout Plain Layout
+
+				agregar transacción a CEC (Current Event Chain)
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+		ordenar la CEC por prioridad
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+		para cada transacción de la CEC:
+\end_layout
+
+\begin_layout Plain Layout
+
+			mover la transacción por el modelo hasta que: 
+\end_layout
+
+\begin_layout Plain Layout
+
+			{
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción ejecuta un LINK):
+\end_layout
+
+\begin_layout Plain Layout
+
+					transacción queda esperando
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción quiere tomar un recurso no disponible):
+\end_layout
+
+\begin_layout Plain Layout
+
+					poner transacción en DELAY CHAIN del recurso
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción atraviesa una condición falsa sin alternativas):
+\end_layout
+
+\begin_layout Plain Layout
+
+					poner transacción en RETRY CHAIN de la condición
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción quiere arrebatar un recurso y no puede):
+\end_layout
+
+\begin_layout Plain Layout
+
+					poner transacción en PENDING CHAIN del recurso
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción quiere hacer ADVANCE con tiempo != 0):
+\end_layout
+
+\begin_layout Plain Layout
+
+					poner transacción en FEC con el instante de finalización
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción muere):
+\end_layout
+
+\begin_layout Plain Layout
+
+					quitar transacción de CEC
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción es la primera de un ASSEMBLE):
+\end_layout
+
+\begin_layout Plain Layout
+
+					transacción queda esperando
+\end_layout
+
+\begin_layout Plain Layout
+
+				si (transacción genera nueva transacción X)
+\end_layout
+
+\begin_layout Plain Layout
+
+					poner X en CEC
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bloques y objetos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bloque
+\series default
+: representa las acciones que realizan las transacciones en el sistema.
+\end_layout
+
+\begin_layout Itemize
+Objetos transitorios
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Transacción
+\series default
+: elemento que se mueve por el modelo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Atributos: se instancian la primera vez que se les asigna valor.
+ (
+\family typewriter
+ASSIGN
+\family default
+, 
+\family typewriter
+SELECT
+\family default
+, 
+\family typewriter
+MARK
+\family default
+, 
+\family typewriter
+ALTER
+\family default
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Prioridad
+\series default
+: 0 (mínima), 100 (máxima).
+ Se puede alterar con los bloques 
+\family typewriter
+PRIORITY
+\family default
+ y 
+\family typewriter
+ALTER
+\family default
+, y examinar con el bloque 
+\family typewriter
+SCAN
+\family default
+.
+ Se inicializa en 
+\family typewriter
+GENERATE.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\series bold
+M1
+\family default
+\series default
+: edad, se inicializa en cero al nacer la transacción, y se puede alterar
+ con el bloque 
+\family typewriter
+MARK
+\family default
+.
+ Al momento de consultar el 
+\family typewriter
+M1
+\family default
+, se hace la resta entre la hora actual y la hora de nacimiento.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Parámetros
+\series default
+: son locales a la transacción.
+ Se modifican con 
+\family typewriter
+ASSIGN
+\family default
+ y 
+\family typewriter
+SELECT
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cada transacción tiene un 
+\series bold
+puntero
+\series default
+ que apunta al primer primer miembro de la familia, que, al nacer cada transacci
+ón, apunta a sí misma (cada transacción creada por 
+\family typewriter
+GENERATE
+\family default
+ pertenece a familias independientes entre sí).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Objetos permanentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Recursos definidos explícitamente: 
+\family typewriter
+STORAGE
+\family default
+, 
+\family typewriter
+TABLE
+\family default
+, 
+\family typewriter
+QTABLE
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Recursos definidos implícitamente: 
+\family typewriter
+FACILITY
+\family default
+, 
+\family typewriter
+QUEUE
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Bloques que generan transacciones: 
+\family typewriter
+GENERATE
+\family default
+, 
+\family typewriter
+SPLIT
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Bloques que colocan transacciones en la FEC (
+\emph on
+Future Event Chain
+\emph default
+): 
+\family typewriter
+GENERATE
+\family default
+, 
+\family typewriter
+ADVANCE
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Bloques que destruyen transacciones: 
+\family typewriter
+TERMINATE
+\family default
+, 
+\family typewriter
+ASSEMBLE
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Bloques que bloquean transacciones si no existe rótulo alternativo y la
+ proposición es falsa: 
+\family typewriter
+TEST
+\family default
+, 
+\family typewriter
+GATE
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+SNAs:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+AC1
+\family default
+: hora absoluta, en segundos.
+ Se inicializa en cero al comenzar la simulación.
+ Es el tiempo simulado desde el último 
+\emph on
+clear
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+RN3, RN4, RN5...: número al azar entre 0 y 999.
+\end_layout
+
+\begin_layout Itemize
+C1: hora relativa, en segundos.
+ Es el tiempo simulado desde el último 
+\emph on
+reset
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="8cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Facility
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Storage
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SEIZE, RELEASE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ENTER, LEAVE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacidad: 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacidad: 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es obligatorio que la transacción que ejecuta el 
+\family typewriter
+RELEASE
+\family default
+ sea la que anteriormente ejecutó 
+\family typewriter
+SEIZE
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No es obligatorio que la transacción que ejecuta el 
+\family typewriter
+LEAVE
+\family default
+ sea la que anteriormente ejecutó el 
+\family typewriter
+ENTER
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es arrebatable.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No es arrebatable.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cadena de Demora (DELAY CHAIN) – Una cadena de prioridad de transacciones
+ esperando por la propiedad de una 
+\emph on
+facility
+\emph default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Cadena de Pendientes (PENDING CHAIN) – Una lista de transacciones esperando
+ por apropiarse de la 
+\emph on
+facility
+\emph default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Cadena de Interrupción (INTERRUPT CHAIN) – Una lista de transacciones que
+ han sido apropiadas desde la propiedad de la 
+\emph on
+facility
+\emph default
+.
+\end_layout
+
+\begin_layout Plain Layout
+Cadena de Reintento (RETRY CHAIN) – Una lista de transacciones que están
+ esperando por el cambio de estado de una 
+\emph on
+facility
+\emph default
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cadena de Demora (DELAY CHAIN) – Una cadena de prioridad de transacciones
+ esperando por una unidad 
+\emph on
+storage
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Cadena de Reintento (RETRY CHAIN) – Una lista de transacciones que están
+ esperando por el cambio de estado del 
+\emph on
+storage
+\emph default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diferencia entre 
+\emph on
+storages
+\emph default
+ y 
+\emph on
+facilities
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parámetro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Savevalue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Logic switch
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿Localidad?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pertenece a una transacción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Global
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Global
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿Valor posible?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cualquier valor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cualquier valor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 valores - set (1), reset (0)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿Valor inicial?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reset (0)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diferencia entre parámetros, 
+\emph on
+savevalues
+\emph default
+ y 
+\emph on
+logic switches
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cadenas de usuario
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cadena
+\series default
+: objeto donde las transacciones se 
+\begin_inset Quotes eld
+\end_inset
+
+encadenan
+\begin_inset Quotes erd
+\end_inset
+
+ de modo tal que si otra transacción no las libera, jamás saldrán de allí.
+\end_layout
+
+\begin_layout Standard
+Permiten representar interacciones entre dos subsistemas.
+\end_layout
+
+\begin_layout Itemize
+Transporte de transacciones: la transacción 
+\series bold
+activa
+\series default
+ realiza el transporte, y la transacción 
+\series bold
+pasiva
+\series default
+ es transportada.
+\end_layout
+
+\begin_layout Itemize
+Recursos que no siempre están disponibles: se los representa como una transacció
+n y como una 
+\emph on
+facility
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Impaciencia de clientes: se subdivide al cliente en dos partes; uno es el
+ original, y la copia es la transacción que espera un tiempo fijo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Impaciencia de grado 1: por ejemplo, si la cantidad de gente en cola supera
+ 8, me voy de la cola.
+\end_layout
+
+\begin_layout Itemize
+Impaciencia de grado 2: por ejemplo, si el tiempo que pasé en cola supera
+ 1 hora, me voy de la cola.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+		GENERATE	  clientes	
+\end_layout
+
+\begin_layout Plain Layout
+
+		TEST	LE	Q$JUAN,7,CHAU		 ;si en la cola de Juan hay mas de 7 clientes,
+ va a CHAU
+\end_layout
+
+\begin_layout Plain Layout
+
+		SAVEVALUE	 CUEN+,1
+\end_layout
+
+\begin_layout Plain Layout
+
+		ASSIGN		4,X$CUEN			  ;P4 tiene el numero de cliente
+\end_layout
+
+\begin_layout Plain Layout
+
+		SPLIT		 1,IMPA				;generamos una copia y la mandamos a IMPA
+\end_layout
+
+\begin_layout Plain Layout
+
+		QUEUE		 JUAN				  ;hace cola para el facility Juan
+\end_layout
+
+\begin_layout Plain Layout
+
+		LINK		  JUAN,FIFO
+\end_layout
+
+\begin_layout Plain Layout
+
+ATIEN   SEIZE		 JUAN
+\end_layout
+
+\begin_layout Plain Layout
+
+		DEPART		JUAN
+\end_layout
+
+\begin_layout Plain Layout
+
+		ADVANCE		tiempo de atencion
+\end_layout
+
+\begin_layout Plain Layout
+
+		RELEASE		JUAN
+\end_layout
+
+\begin_layout Plain Layout
+
+		TERMINATE
+\end_layout
+
+\begin_layout Plain Layout
+
+IMPA	ADVANCE	   tiempo de paciencia	;soy la copia que espera un tiempo
+\end_layout
+
+\begin_layout Plain Layout
+
+		UNLINK		JUAN,SEVA,1,4,*4	   ;me impacienté: desencadeno a 1 transacción
+ cuyo P4 sea igual al P4 mío
+\end_layout
+
+\begin_layout Plain Layout
+
+		TERMINATE							;destruyo la copia
+\end_layout
+
+\begin_layout Plain Layout
+
+SEVA	DEPART	    JUAN
+\end_layout
+
+\begin_layout Plain Layout
+
+CHAU	TERMINATE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cartilla de bloques
+\end_layout
+
+\begin_layout Standard
+Id: número o nombre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="61" columns="6">
+<features rotate="0" islongtable="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="7cm">
+<column alignment="left" valignment="top" width="4cm">
+<row endhead="true">
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bloque
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Acción que representa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parámetros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Default
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row endhead="true">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+START
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simular 
+\begin_inset Formula $n$
+\end_inset
+
+ transacciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n=$
+\end_inset
+
+ cantidad de transacciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+GENERATE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[t],[d],[o],[c],p]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arribo de transacciones independientes entre sí cada cierto tiempo 
+\begin_inset Formula $t\pm d$
+\end_inset
+
+ o 
+\begin_inset Formula $t\times d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $t=$
+\end_inset
+
+ valor medio entre arribos
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $d\in N$
+\end_inset
+
+, es el desvío máximo permitido.
+ Si 
+\begin_inset Formula $d$
+\end_inset
+
+ es una 
+\family typewriter
+FUNCTION
+\family default
+, se multiplica 
+\begin_inset Formula $t\times d$
+\end_inset
+
+ para calcular el próximo nacimiento
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $o=$
+\end_inset
+
+ instante en que se genera la primera transacción
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ cantidad máxima de transacciones a generar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p=$
+\end_inset
+
+ prioridad de la transacción a generar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $o=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p=0$
+\end_inset
+
+ (prioridad mínima)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ADVANCE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+t[,d]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Realización de una tarea que dura cierto tiempo 
+\begin_inset Formula $t\pm d$
+\end_inset
+
+ o 
+\begin_inset Formula $t\times d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $t=$
+\end_inset
+
+ valor medio de la duración de la tarea (constante o SNA)
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $d\in N$
+\end_inset
+
+, es el desvío máximo permitido.
+ Si 
+\begin_inset Formula $d$
+\end_inset
+
+ es una 
+\family typewriter
+FUNCTION
+\family default
+, se multiplica 
+\begin_inset Formula $t\times d$
+\end_inset
+
+ para calcular la duración.
+ 
+\emph on
+No puede ser referencia a FUNCTION.
+\end_layout
+
+\begin_layout Itemize
+Debe cumplirse que 
+\begin_inset Formula $t\geq d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+TERMINATE 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[n]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida de 
+\begin_inset Formula $n$
+\end_inset
+
+ transacciones.
+ Si 
+\begin_inset Formula $n$
+\end_inset
+
+ no se especifica, no se contabiliza la transacción pero la misma se destruye
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n\in N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SEIZE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tomar un recurso de uso exclusivo (
+\emph on
+facility
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f=$
+\end_inset
+
+ id de la 
+\emph on
+facility
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+RELEASE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dejar un recurso de uso exclusivo (
+\emph on
+facility
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f=$
+\end_inset
+
+ id de la 
+\emph on
+facility
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ENTER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+s[,l]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intentar ocupar uno o más lugares de un recurso de uso compartido (
+\emph on
+storage
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $s=$
+\end_inset
+
+ id del 
+\emph on
+storage
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l=$
+\end_inset
+
+ lugares que ocupa la transacción 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LEAVE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+s[,l]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dejar uno o más lugares de un recurso de uso compartido (
+\emph on
+storage
+\emph default
+).
+ No es necesario haber ejecutado 
+\family typewriter
+ENTER
+\family default
+ previamente.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $s=$
+\end_inset
+
+ id del 
+\emph on
+storage
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l=$
+\end_inset
+
+ lugares que deja la transacción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+NSTORAGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+STORAGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definir la capacidad de un 
+\emph on
+storage 
+\emph default
+en 
+\begin_inset Formula $n$
+\end_inset
+
+ transacciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $NSTORAGE=$
+\end_inset
+
+ identificador del 
+\emph on
+storage
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n\in N$
+\end_inset
+
+, 
+\begin_inset Formula $n<30000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+TRANSFER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[p,[a]],b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bifurcar estocásticamente.
+ Con probabilidad 
+\begin_inset Formula $p$
+\end_inset
+
+ se bifurca a 
+\begin_inset Formula $b$
+\end_inset
+
+, y con probabilidad 
+\series bold
+
+\begin_inset Formula $1-p$
+\end_inset
+
+ 
+\series default
+se bifurca a 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $a$
+\end_inset
+
+ no se especifica, bifurca al bloque siguiente con probabilidad 
+\begin_inset Formula $1-p$
+\end_inset
+
+.
+ Si ni 
+\begin_inset Formula $p$
+\end_inset
+
+ ni 
+\begin_inset Formula $a$
+\end_inset
+
+ se especifican, bifurca siempre a 
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $0\leq p<1$
+\end_inset
+
+, o 
+\begin_inset Formula $p$
+\end_inset
+
+ es una referencia a una función de 
+\begin_inset Formula $n$
+\end_inset
+
+ puntos tal que 
+\begin_inset Formula $0\leq y_{i}<1000$
+\end_inset
+
+ 
+\begin_inset Formula $(i=1..n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\series bold
+
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\series default
+son rótulos o referencias a funciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+TRANSFER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SIM,b,c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si el 
+\emph on
+delay indicator
+\emph default
+ de la transacción está en ON (set) —si alguno de los 
+\family typewriter
+GATE/TEST
+\family default
+ anteriores no se cumple—, la transacción es enviada al rótulo 
+\begin_inset Formula $c$
+\end_inset
+
+ y pone el 
+\emph on
+delay indicator 
+\emph default
+en OFF (reset).
+ Si el 
+\emph on
+delay indicator
+\emph default
+ está en OFF —todos los 
+\family typewriter
+GATE/TEST 
+\family default
+anteriores se cumplen 
+\series bold
+simultáneamente
+\series default
+—, la transacción es enviada al rótulo 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ son rótulos.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+QUEUE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+f[,l]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hacer cola para la 
+\emph on
+facility
+\emph default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ id de la 
+\emph on
+queue
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l=$
+\end_inset
+
+ lugares que ocupa la transacción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+DEPART 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+f[,l]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salir de la cola de la 
+\emph on
+facility
+\emph default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+, si la 
+\family typewriter
+QTABLE
+\family default
+ respectiva está definida, registra allí las estadísticas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ id de la 
+\emph on
+queue
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l=$
+\end_inset
+
+ lugares que deja la transacción 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+START
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simular en el modelo hasta contabilizar 
+\begin_inset Formula $n$
+\end_inset
+
+ transacciones terminadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n\in N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+NTABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+TABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+v,x
+\begin_inset Formula $_{0}$
+\end_inset
+
+,
+\begin_inset Formula $\Delta$
+\end_inset
+
+x,n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definir una tabla de distribución de frecuencia.
+ Necesita de 
+\family typewriter
+TABULATE
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $v=$
+\end_inset
+
+ valor a tabular de la transacción que ejecuta el 
+\emph on
+tabulate
+\emph default
+ (cualquier SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{0}=$
+\end_inset
+
+ Límite superior del primer intervalo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Delta x=$
+\end_inset
+
+ tamaño de cada intervalo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+cantidad de intervalos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+TABULATE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+t
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agrega un valor a una 
+\family typewriter
+TABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t=$
+\end_inset
+
+ id de la 
+\family typewriter
+TABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+NQTABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+QTABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ntable,t
+\begin_inset Formula $_{0}$
+\end_inset
+
+,
+\begin_inset Formula $\Delta t$
+\end_inset
+
+,n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Define una tabla de distribución de frecuencias para tiempos en cola.
+ No necesita de 
+\family typewriter
+TABULATE
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $NQTABLE=$
+\end_inset
+
+ id de la
+\emph on
+ queue
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t_{0}=$
+\end_inset
+
+ límite superior del primer intervalo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Delta t=$
+\end_inset
+
+ tamaño de cada intervalo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+ cantidad de intervalos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ASSIGN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+p,v
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+p+,v
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+p-,v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asigna, suma o resta el valor 
+\begin_inset Formula $v$
+\end_inset
+
+ al parámetro 
+\begin_inset Formula $p$
+\end_inset
+
+ de la transacción activa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p=$
+\end_inset
+
+ id del parámetro (puede ser un SNA)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $v=$
+\end_inset
+
+ valor a asignar, sumar o restar (puede ser una constante o un SNA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SELECT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+op logico
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+Logic Switch: LS, LR
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Facility: U, NU, I, NI, FV, FNV
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Storage: SE, SNE, SF, SNF, SV, SNV
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+p,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+[,,,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Busca una 
+\emph on
+facility, storage 
+\emph default
+o
+\emph on
+ logic switch
+\emph default
+ según el 
+\family typewriter
+op logico
+\family default
+ y la almacena en el parámetro 
+\begin_inset Formula $p$
+\end_inset
+
+ de la transacción activa.
+ Al finalizar, 
+\begin_inset Formula $v_{1}\leq a\leq v_{2}$
+\end_inset
+
+ o, si no pudo seleccionar, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ no esta, establece que 
+\begin_inset Formula $p=0$
+\end_inset
+
+ y continúa en el bloque siguiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $p=$
+\end_inset
+
+ id del parámetro
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+ número de objeto menor desde el cual se hace el 
+\family typewriter
+SELECT
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ número de objeto mayor desde el cual se hace el 
+\family typewriter
+SELECT
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que bifurca si la selección fue infructuosa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SELECT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+op relacion
+\family default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+EQ, L, LE, G, GE, NE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,d,e[,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Busca una objeto 
+\begin_inset Formula $e$
+\end_inset
+
+ según el 
+\family typewriter
+op relacion 
+\family default
+y lo almacena en el parámetro 
+\begin_inset Formula $a$
+\end_inset
+
+ de la transacción activa.
+ Al finalizar, 
+\begin_inset Formula $v_{1}\leq a\leq v_{2}$
+\end_inset
+
+ o, si no hay desocupadas, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ no esta, establece que 
+\begin_inset Formula $a=0$
+\end_inset
+
+ y continúa en el bloque siguiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ id del parámetro
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+ número de objeto menor desde el cual se hace el 
+\family typewriter
+SELECT
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ número de objeto mayor desde el cual se hace el 
+\family typewriter
+SELECT
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d=$
+\end_inset
+
+ valor con el que se compara
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e=$
+\end_inset
+
+ clase de objeto que se compara (SNAs)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que bifurca si la selección fue infructuosa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SELECT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+MIN/MAX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+p,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,,e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Busca un
+\emph on
+ facility 
+\emph default
+desocupado según el criterio 
+\begin_inset Formula $e$
+\end_inset
+
+ y lo almacena en 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Si el criterio no alcanza para definir, 
+\begin_inset Formula $p=v_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $p=$
+\end_inset
+
+ id del parámetro
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+ número menor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ número mayor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e=$
+\end_inset
+
+ clase de objeto en la que se busca el mínimo o máximo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+NVARIABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+VARIABLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Define una función que se evalúa cada vez que una transacción hace referencia
+ a ella.
+ Se truncan los decimales de los resultados intermedios y del resultado
+ final.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f=$
+\end_inset
+
+ función con operadores (cualquier SNA)
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+suma
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+resta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+multiplicación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+división
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+módulo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+^
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+potencia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+NFUNCTION
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+FUNCTION
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+x,tn
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+x
+\begin_inset Formula $_{1}$
+\end_inset
+
+,y
+\begin_inset Formula $_{1}$
+\end_inset
+
+/x
+\begin_inset Formula $_{2}$
+\end_inset
+
+,y
+\begin_inset Formula $_{2}$
+\end_inset
+
+/.../x
+\begin_inset Formula $_{n}$
+\end_inset
+
+,y
+\begin_inset Formula $_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Devuelve un valor cada vez que se la invoca.
+ Define una función de 
+\begin_inset Formula $n$
+\end_inset
+
+ puntos.
+ Si 
+\begin_inset Formula $x\leq x_{1}$
+\end_inset
+
+, devuelve 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+, si 
+\begin_inset Formula $x\geq x_{n}$
+\end_inset
+
+, devuelve 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+.
+ Se truncan los decimales de los resultados intermedios y del resultado
+ final.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $x=$
+\end_inset
+
+ variable independiente (cualquier SNA).
+ Si 
+\begin_inset Formula $x$
+\end_inset
+
+ es RN, 
+\begin_inset Formula $0<x_{i}\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=$
+\end_inset
+
+ tipo de la función (
+\begin_inset Formula $C=$
+\end_inset
+
+continua, 
+\begin_inset Formula $D=$
+\end_inset
+
+discreta, 
+\begin_inset Formula $E=$
+\end_inset
+
+discreta de atributos numéricos)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Debe cumplirse que 
+\begin_inset Formula $x_{1}\leq x_{2}\leq...\leq x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+Si es 
+\series bold
+continua
+\series default
+, y 
+\begin_inset Formula $x_{i}<x<x_{i+1}$
+\end_inset
+
+ se interpola linealmente entre 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{i+1}$
+\end_inset
+
+.
+ Si es 
+\series bold
+discreta
+\series default
+, y 
+\begin_inset Formula $x_{i}<x<x_{i+1}$
+\end_inset
+
+, se devuelve 
+\begin_inset Formula $y_{i+1}$
+\end_inset
+
+ (los 
+\begin_inset Formula $y$
+\end_inset
+
+ pueden ser rótulos).
+ Si es 
+\series bold
+discreta de atributos numéricos
+\series default
+, es como la discreta pero las 
+\begin_inset Formula $y$
+\end_inset
+
+ deben ser SNAs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+ cantidad de puntos que definen la función
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SAVEVALUE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+s,v
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+s+,v
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+s-,v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asigna, suma o resta el valor 
+\begin_inset Formula $v$
+\end_inset
+
+ al 
+\emph on
+savevalue
+\emph default
+ 
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $s=$
+\end_inset
+
+ id del 
+\emph on
+savevalue
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v=$
+\end_inset
+
+ valor a asignar, sumar o restar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INITIAL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+s[,a]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asigna el valor inicial 
+\begin_inset Formula $a$
+\end_inset
+
+ al 
+\emph on
+savevalue
+\emph default
+ 
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s=$
+\end_inset
+
+ 
+\series bold
+referencia
+\series default
+ al 
+\emph on
+savevalue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LOOP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+p,a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resta 1 al parámetro 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $p>0$
+\end_inset
+
+, bifurca al rótulo 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $p=0$
+\end_inset
+
+, continúa en el bloque siguiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $p=$
+\end_inset
+
+ id del parámetro a decrementar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ rótulo al que bifurca
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+NMATRIX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+MATRIX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+,f,c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Define una matriz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ cantidad de filas
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ cantidad de columnas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+MSAVEVALUE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+m,f,c,v
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+m+,f,c,v
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+m-,f,c,v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asigna, suma o resta el valor 
+\begin_inset Formula $v$
+\end_inset
+
+ del elemento 
+\begin_inset Formula $m[f,c]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $m=$
+\end_inset
+
+ id de la matriz
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ fila (cualquier SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ columna (cualquier SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v=$
+\end_inset
+
+ valor a asignar, sumar o restar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+TEST
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+op
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,b[,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si 
+\begin_inset Formula $a\, op\, b$
+\end_inset
+
+ es V, continúa en el bloque siguiente.
+ Si es F, bifurca al rótulo 
+\begin_inset Formula $f$
+\end_inset
+
+; si es F y no se especifico 
+\begin_inset Formula $f$
+\end_inset
+
+, bloquea la transacción hasta que sea V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $op$
+\end_inset
+
+ puede ser 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $ne$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+, 
+\begin_inset Formula $ge$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+, 
+\begin_inset Formula $le$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ pueden ser constantes o SNAs
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que bifurca
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SPLIT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+c,r[,n]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Genera 
+\begin_inset Formula $c$
+\end_inset
+
+ nuevas transacciones, “clonando” la transacción activa (M1, PR, parámetros).
+ Las copias bifurcan a 
+\begin_inset Formula $r$
+\end_inset
+
+ y el original continúa en el bloque siguiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ cantidad de copias (constante o SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r=$
+\end_inset
+
+ rótulo al que bifurcan las copias
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+ id de parámetro a utilizar para enumerar el original y las copias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ASSEMBLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reúne un grupo de transacciones y deja pasar solo una transacción que representa
+ al grupo, las restantes 
+\begin_inset Formula $a-1$
+\end_inset
+
+ son destruidas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a=$
+\end_inset
+
+ cantidad de miembros de la familia a sincronizar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+GATHER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reúne un grupo de transacciones y deja pasar a todas una vez reunida la
+ cantidad especificada, sin destruir ninguna transacción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m=$
+\end_inset
+
+ cantidad de miembros de la familia a reunir
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+MARK
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[p]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se almacena un M1 
+\begin_inset Quotes eld
+\end_inset
+
+paralelo
+\begin_inset Quotes erd
+\end_inset
+
+ en el parámetro 
+\begin_inset Formula $p$
+\end_inset
+
+ de la transacción.
+ Si 
+\begin_inset Formula $p$
+\end_inset
+
+ no se especifica, se inicializa M1 en cero.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p=$
+\end_inset
+
+ id del parámetro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p=M1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+PRIORITY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cambia la prioridad de la transacción activa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p=$
+\end_inset
+
+ nueva prioridad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LOGIC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ll
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cambia el estado del 
+\emph on
+logic switch
+\emph default
+ 
+\begin_inset Formula $ll$
+\end_inset
+
+ por el valor de 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $v=$
+\end_inset
+
+ S (set), R (reset), I (invertido)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ll=$
+\end_inset
+
+ id de la llave
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+INITIAL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+rll[,v]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inicializa el estado de la llave 
+\begin_inset Formula $rll$
+\end_inset
+
+ con el valor 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $rll=$
+\end_inset
+
+
+\series bold
+ referencia
+\series default
+ a una llave lógica
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v=$
+\end_inset
+
+ 1 (set), 0 (reset)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $v=1$
+\end_inset
+
+(set)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+GATE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+op lógico
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "op_logicos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a[,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consulta el estado del 
+\emph on
+logic switch
+\emph default
+, 
+\emph on
+facility
+\emph default
+, 
+\emph on
+storage
+\emph default
+ o rótulo 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $op\, A$
+\end_inset
+
+ es V, continúa en el bloque siguiente.
+ Si es F, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Si no se especifica 
+\begin_inset Formula $f$
+\end_inset
+
+, la transacción se bloquea hasta que sea V (
+\emph on
+delay indicator 
+\emph default
+en ON)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ id del 
+\emph on
+logic switch
+\emph default
+, 
+\emph on
+facility
+\emph default
+, 
+\emph on
+storage
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que bifurca si la condición es falsa.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+COUNT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+op logico
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "op_logicos"
+
+\end_inset
+
+Logic Switch: LS, LR
+\end_layout
+
+\begin_layout Plain Layout
+Facility: U, NU, I, NI, FV, FNV
+\end_layout
+
+\begin_layout Plain Layout
+Storage: SE, SNE, SF, SNF, SV, SNV
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuenta la cantidad de objetos desde 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ hasta 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ que cumplen la condición 
+\begin_inset Formula $op\, objeto$
+\end_inset
+
+, y lo almacena en 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ parámetro que recibe la cantidad de objetos que cumplen la condición
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+ número menor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ número mayor del objeto a consultar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+COUNT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+op relacion
+\family default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+EQ, L, LE, G, GE, NE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,d,e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuenta la cantidad de objetos desde 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ hasta 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ que cumplen la condición 
+\begin_inset Formula $objeto\, op\, d$
+\end_inset
+
+, y lo almacena en 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ parámetro que recibe la cantidad de objetos que cumple la condición
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+ número menor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ número mayor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d=$
+\end_inset
+
+ valor con el que se compara
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e=$
+\end_inset
+
+ clase de objeto que se selecciona (SNA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+COUNT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+MIN/MAX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,,e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuenta la cantidad de objetos desde 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ hasta 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ que son mínimo o máximo, y lo almacena en 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ parámetro que recibe la cantidad de objetos que son mínimo o máximo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+ número menor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ número mayor del objeto a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e=$
+\end_inset
+
+ clase de objeto que se compara (SNA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+JOIN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La transacción activa se une al grupo 
+\begin_inset Formula $g$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+personalmente
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g=$
+\end_inset
+
+ id del grupo.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+EXAMINE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,,f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verifica si la transacción activa pertenece al grupo 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Si pertenece, continúa en el bloque siguiente.
+ Si no, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $g=$
+\end_inset
+
+ id del grupo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que bifurca.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+REMOVE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La transacción activa se elimina al grupo 
+\begin_inset Formula $g$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+personalmente
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g=$
+\end_inset
+
+ id del grupo.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+REMOVE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[op]
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+E,G,GE,L,LE,MAX,MIN,NE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,[c],,[p],[v],[f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intenta eliminar 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones del grupo 
+\begin_inset Formula $g$
+\end_inset
+
+ que cumplen la condición 
+\begin_inset Formula $p\, op\, v$
+\end_inset
+
+.
+ Si no puede eliminar todas, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $g=$
+\end_inset
+
+ id del grupo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+cantidad de transacciones a eliminar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p=$
+\end_inset
+
+ idel parámetro que se consulta de la transacción
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v=$
+\end_inset
+
+valor con el que se compara (no se pone si 
+\begin_inset Formula $op=MIN/MAX$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+rótulo al que bifurca si no pudo eliminar 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op=E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $c=ALL$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ALTER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[op]
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+E,G,GE,L,LE,NE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,c,p
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,[p
+\begin_inset Formula $_{2}$
+\end_inset
+
+],[v
+\begin_inset Formula $_{2}$
+\end_inset
+
+],[f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intenta alterar 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones del grupo 
+\begin_inset Formula $g$
+\end_inset
+
+ de la siguiente forma: para cada transacción, si 
+\begin_inset Formula $p_{2}\, op\, v_{2}$
+\end_inset
+
+ es V, se asigna 
+\begin_inset Formula $p_{1}=v_{1}$
+\end_inset
+
+.
+ Si no puede alterar 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones, bifurca al rótulo 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $g=$
+\end_inset
+
+ id del grupo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ cantidad de transacciones a eliminar
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+ puede ser 
+\family typewriter
+ALL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{1}=$
+\end_inset
+
+ id del parámetro a alterar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=$
+\end_inset
+
+valor a asignar al parámetro 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ (constante o SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{2}=$
+\end_inset
+
+ id del parámetro a consultar
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=$
+\end_inset
+
+ valor con el que se compara 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ (constante o SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+rótulo al que bifurca si no pudo alterar 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op=E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SCAN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[op]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,b,[c],p
+\begin_inset Formula $_{1}$
+\end_inset
+
+,p
+\begin_inset Formula $_{2}$
+\end_inset
+
+[,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Busca en el grupo 
+\begin_inset Formula $g$
+\end_inset
+
+ la 
+\series bold
+primera
+\series default
+ transacción que cumple la condición 
+\begin_inset Formula $b\, op\, c$
+\end_inset
+
+.
+ Copia el parámetro 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ en el parámetro 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ de la transacción actual.
+ Si no encuentra ninguna, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $OP$
+\end_inset
+
+ puede ser 
+\begin_inset Formula $e,g,ge,l,le,max,min,ne$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b=$
+\end_inset
+
+ id del parámetro que se consulta
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ valor con el que se compara (si 
+\begin_inset Formula $OP$
+\end_inset
+
+ es 
+\begin_inset Formula $min/max$
+\end_inset
+
+, no se pone)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{1}=$
+\end_inset
+
+ id del parámetro de la transacción del grupo que se copia
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{2}=$
+\end_inset
+
+ id del parámetro de la transacción actual que recibe el valor de 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $op=E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+LINK
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+c,r[,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Encadena la transacción pasiva actual a la cadena 
+\begin_inset Formula $c$
+\end_inset
+
+ según la regla 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Si se especifica el rótulo 
+\begin_inset Formula $f$
+\end_inset
+
+, la primera transacción 
+\series bold
+no es encadenada
+\series default
+ y bifurca al rótulo 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ id de la cadena (constante o SNA)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r=$
+\end_inset
+
+ regla por la cual se encadena (FIFO, LIFO, PR, Pn, M1)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que va la primera transacción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+UNLINK
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+[op]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,b,c,[d],[e],[f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La transacción activa actual desencadena 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones de la cadena 
+\begin_inset Formula $a$
+\end_inset
+
+ tales que se verifique 
+\begin_inset Formula $d\, op\, e$
+\end_inset
+
+, y las envía al rótulo 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Si no puede liberar todas, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+ (las que fueron liberadas, quedan liberadas).
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $op$
+\end_inset
+
+ puede ser 
+\family typewriter
+E,G,GE,L,LE,NE
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ id de la cadena
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b=$
+\end_inset
+
+ rótulo al que se envían las transacciones liberadas
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c=$
+\end_inset
+
+ cantidad de transacciones que se desencadenan
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+ puede ser 
+\family typewriter
+ALL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d=$
+\end_inset
+
+ id de parámetro de la transacción
+\series bold
+ activa
+\series default
+ que se consulta
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e=$
+\end_inset
+
+
+\series bold
+ referencia
+\series default
+ del parámetro de la transacción 
+\series bold
+pasiva
+\series default
+ que se consulta
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f=$
+\end_inset
+
+ rótulo al que bifurca la transacción activa si no pudo liberar 
+\begin_inset Formula $c$
+\end_inset
+
+ transacciones.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $op=E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+BUFFER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La transacción actual se coloca como última transacción a mover en la CEC.
+ Detiene a la misma sin que pase el tiempo.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+PREEMPT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La transacción actual arrebata la 
+\emph on
+facility
+\emph default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ que ha sido tomada por un 
+\family typewriter
+SEIZE
+\family default
+, sin importar las prioridades.
+ Si fue tomada por otro 
+\family typewriter
+PREEMPT
+\family default
+, 
+\series bold
+no 
+\series default
+la arrebata.
+ Interrumpe el 
+\family typewriter
+ADVANCE
+\family default
+ del
+\emph on
+ owner
+\emph default
+ de la 
+\emph on
+facility.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a=$
+\end_inset
+
+ id de 
+\emph on
+facility 
+\emph default
+a intentar arrebatar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+PREEMPT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,PR[,c,d[,RE]]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+El arrebato se produce sólo si el 
+\emph on
+owner
+\emph default
+ de la 
+\emph on
+facility 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+tiene menos prioridad que la transacción actual.
+ Si se especifica 
+\family typewriter
+RE
+\family default
+, el arrebato es definitivo.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a=$
+\end_inset
+
+ id de 
+\emph on
+facility 
+\emph default
+a intentar arrebatar
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $c=$
+\end_inset
+
+ rótulo al que bifurca el 
+\emph on
+owner
+\emph default
+ si estaba ejecutando un 
+\family typewriter
+ADVANCE
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $d=$
+\end_inset
+
+ id del parámetro del 
+\emph on
+owner
+\emph default
+ donde se almacena el tiempo remanente del 
+\emph on
+owner 
+\emph default
+para terminar el 
+\family typewriter
+ADVANCE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+RETURN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retorno de recurso 
+\begin_inset Formula $a$
+\end_inset
+
+ al 
+\emph on
+owner 
+\emph default
+de dicha 
+\emph on
+facility
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+FUNAVAIL
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a,[b],[c],[d],[e],f,[g],h
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rotura de 
+\emph on
+facility
+\emph default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ El owner de la 
+\emph on
+facility
+\emph default
+ bifurca al rótulo 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Las transacciones que fueron interrumpidas bifurcan al rótulo 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Las transacciones que están en la 
+\emph on
+delay chain
+\emph default
+ o 
+\emph on
+pending chain
+\emph default
+ de 
+\begin_inset Formula $a$
+\end_inset
+
+ bifurcan al rótulo 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $a=$
+\end_inset
+
+ id de 
+\emph on
+facility
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b=RE$
+\end_inset
+
+ (el 
+\emph on
+owner 
+\emph default
+de la 
+\emph on
+facility
+\emph default
+ la deja definitivamente) o 
+\begin_inset Formula $CO$
+\end_inset
+
+ (el owner continúa en poder de la 
+\emph on
+facility
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c$
+\end_inset
+
+ es obligatorio si 
+\begin_inset Formula $b=RE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d=$
+\end_inset
+
+ parámetro del 
+\emph on
+owner
+\emph default
+ de la 
+\emph on
+facility
+\emph default
+ donde se guarda el tiempo remanente del 
+\family typewriter
+ADVANCE
+\family default
+ que estuviera ejecutando.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e=RE$
+\end_inset
+
+ (las transacciones interrumpidas la dejan definitivamente) o 
+\begin_inset Formula $CO$
+\end_inset
+
+ (el owner continúa en poder de la 
+\emph on
+facility
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ es obligatorio si 
+\begin_inset Formula $e=RE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g=RE$
+\end_inset
+
+ (las transacciones en la 
+\emph on
+delay chain
+\emph default
+ o 
+\emph on
+pending chain
+\emph default
+ abandonan la idea de tomar 
+\begin_inset Formula $a$
+\end_inset
+
+) o 
+\begin_inset Formula $CO$
+\end_inset
+
+ (abandonan la 
+\emph on
+delay chain
+\emph default
+ o 
+\emph on
+pending chain
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+si 
+\begin_inset Formula $h$
+\end_inset
+
+ es usado, 
+\begin_inset Formula $g$
+\end_inset
+
+ debe ser 
+\begin_inset Formula $RE$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+FAVAIL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arreglo de 
+\emph on
+facility
+\emph default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SUNAVAIL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rotura de 
+\emph on
+storage 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+SAVAIL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arreglo de 
+\emph on
+storage 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+MATCH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sincronizar el movimiento de transacciones de la misma familia.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a=$
+\end_inset
+
+ rótulo para ser testeado por transacciones iguales.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+JOIN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unir el número 
+\begin_inset Formula $n$
+\end_inset
+
+ al grupo numérico 
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $g$
+\end_inset
+
+= id del grupo 
+\series bold
+numérico
+\series default
+ o SNA
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+constante o SNA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+REMOVE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,,n[,,,f]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Remover al número 
+\begin_inset Formula $n$
+\end_inset
+
+ del grupo numérico 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Si no pertenece, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $g$
+\end_inset
+
+= id del grupo 
+\series bold
+numérico
+\series default
+ o SNA
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+constante o SNA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+EXAMINE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+g,n,f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si el número 
+\begin_inset Formula $n$
+\end_inset
+
+ pertenece al grupo numérico 
+\begin_inset Formula $g$
+\end_inset
+
+, continúa en el bloque siguiente.
+ Si no, bifurca a 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $g$
+\end_inset
+
+= id del grupo 
+\series bold
+numérico
+\series default
+ o SNA
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n=$
+\end_inset
+
+constante o SNA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+Para referirse a parámetros:
+\end_layout
+
+\begin_layout Enumerate
+Por nombre: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+P$CAJAS
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+*$CAJAS
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+*CAJAS
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por número:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+P4
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+*4
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Para referirse a un 
+\family typewriter
+SAVEVALUE
+\family default
+:
+\end_layout
+
+\begin_layout Enumerate
+Por nombre: 
+\family typewriter
+X$CAJAS
+\end_layout
+
+\begin_layout Enumerate
+Por número: 
+\family typewriter
+X4
+\end_layout
+
+\begin_layout Standard
+Para referirse a una 
+\family typewriter
+VARIABLE
+\family default
+: 
+\end_layout
+
+\begin_layout Enumerate
+Direccionamiento directo: 
+\family typewriter
+V$CAJA, V$1
+\end_layout
+
+\begin_layout Enumerate
+Direccionamiento indirecto: 
+\family typewriter
+V*CAJA, V*1
+\end_layout
+
+\begin_layout Standard
+Para referirse a una 
+\family typewriter
+FUNCTION
+\family default
+: 
+\family typewriter
+FN$FUNCION
+\end_layout
+
+\begin_layout Standard
+Para referirse a una 
+\family typewriter
+MATRIX
+\family default
+:
+\end_layout
+
+\begin_layout Enumerate
+Por nombre: 
+\family typewriter
+MX$MATRIZ(col,fil)
+\end_layout
+
+\begin_layout Enumerate
+Por número: 
+\family typewriter
+Mx4(col,fil)
+\end_layout
+
+\end_body
+\end_document

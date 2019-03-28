@@ -1,0 +1,5216 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{pdflscape}
+\usepackage{changepage}
+ 
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Análisis de la Información"
+\pdf_author "María Inés Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 1cm
+\headsep 1cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\footnotesize\ttfamily},frame=single,language={C++},numbers=left,numbersep=5pt,stepnumber=1,tabsize=2"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[75.09] Análisis de la Información
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ingeniería de software
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ingeniería del software
+\series default
+: enfoque sistemático, disciplinado y cuantificable aplicado al desarrollo,
+ la operación y el mantenimiento del software.
+\end_layout
+
+\begin_layout Standard
+Para trabajar, se necesitan metodologías que requieren: 
+\end_layout
+
+\begin_layout Itemize
+notación, 
+\end_layout
+
+\begin_layout Itemize
+herramientas automatizadas,
+\end_layout
+
+\begin_layout Itemize
+proceso de desarrollo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/pilares.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pilares de las metodologías
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Enfoques de la ingeniería de software: 
+\end_layout
+
+\begin_layout Enumerate
+Estructurado
+\end_layout
+
+\begin_layout Enumerate
+Orientado a Objetos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Objeto
+\series default
+: agrupa atributos y métodos en una sola entidad
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Encapsulamiento
+\series default
+: “ocultar” un atributo de nuestra clase hacia el exterior
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Abstracción
+\series default
+: definición de clases
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Polimorfismo
+\series default
+: posibilidad de tener una misma función que se comporte de distinta manera
+ dependiendo de los parámetros que le entreguemos.
+ Declarar una función pero no implementarla, con el objetivo de que si o
+ si las clases que la heredan tienen que implementar este método.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Herencia
+\series default
+: podemos “heredar” una clase más general, a otra menos general
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Modelos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Modelo
+\series default
+: representación simplificada de la realidad.
+\end_layout
+
+\begin_layout Standard
+¿Para qué se modeliza?
+\end_layout
+
+\begin_layout Enumerate
+Para comprender el problema
+\end_layout
+
+\begin_layout Enumerate
+Para visualizar el problema
+\end_layout
+
+\begin_layout Enumerate
+Para minimizar los riesgos de tiempo, de dinero y funcionales
+\end_layout
+
+\begin_layout Enumerate
+Para comunicar ideas entre personas
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ingeniería Civil
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ingeniería de Software
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Captura de requisitos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿Pileta?, ¿cantidad de habitaciones?, ¿garage?..
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Encuestas, cuestionarios...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Análisis (QUÉ)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Planos esquemáticos, maquetas..
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelos de análisis (modelos de casos de uso, de comportamiento, de negocio...)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Diseño (CÓMO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Planos estructurales, eléctricos, hidráulicos...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelos de diseño (modelos de caso de uso, de componentes, de despliegue...)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Construcción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Pruebas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unitarias, de integración, de sistema, de usuarios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Entrega
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Mantenimiento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Correctivo y evolutivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Correctivo y evolutivo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Paralelismo entre ingeniería civil y de software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modelos en UML
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+UML
+\series default
+ 
+\series bold
+(
+\emph on
+Unified Modeling Language)
+\series default
+\emph default
+: lenguaje para visualizar, especificar, construir y documentar sistemas
+ bajo el paradigma de orientación a objetos.
+ Es un lenguaje basado en modelos visuales que abarcan todo el ciclo de
+ vida.
+ Estas metodologías usan distintos modelos.
+\end_layout
+
+\begin_layout Standard
+Modelos orientados a objetos:
+\end_layout
+
+\begin_layout Enumerate
+Modelos de Requerimientos (
+\emph on
+qué
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+Modelos de Diseño (
+\emph on
+cómo
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Modelos de Requerimientos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Diagrama/s
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Negocio
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actividad
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comportamiento
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Casos de Uso
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conceptual
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clases
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interacción entre objetos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Secuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Colaboración
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estado de objetos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transición de estado de objetos
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componentes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componentes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Despliegue
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none" width="6cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Despliegue
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Modelos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelo de Objetivos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Objetivo
+\series default
+: define en un alto nivel de abstracción, utilizando una breve descripción,
+ y en pocas líneas, qué vamos a automatizar con el software a construir.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Alcance
+\series default
+: define qué procesos estarán alcanzados, y cuáles no.
+ En un principio es difuso y luego se va refinando a medida que avanza el
+ análisis.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hipótesis
+\series default
+: sentencias que establecen determinadas premisas y/o restricciones sobre
+ las cuales estará basado el sistema.
+ Debe contemplar faltantes, ambigüedades y restricciones regulatorias.
+\end_layout
+
+\begin_layout Subsection
+Modelo de Negocio
+\end_layout
+
+\begin_layout Standard
+Objetivo: Entender la organización y los 
+\series bold
+procesos de negocios 
+\series default
+para los cuales vamos a desarrollar el sistema.
+ Los procesos de negocio son los que voy a querer 
+\begin_inset Quotes eld
+\end_inset
+
+automatizar
+\begin_inset Quotes erd
+\end_inset
+
+ con el sistema.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Ejemplos
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+Gestión de facturación
+\end_layout
+
+\begin_layout Itemize
+Administración de pedidos
+\end_layout
+
+\begin_layout Itemize
+Gestión de almacenes
+\end_layout
+
+\begin_layout Subsubsection
+Diagrama de actividad
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Diagrama de actividad
+\series default
+: grafo dirigido compuesto por nodos (representan actividades) y aristas
+ (representan transición entre actividades).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/activity diagram_2.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Componentes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/Diagrama de actividad.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ejemplo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagramas de actividad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para un diagrama de actividad hay que definir 
+\series bold
+escenarios
+\series default
+ para los procesos de negocios.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Nivel Global
+\emph default
+: visión global de los procesos.
+ Alto nivel de abstracción.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Nivel Intermedio
+\emph default
+: una parte de los procesos de negocio.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Método
+\emph default
+: un proceso detallado.
+\end_layout
+
+\begin_layout Standard
+Componentes:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Swimming lanes
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Actividades
+\series default
+: Verbo + Objeto.
+ Describir 
+\emph on
+qué
+\emph default
+ se hace (no el 
+\emph on
+cómo
+\emph default
+).
+ Las actividades tienen que hacer hincapié tal como son vistas por quienes
+ interactúan con el sistema.
+ Cada actividad se desglosa en 2 
+\series bold
+tareas
+\series default
+ como mínimo.
+ Se debe evitar que representen algo físico (entregar o recibir paquetes)
+ porque no agregan funcionalidad al sistema.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Símbolo de inicio 
+\emph on
+(uno solo)
+\emph default
+ y final
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Nodos de decisión
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Barras de sincronización, transición de actividades
+\series default
+: secuenciales y sincronizadas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="middle" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sync_1.PNG
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Para que comiencen las actividades B y C, tiene que haber terminado la actividad
+ A.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sync_2.PNG
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Para que comience la actividad C, tienen que haber terminado las actividades
+ A y B.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sync_3.PNG
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Para que comiencen las actividades C y D, tienen que haber terminado las
+ actividades A y B.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Modelo de Comportamiento
+\end_layout
+
+\begin_layout Standard
+Objetivo: modelizar el comportamiento funcional del sistema bajo estudio.
+\end_layout
+
+\begin_layout Standard
+Componentes: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Casos de uso
+\series default
+: funciones requeridas por el sistema.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Actores
+\series default
+: algo o alguien que interactúa con nuestro sistema pero que no es parte
+ del mismo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Diagrama de casos de uso
+\series default
+: modeliza relaciones entre actores y casos de uso.
+\end_layout
+
+\begin_layout Subsubsection
+Actores
+\end_layout
+
+\begin_layout Standard
+Cuando uno define un 
+\series bold
+actor
+\series default
+ debe pensar en cuál es su 
+\series bold
+rol
+\series default
+ con el sistema (cómo interactúa con el mismo).
+\end_layout
+
+\begin_layout Standard
+Reglas prácticas para identificar actores:
+\end_layout
+
+\begin_layout Enumerate
+¿Quién está interesado en cierto requerimiento?
+\end_layout
+
+\begin_layout Enumerate
+¿En qué lugar de la organización se usará el sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Quién se beneficia usando el sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Quién suministrará, usará o eliminará del sistema tal información?
+\end_layout
+
+\begin_layout Enumerate
+¿Quién mantiene los datos del sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Juega una persona diferentes roles?
+\end_layout
+
+\begin_layout Enumerate
+¿Juegan varias personas el mismo rol? 
+\emph on
+Son el mismo actor.
+\end_layout
+
+\begin_layout Enumerate
+¿Interactúa el sistema con otros sistemas?
+\end_layout
+
+\begin_layout Standard
+Documentación de actores: contiene una breve descripción de cada actor,
+ la cual debe identificar el 
+\series bold
+rol
+\series default
+ que juega el actor al interactuar con el sistema.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipos de actores
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿Dispara un caso de uso?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¿Es un actor físico?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si: 
+\series bold
+primario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si: 
+\series bold
+físico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No: 
+\series bold
+secundario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No: 
+\series bold
+temporal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/actor_temporal.PNG
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Actor temporal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ultimate Primary Actor: depende del modelo en el que estamos.
+\end_layout
+
+\begin_layout Itemize
+Modelo Conceptual (
+\emph on
+qué
+\emph default
+): actor que tiene la necesidad en última instancia.
+\end_layout
+
+\begin_layout Itemize
+Modelo de Diseño (
+\emph on
+cómo
+\emph default
+): actor que interacciona en forma directa con el sistema.
+\end_layout
+
+\begin_layout Subsubsection
+Casos de uso
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Caso de uso
+\series default
+: modeliza la funcionalidad provista por el sistema, es decir los 
+\series bold
+servicios
+\series default
+ provistos a un actor del sistema.
+ Son una descripción de un conjunto de 
+\series bold
+secuencias de acciones
+\series default
+, incluyendo variaciones, que ejecuta un sistema para producir un resultado
+ observable que sea de valor para un actor.
+\end_layout
+
+\begin_layout Standard
+Reglas prácticas para identificar casos de uso:
+\end_layout
+
+\begin_layout Enumerate
+¿Cuáles son las tareas de cada actor?
+\end_layout
+
+\begin_layout Enumerate
+Un actor determinado, ¿creará, modificará, eliminará o consultará información
+ del sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Qué casos de uso crearán, modificarán, eliminarán o consultarán el sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Algún actor necesita informar al sistema de cambios?
+\end_layout
+
+\begin_layout Enumerate
+¿Necesita algún actor ser informado de cambios que ocurran?
+\end_layout
+
+\begin_layout Enumerate
+¿Qué casos de uso mantendrán actualizado el sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Todos los requerimientos funcionales están cubiertos en los casos de uso?
+\end_layout
+
+\begin_layout Standard
+Un buen caso de uso posee:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Completitud
+\series default
+ 
+\series bold
+temporal
+\series default
+: el caso de uso es completo de principio a fin.
+ 
+\bar under
+Ejemplo
+\bar default
+: Seleccionar curso / Registrar curso / Informar al sistema de facturación
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+Registrar curso
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Completitud
+\series default
+ 
+\series bold
+funcional
+\series default
+: cuando hay casos de uso que son comenzados por el mismo actor y además
+ tratan con la misma entidad del sistema.
+ 
+\bar under
+Ejemplo
+\bar default
+: Crear / Modificar / Eliminar cursos 
+\begin_inset Formula $\implies$
+\end_inset
+
+Mantener cursos.
+\end_layout
+
+\begin_layout Standard
+Documentación de casos de uso: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Descripción
+\series default
+: describe el propósito del mismo en pocas sentencias, con una definición
+ de alto nivel de la funcionalidad en cuestión provista por el sistema.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Flujo de eventos
+\series default
+: descripción de los eventos necesarios para realizar el comportamiento
+ requerido del caso de uso.
+ Debe hacer hincapié en 
+\emph on
+qué
+\emph default
+ debe hacer el sistema, no en el 
+\emph on
+cómo
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Precondiciones
+\series default
+: enumera qué casos de uso y/o subflujos deben haber sido ejecutados previo
+ a la ejecución del caso de uso en cuestión.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Flujo principal (
+\begin_inset Quotes eld
+\end_inset
+
+normal
+\begin_inset Quotes erd
+\end_inset
+
+)
+\series default
+: debe destacar:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cuándo comienza el caso de uso 
+\end_layout
+
+\begin_layout Enumerate
+Qué interacciones se dan entre el sistema y los actores
+\end_layout
+
+\begin_layout Enumerate
+La secuencia normal de eventos
+\end_layout
+
+\begin_layout Enumerate
+La descripción de flujos de excepción
+\end_layout
+
+\begin_layout Enumerate
+Cuándo termina el caso de uso
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Subflujos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Flujos de excepción
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/use case.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ejemplo de caso de uso.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Diagrama de casos de uso
+\end_layout
+
+\begin_layout Standard
+Todo caso de uso debe tener al menos un actor primario que lo inicie.
+\end_layout
+
+\begin_layout Standard
+Tipos de relaciones:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Asociación
+\series default
+ entre actores y casos de uso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/use case_associations.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tipos de asociación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Dependencia
+\series default
+ entre casos de uso.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Inclusión
+\series default
+ (
+\series bold
+\emph on
+include
+\series default
+\emph default
+): cuando dos o más casos de uso comparten parte de su funcionalidad, es
+ conveniente factorizar la parte común y colocarla en un caso de uso separado
+ a través de una relación de inclusión.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/use_case_include.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Extensión
+\series default
+ (
+\series bold
+\emph on
+extend
+\series default
+\emph default
+): un caso de uso agrega pasos condicionalmente a otro caso de uso 
+\emph on
+base
+\emph default
+.
+ La 
+\emph on
+etiqueta
+\emph default
+ que se coloca abajo de 
+\family typewriter
+<<extend>>
+\family default
+ hace referencia a la condición de ejecución del caso extendido.
+ El caso base no debe conocer al extendido.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/use_case_extend.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Jerarquía
+\series default
+ entre actores, y entre casos de uso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La jerarquía inferior hereda 
+\emph on
+todos
+\emph default
+ los comportamientos de la jerarquía superior.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/Herencia entre actores.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelo Conceptual
+\end_layout
+
+\begin_layout Subsubsection
+Diagrama de clases conceptuales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/class diagram.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de clases
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Clase
+\series default
+: representa un bloque constructivo de cualquier sistema orientado a objetos.
+ Una clase conceptual es una descripción de un conjunto de objetos que comparten
+ los mismos atributos, operaciones, relaciones y semántica.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Nombre de clase
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Atributos
+\series default
+: representan el estado interno del objeto.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operaciones
+\series default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Una 
+\series bold
+operación
+\series default
+ aún no está implementada.
+ Cuando sí lo está, se llama 
+\series bold
+método
+\series default
+.
+\end_layout
+
+\end_inset
+
+: servicios que brinda la clase.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Público
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Protegido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Privado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Responsabilidades
+\series default
+: contrato u obligación que debe prestar la clase.
+ Como mínimo 1, como máximo 3.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/clase.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Reglas de identificación de clases conceptuales:
+\end_layout
+
+\begin_layout Enumerate
+Regla práctica
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Identificar clases candidatas prestando atención a los 
+\series bold
+sustantivos
+\series default
+ del relevamiento.
+ Identificar las responsabilidades de cada clase.
+\end_layout
+
+\begin_layout Enumerate
+Diagrama de clases preliminar: listar las clases.
+\end_layout
+
+\begin_layout Enumerate
+Diagrama de relaciones entre clases.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+CRC (
+\emph on
+Collaboration Responsibility Cards
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Armar las tarjetas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre de la clase
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Superclase
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Subclases
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Responsabilidades
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Colaboraciones (lista de clases con las que interactúa para cumplir sus
+ responsabilidades)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tarjeta CRC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Armar el diagrama de tarjetas CRC.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Relaciones entre clases: 
+\end_layout
+
+\begin_layout Enumerate
+Relación de 
+\series bold
+Asociación
+\series default
+: relación estructural entre instancias de clases.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/asociacion.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Asociación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Simple
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexiva
+\series default
+: relación entre instancias de una misma clase.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/clase reflexiva.PNG
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Relación reflexiva
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Clases de Asociación
+\series default
+: se utiliza cuando se necesita una clase para definir una relación.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/Clases de Asociacion.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Clase de asociación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Agregación
+\series default
+: si el contenedor desaparece, los contenidos puede que también, pero no
+ siempre.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/agregacion.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Relación de agregación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Composición
+\series default
+: si el contenedor desaparece, los contenidos también.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class Departamento {
+\end_layout
+
+\begin_layout Plain Layout
+
+	private string nombre;
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Empresa {
+\end_layout
+
+\begin_layout Plain Layout
+
+	private Departamento depto_rrhh;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	public Empresa() { 
+\end_layout
+
+\begin_layout Plain Layout
+
+		depto_rrhh = new Departamento();
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	public ~Empresa() { 
+\end_layout
+
+\begin_layout Plain Layout
+
+		delete depto_rrhh; 
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/composicion.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Relación de composición
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class Company {
+\end_layout
+
+\begin_layout Plain Layout
+
+	private Employee[] peon = new Employee[n];
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void give_me_a_raise (Employee e) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Employee {
+\end_layout
+
+\begin_layout Plain Layout
+
+	private Company employer;
+\end_layout
+
+\begin_layout Plain Layout
+
+	private Employee boss;
+\end_layout
+
+\begin_layout Plain Layout
+
+	private Vector flunkies = new Vector();
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void you_re_fired() {
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/class diagram_2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ejemplo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Relación de 
+\series bold
+Generalización / Especialización
+\series default
+: Jerarquía de clases.
+ Herencia.
+ Representa relaciones de tipo 
+\begin_inset Quotes eld
+\end_inset
+
+es un
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/herencia.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Herencia.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Relación de 
+\series bold
+Uso
+\series default
+: dependencia entre clases.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/Relaciones de Uso.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Relación de 
+\series bold
+Realización
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Interfaz
+\series default
+: colección de operaciones que se utiliza para especificar un servicio de
+ una clase.
+ Establece un comportamiento deseado de una abstracción independiente de
+ la implementación de dicha abstracción.
+ La interfaz no tiene atributos y tampoco tiene instancias.
+\end_layout
+
+\begin_layout Standard
+La clase 
+\emph on
+realiza
+\emph default
+ (
+\emph on
+implementa
+\emph default
+) los servicios que declara la interfaz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/interfaz.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Relación de realización.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Modelo de Interacción entre Objetos
+\end_layout
+
+\begin_layout Standard
+Se utiliza para modelar cómo se comunican entre sí los objetos para un escenario
+ específico.
+\end_layout
+
+\begin_layout Itemize
+Diagrama de secuencia: cronológico.
+\end_layout
+
+\begin_layout Itemize
+Diagrama de colaboración: espacial.
+\end_layout
+
+\begin_layout Subsubsection
+Diagrama de Secuencia
+\end_layout
+
+\begin_layout Itemize
+Las cajas superiores representan objetos, no clases.
+\end_layout
+
+\begin_layout Itemize
+Las líneas verticales punteadas representan la existencia del objeto (
+\series bold
+línea de vida
+\series default
+).
+\end_layout
+
+\begin_layout Itemize
+Los rectángulos sobre la línea de vida indican que el objeto está activo.
+\end_layout
+
+\begin_layout Itemize
+El objeto que 
+\series bold
+envía
+\series default
+ el mensaje debe tener algún tipo de asociación con el objeto que 
+\series bold
+recibe
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Para crear un objeto: el objeto creado aparece al final del mensaje de creación.
+\end_layout
+
+\begin_layout Itemize
+Para un mensaje condicional, la 
+\series bold
+condición
+\series default
+ se expresa entre corchetes [] antes del mensaje.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/sequence diagram.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de secuencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/diagrama de secuencia_loops.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+Loops
+\emph default
+ en un diagrama de secuencia.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Diagrama de Colaboración
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/collaboration diagram.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de colaboración
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelo de Estado de Objetos
+\end_layout
+
+\begin_layout Standard
+Objetivo: modelizar cómo va cambiando el estado de un objeto específico
+ con el tiempo.
+\end_layout
+
+\begin_layout Subsubsection
+Diagrama de transición de estado de objetos
+\end_layout
+
+\begin_layout Standard
+Grafo dirigido donde los 
+\series bold
+nodos
+\series default
+ son 
+\series bold
+estados
+\series default
+ de un objeto en un instante determinado, y las 
+\series bold
+aristas
+\series default
+ son las 
+\series bold
+transiciones
+\series default
+ entre los estados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/statemachine.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/state diagram.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de transición de estado de objetos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Estado
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+entry
+\family default
+: se ejecuta siempre al entrar al estado.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+do
+\family default
+: se ejecuta mientras se está en el estado.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+exit
+\family default
+: se ejecuta siempre al salir del estado.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Transición
+\series default
+: 
+\family typewriter
+evento [condición] / acción
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Evento: qué inicia la transición
+\end_layout
+
+\begin_layout Itemize
+Condición: cuándo se inicia la transición
+\end_layout
+
+\begin_layout Itemize
+Acción: se ejecuta.
+\end_layout
+
+\begin_layout Itemize
+Transición temporizada: se representa con una línea punteada.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Transición inicial
+\series default
+: se origina del círculo relleno y especifica el estado por defecto cuando
+ inicia el sistema.
+ Todos los diagramas deben tener esta transición, sin etiqueta puesto que
+ no es causada por un evento.
+ Sí puede tener acciones asociadas.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Transición final
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/uml super estados.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Generalización de estados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/diagrama transicion estados.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de transición de estados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Proceso de desarrollo
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Proceso de desarrollo de software:
+\series default
+ forma disciplinada de asignar tareas y responsabilidades en un proyecto
+ de desarrollo de software, para cumplir los objetivos:
+\end_layout
+
+\begin_layout Enumerate
+Software de calidad: funcional, confiable, veloz
+\end_layout
+
+\begin_layout Enumerate
+Cumplir con el plazo y el costo establecido
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/proceso.PNG
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El encadenamiento de las etapas se conoce como 
+\series bold
+ciclo de vida
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Mejores prácticas en el desarrollo de software
+\end_layout
+
+\begin_layout Standard
+Son las condiciones necesarias para el no fracaso de un proyecto.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Proceso iterativo e incremental.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ciclo de vida en cascada
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/waterfall.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ciclo en cascada.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="8cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Desventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Es simple de llevar a cabo.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+El usuario no acompaña el proceso.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Puede servir en proyectos pequeños.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No sirve en proyectos medianos y grandes.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No se puede paralelizar.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No hay entregables intermedios.
+ No se pueden detectar problemas en etapas tempranas.
+ Si falla la captura de requisitos, hay pérdida de tiempo y dinero.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ciclos de vida iterativos e incrementales
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/iterative.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ciclo iterativo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ventajas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permite un entendimiento incremental del problema
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permite acomodar fácilmente los cambios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ayuda a mitigar riesgos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+El equipo aprende en el camino
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mayor calidad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se debe comenzar por las funcionalidades de mayor riesgo.
+ Los riesgos son más manejables cuando menor sea el ciclo de vida
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+El usuario acompaña el proceso
+\emph default
+ y proporciona retroalimentación
+\end_layout
+
+\begin_layout Itemize
+Cada 
+\series bold
+iteración
+\series default
+ termina un con 
+\emph on
+release
+\emph default
+ ejecutable.
+ Cada iteración está compuesta por un miniciclo en cascada (3 a 6 semanas).
+ En cada iteración se incrementa la funcionalidad del sistema.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Proceso dirigido por casos de uso
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los casos de uso se utilizan a lo largo de todo el ciclo de vida del proyecto,
+ tanto para capturar requisitos (
+\emph on
+definición de casos de uso
+\emph default
+), servir de guía en la implementación (
+\emph on
+realización de casos de uso
+\emph default
+), y en las pruebas (
+\emph on
+verificación de cumplimiento de los casos de uso
+\emph default
+).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Arquitecturas basadas en componentes
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El proceso se basa en diseñar tempranamente una arquitectura base ejecutable.
+ Condiciones:
+\end_layout
+
+\begin_layout Enumerate
+Flexibilidad
+\end_layout
+
+\begin_layout Enumerate
+Fácil de modificar
+\end_layout
+
+\begin_layout Enumerate
+Se entiende intuitivamente
+\end_layout
+
+\begin_layout Enumerate
+Promover reutilización de componentes
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Componentes
+\series default
+: módulos no triviales del sistema, que cumplen una función determinada.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Modelización visual del software
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Uso intensivo de UML.
+ Ventajas:
+\end_layout
+
+\begin_layout Enumerate
+Permite visualizar cómo interactúan todos los elementos del sistema,
+\end_layout
+
+\begin_layout Enumerate
+Permite mantener consistencia entre el diseño y la implementación,
+\end_layout
+
+\begin_layout Enumerate
+Promueve comunicación no ambigua.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Verificación de la calidad del software
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El aseguramiento de la calidad debe ser parte del proceso de desarrollo
+ y 
+\series bold
+no
+\series default
+ la responsabilidad de un grupo independiente.
+ Se deben utilizar criterios objetivos.
+ Se mide en cuanto a confiabilidad, funcionalidad, performance, y concordancia
+ con los requerimientos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Gestión del cambio
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los cambios son inevitables por la dinámica del negocio cambiante.
+\end_layout
+
+\begin_layout Enumerate
+Evaluación del impacto del cambio:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+¿cómo influye en tiempo, dinero y riesgos?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evaluación de la oportunidad del cambio: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+¿en qué momento conviene introducir el cambio? (evaluar relación costo-beneficio
+)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+RUP (
+\emph on
+Rational Unified Process
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+RUP
+\series default
+: 
+\end_layout
+
+\begin_layout Itemize
+Proceso de desarrollo: forma disciplinada de asignar tareas y responsabilidades
+ en un proyecto de desarrollo de software, con un tiempo y costo predecible.
+\end_layout
+
+\begin_layout Itemize
+Proceso de producto
+\end_layout
+
+\begin_layout Itemize
+Apoya la productividad del equipo, utilizando una 
+\emph on
+knowledge base
+\emph default
+ común a todos los miembros.
+\end_layout
+
+\begin_layout Itemize
+Crear y mantener modelos
+\end_layout
+
+\begin_layout Itemize
+Guía para usar UML efectivamente
+\end_layout
+
+\begin_layout Itemize
+Apoyada por herramientas
+\end_layout
+
+\begin_layout Itemize
+Proceso configurable, que se adapta a pequeños y grandes equipos
+\end_layout
+
+\begin_layout Itemize
+Captura las mejores prácticas de desarrollo
+\end_layout
+
+\begin_layout Standard
+Fases según RUP:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Inicio
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Elaboración
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Construcción
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Componentes del proceso
+\end_layout
+
+\begin_layout Enumerate
+Componentes de soporte de proceso:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Administración de proyecto
+\end_layout
+
+\begin_layout Enumerate
+Gestión de cambio
+\end_layout
+
+\begin_layout Enumerate
+Gestión de entornos y herramientas de desarrollo
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Transición
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/matriz de esfuerzos.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Matriz de esfuerzos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Matriz de fases, hitos y productos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/rup milestones.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Hitos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{landscape}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-0.80cm}{-1cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="2.5cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="left" valignment="top" width="7cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Fase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hito (
+\emph on
+milestone
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Conceptos involucrados
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Productos obtenidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Comentarios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Inicio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Objetivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Alcance del proyecto
+\end_layout
+
+\begin_layout Enumerate
+Estimación de plazos y costos
+\end_layout
+
+\begin_layout Enumerate
+Comprensión inicial de requerimientos
+\end_layout
+
+\begin_layout Enumerate
+Oportunidad del negocio
+\end_layout
+
+\begin_layout Enumerate
+Otros productos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 y 2.
+ Documento de visión general
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Modelo 
+\series bold
+inicial
+\series default
+ de casos de uso (20% completo)
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ 
+\emph on
+Business Case
+\emph default
+ (F.C.E.
+ + pronóstico financiero)
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Plan de proyecto inicial, identificación inicial de riesgos, prototipos
+ (uno o más)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Elaboración
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arquitectura del sistema base
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Análisis del dominio del problema
+\end_layout
+
+\begin_layout Enumerate
+Establecer arquitectura base sólida
+\end_layout
+
+\begin_layout Enumerate
+Desarrollar plan de proyecto definitivo
+\end_layout
+
+\begin_layout Enumerate
+Mitigar factores de riesgo
+\end_layout
+
+\begin_layout Enumerate
+Otros productos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Modelo 
+\series bold
+final
+\series default
+ de casos de uso
+\end_layout
+
+\begin_layout Enumerate
+Descripción de arquitectura del sistema, prototipo ejecutable
+\end_layout
+
+\begin_layout Enumerate
+Plan de proyecto final
+\end_layout
+
+\begin_layout Enumerate
+Lista de riesgos revisada
+\end_layout
+
+\begin_layout Enumerate
+Manual de usuario preliminar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A partir de este hito, la arquitectura, los requisitos y los planes de desarroll
+o son muy estables.
+ Hay menos riesgos, se puede planificar el resto del proyecto con menos
+ incertidumbre.
+\end_layout
+
+\begin_layout Plain Layout
+Se construye arquitectura ejecutable que contemple casos de uso críticos
+ y mayores riesgos identificados.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Construcción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacidad operacional inicial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Desarrollo e incorporación de componentes restantes
+\end_layout
+
+\begin_layout Enumerate
+Pruebas en profundidad
+\end_layout
+
+\begin_layout Enumerate
+Énfasis en eficiencia del producto
+\end_layout
+
+\begin_layout Enumerate
+Otros productos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+ Producto de software con todos los componentes integrados y ejecutando
+ en la plataforma adecuada
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Manual de usuario final, descripción del 
+\emph on
+release
+\emph default
+ actual
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se obtiene un producto 
+\series bold
+beta
+\series default
+ que debe decidirse si puede ponerse productivo sin mayores riesgos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Transición
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Release
+\emph default
+ del producto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Traspaso de producto a usuarios
+\end_layout
+
+\begin_layout Enumerate
+Pruebas beta
+\end_layout
+
+\begin_layout Enumerate
+Ejecución en paralelo con sistemas antiguos
+\end_layout
+
+\begin_layout Enumerate
+Migración de datos del viejo al nuevo sistema
+\end_layout
+
+\begin_layout Enumerate
+Capacitación de usuarios
+\end_layout
+
+\begin_layout Enumerate
+Distribución del producto y despliegue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Obtener autosuficiencia de los usuarios.
+\end_layout
+
+\begin_layout Plain Layout
+Lograr consenso para liberar productos a todos los usuarios.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{landscape}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metodologías ágiles
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Metodologías Formales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Metodologías Ágiles
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atención a procesos y documentación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atención a personas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comunicación formal y escrita
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comunicación informal y cara a cara
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Documentación de requisitos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Colaboración con el cliente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seguimiento de planes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agilidad en respuesta a los cambios de planes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Documentación completa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software que funciona
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Valores
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Individuos e interacciones
+\series default
+ por sobre procesos y herramientas
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Software que funcion
+\series default
+a por sobre documentación extensiva
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Colaboración con el cliente
+\series default
+ por sobre negociación contractual
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Respuesta ante el cambio
+\series default
+ por sobre seguir un plan
+\end_layout
+
+\begin_layout Subsection
+Principios
+\end_layout
+
+\begin_layout Enumerate
+Nuestra mayor prioridad es satisfacer al cliente mediante la 
+\series bold
+entrega temprana y continua de software
+\series default
+ con valor.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Aceptamos que los requisitos cambien
+\series default
+, incluso en etapas tardías del desarrollo.
+ Los procesos Ágiles aprovechan el cambio para proporcionar ventaja competitiva
+ al cliente.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Entregamos software funcional frecuentemente
+\series default
+, entre dos semanas y dos meses, con preferencia al periodo de tiempo más
+ corto posible.
+\end_layout
+
+\begin_layout Enumerate
+Los responsables de negocio y los desarrolladores 
+\series bold
+trabajamos juntos
+\series default
+ de forma cotidiana durante todo el proyecto.
+\end_layout
+
+\begin_layout Enumerate
+Los proyectos se desarrollan en torno a 
+\series bold
+individuos
+\series default
+ 
+\series bold
+motivados
+\series default
+.
+ Hay que darles el entorno y el apoyo que necesitan, y confiarles la ejecución
+ del trabajo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+El método más eficiente y efectivo de comunicar información al equipo de
+ desarrollo y entre sus miembros es la 
+\series bold
+conversación cara a cara
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+El 
+\series bold
+software
+\series default
+ 
+\series bold
+funcionando
+\series default
+ es la
+\series bold
+ medida principal de progreso
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Los procesos Ágiles promueven el desarrollo sostenible.
+ Los promotores, desarrolladores y usuarios debemos ser capaces de mantener
+ un ritmo constante de forma indefinida.
+\end_layout
+
+\begin_layout Enumerate
+La 
+\series bold
+atención continua a la excelencia técnica
+\series default
+ y al buen diseño mejora la Agilidad.
+\end_layout
+
+\begin_layout Enumerate
+La 
+\series bold
+simplicidad
+\series default
+, o el arte de maximizar la cantidad de trabajo no realizado, es esencial.
+\end_layout
+
+\begin_layout Enumerate
+Las mejores arquitecturas, requisitos y diseños emergen de 
+\series bold
+equipos auto-organizados
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo
+\series default
+ para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
+\end_layout
+
+\begin_layout Subsection
+Scrum
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Scrum
+\series default
+\emph default
+: 
+\begin_inset Quotes eld
+\end_inset
+
+marco
+\begin_inset Quotes erd
+\end_inset
+
+ (no define el proceso ni los entregables) para métodos de desarrollo ágil,
+ iterativo e incremental.
+ 
+\emph on
+Scrum
+\emph default
+ estructura el desarrollo del producto en ciclos que se llaman 
+\emph on
+sprints
+\emph default
+.
+ Un 
+\emph on
+sprint
+\emph default
+ fija objetivos y el trabajo acordado debe estar terminado al finalizar
+ el mismo.
+ Los 
+\emph on
+sprints
+\emph default
+ son de longitud fija (1 a 4 semanas).
+ Durante un 
+\emph on
+sprint
+\emph default
+ no se pueden cambiar ni los integrantes ni las tareas; lo único que se
+ puede hacer es cancelar el 
+\emph on
+sprint
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/agile-scrum-process.png
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scrum.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hay 3 roles:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Product Owner
+\emph default
+: hace las veces del cliente.
+ Elabora la lista de requisitos (
+\emph on
+product backlog
+\emph default
+) y les asigna prioridades.
+ Define qué requisitos habrá que desarrollar en un 
+\emph on
+sprint
+\emph default
+ (
+\emph on
+sprint backlog
+\emph default
+).
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Scrum Master
+\emph default
+: el líder del equipo.
+\end_layout
+
+\begin_layout Enumerate
+Miembros del equipo: diseñan, codifican y prueban las funcionalidades.
+\end_layout
+
+\begin_layout Standard
+Algunas características:
+\end_layout
+
+\begin_layout Itemize
+Se realizan reuniones diarias de 
+\emph on
+scrum
+\emph default
+ para analizar el avance del día.
+\end_layout
+
+\begin_layout Itemize
+Día a día se actualiza el 
+\emph on
+sprint burndown chart
+\emph default
+, que muestra cuánto trabajo falta realizar dentro del 
+\emph on
+sprint
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Al finalizar el 
+\emph on
+sprint
+\emph default
+ se realiza una reunión para sacar conclusiones de lo aprendido.
+\end_layout
+
+\begin_layout Subsection
+XP (
+\emph on
+Extreme Programming
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/xp.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es un conjunto de prácticas ágiles de desarrollo.
+\end_layout
+
+\begin_layout Standard
+Principios del XP:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Test-Driven Design
+\emph default
+: primero escribir los programas de prueba y después la aplicación.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Pair Programming
+\emph default
+: programar de a dos.
+ Uno escribe y el otro observa el trabajo.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Continuous Integration
+\emph default
+: integraciones frecuentes y una máquina especial para las integraciones.
+\end_layout
+
+\begin_layout Enumerate
+Pruebas unitarias, de integración y de aceptación.
+\end_layout
+
+\begin_layout Enumerate
+Refactorizaciones al final.
+\end_layout
+
+\begin_layout Enumerate
+Estándares de codificación precisos y estrictos.
+\end_layout
+
+\begin_layout Enumerate
+Desarrollo incremental.
+\end_layout
+
+\begin_layout Enumerate
+Comunicación frecuente con el cliente.
+ Le mostramos el software y nos adaptamos a los cambios pedidos, y no a
+ la inversa.
+\end_layout
+
+\begin_layout Enumerate
+Implementar primero lo que tenga mayor valor para el cliente.
+\end_layout
+
+\begin_layout Enumerate
+No escribir código por adelantado, ni código que no sabe si se usará.
+ Se escribirá lo que se pida.
+\end_layout
+
+\begin_layout Enumerate
+Compilaciones rápidas (10 minutos).
+\end_layout
+
+\begin_layout Enumerate
+Documentación actualizada.
+\end_layout
+
+\begin_layout Standard
+¿Cuándo usar XP?
+\end_layout
+
+\begin_layout Itemize
+Cuando los requerimientos del cliente no son claros, cuando la funcionalidad
+ del software pedido será cambiante.
+\end_layout
+
+\begin_layout Itemize
+Cuando la fecha de entrega sea muy cercana, cuando haya mucho riesgo.
+\end_layout
+
+\begin_layout Itemize
+Cuando el grupo de programadores sea pequeño (entre 2 y 12).
+\end_layout
+
+\begin_layout Itemize
+Cuando haya comunicación constante entre todos (programadores y clientes).
+\end_layout
+
+\begin_layout Itemize
+Cuando puedan realizarse pruebas.
+\end_layout
+
+\end_body
+\end_document

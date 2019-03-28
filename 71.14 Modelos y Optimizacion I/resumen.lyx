@@ -1,0 +1,3646 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Modelos y Optimización I"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Modelos y Optimización I
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definiciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Investigación operativa
+\series default
+: aplicación de la ciencia moderna a problemas complejos que aparecen en
+ la administración de sistemas formados por personas, materiales, equipos
+ y dinero.
+ Su característica es la elaboración de modelos científicos que mediante
+ la incorporación de factores de riesgo e incertidumbre permitan evaluar
+ decisiones.
+\end_layout
+
+\begin_layout Subsection
+Supuestos básicos de la programación lineal
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Proporcionalidad
+\series default
+: el beneficio y el uso de recursos son directamente proporcionales al nivel
+ de actividad.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Aditividad
+\series default
+: no existen interacciones entre las actividades que cambien la medida total
+ de la efectividad o el uso total de algún recurso.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Divisibilidad
+\series default
+: pueden permitirse valores fraccionarios.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Certeza
+\series default
+: todos los parámetros del modelo son constantes conocidas.
+\end_layout
+
+\begin_layout Subsection
+Elementos de un modelo
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Análisis del problema
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Objetivo
+\series default
+: ¿qué hacer? ¿cuándo? ¿para qué?
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Hipótesis
+\series default
+: supuestos aceptados como verdaderos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Actividad
+\series default
+: procesos que se realizan en el sistema, caracterizados por consumir recursos
+ y generar resultados económicos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Variables
+\series default
+: indican el estado de una actividad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Continuas: miden
+\end_layout
+
+\begin_layout Itemize
+Enteras: indican
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Método Simplex
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Enumerate
+
+\family typewriter
+Transformar las desigualdades en igualdades, agregando variables 
+\begin_inset Quotes eld
+\end_inset
+
+slacks
+\begin_inset Quotes erd
+\end_inset
+
+ o variables artificiales
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+Mover las constantes a los 2dos miembros
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+Armar la tabla
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+Mientras hay algún 
+\begin_inset Formula $z_{j}-c_{j}$
+\end_inset
+
+ negativo (
+\begin_inset Formula $z_{max})$
+\end_inset
+
+ o positivo (
+\begin_inset Formula $z_{min})$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+Elegir la variable que entra: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+Menor 
+\begin_inset Formula $z_{j}-c_{j}$
+\end_inset
+
+ (
+\begin_inset Formula $z_{max})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+Mayor 
+\begin_inset Formula $z_{j}-c_{j}$
+\end_inset
+
+ (
+\begin_inset Formula $z_{min}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family typewriter
+Elegir la variable que sale:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+Menor 
+\begin_inset Formula $\theta$
+\end_inset
+
+ positiva (o 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ si 
+\begin_inset Formula $a_{ij}>0$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family typewriter
+Armar nueva tabla:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+Dividir la fila del pivote por el pivote
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+Aplicar el método del rectángulo para las demás filas
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z_{nuevo}=z_{viejo}-\theta_{min}\cdot(z_{j}-c_{j})_{\mbox{variable que entra a la base}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Método simplex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Teoremas
+\end_layout
+
+\begin_layout Theorem
+El conjunto de todas las soluciones factibles a un problema de programación
+ lineal es un poliedro convexo.
+\end_layout
+
+\begin_layout Theorem*
+El funcional alcanza su mínimo (o máximo) en un punto extremo del poliedro
+ convexo.
+\end_layout
+
+\begin_layout Theorem
+El número de vértices del conjunto factible del problema es:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+m+n\\
+m
+\end{array}\right)=\frac{(m+n)!}{m!(m+n-m)!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+donde 
+\begin_inset Formula $n$
+\end_inset
+
+ es la cantidad de variables reales y 
+\begin_inset Formula $m$
+\end_inset
+
+ es la cantidad de ecuaciones.
+\end_layout
+
+\begin_layout Subsection
+Análisis de variables
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="0">
+<column alignment="left" valignment="top" width="12cm">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coeficiente en el funcional de cada 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable que forma parte de la base (nivel de actividad 
+\begin_inset Formula $j$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valor de 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+ en la base (las que no están valen 0)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuánto disminuye el valor de 
+\begin_inset Formula $X_{i}[fila]$
+\end_inset
+
+ por cada unidad de 
+\begin_inset Formula $X_{j}[columna]$
+\end_inset
+
+ que decida fabricarse o que sobre
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z_{j}-c_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo de oportunidad si 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+ está en la base; Valor marginal de un 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+slack
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valor marginal del recurso 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Recurso saturado
+\series default
+: recurso con cero sobrante.
+ Equivale a tener una variable slack 
+\begin_inset Formula $x_{j}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lucro cesante
+\series default
+: 
+\begin_inset Formula $\sum_{\forall i}UsoRecurso_{i}\cdot ValorMarginalRecurso_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="6cm">
+<column alignment="center" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valor marginal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo de oportunidad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable real
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuánto va a empeorar el funcional si debemos fabricar una unidad de ese
+ producto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable slack
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuánto va a mejorar el funcional si se tiene una unidad más de ese recurso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Análisis de sensibilidad
+\end_layout
+
+\begin_layout Standard
+El 
+\series bold
+análisis de sensibilidad
+\series default
+ se efectúa en todo estudio de programación lineal porque la mayoría de
+ los parámetros utilizados en el modelo suelen ser solamente estimaciones
+ de condiciones futuras.
+\end_layout
+
+\begin_layout Enumerate
+Variación de los 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El rango para que la solución óptima siga siéndolo es 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $z_{j}-c_{j}\geq0$
+\end_inset
+
+ (
+\begin_inset Formula $z_{max})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Variación de los 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El análisis se hace tomando la tabla del problema dual y analizando los
+ 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Variación simultánea de varios 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El análisis se hace tomando la tabla del problema dual y analizando los
+ 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Variación simultánea de varios 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ y varios 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Primero analizar los cambios de 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ en el problema dual, y luego hacer el dual del dual para analizar los cambios
+ de 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Curva de oferta
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Es un gráfico de la variación de cada 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Dualidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3.5cm">
+<column alignment="center" valignment="top" width="3.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Primal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dual
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximizar:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $z=\sum_{j=1}^{n}\; C_{j}\cdot X_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minimizar:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $W=\sum_{i=1}^{m}\; B_{j}\cdot Y_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sujeto a:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $X_{j}\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{j=1}^{n}\; a_{ij}\cdot X_{j}\leq B_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sujeto a:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{i}\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{i=1}^{m}\; a_{ij}\cdot Y_{i}\geq C_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall j$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Teorema fundamental de la dualidad
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ tiene solución óptima finita 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $Y$
+\end_inset
+
+ tiene solución óptima finita
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ es poliedro abierto 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $Y$
+\end_inset
+
+ es incompatible
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ es incompatible 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $(Y$
+\end_inset
+
+ es incompatible) 
+\begin_inset Formula $\vee$
+\end_inset
+
+ (
+\begin_inset Formula $Y$
+\end_inset
+
+ es poliedro abierto)
+\end_layout
+
+\begin_layout Subsubsection
+Modificaciones al problema original
+\end_layout
+
+\begin_layout Enumerate
+Agregar un producto:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+La columna del producto en la tabla óptima será: 
+\begin_inset Formula $y=A\cdot x$
+\end_inset
+
+ donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es la matriz inversa óptima (tiene las columnas de la tabla óptima que
+ corresponden a la matriz identidad del 1er paso, ordenados
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Si la matriz identidad del 1er paso incluye a variables artificiales, no
+ utilizar éstas, sino las reales cambiadas de signo.
+\end_layout
+
+\end_inset
+
+), y 
+\begin_inset Formula $x$
+\end_inset
+
+ es el vector de coeficientes del producto.
+\end_layout
+
+\begin_layout Enumerate
+Con la nueva tabla formada, calcular el 
+\begin_inset Formula $z_{j}-c_{j}$
+\end_inset
+
+ y proseguir normalmente.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cambios en los 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Reemplazar en la tabla final en todos los lugares que aparezcan y recalcular
+ los 
+\begin_inset Formula $z_{j}-c_{j}$
+\end_inset
+
+ involucrados.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cambios en los 
+\begin_inset Formula $B_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Realizar (2) tomando la tabla del dual.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Agregar una restricción
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Verificar si la nueva restricción no afecta a la solución actual.
+\end_layout
+
+\begin_layout Enumerate
+Si afecta, realizar (1) tomando la tabla del dual.
+ Recordar que si había un coeficiente negativo en el funcional del primal,
+ habrá un coeficiente de 
+\begin_inset Formula $x$
+\end_inset
+
+ negativo.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tipos de soluciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="0">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Punto degenerado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Solución alternativa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Poliedro abierto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Incompatible
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuándo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Acumulación de vértices en un punto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hay otro vértice del poliedro con el mismo 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No existe solución óptima
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No existe solución factible
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+En Simplex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tabla anterior: empate de 
+\begin_inset Formula $\theta$
+\end_inset
+
+ mínimos.
+ Tabla actual: 
+\begin_inset Formula $B_{k}=0$
+\end_inset
+
+ para una variable de la base
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z_{j}-c_{j}=0$
+\end_inset
+
+ de una variable que no está en la base
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hay una variable que quiere entrar a la base pero ninguna puede salir
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+En la tabla óptima hay una variable artificial en la base con 
+\begin_inset Formula $B_{k}\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gráfico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename puntoDegenerado.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename solucionAlternativa.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename poliedroAbierto.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename incompatible.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problemas
+\end_layout
+
+\begin_layout Subsection
+Problema de análisis de actividad
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ actividades
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ recursos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B_{i}=$
+\end_inset
+
+disponibilidad del recurso 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a_{ij}=$
+\end_inset
+
+cantidad de recurso 
+\begin_inset Formula $i$
+\end_inset
+
+ que consume la actividad 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c_{i}=$
+\end_inset
+
+ganancia unitaria de la actividad 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: encontrar la intensidad de trabajo de las actividades, para maximizar
+ la ganancia total.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{i}=$
+\end_inset
+
+intensidad de la actividad 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{max}=\sum_{i=1}^{n}c_{i}\cdot x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+La cantidad de recursos utilizados no puede superar la disponibilidad del
+ recurso
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{j=1}^{n}a_{ij}\cdot x_{j}\leq B_{i}$
+\end_inset
+
+ para todo 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Condición de no negatividad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x_{i}\geq0$
+\end_inset
+
+ para todo 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema de centros de producción
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar cuánto producir y cuánto insumo consumir en cada centro de
+ producción.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Relación E/S:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $MERMA\cdot\sum Entrada_{i}C_{k}=\sum Salida_{i}C_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mezcla a la entrada:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\%dDE_{i}EN_{k}\cdot\sum Entrada_{i}C_{k}=Entrada_{i}C_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mezcla a la salida:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\%DE_{i}EN_{k}\cdot\sum Salida_{i}C_{k}=Salida_{i}C_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Capacidad productiva:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $HS.PORkG.C_{k}\cdot\sum Entrada_{i}C_{k}\leq Cap.Hs.C_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema del viajante
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ ciudades
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C_{ij}=$
+\end_inset
+
+costo de ir de la ciudad 
+\begin_inset Formula $i$
+\end_inset
+
+ a la ciudad 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Simetría (
+\begin_inset Formula $C_{ij}=C_{ji})$
+\end_inset
+
+ o asimetría (
+\begin_inset Formula $C_{ij}\neq C_{ji})$
+\end_inset
+
+ del problema
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: encontrar el orden en el cual un viajante visita las ciudades para minimizar
+ la distancia total recorrida.
+ Cada ciudad debe ser visitada solo una vez, y al terminar el recorrido
+ debe volverse a la ciudad de origen.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y_{ij}=\begin{cases}
+1 & \mbox{si va de la ciudad }i\mbox{ a la ciudad }j\mbox{ directamente}\\
+0 & \mbox{si no}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{i}=$
+\end_inset
+
+orden de visita de la ciudad 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $\{1,2,\ldots,n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{min}=\sum_{i=0}^{n}\sum_{j=0}^{n}\; C_{ij}\cdot Y_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Hay solo una ciudad después de 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{j=0}^{n}\, Y_{ij}=1,\;\forall i,\; i\neq j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hay solo una ciudad antes de 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=0}^{n}\, Y_{ij}=1,\;\forall j,\; i\neq j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evitamos subtours
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $U_{i}-U_{j}+n\cdot Y_{ij}\leq n-1,\;\forall i,j\; i\neq j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema de distribución
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ Orígenes / Suministros
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ Demandas / Destinos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C_{ij}=$
+\end_inset
+
+costo de enviar el producto desde el origen 
+\begin_inset Formula $i$
+\end_inset
+
+ al destino 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{i}=$
+\end_inset
+
+cantidad de producto disponible en el suministro 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D_{i}=$
+\end_inset
+
+cantidad de producto demandada por el destino 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Hipótesis
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+Cualquier origen puede enviar producto a cualquier destino
+\end_layout
+
+\begin_layout Itemize
+Producto homogéneo
+\end_layout
+
+\begin_layout Itemize
+Costos lineales
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar qué origen le envía a cuál destino para minimizar los costos
+ de transporte.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X_{ij}=$
+\end_inset
+
+cantidad de productos enviados desde el origen 
+\begin_inset Formula $i$
+\end_inset
+
+ al destino 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{min}=\sum_{i=1}^{m}\sum_{j=1}^{n}C_{ij}\cdot X_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+La cantidad enviada desde 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ debe ser menor o igual a su disponibilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{m}X_{ij}\leq S_{i}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+La cantidad que llega a 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ debe ser mayor o igual a su demanda
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{n}X_{ij}\geq D_{j}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Condición de no negatividad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $X_{ij}\geq0$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i,j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema de transbordo
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $o$
+\end_inset
+
+ Orígenes
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d$
+\end_inset
+
+ Destinos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t$
+\end_inset
+
+ Transbordos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $CO_{i}T_{j}=$
+\end_inset
+
+costo de enviar un producto desde el origen 
+\begin_inset Formula $i$
+\end_inset
+
+ al transbordo 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $CT_{i}D_{j}=$
+\end_inset
+
+costo de enviar un producto desde el transbordo 
+\begin_inset Formula $i$
+\end_inset
+
+ al destino 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Hipótesis
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+Los transbordos tienen capacidad de stock ilimitada
+\end_layout
+
+\begin_layout Itemize
+Costos lineales
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar qué origen le envía a cuál transbordo, y qué transbordo le
+ envía a cuál destino, para minimizar los costos de transporte.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $XO_{i}T_{j}=$
+\end_inset
+
+cantidad enviada desde el origen 
+\begin_inset Formula $i$
+\end_inset
+
+ al transbordo 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $XT_{i}D_{j}=$
+\end_inset
+
+cantidad enviada desde el transbordo 
+\begin_inset Formula $i$
+\end_inset
+
+ al destino 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{min}=\sum_{i=1}^{o}\sum_{i=1}^{t}CO_{i}T_{j}\cdot XO_{i}T_{j}+\sum_{i=1}^{t}\sum_{i=1}^{d}CT_{i}D_{j}\cdot XT_{i}D_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+La cantidad enviada desde 
+\begin_inset Formula $O_{i}$
+\end_inset
+
+ debe ser menor o igual a su disponibilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{j=1}^{t}XO_{i}T_{j}\leq O_{i}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+La cantidad que llega a 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ debe ser mayor o igual a su demanda
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{t}XT_{i}D_{j}\geq D_{j}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Todo lo que entra a un transbordo, es enviado a un destino
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{o}XO_{i}T_{j}=\sum_{k=1}^{d}XT_{j}D_{k}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Condición de no negatividad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $XO_{i}T_{j}\geq0$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i,j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $XT_{i}D_{j}\geq0$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i,j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema de la dieta
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ Comidas
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ Nutrientes
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{i}=$
+\end_inset
+
+requerimiento mínimo diario del nutriente 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{i}=$
+\end_inset
+
+precio por unidad de la comida 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c_{ij}=$
+\end_inset
+
+cantidad de nutriente 
+\begin_inset Formula $j$
+\end_inset
+
+ en la comida 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar una dieta que satisfaga los requisitos alimenticios a un costo
+ mínimo.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y_{i}=$
+\end_inset
+
+cantidad de comida 
+\begin_inset Formula $i$
+\end_inset
+
+ a comprar por día
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{min}=\sum_{i=1}^{m}P_{i}\cdot Y_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Se deben satisfacer los requerimientos alimenticios
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{m}c_{ij}\cdot Y_{i}\geq R_{i}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Condición de no negatividad
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Y_{i}\geq0$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema del secuenciamiento de máquinas (Job Shop Scheduling)
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ trabajos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ máquinas
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar en qué orden y en qué máquinas se procesarán todos los trabajos
+ para minimizar el tiempo que lleva terminar todos los trabajos.
+\end_layout
+
+\begin_layout Subsection
+Problema de asignación
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ personas
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t$
+\end_inset
+
+ trabajos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a_{ij}=$
+\end_inset
+
+ganancia que se obtiene cuando la persona 
+\begin_inset Formula $i$
+\end_inset
+
+ está con el trabajo 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar qué personas realizarán qué trabajos.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{ij}=\begin{cases}
+1 & \mbox{si la persona \ensuremath{i}se asigna al trabajo \ensuremath{j}}\\
+0 & \mbox{si no}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{max}=\sum_{i=1}^{p}\sum_{j=1}^{t}a_{ij}\cdot x_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Un trabajo por persona
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{j=1}^{t}x_{ij}=1$
+\end_inset
+
+ para cada 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una persona por trabajo
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{p}x_{ij}=1$
+\end_inset
+
+ para cada 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema de asignación cuadrática
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ fábricas
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ ciudades
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d_{ij}=$
+\end_inset
+
+distancia de la ciudad 
+\begin_inset Formula $i$
+\end_inset
+
+ a la ciudad 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c_{ij}=$
+\end_inset
+
+capacidad de transporte de la fábrica 
+\begin_inset Formula $i$
+\end_inset
+
+ a la fábrica 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar qué fábricas se instalarán en qué ciudades para minimizar la
+ suma de las distancias multiplicado por la capacidad de transporte.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c_{ijkl}=c_{ij}\cdot d_{kl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{ij}=\begin{cases}
+1 & \mbox{si la fábrica \ensuremath{i}se instala en la ciudad \ensuremath{j}}\\
+0 & \mbox{si no}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y_{ijkl}=\begin{cases}
+1 & \mbox{si }x_{ij}=x_{kl}=1\\
+0 & \mbox{si no}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{min}=\sum_{i=1}^{m}\sum_{j=1}^{m}\sum_{k=1}^{m}\sum_{l=1}^{m}Y_{ijkl}\cdot c_{ijkl}$
+\end_inset
+
+ para todo 
+\begin_inset Formula $i\neq k$
+\end_inset
+
+ y para todo 
+\begin_inset Formula $j\neq l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelización
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Valor para 
+\begin_inset Formula $Y_{ijkl}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $2\cdot Y_{ijkl}\leq x_{ij}+x_{kl}\leq Y_{ijkl}+1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Problema de la mochila
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Datos
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k$
+\end_inset
+
+ objetos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{k}=$
+\end_inset
+
+peso del objeto 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{k}=$
+\end_inset
+
+valor económico del objeto 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P=$
+\end_inset
+
+peso máximo de la mochila
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Problema
+\bar default
+: determinar qué objetos meter dentro de la mochila para satisfacer la restricci
+ón de peso, y maximizar el valor de los objetos guardados.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Definición de variables:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{i}=\begin{cases}
+1 & \mbox{si el objeto \ensuremath{i}se guarda en la mochila, \ensuremath{i=\{1,\ldots,k\}}}\\
+0 & \mbox{si no}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Funcional
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{max}=\sum_{i=1}^{k}\, v_{i}\cdot x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Modelo
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+El peso de los objetos de la mochila no debe superar el peso máximo permitido:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{k}p_{i}\cdot x_{i}\leq P$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Modelización
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{AND}=x_{1}\wedge x_{2}\wedge\ldots\wedge x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n\cdot Y_{AND}\leq\sum_{i=1}^{n}\; x_{i}\leq Y_{AND}+n-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{OR}=x_{1}\vee x_{2}\vee\ldots\vee x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{OR}\leq\sum_{i=1}^{n}\; x_{i}\leq n\cdot Y_{OR}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XOR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{i=1}^{n}\; x_{i}\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m\cdot Y_{NN}\leq x\leq M\cdot Y_{NN}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $MAX=max(x_{1},x_{2},\ldots,x_{n})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{i}\leq MAX\leq x_{i}+M\cdot Y_{i}\; i=\{1,\ldots,n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{i=1}^{n}Y_{i}=n-1$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ es bivalente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $MIN=min(x_{1},x_{2},\ldots,x_{n})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{i}-M\cdot Y_{i}\leq MIN\leq x_{i}\; i=\{1,\ldots,n\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{i=1}^{n}Y_{i}=n-1$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ es bivalente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y\in[c_{1},c_{2}]$
+\end_inset
+
+ o 
+\begin_inset Formula $Y\in[c_{3},c_{4}]$
+\end_inset
+
+ ...
+ o 
+\begin_inset Formula $Y\in[c_{n},c_{n+1}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{1}\cdot x_{1}+c_{3}\cdot x_{3}+\cdots+c_{n}\cdot x_{n}\leq Y\leq c_{2}\cdot x_{1}+c_{4}\cdot x_{3}+\cdots+c_{n+1}\cdot x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{i=1}^{n}\; x_{i}=1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ es bivalente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y=round(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y-(0.5-m)\leq x\leq Y+0.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\lessgtr0$
+\end_inset
+
+, 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-m\cdot(1-Y_{POS})+m\cdot Y_{POS}\leq x\leq M\cdot Y_{POS}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Restricciones financieras
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\$INI+INGRESOS-EGRESOS-\$FIN=EXCESO-DEFECTO$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costos dependientes de la cantidad de producto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q=$
+\end_inset
+
+ cantidad de producto (u.)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{i}=$
+\end_inset
+
+ costo 
+\begin_inset Formula $i$
+\end_inset
+
+ ($), 
+\begin_inset Formula $i=\{1,\ldots,n\}$
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+ intervalos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q=Q_{1}+Q_{2}+\cdots+Q_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $COSTO_{Q}=\$C_{1}\cdot Q_{1}+\$C_{2}\cdot Q_{2}+\cdots+\$C_{n}\cdot Q_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\$min_{1}\cdot x_{1}\leq Q_{1}\leq\$max_{1}\cdot x_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\$min_{2}\cdot x_{2}\leq Q_{2}\leq\$max_{2}\cdot x_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\$min_{n}\cdot x_{n}\leq Q_{n}\leq\$max_{n}\cdot x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{i=1}^{n}\; x_{i}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Continuidad de inventarios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $stock_{inicial}+produccion=demanda+stock_{sobrante}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Heurísticas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Heurística
+\series default
+: técnica que aumenta la eficiencia de un proceso de búsqueda, posiblemente
+ sacrificando demandas de completitud.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Heurísticas de construcción
+\series default
+: se utilizan para encontrar una solución al problema
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Heurísticas de mejoramiento
+\series default
+: parten de una solución conocida y tratan de mejorarla
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Función heurística
+\series default
+: correspondencia entre las descripciones de estados del problema hacia
+ alguna medida de deseabilidad, generalmente representada por números.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+HEUR\leq K\cdot OPTIMO
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $HEUR=$
+\end_inset
+
+valor óptimo encontrado por la heurística
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K=$
+\end_inset
+
+ constante de calidad
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $OPTIMO=$
+\end_inset
+
+valor óptimo real
+\end_layout
+
+\begin_layout Standard
+Si para una función heurística puede encontrarse un valor de 
+\begin_inset Formula $K$
+\end_inset
+
+ que permanezca constante para todos los problemas de un mismo tipo, esta
+ heurística tendrá 
+\series bold
+garantía de calidad
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Análisis de características de un problema para elegir el mejor método
+\end_layout
+
+\begin_layout Enumerate
+¿Puede descomponerse el problema?
+\end_layout
+
+\begin_layout Enumerate
+¿Pueden deshacerse o ignorarse pasos hacia una solución?
+\end_layout
+
+\begin_layout Enumerate
+¿El universo es predecible?
+\end_layout
+
+\begin_layout Enumerate
+Una solución adecuada, ¿es absoluta o relativa?
+\end_layout
+
+\begin_layout Enumerate
+La solución, ¿es un estado o una ruta?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es el papel del conocimiento?
+\end_layout
+
+\begin_layout Enumerate
+¿La tarea necesita interactuar con la persona?
+\end_layout
+
+\begin_layout Subsection
+Ejemplos de heurísticas
+\end_layout
+
+\begin_layout Subsubsection
+Para el problema del viajante
+\end_layout
+
+\begin_layout Standard
+De construcción:
+\end_layout
+
+\begin_layout Enumerate
+Heurística del vecino más próximo: consiste en seleccionar en cada paso
+ la ciudad que se encuentre más cerca de la actual.
+ Este tipo de algoritmos también se conocen como 
+\emph on
+greedy
+\emph default
+, porque en cada paso hacen lo que sea mejor, sin tener en cuenta estados
+ anteriores o posteriores.
+ Es muy fácil de implementar, pero puede arrojar soluciones muy lejanas
+ a la óptima.
+\end_layout
+
+\begin_layout Enumerate
+Heurística del emparchamiento más cercano.
+\end_layout
+
+\begin_layout Enumerate
+Heurística de la inserción más cercana.
+\end_layout
+
+\begin_layout Enumerate
+Heurística de barrido: se rota una semirrecta alrededor del centro del plano
+ y se determina el tour a medida que la recta vaya tocando ciudades.
+\end_layout
+
+\begin_layout Enumerate
+Heurística con curvas de llenado.
+\end_layout
+
+\begin_layout Enumerate
+Heurística con algoritmos genéticos.
+\end_layout
+
+\begin_layout Standard
+De mejoramiento:
+\end_layout
+
+\begin_layout Enumerate
+Heurística de los K-intercambios: se toma una solución factible y se trata
+ de mejorarla cambiando K ejes de la solución.
+ La complejidad de este algoritmo es de 
+\begin_inset Formula $n^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Heurística de recocido simulado: se evalúan algunos vecinos del estado actual
+ y probabilísticamente se decide entre efectuar una transición a un nuevo
+ estado o quedarse en el estado actual.
+\end_layout
+
+\begin_layout Subsubsection
+Para el problema de secuenciamiento
+\end_layout
+
+\begin_layout Standard
+Técnicas de despacho:
+\end_layout
+
+\begin_layout Enumerate
+SPT (
+\emph on
+Shortest processing time
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+FCFS (
+\emph on
+First come, first served
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+MWKR (
+\emph on
+Most work remaining
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+LWKR (
+\emph on
+Least work remaining
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+MOPNR (
+\emph on
+Most operation remaining
+\emph default
+)
+\end_layout
+
+\begin_layout Subsubsection
+Para el problema de distribución
+\end_layout
+
+\begin_layout Enumerate
+Regla del Noroeste
+\end_layout
+
+\begin_layout Enumerate
+Costos mínimos progresivos
+\end_layout
+
+\begin_layout Enumerate
+Método 
+\begin_inset Quotes eld
+\end_inset
+
+VAM
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Metaheurísticas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Metaheurística
+\series default
+: método de solución general que proporciona una estructura general y criterios
+ estratégicos para desarrollar un método heurístico específico que se ajuste
+ a un tipo particular de problema.
+\end_layout
+
+\begin_layout Standard
+Ejemplos:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+GRASP: Greedy Randomized Adaptative Search Procedure.
+
+\emph default
+ Para resolver problemas combinatorios.
+ En cada iteración hay dos fases: construcción y búsqueda local.
+ En la fase de construcción se construye una solución factible, y en la
+ búsqueda local se examinan las soluciones vecinas hasta encontrar un mínimo
+ local.
+\end_layout
+
+\begin_layout Itemize
+Algoritmos genéticos
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Ant Colony Optimization
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Simulated Annealing
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Taboo Search
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,6506 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Álgebra II
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Revisión de Matrices
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z^{n}=a\Longrightarrow z=\sqrt[n]{|a|}\cdot e^{i\left(\frac{2k\pi+arg(a)}{n}\right)}$
+\end_inset
+
+ con 
+\begin_inset Formula $k=0,1,\ldots,n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{(a+ib)t}=e^{a}(\cos(bt)+i\cdot\sin(bt))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Propiedades de las matrices
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(AB\right)^{-1}=B^{-1}A^{-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(A+B\right)^{T}=A^{T}+B^{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(AB\right)^{T}=B^{T}A^{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A^{-1}=\frac{1}{\det\left(A\right)}adj(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Propiedades de los determinantes
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $A,B\in\mathbb{R}^{n\times n}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\det(A^{T})=\det(A)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\det(AB)=\det(A)\det(B)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+Si una fila de 
+\begin_inset Formula $A$
+\end_inset
+
+ se suma a 
+\begin_inset Formula $k\cdot$
+\end_inset
+
+(otra fila) para producir una matriz 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $\det(B)=\det(A)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+Si dos filas de 
+\begin_inset Formula $A$
+\end_inset
+
+ se intercambian de lugar para producir 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $\det\left(B\right)=-\det(A)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+Si una fila de 
+\begin_inset Formula $A$
+\end_inset
+
+ se multiplica por 
+\begin_inset Formula $k$
+\end_inset
+
+ para producir 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $\det\left(B\right)=k\cdot\det\left(A\right)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+Si toda la matriz 
+\begin_inset Formula $A$
+\end_inset
+
+ se multiplica por 
+\begin_inset Formula $k$
+\end_inset
+
+ para producir 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $\det\left(B\right)=k^{n}\cdot\det(A)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es una matriz triangular, 
+\begin_inset Formula $\det\left(A\right)=\prod_{i=1}^{n}a_{ii}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Espacios fila, nulo y columna de matrices
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A\in\mathbb{R}^{n\times m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Espacio nulo
+\series default
+: 
+\begin_inset Formula $Nul(A)=\{x\in R^{m}:\: Ax=0\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Espacio columna
+\series default
+: 
+\begin_inset Formula $Col(A)=\{b\in R^{n}:\: Ax=b$
+\end_inset
+
+ para alguna 
+\begin_inset Formula $x\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Espacio fila
+\series default
+: 
+\begin_inset Formula $Fil(A)=\{x\in R^{m}$
+\end_inset
+
+: 
+\begin_inset Formula $x$
+\end_inset
+
+ es combinación lineal de las filas de 
+\begin_inset Formula $A$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $nul(A)=nul(A^{T}A)=(fil(A))^{\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $nul(A^{T})=nul(AA^{T})=(col(A))^{\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $rg(A)=rg(A^{T}A)$
+\end_inset
+
+, con lo cual 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ es inversible 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ es inversible
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dim\left(col(A)\right)=\dim\left(fil(A)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $col(A)\oplus col(A)^{\bot}=R^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $fil(A)\oplus fil(A)^{\bot}=R^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $rg(A)+\dim\left(nul(A)\right)=m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $A\in\mathbb{K}^{n\times m}$
+\end_inset
+
+ y 
+\begin_inset Formula $B\in\mathbb{K}^{r\times n}$
+\end_inset
+
+, entonces: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Col\left(BA\right)\subseteq Col(B)$
+\end_inset
+
+ (son iguales si 
+\begin_inset Formula $rg\left(A\right)=n$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Nul\left(A\right)\subseteq Nul\left(BA\right)$
+\end_inset
+
+ (son iguales si 
+\begin_inset Formula $rg\left(B\right)=n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $rg\left(A\right)=n\Rightarrow rg\left(BA\right)=rg\left(B\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $rg\left(B\right)=n\Rightarrow rg\left(BA\right)=rg(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Col\left(A\right)\bot Col\left(B\right)\Longleftrightarrow A^{T}B=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Matrices equivalentes y semejantes
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matrices equivalentes
+\series default
+: dos matrices A y B son equivalentes si existen otras dos matrices E y
+ F regulares tal que 
+\begin_inset Formula $A=EBF$
+\end_inset
+
+.
+ Dos matrices equivalentes pueden pensarse como dos descripciones de una
+ misma TL, pero con respecto a bases distintas.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matrices semejantes
+\series default
+: dos matrices cuadradas A y B son semejantes (notamos 
+\begin_inset Formula $A\sim B)$
+\end_inset
+
+ si y solo si existe una matriz P inversible tal que 
+\begin_inset Formula $B=P^{-1}AP$
+\end_inset
+
+ ó 
+\begin_inset Formula $A=PBP^{-1}$
+\end_inset
+
+.
+ Dos matrices semejantes pueden pensarse como dos descripciones de un mismo
+ operador lineal, pero con respecto a bases distintas.
+ Estas dos matrices cumplen que: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\det(A)=\det(B)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $tr\left(A\right)=tr(B)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $rg\left(A\right)=rg(B)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p_{A}\left(\lambda\right)=p_{B}\left(\lambda\right)\Longrightarrow\sigma\left(A\right)=\sigma(B)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Espacios Vectoriales
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Espacio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dimensión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{C}^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K^{n\times m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n\times m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Propiedades de los subespacios
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{S}$
+\end_inset
+
+ es un subespacio vectorial del espacio 
+\begin_inset Formula $\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow\left\{ \begin{array}{c}
+0_{\mathbb{V}}\in\mathbb{S}\\
+\left(\alpha x+y\right)\in\mathbb{S}\,\forall x,y\in\mathbb{\mathbb{V}}\mbox{ y }\forall\alpha\in\mathbb{K}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Independencia lineal
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Combinación lineal
+\series default
+: El vector 
+\begin_inset Formula $x$
+\end_inset
+
+ es una combinación lineal de 
+\begin_inset Formula $v_{1},v_{2},\ldots,v_{q}$
+\end_inset
+
+ si 
+\begin_inset Formula $x=\alpha_{1}v_{1}+\alpha_{2}v_{2}+\ldots+\alpha_{q}v_{q}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1},a_{2},\ldots,a_{q}$
+\end_inset
+
+ no son todos nulos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Independencia lineal
+\series default
+: 
+\begin_inset Formula $x$
+\end_inset
+
+ es LI si 
+\begin_inset Formula $0=\alpha_{1}v_{1}+\alpha_{2}v_{2}+\ldots+\alpha_{q}v_{q}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1}=a_{2}=\ldots=a_{q}=0$
+\end_inset
+
+.
+ Dos vectores son LD si son proporcionales.
+ Un subconjunto de un conjunto LI sigue siendo LI.
+\end_layout
+
+\begin_layout Subsection
+Operaciones con subespacios
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $S_{1},S_{2},\ldots,S_{q}$
+\end_inset
+
+ subespacios de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Intersección
+\series default
+: 
+\begin_inset Formula $S=\bigcap_{i=1}^{q}S_{i}=\{x\in\mathbb{V}:\, x\in S_{i}\:\forall i=1,\ldots,q\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suma
+\series default
+: 
+\begin_inset Formula $S=\sum_{i=1}^{n}S_{i}=gen\{\bigcup_{i=1}^{m}B_{i}\}$
+\end_inset
+
+, donde 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ es base de 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Unión
+\series default
+: 
+\begin_inset Formula $S=S_{1}\cup S_{2}$
+\end_inset
+
+ es un subespacio cuando 
+\begin_inset Formula $S_{1}\subseteq S_{2}$
+\end_inset
+
+ ó 
+\begin_inset Formula $S_{2}\subseteq S_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suma directa
+\series default
+: 
+\begin_inset Formula $S_{1},S_{2},\ldots,S_{q}$
+\end_inset
+
+ están en suma directa 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ la unión de sus bases es base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+Dos subespacios son suplementarios cuando están en suma directa y su suma
+ es todo el espacio.
+\end_layout
+
+\begin_layout Subsection
+Bases
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\dim(\mathbb{V})=n$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ v_{1},\ldots,v_{n}\right\} \subset\mathbb{V}$
+\end_inset
+
+ es base de 
+\begin_inset Formula $\mathbb{V}\Longleftrightarrow\left\{ \begin{array}{c}
+\left\{ v_{1},\ldots,v_{n}\right\} \mbox{ genera }\mathbb{V}\\
+\left\{ v_{1},\ldots,v_{n}\right\} \mbox{ es LI}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coordenadas de un vector en una base
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\left\{ v_{1},v_{2},\ldots,v_{n}\right\} $
+\end_inset
+
+ es base de un espacio vectorial 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $x=\alpha_{1}v_{1}+\alpha_{2}v_{2}+\ldots+\alpha_{n}v_{n}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $C_{B}\left(x\right)=\left(\alpha_{1},\alpha_{2},\ldots,\alpha_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dado un vector y una base, las coordenadas de ese vector en esa base son
+ únicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall v,w\in\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall k\in\mathbb{K}:\left\{ \begin{array}{c}
+C_{B}\left(v+w\right)=C_{B}\left(v\right)+C_{B}(w)\\
+C_{B}\left(k\cdot v\right)=k\cdot C_{B}(v)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ v_{1},v_{2},\ldots,v_{r}\right\} $
+\end_inset
+
+ es LI 
+\begin_inset Formula $\Longleftrightarrow\left\{ C_{B}\left(v_{1}\right),C_{B}\left(v_{2}\right),\ldots,C_{B}\left(v_{r}\right)\right\} $
+\end_inset
+
+ es LI para cualquier base B.
+\end_layout
+
+\begin_layout Subsection
+Matriz de pasaje
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $B=\{v_{1},v_{2},\ldots,v_{n}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $C=\{w_{1},w_{2},\ldots,w_{n}\}$
+\end_inset
+
+ bases del espacio 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+.
+ Las matrices de cambio se base son: 
+\begin_inset Formula 
+\[
+C_{BC}=\left[\begin{array}{cccc}
+| & | &  & |\\
+C_{C}\left(v_{1}\right) & C_{C}\left(v_{2}\right) & \cdots & C_{C}\left(v_{n}\right)\\
+| & | &  & |
+\end{array}\right]
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+C_{CB}=\left[\begin{array}{cccc}
+| & | &  & |\\
+C_{B}\left(w_{1}\right) & C_{B}\left(w_{2}\right) & \cdots & C_{B}\left(w_{n}\right)\\
+| & | &  & |
+\end{array}\right]=C_{BC}^{-1}
+\]
+
+\end_inset
+
+ Además: si 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $C$
+\end_inset
+
+ son bases ortonormales, entonces 
+\begin_inset Formula $C_{BC}$
+\end_inset
+
+ es una matriz ortogonal.
+\end_layout
+
+\begin_layout Subsection
+Teorema de la dimensión
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $\dim(S+H)=\dim(S)+\dim(H)-\dim(S\cap H)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $\dim(S+H+T)=\dim(S)+\dim(H)+\dim(T)-\dim\left(S\cap(H+T)\right)-\dim(H\cap T)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Producto Interno
+\end_layout
+
+\begin_layout Subsection
+Axiomas
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $<\bullet,\bullet>:\mathbb{V}_{\mathbb{K}}\times\mathbb{V}_{\mathbb{K}}\to\mathbb{R}$
+\end_inset
+
+ un producto interno.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<x,y>\in\mathbb{K}$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall x,y\in\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<x,y>=<\overline{y,x}>$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x,y\in\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<\lambda x,y>=\overline{\lambda}<x,y>$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x,y\in\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall\lambda\in\mathbb{K}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<x,\lambda y>=\lambda<x,y>$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x,y\in\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall\lambda\in\mathbb{K}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<x,y+z>=<x,y>+<x,z>$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x,y,z\in\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<x,x>=0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\mathbb{V}$
+\end_inset
+
+ (si 
+\begin_inset Formula $<x,x>=0$
+\end_inset
+
+ entonces 
+\begin_inset Formula $x=0$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Subsection
+Productos internos canónicos (PIC)
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $R^{n}:\,<x,y>=x^{T}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $C^{n}:\,<x,y>=x^{H}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $R^{n\times m}:\,<A,B>=tr(A^{T}B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $C^{n\times m}:\,<A,B>=tr(A^{H}B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $P_{R}[a,b]:\,<p,q>=\int_{a}^{b}p(t)g(t)\, dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $P_{C}[a,b]:\,<p,q>=\int_{a}^{b}\overline{p(t)}g(t)\, dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $C_{R}[a,b]:\,<f,g>=\int_{a}^{b}f(t)g(t)\, dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset Formula $C_{C}[a,b]:\,<f,g>=\int_{a}^{b}\overline{f(t)}g(t)\, dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definiciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ortogonalidad
+\series default
+: 
+\begin_inset Formula $<x,y>=0\Longleftrightarrow x\bot y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Norma de un vector
+\series default
+ : 
+\begin_inset Formula $\left|x\right|^{2}=<x,x>$
+\end_inset
+
+.
+ La norma depende del producto interno.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades de la norma
+\bar default
+: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|x|\in\mathbb{R}\,\forall x\in\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|x|\geq0$
+\end_inset
+
+ (
+\begin_inset Formula $|x|=0\Longleftrightarrow x=0$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|k\cdot x|=|k|\cdot|x|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Desigualdad de Cauchy-Schwarz: 
+\begin_inset Formula $|<x,y>|\leq\left|x\right|\cdot\left|y\right|$
+\end_inset
+
+, 
+\begin_inset Formula $x,y\in\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+.
+ Son iguales si 
+\begin_inset Formula $x$
+\end_inset
+
+ es paralelo a 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Desigualdad triangular: 
+\begin_inset Formula $\left|x+y\right|\leq\left|x\right|+\left|y\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Teorema de Pitágoras: si 
+\begin_inset Formula $x\bot y$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\left|x+y\right|^{2}=\left|x\right|^{2}+\left|y\right|^{2}$
+\end_inset
+
+.
+ La recíproca sólo vale para 
+\begin_inset Formula $\mathbb{R}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Identidad del paralelogramo: 
+\begin_inset Formula $\left|x+y\right|^{2}+\left|x-y\right|^{2}=2\left(\left|x\right|^{2}+\left|y\right|^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\in\mathbb{V}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ángulo entre dos vectores
+\series default
+: 
+\begin_inset Formula $\cos(\theta)=\frac{<x,y>}{|x|\cdot|y|}$
+\end_inset
+
+ con 
+\begin_inset Formula $\theta\in[0,\pi]$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\ne0,\forall$
+\end_inset
+
+ EPI real.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Complemento ortogonal de un conjunto en un EPI
+\series default
+: Sea 
+\begin_inset Formula $A\subset\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A^{\bot}=\{x\in\mathbb{V}_{\mathbb{K}}:\,<x,y>=0\:\forall y\in A\}$
+\end_inset
+
+.
+ Para el cálculo del complemento ortogonal a un subespacio de dimensión
+ finita, alcanza con exigir la ortogonalidad a un sistema de generadores.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Función distancia
+\series default
+: 
+\begin_inset Formula $d:\mathbb{V}_{\mathbb{R}}\times\mathbb{V}_{\mathbb{R}}\rightarrow\mathbb{R}^{+}:d\left(x,y\right)=\left|x-y\right|=\left|y-x\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Matriz asociada a un PI
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $B=\{v_{1},v_{2},\ldots,v_{q}\}$
+\end_inset
+
+ base de 
+\begin_inset Formula $\left(\mathbb{V}_{\mathbb{K}},\bullet\right)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $G\in\mathbb{K}^{q\times q},g_{ij}=<v_{i},v_{j}>$
+\end_inset
+
+ es la matriz del producto interno: 
+\begin_inset Formula 
+\[
+G=\left[\begin{array}{cccc}
+\left|v_{1}\right|^{2} & \left(v_{1},v_{2}\right) & \cdots & \left(v_{1},v_{q}\right)\\
+\left(v_{2},v_{1}\right) & \left|v_{2}\right|^{2} & \cdots & \left(v_{2},v_{q}\right)\\
+\vdots & \vdots & \ddots & \vdots\\
+\left(v_{q},v_{1}\right) & (v_{q},v_{2}) & \cdots & \left|v_{q}\right|^{2}
+\end{array}\right]
+\]
+
+\end_inset
+
+ 
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g_{ii}>0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i=1,2,\ldots,q.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $G^{H}=G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $G$
+\end_inset
+
+ es definida positiva.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\exists\, G^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Expresión matricial de un PI
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $B$
+\end_inset
+
+ es base de 
+\begin_inset Formula $\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ y 
+\begin_inset Formula $G$
+\end_inset
+
+ es la matriz del PI en esa base, entonces 
+\begin_inset Formula $\forall x,y\in\mathbb{V}:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+<x,y>=C_{B}^{H}(x)\cdot G\cdot C_{B}(y)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+La matriz de un PI en una BOG es una matriz diagonal.
+ 
+\end_layout
+
+\begin_layout Itemize
+La matriz de un PI en una BON es la matriz identidad.
+ 
+\end_layout
+
+\begin_layout Subsection
+La mejor aproximación en EPIs
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ un espacio vectorial de funciones, y 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+ un subespacio de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+.
+ Si se quiere aproximar 
+\begin_inset Formula $f\in\mathbb{V}$
+\end_inset
+
+ con una función 
+\begin_inset Formula $g\in\mathbb{W}$
+\end_inset
+
+, la mejor aproximación será la proyección ortogonal de 
+\begin_inset Formula $f$
+\end_inset
+
+ sobre el subespacio 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Proyecciones y Matrices de Proyección
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $S\subset\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $S^{\bot}$
+\end_inset
+
+ su complemento ortogonal, entonces 
+\begin_inset Formula $\forall x\in\mathbb{V}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\doteq\underset{\in S}{\underbrace{u}}+\underset{\in S^{\bot}}{\underbrace{v}}\doteq P_{S}(x)+P_{S^{\bot}}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Propiedades de la proyección
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{S}\left(x\right)$
+\end_inset
+
+ es el vector de 
+\begin_inset Formula $S$
+\end_inset
+
+ más próximo a 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{S}\left(v\right)=v\Longleftrightarrow v\in S$
+\end_inset
+
+ y además 
+\begin_inset Formula $P_{S}\left(w\right)=0\Longleftrightarrow w\in S^{\bot}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Por Pitágoras: 
+\begin_inset Formula $\left|x\right|^{2}=\left|P_{S}\left(x\right)\right|^{2}+\left|P_{S}^{\bot}\left(x\right)\right|^{2}\forall x\in\mathbb{V}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|P_{S}(x)\right|\leq\left|x\right|$
+\end_inset
+
+ (si 
+\begin_inset Formula $\left|P_{S}(x)\right|=\left|x\right|$
+\end_inset
+
+ entonces 
+\begin_inset Formula $x\in S$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d\left(x,S\right)=\left|P_{S^{\bot}}\left(x\right)\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Expresión de la proyección y la reflexión
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $S$
+\end_inset
+
+ un subespacio de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+, y 
+\begin_inset Formula $B=\{v_{1},v_{2},\ldots,v_{q}\}$
+\end_inset
+
+ una BOG de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\forall x\in\mathbb{V}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{S}(x)\doteq\sum_{i=1}^{q}\frac{<v_{i},x>}{<v_{i},v_{i}>}\cdot v_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{S}(x)=2P_{S}(x)-x=P_{S}(x)-P_{S^{\bot}}(x)=x-2P_{S^{\bot}}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Proyecciones y TLs
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $T:\mathbb{V}_{\mathbb{K}}\rightarrow\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ una transformación lineal tal que 
+\begin_inset Formula $\left\{ \begin{array}{c}
+Im\left(P_{S}\right)=S\\
+Nu\left(P_{S}\right)=S^{\bot}
+\end{array}\right.$
+\end_inset
+
+y sea 
+\begin_inset Formula $B=\{\underbrace{v_{1},v_{2},\ldots,v_{q}}_{\in S},\underbrace{v_{q+1},v_{q+2},\ldots,v_{n}}_{\in S^{\bot}}\}$
+\end_inset
+
+ una base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+, entonces la matriz de la TL es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[P_{S}\right]_{B}=\left[\begin{array}{cccccc}
+1 &  &  &  & \cdots & 0\\
+ & \ddots &  &  &  & \vdots\\
+ &  & 1\\
+ &  &  & 0\\
+\vdots &  &  &  & \ddots\\
+0 & \cdots &  &  &  & 0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(tantos 1 como la dimensión del espacio sobre el cual proyecto, y tantos
+ 0 como la dimensión del complemento ortogonal)
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Nota
+\bar default
+: la matriz de un operador proyección en una BON es una matriz de proyección.
+ En cualquier otra base, no lo es.
+\end_layout
+
+\begin_layout Subsection
+Reflexiones y TLs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 4
+placement r
+overhang 0in
+width "4cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename proyeccion.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Proyección y reflexión.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T:\mathbb{V}_{\mathbb{K}}\to\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ una TL tal que 
+\begin_inset Formula $\left\{ \begin{array}{c}
+T\left(v\right)=v,\forall v\in S\\
+T\left(v\right)=-v,\forall v\in S^{\bot}
+\end{array}\right.$
+\end_inset
+
+y sea 
+\begin_inset Formula $B=\{\underbrace{v_{1},v_{2},\ldots,v_{q}}_{\in S},\underbrace{v_{q+1},v_{q+2},\ldots,v_{n}}_{\in S^{\bot}}\}$
+\end_inset
+
+ una base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+, entonces la matriz de la TL es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[T\right]_{B}=\left[\begin{array}{cccccc}
+1 &  &  &  & \cdots & 0\\
+ & \ddots &  &  &  & \vdots\\
+ &  & 1\\
+ &  &  & -1\\
+\vdots &  &  &  & \ddots\\
+0 & \cdots &  &  &  & -1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(tantos 
+\begin_inset Formula $1$
+\end_inset
+
+ como la dimensión del espacio sobre el cual reflejo, y tantos 
+\begin_inset Formula $-1$
+\end_inset
+
+ como la dimensión del complemento ortogonal)
+\end_layout
+
+\begin_layout Subsection
+Matriz de Householder
+\end_layout
+
+\begin_layout Standard
+La matriz de reflexión sobre un subespacio de dimensión 
+\begin_inset Formula $n-1$
+\end_inset
+
+ que es ortogonal a un vector 
+\begin_inset Formula $w$
+\end_inset
+
+ en un espacio de dimensión 
+\begin_inset Formula $n$
+\end_inset
+
+ se puede obtener mediante la expresión: 
+\begin_inset Formula 
+\[
+H=I_{d}-2\frac{ww^{T}}{w^{T}w}
+\]
+
+\end_inset
+
+
+\bar under
+Propiedades de la matriz de Householder: 
+\end_layout
+
+\begin_layout Itemize
+Es involutiva: 
+\begin_inset Formula $H\circ H=I_{d}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Es simétrica: 
+\begin_inset Formula $H^{T}=H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Es inversible: 
+\begin_inset Formula $\exists\, H^{-1}$
+\end_inset
+
+ y 
+\begin_inset Formula $H^{-1}=H$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Es ortogonal: 
+\begin_inset Formula $H^{T}H=HH^{T}=Id$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Rotaciones en 
+\begin_inset Formula $\mathbb{R}^{\mathbf{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $B=\left\{ v_{1},v_{2},v_{3}\right\} $
+\end_inset
+
+ una BON de 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $T$
+\end_inset
+
+ la rotación de 
+\begin_inset Formula $\theta$
+\end_inset
+
+ grados alrededor del eje 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\left[T\right]_{B}=\left[\begin{array}{ccc}
+1 & 0 & 0\\
+0 & \cos(\theta) & -\sin(\theta)\\
+0 & \sin(\theta) & \cos(\theta)
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Proceso Gram-Schmidt
+\end_layout
+
+\begin_layout Standard
+Dada una base 
+\begin_inset Formula $\left\{ x_{1},x_{2},\ldots,x_{p}\right\} $
+\end_inset
+
+ para un subespacio 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, defina:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}=x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{2}=x_{2}-\frac{x_{2}.v_{1}}{v_{1}.v_{1}}\cdot v_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{p}=x_{p}-\frac{x_{p}\cdot v_{1}}{v_{1}\cdot v_{1}}\cdot v_{1}-\frac{x_{p}\cdot v_{2}}{v_{2}\cdot v_{2}}\cdot v_{2}-\ldots-\frac{x_{p}\cdot v_{p-1}}{v_{p-1}\cdot v_{p-1}}\cdot v_{p-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces 
+\begin_inset Formula $\left\{ v_{1},v_{2},\ldots,v_{p}\right\} $
+\end_inset
+
+ es una BOG para 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Matrices de Proyección
+\end_layout
+
+\begin_layout Standard
+Trabajamos con el producto interno canónico y sobre 
+\begin_inset Formula $\mathbb{K}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{K}\text{=}\mathbb{R}$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\in\mathbb{K}^{n\times n}$
+\end_inset
+
+ es una matriz de proyección 
+\begin_inset Formula $\Longleftrightarrow\left\{ \begin{array}{c}
+P^{2}=P\\
+P^{H}=P
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $col(P)=nul(P)^{\bot}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\cdot y=y\Longleftrightarrow y\in col(P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $P_{S}$
+\end_inset
+
+ es matriz de proyección sobre 
+\begin_inset Formula $S$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{S^{\bot}}$
+\end_inset
+
+ es matriz de proyección sobre 
+\begin_inset Formula $S^{\bot}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $P_{S}+P_{S^{\bot}}=Id$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Las columnas de 
+\begin_inset Formula $P$
+\end_inset
+
+ son una base del espacio sobre el cual proyectan.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $rg(P)=tr(P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det(P)\neq0$
+\end_inset
+
+ si 
+\begin_inset Formula $P\neq Id$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ son matrices de proyección, y 
+\begin_inset Formula $P_{1}\cdot P_{2}=P_{2}\cdot P_{1}=0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $P_{1}+P_{2}$
+\end_inset
+
+ es matriz de proyección y 
+\begin_inset Formula $rg(P_{1}+P_{2})=rg(P_{1})+rg(P_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obtención de la matriz de proyección:
+\end_layout
+
+\begin_layout Itemize
+Sea 
+\begin_inset Formula $Q$
+\end_inset
+
+ una matriz cuyas columnas son una BON de 
+\begin_inset Formula $S\subset\mathbb{V}$
+\end_inset
+
+.
+ Entonces la única matriz de proyección sobre 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $[P_{S}]=QQ^{T}$
+\end_inset
+
+.
+ La matriz de proyección sobre 
+\begin_inset Formula $S^{\bot}$
+\end_inset
+
+ es 
+\begin_inset Formula $\left[P_{S}^{\bot}\right]=I_{d}-[P_{S}]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Sea 
+\begin_inset Formula $B=\left\{ v_{1},v_{2},\ldots,v_{q}\right\} $
+\end_inset
+
+ una base de 
+\begin_inset Formula $S$
+\end_inset
+
+, y 
+\begin_inset Formula $A$
+\end_inset
+
+ la matriz que tiene por columnas a 
+\begin_inset Formula $v_{1},v_{2},\ldots,v_{q}.$
+\end_inset
+
+ Entonces la única matriz de proyección sobre 
+\begin_inset Formula $S$
+\end_inset
+
+ se obtiene mediante 
+\begin_inset Formula $\left[P_{s}\right]=A\left(A^{H}A\right)^{-1}A^{H}=AA^{\#}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Inversas y pseudoinversas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pseudoinversa
+\series default
+: Sea 
+\begin_inset Formula $A\in\mathbb{K}^{n\times q}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $rg\left(A\right)=q$
+\end_inset
+
+.
+ La matriz pseudoinversa de 
+\begin_inset Formula $A$
+\end_inset
+
+ es 
+\begin_inset Formula $A^{\#}=(A^{H}A)^{-1}A^{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es cuadrada e inversible, 
+\begin_inset Formula $A^{-1}=A^{\#}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A^{\#}\in\mathbb{R}^{q\times n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A^{\#}A=Id_{(q)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $AA^{\#}=[P]_{Col(A)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Nul\left(AA^{\#}\right)=\left[Col\left(A\right)\right]^{\bot}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Cuadrados mínimos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 8
+placement r
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cuad_min.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cuadrados mínimos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $A\in\mathbb{K}^{n\times q}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in\mathbb{K}^{q}$
+\end_inset
+
+, 
+\begin_inset Formula $b\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ tiene una solución exacta, entonces 
+\begin_inset Formula $b\in Col(A)$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $b\notin Col\left(A\right)$
+\end_inset
+
+, intentamos hallar una solución 
+\begin_inset Formula $\hat{x}\in\mathbb{K}^{q}$
+\end_inset
+
+ (la solución por cuadrados mínimos) tal que: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|A\hat{x}-b\right|<\left|Au-b\right|\:\forall u\in\mathbb{K}^{q}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d\left(A\hat{x},b\right)\le d(Au,b)\:\forall u\in\mathbb{K}^{q}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|A\hat{x}\right|\le\left|b\right|$
+\end_inset
+
+ (son iguales si 
+\begin_inset Formula $b\in Col\left(A\right)$
+\end_inset
+
+), 
+\end_layout
+
+\begin_layout Itemize
+Ecuaciones normales de cuadrados mínimos: 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\hat{x}=\hat{b}=P_{ColA}\left(b\right)\Longleftrightarrow\left\{ \begin{array}{c}
+A\hat{x}\in Col(A)\\
+b-A\hat{x}\in Col\left(A\right)^{\bot}
+\end{array}\right.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Observaciones: 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\hat{x}=0$
+\end_inset
+
+ entonces 
+\begin_inset Formula $b\in\left[Col\left(A\right)\right]^{\bot}$
+\end_inset
+
+.
+ La recíproca solo es cierta si 
+\begin_inset Formula $A$
+\end_inset
+
+ es inversible.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si las columnas de 
+\begin_inset Formula $A$
+\end_inset
+
+ son LI, la solución por cuadrados mínimos es única y se obtiene mediante
+ 
+\begin_inset Formula $\hat{x}=\left(A^{T}A\right)^{-1}A^{T}b=A^{\#}b$
+\end_inset
+
+.
+ Si las columnas de 
+\begin_inset Formula $A$
+\end_inset
+
+ son LD, el sistema 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}b$
+\end_inset
+
+ tiene infinitas soluciones, y éstas son de la forma 
+\begin_inset Formula $\hat{x}=\hat{x}_{p}+\underbrace{\hat{x}_{n}}_{\in Nul(A)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $b\in Col(A)$
+\end_inset
+
+, entonces toda solución de 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ es una solución exacta y por cuadrados mínimos.
+ 
+\end_layout
+
+\begin_layout Enumerate
+El error de aproximación 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ es igual a 
+\begin_inset Formula $\left|b-\hat{b}\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Regresión lineal
+\end_layout
+
+\begin_layout Standard
+Sean los puntos 
+\begin_inset Formula $P_{i}=\left(x_{i},y_{i}\right)$
+\end_inset
+
+ con 
+\begin_inset Formula $i=1,2,\ldots,n$
+\end_inset
+
+.
+ La recta que mejor aproxima a los puntos es 
+\begin_inset Formula $y=\alpha+\beta x$
+\end_inset
+
+, y los coeficientes 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ se obtienen resolviendo el sistema 
+\begin_inset Formula $\left[\begin{array}{cc}
+1 & x_{1}\\
+1 & x_{2}\\
+\vdots & \vdots\\
+1 & x_{n}
+\end{array}\right]\left(\begin{array}{c}
+\alpha\\
+\beta
+\end{array}\right)=\left[\begin{array}{c}
+\begin{array}{c}
+y_{1}\\
+y_{2}\\
+\vdots
+\end{array}\\
+y_{n}
+\end{array}\right]$
+\end_inset
+
+ por cuadrados mínimos.
+\end_layout
+
+\begin_layout Subsection
+Solución por cuadrados mínimos de norma mínima
+\end_layout
+
+\begin_layout Standard
+La solución por cuadrados mínimos de norma mínima pertenece al espacio 
+\begin_inset Formula $Fil(A)$
+\end_inset
+
+ y se obtiene como 
+\begin_inset Formula $\tilde{x}=A^{+}b$
+\end_inset
+
+, siendo 
+\begin_inset Formula $A^{+}$
+\end_inset
+
+ la pseudoinversa de Moore-Penrose de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Transformaciones Lineales
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V}_{\mathbb{K}},\mathbb{W}_{\mathbb{K}})$
+\end_inset
+
+ y 
+\begin_inset Formula $A=\left[T\right]_{BC}$
+\end_inset
+
+ con 
+\begin_inset Formula $B$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $C$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+ la matriz de 
+\begin_inset Formula $T.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Condiciones de TLs
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\left(u+v\right)=T\left(u\right)+T\left(v\right)$
+\end_inset
+
+ con 
+\begin_inset Formula $u,v\in\mathbb{V}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\left(\alpha\cdot u\right)=\alpha\cdot T\left(u\right)$
+\end_inset
+
+ con 
+\begin_inset Formula $u\in\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ y 
+\begin_inset Formula $\alpha\in\mathbb{K}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\left(0_{\mathbb{V}_{\mathbb{K}}}\right)=0_{\mathbb{W}_{\mathbb{K}}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Núcleo e imagen
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Núcleo
+\series default
+: 
+\begin_inset Formula $Nu\left(T\right)=\left\{ v\in\mathbb{V}_{\mathbb{K}}:\, T\left(v\right)=0_{\mathbb{W}}\right\} =C_{B}^{-1}(Nul\left(A\right))$
+\end_inset
+
+.
+ Es un subespacio.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Imagen
+\series default
+: 
+\begin_inset Formula $Im\left(T\right)=\left\{ w\in\mathbb{W}_{\mathbb{K}}:\, T\left(v\right)=w\text{ con }v\in\mathbb{V}_{\mathbb{K}}\right\} =C_{C}^{-1}(Col\left(A\right))$
+\end_inset
+
+.
+ Es un subespacio.
+ 
+\end_layout
+
+\begin_layout Standard
+La imagen de una TL puede obtenerse como lo que generan los transformados
+ de una base del espacio de partida.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de la dimensión
+\series default
+: Sea 
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V},\mathbb{W})$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\dim\left(\mathbb{V}\right)=n$
+\end_inset
+
+ (finita).
+ Entonces: 
+\begin_inset Formula 
+\[
+\dim(\mathbb{V})=\dim\left(Nu(T)\right)+\dim\left(Im(T)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Clasificación de TLs
+\end_layout
+
+\begin_layout Subsubsection
+Inyectividad (monomorfismo)
+\end_layout
+
+\begin_layout Standard
+Una TL es inyectiva si verifica: 
+\begin_inset Formula $v_{1}\ne v_{2}\Longrightarrow T\left(v_{1}\right)\ne T\left(v_{2}\right)\forall v_{1},v_{2}\in\mathbb{V}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Una TL es inyectiva 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Nu\left(T\right)=\left\{ 0_{\mathbb{V}}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow\dim\left(Im(T)\right)=\dim\left(\mathbb{V}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una TL inyectiva transforma conjuntos LI a conjuntos LI.
+ La recíproca también es cierta: si 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto LI y es transformado en otro conjunto LI, la TL es inyectiva.
+ Es decir: si 
+\begin_inset Formula $T$
+\end_inset
+
+ es inyectiva y 
+\begin_inset Formula $A$
+\end_inset
+
+ es LI, 
+\begin_inset Formula $T\left(A\right)$
+\end_inset
+
+ es LI.
+\end_layout
+
+\begin_layout Standard
+Las matrices asociadas a TLs inyectivas tienen sus columnas LI.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\dim(V)>\dim(\mathbb{W})$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ no puede ser inyectiva.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Sobreyectividad (epimorfismo)
+\end_layout
+
+\begin_layout Standard
+Una TL es sobreyectiva 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Im(T)=\mathbb{W}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las matrices asociadas a TLs sobreyectivas tienen sus filas LI.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\dim(\mathbb{W})>\dim(\mathbb{V})$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ no puede ser sobreyectiva.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Biyectividad (isomorfismo)
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\dim(\mathbb{W})=\dim(\mathbb{V})$
+\end_inset
+
+, y 
+\begin_inset Formula $Nu\left(T\right)=\{0\}$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ es biyectiva.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+es biyectiva 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ si 
+\begin_inset Formula $\{v_{1},\ldots,v_{n}\}$
+\end_inset
+
+ es base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\left\{ T\left(v_{1}\right),\ldots,T\left(v_{n}\right)\right\} $
+\end_inset
+
+ es base de 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La matriz asociada a una TL biyectiva tiene sus filas y columnas LI, o sea
+ que es una matriz inversible, o sea que existe la TL inversa: 
+\begin_inset Formula $T^{-1}=\left[T\right]^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\dim\left(\mathbb{V}\right)=\dim(\mathbb{W})$
+\end_inset
+
+, entonces o bien 
+\begin_inset Formula $T$
+\end_inset
+
+ es inyectiva y sobreyectiva, o bien no es ninguna.
+\end_layout
+
+\begin_layout Subsection
+Matriz asociada a una TL
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V}_{\mathbb{K}},\mathbb{W}_{\mathbb{K}})$
+\end_inset
+
+, sea 
+\begin_inset Formula $B=\{v_{1},v_{2},\ldots,v_{q}\}$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $C=\{w_{1},w_{2},\ldots,w_{m}\}$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $T$
+\end_inset
+
+ se puede escribir como 
+\begin_inset Formula $T\left(x\right)=Ax$
+\end_inset
+
+, con 
+\begin_inset Formula $A\in\mathbb{K}^{m\times q}$
+\end_inset
+
+ tal que
+\begin_inset Formula $:$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+A=\left[T\right]_{BC}=\left[\begin{array}{cccc}
+| & | &  & |\\
+C_{C}\left(T\left(v_{1}\right)\right) & C_{C}\left(T\left(v_{2}\right)\right) & \cdots & C_{C}(T\left(v_{q}\right))\\
+| & | &  & |
+\end{array}\right]
+\]
+
+\end_inset
+
+ 
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[T\right]_{BC}\cdot C_{B}\left(v\right)=C_{C}\left(T\left(v\right)\right)\forall v\in\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\in Nu\left(T\right)\Longleftrightarrow C_{B}\left(v\right)\in Nul(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $w\in Im\left(T\right)\Longleftrightarrow C_{C}\left(w\right)\in Col(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dim(Im\left(T\right))=rg(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema
+\series default
+: sean 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+-espacios vectoriales (
+\begin_inset Formula $\mathbb{K}=\mathbb{R}\mbox{ ó }\mathbb{C}$
+\end_inset
+
+).
+ Sea 
+\begin_inset Formula $T:\mathbb{V}\to\mathbb{W}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ son bases ordenadas de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+, y 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ son bases ordenadas de 
+\begin_inset Formula $\mathbb{W}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $rg\left(\left[T\right]_{B_{1}C_{1}}\right)=rg(\left[T\right]_{B_{2}C_{2}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Teorema Fundamental de las TLs
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $B=\{v_{1},v_{2},\ldots,v_{n}\}$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $w_{1},w_{2},\ldots,w_{n}$
+\end_inset
+
+ vectores de 
+\begin_inset Formula $\mathbb{W}.$
+\end_inset
+
+ Entonces existe y es única la TL que verifica que 
+\begin_inset Formula $T\left(v_{1}\right)=w_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $T\left(v_{2}\right)=w_{2},\ldots,T\left(v_{n}\right)=w_{n}$
+\end_inset
+
+.
+ Además, dada una TL y un par de bases, existe una única matriz asociada.
+ La recíproca también es verdadera: dada una matriz y un par de bases, existe
+ una única TL asociada.
+\end_layout
+
+\begin_layout Subsection
+Composición de TLs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 4
+placement r
+overhang 0in
+width "5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename composicion.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Composición.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\in\mathcal{L}(\mathbb{V},\mathbb{W})$
+\end_inset
+
+ y 
+\begin_inset Formula $g\in\mathcal{L}\left(\mathbb{W},\mathbb{H}\right)\Longrightarrow g\circ f\in\mathcal{L}\left(\mathbb{V},\mathbb{H}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Nu\left(f\right)\subseteq Nu\left(g\circ f\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Im\left(g\circ f\right)\subseteq Im(g)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Operadores lineales
+\end_layout
+
+\begin_layout Standard
+Un operador lineal es una TL que va de un espacio en sí mismo.
+ Se escribe como 
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $T_{1}\in\mathcal{L}(\mathbb{V})$
+\end_inset
+
+ y 
+\begin_inset Formula $T_{2}\in\mathcal{L}(\mathbb{V})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $T_{1}\circ T_{2}\in\mathcal{L}(\mathbb{V})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V})$
+\end_inset
+
+, 
+\begin_inset Formula $T^{n}=\underbrace{T\circ T\circ\ldots\circ T}_{n\: veces}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Autovalores y Autovectores
+\end_layout
+
+\begin_layout Subsection
+Autovalores y autovectores de una matriz cuadrada
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Autovector
+\series default
+: Un vector 
+\begin_inset Formula $v\ne\overline{0}$
+\end_inset
+
+ es autovector de 
+\begin_inset Formula $A\in\mathbb{K}^{n\times n}$
+\end_inset
+
+
+\begin_inset Formula $\Longleftrightarrow\exists\lambda\in\mathbb{K}:\: Av=\lambda v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Autoespacio
+\series default
+: El autoespacio de 
+\begin_inset Formula $A$
+\end_inset
+
+ asociado a un autovalor 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es 
+\begin_inset Formula $S_{\lambda}(A)=nul(A-\lambda I)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Polinomio característico
+\series default
+: El polinomio característico de una matriz 
+\begin_inset Formula $A\in\mathbb{K}^{n\times n}$
+\end_inset
+
+ es 
+\begin_inset Formula $p_{A}(\lambda)=\det(A-\lambda I)$
+\end_inset
+
+, y tiene grado 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\mathbb{K}=\mathbb{R}$
+\end_inset
+
+ el polinomio tiene a lo sumo 
+\begin_inset Formula $n$
+\end_inset
+
+ raíces.
+ Si 
+\begin_inset Formula $\mathbb{K}=\mathbb{C}$
+\end_inset
+
+ tiene exactamente 
+\begin_inset Formula $n$
+\end_inset
+
+ raíces.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Autovalor
+\series default
+: Los autovalores de una matriz son las raíces de su polinomio característico.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Espectro de una matriz
+\series default
+: 
+\begin_inset Formula $\sigma\left(A\right)=\{\lambda\in\mathbb{K}:\:\lambda\mbox{es autovalor de \ensuremath{A\}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Multiplicidad geométrica y algebraica de un autovalor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m_{g}(\lambda)=\dim\left(S_{\lambda}(A)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m_{a}(\lambda)=$
+\end_inset
+
+ número de veces que aparece 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ como raíz del polinomio característico.
+\end_layout
+
+\begin_layout Standard
+Siempre se verifica que: 
+\begin_inset Formula $1\le m_{g}\left(\lambda\right)\le m_{a}\left(\lambda\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Propiedades
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A\in\mathbb{K}^{n\times n}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ es singular 
+\begin_inset Formula $\Longleftrightarrow0$
+\end_inset
+
+ es un autovalor de 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow m_{g}\left(0\right)=n-k\Longleftrightarrow rg\left(A\right)=k<n$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Itemize
+Dos autovectores asociados a autovalores distintos son LI.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A\in\mathbb{K}^{2\times2}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $p_{A}\left(\lambda\right)=\lambda^{2}-tr\left(A\right)\lambda+\det(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si todas las filas o columnas de 
+\begin_inset Formula $A$
+\end_inset
+
+ suman 
+\begin_inset Formula $s$
+\end_inset
+
+ entonces 
+\begin_inset Formula $s\in\sigma(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sea 
+\begin_inset Formula $p\left(t\right)=a_{k}t^{k}+\ldots+a_{1}t+a_{0}\,(a_{k}\ne0)$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces se cumple que 
+\begin_inset Formula $p\left(\lambda\right)$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $p\left(A\right)$
+\end_inset
+
+, y para cada autovalor 
+\begin_inset Formula $\mu$
+\end_inset
+
+ de 
+\begin_inset Formula $p(A)$
+\end_inset
+
+ existe un autovalor 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $p\left(\lambda\right)=\mu$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $A$
+\end_inset
+
+...
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda^{-1}$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ y 
+\begin_inset Formula $S_{\lambda^{-1}}\left(A^{-1}\right)=S_{\lambda}\left(A\right)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r\cdot\lambda$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $r\cdot A$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda^{k}$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda+r$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $A+r\cdot I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Autovalores y autovectores de operadores lineales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T:\mathbb{V}_{\mathbb{K}}\to\mathbb{V}_{\mathbb{K}}.$
+\end_inset
+
+ Un vector 
+\begin_inset Formula $v\ne\overline{0}$
+\end_inset
+
+ es autovector de 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow T\left(v\right)=\lambda v,$
+\end_inset
+
+ con 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ autovalor de 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{\lambda}\left(T\right)=\left\{ x\in\mathbb{V}:\: T\left(x\right)=\lambda x\mbox{ y }\lambda\text{ autovalor de }T\right\} =Nuc(T-\lambda I).$
+\end_inset
+
+ Si 
+\begin_inset Formula $B$
+\end_inset
+
+ es base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ y 
+\begin_inset Formula $A$
+\end_inset
+
+ es la matriz de 
+\begin_inset Formula $T$
+\end_inset
+
+ en esa base, entonces: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma\left(A\right)=\sigma\left(T\right)\,\forall B$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+ es autovector de
+\begin_inset Formula $T\Longleftrightarrow C_{B}\left(x\right)$
+\end_inset
+
+ es autovector de 
+\begin_inset Formula $\left[T\right]_{B}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T\left(x\right)=\lambda\cdot x\Longrightarrow T^{n}\left(x\right)=\lambda^{n}\cdot x\:\left(n\in\mathbb{N}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda^{-1}$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $h$
+\end_inset
+
+ es un polinomio en 
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+ y 
+\begin_inset Formula $T\left(x\right)=Ax$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\sigma\left[h\left(A\right)\right]=h[\sigma\left(A\right)]\\
+S_{h\left(\lambda\right)}h\left(A\right)=S_{\lambda}(A)
+\end{array}\right.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T:\mathbb{V}_{\mathbb{K}}\to\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ es regular 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $0\notin\sigma(T)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Diagonalización
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in\mathbb{K}^{n\times n}$
+\end_inset
+
+ es diagonalizable 
+\begin_inset Formula $\Longleftrightarrow A\sim D\Longleftrightarrow$
+\end_inset
+
+ existe una base de 
+\begin_inset Formula $\mathbb{K}^{n}$
+\end_inset
+
+ compuesta por autovectores de 
+\begin_inset Formula $A\Longleftrightarrow A$
+\end_inset
+
+ tiene 
+\begin_inset Formula $n$
+\end_inset
+
+ autovectores LI 
+\begin_inset Formula $\Longleftrightarrow m_{g}\left(\lambda\right)=m_{a}\left(\lambda\right)\:\forall\lambda\in\sigma(A)\Longleftrightarrow\exists\, P$
+\end_inset
+
+ inversible y 
+\begin_inset Formula $D$
+\end_inset
+
+ diagonal tal que: 
+\begin_inset Formula $A=PDP^{-1}$
+\end_inset
+
+, siendo 
+\begin_inset Formula $P$
+\end_inset
+
+ la matriz de autovectores y 
+\begin_inset Formula $D$
+\end_inset
+
+ la matriz de autovalores.
+\end_layout
+
+\begin_layout Subsubsection
+Matrices trivialmente diagonalizables
+\end_layout
+
+\begin_layout Itemize
+Nula: autovalor 0, autovectores: cualquier vector no nulo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Identidad: autovalor: 1, autovectores: cualquier vector no nulo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Diagonal (
+\begin_inset Formula $A=\left(\begin{array}{ccc}
+\alpha_{1} & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & \alpha_{n}
+\end{array}\right))$
+\end_inset
+
+: autovalores: 
+\begin_inset Formula $\alpha_{1},\ldots,\alpha_{n}$
+\end_inset
+
+, autovectores: los que tienen sus componentes nulas excepto la n-ésima.
+ 
+\end_layout
+
+\begin_layout Itemize
+Escalar (
+\begin_inset Formula $A=\left(\begin{array}{ccc}
+k & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & k
+\end{array}\right),k\in\mathbb{R}$
+\end_inset
+
+): autovalor: 
+\begin_inset Formula $k$
+\end_inset
+
+, autovectores: cualquier vector no nulo.
+ 
+\end_layout
+
+\begin_layout Itemize
+De proyección (
+\begin_inset Formula $A\in\mathbb{K}^{n\times n},\dim S=q)$
+\end_inset
+
+: autovalor 1 con 
+\begin_inset Formula $m_{a}\left(1\right)=m_{g}\left(1\right)=q$
+\end_inset
+
+, autovalor 0 con 
+\begin_inset Formula $m_{a}\left(0\right)=m_{g}\left(0\right)=n-q$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+De reflexión: autovalor 1 con 
+\begin_inset Formula $m_{a}\left(1\right)=q$
+\end_inset
+
+, autovalor -1 con 
+\begin_inset Formula $m_{a}\left(0\right)=n-q$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Propiedades
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es diagonalizable entonces 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+ es diagonalizable (
+\begin_inset Formula $D_{A}^{n}=D_{A^{n}}$
+\end_inset
+
+ y 
+\begin_inset Formula $\sigma(A^{n})=\sigma^{n}(A)$
+\end_inset
+
+).
+ La recíproca es falsa.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A\in\mathbb{C}^{n\times n}$
+\end_inset
+
+ tiene 
+\begin_inset Formula $n$
+\end_inset
+
+ autovalores distintos entonces 
+\begin_inset Formula $A$
+\end_inset
+
+ es diagonalizable.
+ La recíproca es falsa.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det\left(A\right)=\prod_{i=1}^{n}\lambda_{i}=p_{A}(0)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(A\right)=\sum_{i=1}^{n}\lambda_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Autovalores complejos de una matriz real
+\end_layout
+
+\begin_layout Standard
+Supongamos que 
+\begin_inset Formula $\lambda=a+bi$
+\end_inset
+
+ con 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $b\ne0$
+\end_inset
+
+ es un autovalor de 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\overline{\lambda}=a-bi$
+\end_inset
+
+ también es autovalor de 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $v\in\mathbb{C}^{n}$
+\end_inset
+
+ es autovector de 
+\begin_inset Formula $A$
+\end_inset
+
+ asociado a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ si y sólo si 
+\begin_inset Formula $\overline{v}$
+\end_inset
+
+ es autovector de A asociado a 
+\begin_inset Formula $\overline{\lambda}$
+\end_inset
+
+.
+ En particular, si 
+\begin_inset Formula $\{v_{1},\ldots,v_{r}\}$
+\end_inset
+
+ es base de 
+\begin_inset Formula $S_{\lambda}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\{\overline{v}_{1},\ldots,\overline{v_{r}}\}$
+\end_inset
+
+ es base de 
+\begin_inset Formula $S_{\overline{\lambda}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Diagonalización de TLs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V}_{\mathbb{K}})$
+\end_inset
+
+ con 
+\begin_inset Formula $\dim(\mathbb{V}_{\mathbb{K}})=n$
+\end_inset
+
+, es diagonalizable 
+\begin_inset Formula $\Longleftrightarrow\exists\, B$
+\end_inset
+
+ base de
+\begin_inset Formula $\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left[T\right]_{B}$
+\end_inset
+
+ es diagonal 
+\begin_inset Formula $\Longleftrightarrow\exists\, B$
+\end_inset
+
+ base de 
+\begin_inset Formula $\mathbb{V}_{\mathbb{K}}$
+\end_inset
+
+ formada por autovectores de 
+\begin_inset Formula $T\Longleftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ tiene 
+\begin_inset Formula $n$
+\end_inset
+
+ autovectores LI.
+ Esa base es 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $\left[T\right]_{B}=diag(\sigma\left(T\right))$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $A=\left[T\right]_{H}$
+\end_inset
+
+, 
+\begin_inset Formula $H$
+\end_inset
+
+ cualquier base, entonces 
+\begin_inset Formula $T$
+\end_inset
+
+ es diagonalizable si y sólo si 
+\begin_inset Formula $A$
+\end_inset
+
+ es diagonalizable.
+\end_layout
+
+\begin_layout Section
+Diagonalización de Matrices Hermíticas, Formas Cuadráticas, DVS
+\end_layout
+
+\begin_layout Subsection
+Diagonalización de matrices simétricas y hermíticas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matriz antisimétrica
+\series default
+: Si 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ es antisimétrica 
+\begin_inset Formula $(A^{T}=-A)$
+\end_inset
+
+ entonces: 
+\end_layout
+
+\begin_layout Itemize
+Los autovalores de 
+\begin_inset Formula $A$
+\end_inset
+
+ son imaginarios puros o nulos, 
+\end_layout
+
+\begin_layout Itemize
+Los autovectores asociados a autovalores distintos son ortogonales, 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ es diagonalizable unitariamente.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matriz simétrica (hermítica)
+\series default
+: 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ es simétrica (
+\begin_inset Formula $B=\mathbb{C}^{n\times n}$
+\end_inset
+
+ es hermítica) si y solo si:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ es diagonalizable ortogonalmente: 
+\begin_inset Formula $A=PDP^{T}$
+\end_inset
+
+ (
+\begin_inset Formula $B$
+\end_inset
+
+ es diagonalizable unitariamente con 
+\begin_inset Formula $D$
+\end_inset
+
+ real: 
+\begin_inset Formula $B=PDP^{H}$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A(B)$
+\end_inset
+
+ tiene 
+\begin_inset Formula $n$
+\end_inset
+
+ autovalores reales
+\end_layout
+
+\begin_layout Itemize
+Los elementos de la diagonal de 
+\begin_inset Formula $A(B)$
+\end_inset
+
+ son reales
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det\left(A\right)\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dim\left(S_{\lambda}(A)(B)\right)=m_{a}\left(\lambda\right)\,\forall\lambda\in\sigma(A,B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Los autovectores asociados a autovalores distintos son ortogonales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matriz ortogonal
+\series default
+: 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ es ortogonal (
+\begin_inset Formula $B\in\mathbb{C}^{n\times n}$
+\end_inset
+
+ es unitaria) si y solo si: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $AA^{T}=A^{T}A=Id$
+\end_inset
+
+ (
+\begin_inset Formula $BB^{H}=B^{H}B=Id$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{T}=A^{-1}$
+\end_inset
+
+ (
+\begin_inset Formula $B^{H}=B^{-1}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Las columnas de 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $(B)$
+\end_inset
+
+ son BON de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ (
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det\left(A\right)=\pm1$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\det\left(A\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ es la matriz de una rotación
+\end_layout
+
+\begin_layout Itemize
+Los autovalores tienen módulo 1, y pueden ser reales o complejos
+\end_layout
+
+\begin_layout Itemize
+Son matrices unitariamente diagonalizables
+\end_layout
+
+\begin_layout Itemize
+Los autovectores asociados a autovalores distintos son ortogonales
+\end_layout
+
+\begin_layout Itemize
+Preservan los productos internos 
+\begin_inset Formula $(<Ax,Ay>=<x,y>)$
+\end_inset
+
+ y las normas 
+\begin_inset Formula $(\left|Ax\right|=\left|x\right|)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $C$
+\end_inset
+
+ es unitaria, 
+\begin_inset Formula $BC$
+\end_inset
+
+ y 
+\begin_inset Formula $CB$
+\end_inset
+
+ son unitarias
+\end_layout
+
+\begin_layout Subsection
+Descomposición espectral de matrices simétricas
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $A=PDP^{-1}=PDP^{T}$
+\end_inset
+
+, las columnas de 
+\begin_inset Formula $P$
+\end_inset
+
+ son autovectores ortonormales 
+\begin_inset Formula $u_{1},\ldots,u_{n}$
+\end_inset
+
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ y los autovalores correspondientes 
+\begin_inset Formula $\lambda_{1},\ldots,.\lambda_{n}$
+\end_inset
+
+ están en la matriz diagonal 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Entonces: 
+\begin_inset Formula 
+\[
+A=\lambda_{1}u_{1}u_{1}^{T}+\lambda_{2}u_{2}u_{2}^{T}+\ldots+\lambda_{n}u_{n}u_{n}^{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Subespacios invariantes por una matriz o por una TL
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\in\mathbb{K}^{n}$
+\end_inset
+
+ es invariante por 
+\begin_inset Formula $A\in\mathbb{K}^{n\times n}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow\forall x\in S:\: Ax\in S.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\subset\mathbb{V}$
+\end_inset
+
+ es invariante por 
+\begin_inset Formula $T\in\mathcal{L}(\mathbb{V})$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow\forall x\in S:\: T(x)\in S.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es autovalor de 
+\begin_inset Formula $T$
+\end_inset
+
+, entonces 
+\begin_inset Formula $S_{\lambda}(T)$
+\end_inset
+
+ es un subespacio invariante por 
+\begin_inset Formula $T$
+\end_inset
+
+, puesto que 
+\begin_inset Formula $\forall x\in S_{\lambda}\left(T\right)\Rightarrow T\left(x\right)=\lambda x\in S_{\lambda}(T)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+No todo subespacio invariante es un autoespacio de 
+\begin_inset Formula $T$
+\end_inset
+
+, pero sí los subespacios invariantes de dimensión 1.
+ 
+\end_layout
+
+\begin_layout Subsection
+Formas cuadráticas
+\end_layout
+
+\begin_layout Standard
+Una forma cuadrática en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ es una función 
+\begin_inset Formula $Q:\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $Q\left(x\right)=x^{T}Ax$
+\end_inset
+
+, donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es una matriz simétrica de 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de los ejes principales
+\series default
+: sea 
+\begin_inset Formula $A$
+\end_inset
+
+ una matriz simétrica de 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Entonces existe un cambio ortogonal de variable, 
+\begin_inset Formula $x=Py$
+\end_inset
+
+, donde 
+\begin_inset Formula $P$
+\end_inset
+
+ es una matriz ortogonal tal que 
+\begin_inset Formula $\det\left(P\right)=+1$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ es un nuevo vector, que transforma la forma cuadrática 
+\begin_inset Formula $x^{T}Ax$
+\end_inset
+
+ a una forma cuadrática 
+\begin_inset Formula $y^{T}Dy$
+\end_inset
+
+ sin términos de producto cruzado: 
+\begin_inset Formula $Q(x)=x^{T}Ax=(Py)^{T}A(Py)=y^{T}(P^{T}AP)y=y^{T}D_{A}y=g(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Perspectiva geométrica de los ejes principales
+\series default
+: sea la forma cuadrática 
+\begin_inset Formula $Q\left(x\right)=x^{T}Ax$
+\end_inset
+
+, con 
+\begin_inset Formula $A=PDP^{T}$
+\end_inset
+
+.
+ El conjunto de todas las 
+\begin_inset Formula $x\in\mathbb{R}^{n}:\, x^{T}Ax=c$
+\end_inset
+
+ es una elipse, una hipérbola, dos rectas, un punto o ningún punto.
+ Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es diagonal, la gráfica está en posición estándar.
+ Si 
+\begin_inset Formula $A$
+\end_inset
+
+ no es diagonal, la gráfica está girada hasta salirse de la posición estándar.
+ Los 
+\begin_inset Quotes eld
+\end_inset
+
+ejes principales
+\begin_inset Quotes erd
+\end_inset
+
+ son los autovectores de 
+\begin_inset Formula $A$
+\end_inset
+
+ y son el nuevo sistema de coordenadas para los cuales la gráfica está en
+ posición estándar.
+ 
+\end_layout
+
+\begin_layout Subsection
+Clasificación de formas cuadráticas
+\end_layout
+
+\begin_layout Standard
+Una forma cuadrática 
+\begin_inset Formula $Q\left(x\right)=x^{T}Ax$
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Definición 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Criterio I 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Criterio II 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Definida positiva 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(x\right)>0,\forall x\ne0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{11}>0$
+\end_inset
+
+ y 
+\begin_inset Formula $det\left(A\right)>0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+los autovalores de A son positivos 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Semi-definida positiva 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(x\right)\ge0,\forall x$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\det\left(A_{k}\right)\ge0,k=1,2,\ldots,n$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+los autovalores de A son positivos o cero 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Definida negativa 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(x\right)<0,\forall x\ne0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{11}<0$
+\end_inset
+
+ y 
+\begin_inset Formula $det\left(A\right)>0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+los autovalores de A son negativos 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Semi-definida negativa 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(x\right)\le0,\forall x$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $det\left(A_{k}\right)\le0,k=1,2,\ldots,n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+los autovalores de A son negativos o cero 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Indefinida 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(x\right)\gtrless0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+los autovalores de A son tanto positivos como negativos 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Optimización restringida 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema de Rayleigh
+\series default
+: sea la forma cuadrática 
+\begin_inset Formula $Q\left(x\right)=x^{T}Ax$
+\end_inset
+
+, con 
+\begin_inset Formula $A$
+\end_inset
+
+ simétrica.
+ Se verifica: 
+\begin_inset Formula 
+\[
+\lambda_{min}(A)\leq\frac{Q(x)}{\left\Vert x\right\Vert ^{2}}\leq\lambda_{max}(A)
+\]
+
+\end_inset
+
+ Sea extremar una forma cuadrática 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=x^{T}Ax$
+\end_inset
+
+ (
+\begin_inset Formula $A$
+\end_inset
+
+ simétrica), sujeto a la restricción 
+\begin_inset Formula $\left|x\right|=\alpha$
+\end_inset
+
+.
+ El máximo de 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Formula $\lambda_{max}(A).\alpha^{2}$
+\end_inset
+
+ y se alcanza en 
+\begin_inset Formula $M=\{x\in S_{\lambda_{max}}\left(A\right):\left|x\right|=\alpha\}$
+\end_inset
+
+.
+ El mínimo de 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Formula $\lambda_{min}(A).\alpha^{2}$
+\end_inset
+
+ y se alcanza en 
+\begin_inset Formula $m=\{x\in S_{\lambda_{min}}\left(A\right):\left|x\right|=\alpha\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sea extremar una forma cuadrática 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=x^{T}Ax$
+\end_inset
+
+ (
+\begin_inset Formula $A$
+\end_inset
+
+ simétrica), sujeto a la restricción 
+\begin_inset Formula $x^{T}Bx=\alpha^{2}$
+\end_inset
+
+, y sea 
+\begin_inset Formula $B$
+\end_inset
+
+ definida positiva tal que 
+\begin_inset Formula $B=P_{B}D_{B}P_{B}^{T}$
+\end_inset
+
+.
+ Mediante un cambio de variable 
+\begin_inset Formula $y=\sqrt{D_{B}}P_{B}^{T}x$
+\end_inset
+
+ (
+\begin_inset Formula $x=\sqrt{D_{B}^{-1}}P_{B}y$
+\end_inset
+
+), esto es equivalente a extremar 
+\begin_inset Formula $g\left(y\right)=y^{T}\left(\sqrt{D_{B}^{-1}}P_{B}^{T}AP_{B}\sqrt{D_{B}^{-1}}\right)y$
+\end_inset
+
+ sujeto a la restricción 
+\begin_inset Formula $\left|y\right|=\alpha$
+\end_inset
+
+.
+ Entonces: 
+\begin_inset Formula $\max g\left(y\right)=\max f(x)$
+\end_inset
+
+, y 
+\begin_inset Formula $\min g\left(y\right)=\min f(x)$
+\end_inset
+
+.
+ Los 
+\begin_inset Formula $x$
+\end_inset
+
+ en donde se alcanza ese extremo se hallan realizando la cuenta 
+\begin_inset Formula $x=P_{B}y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+DVS
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Valores singulares
+\series default
+: 
+\begin_inset Formula $VS\left(A\right)=\sqrt{\lambda_{i}}\:\forall\lambda_{i}\in\sigma(A^{T}A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ una matriz de 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ con rango 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Entonces existe una matriz 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, y existen una matriz U ortogonal de 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ y una matriz 
+\begin_inset Formula $V$
+\end_inset
+
+ ortogonal de 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ tales que 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+, donde: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Sigma\in\mathbb{R}^{m\times n}$
+\end_inset
+
+ es tal que 
+\begin_inset Formula $\Sigma=\left[\begin{array}{cc}
+D & 0\\
+0 & 0
+\end{array}\right]$
+\end_inset
+
+, y las entradas diagonales de D son los primeros 
+\begin_inset Formula $r$
+\end_inset
+
+ valores singulares de A, ordenados en forma descendente: 
+\begin_inset Formula $\sigma_{i}\ge\sigma_{2}\ge\ldots\ge\sigma_{r}>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ es una matriz cuyas columnas son una BON de autovectores 
+\begin_inset Formula $\left\{ v_{1},v_{2},\ldots,v_{n}\right\} $
+\end_inset
+
+ asociados a los autovalores de 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U\in\mathbb{R}^{m\times m}$
+\end_inset
+
+ es una matriz cuyas primeras 
+\begin_inset Formula $r$
+\end_inset
+
+ columnas son los vectores 
+\begin_inset Formula $\frac{Av_{1}}{\sigma_{1}},\ldots,\frac{Av_{r}}{\sigma_{r}}$
+\end_inset
+
+.
+ Las otras columnas se obtienen completando una BON para 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+.
+ Las columnas de U son autovectores de 
+\begin_inset Formula $AA^{T}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones de las DVS
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A\in\mathbb{K}^{m\times n},A=\left[\begin{array}{ccc}
+| &  & |\\
+u_{1} & \cdots & u_{m}\\
+| &  & |
+\end{array}\right]\left[\begin{array}{cc}
+D & 0\\
+\vdots & 0\\
+0 & 0
+\end{array}\right]\left[\begin{array}{ccc}
+| &  & |\\
+v_{1} & \cdots & v_{n}\\
+| &  & |
+\end{array}\right]^{T}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $rg\left(A\right)=r$
+\end_inset
+
+ entonces: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ u_{1},u_{2},\ldots,u_{r}\right\} $
+\end_inset
+
+ es BON de 
+\begin_inset Formula $Col(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\{u_{r+1},\ldots,u_{m}\}$
+\end_inset
+
+ es BON de 
+\begin_inset Formula $\left[Col\left(A\right)\right]^{\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\{v_{1},v_{2},\ldots,v_{r}\}$
+\end_inset
+
+ es BON de 
+\begin_inset Formula $Fil\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\{v_{r+1},\ldots,v_{n}\}$
+\end_inset
+
+ es BON de 
+\begin_inset Formula $\left[Fil\left(A\right)\right]^{\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Propiedades de las DVS
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $rg\left(A\right)=rg\left(\Sigma\right)=rg\left(\Sigma^{T}\right)=\#VS\left(A\right)_{positivos}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ es inversible 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ tiene 
+\begin_inset Formula $n$
+\end_inset
+
+ VS positivos 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $VS\left(A\right)_{positivos}=VS\left(A^{T}\right)_{positivos}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n},\left|det(A)\right|=\prod_{i=1}^{n}VS_{i}(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es cuadrada y definida positiva, 
+\begin_inset Formula $\sigma\left(A\right)\equiv VS(A)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula $\sim$
+\end_inset
+
+
+\begin_inset Formula $B$
+\end_inset
+
+, entonces 
+\begin_inset Formula $VS\left(A\right)\equiv VS(B)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $B$
+\end_inset
+
+ es ortogonal, 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $AB$
+\end_inset
+
+ y 
+\begin_inset Formula $BA$
+\end_inset
+
+ tienen los mismos valores singulares 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es cuadrada y simétrica, entonces 
+\begin_inset Formula $VS_{i}\left(A\right)=\left|\lambda_{i}(A)\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ tiene filas BON, los valores singulares no nulos de 
+\begin_inset Formula $A$
+\end_inset
+
+ son 1.
+ Si 
+\begin_inset Formula $A$
+\end_inset
+
+ tiene columnas BON, los valores singulares de 
+\begin_inset Formula $A$
+\end_inset
+
+ son 1 
+\end_layout
+
+\begin_layout Itemize
+La matriz 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ (matriz de 
+\emph on
+Gram
+\emph default
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+) es siempre simétrica y semi definida positiva, con lo cual nunca tendrá
+ valores singulares negativos.
+ Será definida positiva cuando 
+\begin_inset Formula $A$
+\end_inset
+
+ tenga columnas LI 
+\end_layout
+
+\begin_layout Itemize
+Sea 
+\begin_inset Formula $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+ una transformación lineal tal que 
+\begin_inset Formula $T\left(x\right)=Ax$
+\end_inset
+
+.
+ Sea la forma cuadrática 
+\begin_inset Formula $f\left(x\right)=\left|T\left(x\right)\right|^{2}=x^{T}\left(A^{T}A\right)x$
+\end_inset
+
+.
+ Entonces: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+El máximo de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ sujeto a 
+\begin_inset Formula $\left|x\right|=1$
+\end_inset
+
+ es 
+\begin_inset Formula $\lambda_{max}\left(A^{T}A\right)$
+\end_inset
+
+.
+ Entonces el máximo de 
+\begin_inset Formula $\left|T(x)\right|$
+\end_inset
+
+ es 
+\begin_inset Formula $VS_{max}(A)$
+\end_inset
+
+ y se alcanza en 
+\begin_inset Formula $M=\{x\in\mathbb{R}^{m}:x\in S_{\lambda_{max}}\left(A^{T}A\right),\left|x\right|=1\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+El mínimo de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ sujeto a 
+\begin_inset Formula $\left|x\right|=1$
+\end_inset
+
+ es 
+\begin_inset Formula $\lambda_{min}\left(A^{T}A\right)$
+\end_inset
+
+.
+ Entonces el mínimo de 
+\begin_inset Formula $\left|T(x)\right|$
+\end_inset
+
+ es 
+\begin_inset Formula $VS_{min}(A)$
+\end_inset
+
+ y se alcanza en 
+\begin_inset Formula $m=\{x\in\mathbb{R}^{m}:x\in S_{\lambda_{min}}\left(A^{T}A\right),\left|x\right|=1\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+DVS reducida con matrices de proyección y pseudoinversa
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+DVS reducida:
+\series default
+ Sea 
+\begin_inset Formula $A\in\mathbb{R}^{n\times m}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+, y 
+\begin_inset Formula $rg\left(A\right)=r$
+\end_inset
+
+, entonces una DVS reducida de 
+\begin_inset Formula $A$
+\end_inset
+
+ es 
+\begin_inset Formula $A=U_{r}\Sigma_{r}V_{r}^{T}$
+\end_inset
+
+ siendo 
+\begin_inset Formula $U_{r}\in\mathbb{K}^{n\times r}$
+\end_inset
+
+, 
+\begin_inset Formula $\Sigma_{r}\in\mathbb{K}^{r\times r}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{r}^{T}\in\mathbb{K}^{r\times m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pseudoinversa de Moore-Penrose de A
+\series default
+: 
+\begin_inset Formula $A^{+}=V_{r}\Sigma_{r}^{-1}U_{r}^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+: 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A\in\mathbb{R}^{n\times m}:$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{+}=A^{\#}$
+\end_inset
+
+cuando 
+\begin_inset Formula $rg\left(A\right)=m$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{+}A=V_{r}V_{r}^{T}=P_{Fil\left(A\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $AA^{+}=U_{r}U_{r}^{T}=P_{Col(A)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Ecuaciones Diferenciales
+\end_layout
+
+\begin_layout Subsection
+Independencia lineal y Wronskiano
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matriz de Wronski
+\series default
+: Sea 
+\begin_inset Formula $A=\left\{ f_{1},f_{2},\ldots,f_{q}\right\} $
+\end_inset
+
+ funciones definidas en un intervalo 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+, a valores en 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+, con derivada hasta el orden 
+\begin_inset Formula $(q-1)$
+\end_inset
+
+ continua en 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ La matriz de wronski de 
+\begin_inset Formula $A$
+\end_inset
+
+ es, para cada 
+\begin_inset Formula $x\in I$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+Mw_{A}\left(x\right)=\left[\begin{array}{ccc}
+f_{1}(x) & \cdots & f_{q}(x)\\
+f_{1}^{'}(x) & \cdots & f_{q}^{'}(x)\\
+f_{1}^{\left(q-1\right)}(x) & \cdots & f_{q}^{\left(q-1\right)}(x)
+\end{array}\right]
+\]
+
+\end_inset
+
+ 
+\series bold
+Wronskian
+\series default
+o: 
+\begin_inset Formula $w_{A}\left(t\right)=det(Mw_{A})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Propiedades
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+Si existe un 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ tal que 
+\begin_inset Formula $w_{A}(x_{0})\ne0$
+\end_inset
+
+, entonces las funciones 
+\begin_inset Formula $f_{1},f_{2},\ldots,f_{q}$
+\end_inset
+
+ son LI.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si un conjunto es LD en un 
+\begin_inset Formula $I$
+\end_inset
+
+, su wronskiano es la función nula.
+ La recíproca es falsa; es verdadera solo si las funciones que componen
+ el wronskiano son soluciones de una ED lineal de orden superior.
+ 
+\end_layout
+
+\begin_layout Itemize
+La derivada del wronskiano es el determinante obtenido derivando la última
+ fila.
+ La derivada del wronskiano es la suma de 
+\begin_inset Formula $q$
+\end_inset
+
+ determinantes.
+ 
+\end_layout
+
+\begin_layout Subsection
+Identidad de Abel
+\end_layout
+
+\begin_layout Standard
+Sea la ecuación diferencial 
+\begin_inset Formula $y(x)^{(n)}+a_{n-1}\cdot y(x)^{\left(n-1\right)}+\ldots+a_{1}\cdot y'\left(x\right)+a_{0}\cdot y\left(x\right)=0$
+\end_inset
+
+ en un intervalo 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+, sea 
+\begin_inset Formula $S=\{y_{1},y_{2},\ldots,y_{n}\}$
+\end_inset
+
+ el conjunto de las soluciones de ED, y sea 
+\begin_inset Formula $W_{S}$
+\end_inset
+
+ el wronskiano de este conjunto.
+ Entonces se verifica que: 
+\begin_inset Formula 
+\[
+W_{S}^{'}(t)=-a_{n-1}\cdot W_{S}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ecuaciones diferenciales lineales
+\end_layout
+
+\begin_layout Subsubsection
+Condición de existencia y unicidad de un PVI
+\end_layout
+
+\begin_layout Standard
+Sea el problema 
+\begin_inset Formula $\left\{ \begin{array}{c}
+a_{n}y\left(x\right)^{(n)}+\ldots+a_{1}y'\left(x\right)+a_{0}y(x)=f(x)\\
+y\left(x_{0}\right)=y_{0}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La condición de existencia y unicidad de la solución del PVI es: 
+\end_layout
+
+\begin_layout Itemize
+ED normal en 
+\begin_inset Formula $I$
+\end_inset
+
+: 
+\begin_inset Formula $a_{n}\ne0\:\forall x\in I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Variables separables: 
+\begin_inset Formula $y'=\frac{f(x)}{g(x)}$
+\end_inset
+
+ con 
+\begin_inset Formula $y=y(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Separamos la ecuación en 
+\begin_inset Formula $g\left(x\right)\cdot dy=f\left(x\right)\cdot dx$
+\end_inset
+
+ e integrando ambos miembros se tiene 
+\begin_inset Formula $G\left(y\right)=F\left(x\right)+c$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Homogéneas: 
+\begin_inset Formula $y'=f(x,y)$
+\end_inset
+
+ con 
+\begin_inset Formula $f\left(tx,ty\right)=f(x,y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Hacemos un cambio de variable 
+\begin_inset Formula $y=zx$
+\end_inset
+
+ (donde 
+\begin_inset Formula $z=z\left(x\right)$
+\end_inset
+
+).
+ Entonces 
+\begin_inset Formula $y'=z+xz'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Lineales de 1
+\begin_inset Formula $^{er}$
+\end_inset
+
+ orden
+\end_layout
+
+\begin_layout Standard
+Obtenemos primero la solución general de la homogénea (
+\begin_inset Formula $y_{h}$
+\end_inset
+
+) y luego una particular de la no homogénea (
+\begin_inset Formula $y_{p}$
+\end_inset
+
+).
+ La solución buscada es 
+\begin_inset Formula $y_{G}=y_{H}+y_{P}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Solución de la ecuación homogénea asociada (
+\begin_inset Formula $y'+p\left(x\right)y=0$
+\end_inset
+
+): es de variables separables.
+ Una solución es 
+\begin_inset Formula $y_{H}\left(x\right)=e^{-\int p(x)dx}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Solución de la no homogénea: una solución se obtiene multiplicando toda
+ la ecuación por el factor integrante de Lagrange: 
+\begin_inset Formula $u\left(v\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+ Entonces, la ecuación a resolver será 
+\begin_inset Formula $\left[u\left(v\right).y\right]'=u\left(v\right).q(x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Diferencial exacta: 
+\begin_inset Formula $P(x,y)dx+Q(x,y)dy=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es diferencial exacta si existe 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $df=P\left(x,y\right)dx+Q\left(x,y\right)dy$
+\end_inset
+
+, es decir si 
+\begin_inset Formula $\frac{\partial f}{\partial x}=P(x,y)$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{\partial f}{\partial y}=Q(x,y)$
+\end_inset
+
+.
+ En ese caso, la solución general es 
+\begin_inset Formula $f\left(x,y\right)=C$
+\end_inset
+
+.
+ Se cumple que la ecuación anterior es diferencial exacta si y solo si 
+\begin_inset Formula $\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se dice además que 
+\begin_inset Formula $\mu(x,y)$
+\end_inset
+
+ es un factor integrante de la ecuación 
+\begin_inset Formula $P\left(x,y\right)dx+Q\left(x,y\right)dy=0$
+\end_inset
+
+ si al multiplicar la ecuación por 
+\begin_inset Formula $\mu(x,y)$
+\end_inset
+
+ la ecuación resultante es diferencial exacta.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Lineales homogéneas de orden superior con coeficientes constantes: 
+\begin_inset Formula $a_{n}(t)y^{(n)}+...+a_{1}y'+a_{0}y=0\,\forall t\in I$
+\end_inset
+
+ (I)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Polinomio característico de (I)
+\series default
+: 
+\begin_inset Formula $p\left(\lambda\right)=\sum_{i=0}^{n}a_{i}\lambda_{i}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Espectro de (I)
+\series default
+: 
+\begin_inset Formula $\sigma\left(p\right)=\{\lambda\in\mathbb{C}:\: p\left(\lambda\right)=0\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{H}\left(t\right)=t^{k}e^{\lambda t}$
+\end_inset
+
+ es una solución de la ED si 
+\begin_inset Formula $\lambda\in\sigma(p)$
+\end_inset
+
+, multiplicidad 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Formula $k=0,1,\ldots,m-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si la ED es de coeficientes constantes reales, las raíces del polinomio
+ característico aparecerán conjugadas.
+ Esto es, 
+\begin_inset Formula $\lambda_{1,2}=\alpha\pm\beta i$
+\end_inset
+
+.
+ Luego, 
+\begin_inset Formula $y_{1}=e^{\alpha t}\left(\cos\left(\beta t\right)+i.sen\left(\beta t\right)\right)$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{2}=e^{\alpha t}\left(\cos\left(\beta t\right)-i.sen\left(\beta t\right)\right)$
+\end_inset
+
+.
+ Entonces, 
+\begin_inset Formula $gen\left\{ y_{1},y_{2}\right\} =gen\left\{ e^{\alpha t}\cos\left(\beta t\right),e^{\alpha t}sen\left(\beta t\right)\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Lineales no homogéneas de orden superior con coeficientes constantes: 
+\begin_inset Formula $a_{n}y^{(n)}+...+a_{1}y'+a_{0}y=f(x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+La solución general es de la forma 
+\begin_inset Formula $y_{G}=y_{P}+y_{H}$
+\end_inset
+
+, donde 
+\begin_inset Formula $y_{H}$
+\end_inset
+
+ se obtiene como antes, e 
+\begin_inset Formula $y_{P}$
+\end_inset
+
+ se obtiene mediante alguno de estos métodos:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Método de variación de parámetros
+\series default
+: aplicable en cualquier caso.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{P}\left(t\right)=\sum_{i=1}^{n}u_{i}\left(x\right)\cdot y_{i}(x)$
+\end_inset
+
+, siendo 
+\begin_inset Formula $y_{i}(x)$
+\end_inset
+
+ las soluciones de 
+\begin_inset Formula $y_{H}$
+\end_inset
+
+, y 
+\begin_inset Formula $u_{i}\left(x\right)$
+\end_inset
+
+ las funciones que satisfacen 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{cccc}
+y_{1} & y_{2} & \ldots & y_{n}\\
+y_{1}^{'} & y_{2}^{'} & \ldots & y_{n}^{'}\\
+\vdots & \vdots & \ddots & \vdots\\
+y_{1}^{\left(n\right)} & y_{2}^{(n)} & \ldots & y_{n}^{\left(n\right)}
+\end{array}\right]\cdot\left[\begin{array}{c}
+u_{1}^{'}\\
+u_{2}^{'}\\
+\vdots\\
+u_{n}^{'}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0\\
+\vdots\\
+\frac{f\left(x\right)}{a_{n}}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Método de coeficientes indeterminados
+\series default
+: aplicable cuando 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ es exponencial, polinomio, seno y coseno, siendo 
+\begin_inset Formula $a_{2}y''+a_{1}y'+a_{0}y=f(x)$
+\end_inset
+
+ con 
+\begin_inset Formula $f\left(x\right)=p_{1}\left(x\right).e^{m_{1}x}+\ldots+p_{k}\left(x\right).e^{m_{k}x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{P}\left(t\right)=q_{1}\left(x\right).e^{m_{1}x}+\ldots+q_{k}\left(x\right).e^{m_{k}x}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $e^{m_{k}x}$
+\end_inset
+
+ no es solución de la EDO homogénea asociada (i.e.
+ 
+\begin_inset Formula $m_{k}$
+\end_inset
+
+ no es raíz de 
+\begin_inset Formula $a_{2}\lambda^{2}+a_{1}\lambda+a_{0}=0$
+\end_inset
+
+), 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+ es un polinomio del grado de 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ con coeficientes a determinar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $e^{m_{k}x}$
+\end_inset
+
+ si es solución de la EDO homogénea asociada (i.e.
+ 
+\begin_inset Formula $m_{k}$
+\end_inset
+
+ sí es raíz de 
+\begin_inset Formula $a_{2}"\lambda^{2}+a_{1}"\lambda+a_{0}=0$
+\end_inset
+
+), 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+ es un polinomio de un grado mayor que 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ con coeficientes a determinar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Una vez armada la 
+\begin_inset Formula $y_{P}$
+\end_inset
+
+ se reemplaza en la ED original, e igualando los términos semejantes se
+ hallan los coeficientes indeterminados.
+ 
+\end_layout
+
+\begin_layout Section
+Sistemas de Ecuaciones Diferenciales Lineales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+x'_{t}=a_{11}x+a_{12}y+b_{1}\\
+y'_{t}=a_{21}x+a_{22}y+b_{2}
+\end{cases}\Longrightarrow\left[\begin{array}{c}
+x'\\
+y'
+\end{array}\right]=\left[\begin{array}{cc}
+a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{array}\right]\left[\begin{array}{c}
+x\\
+y
+\end{array}\right]+\left[\begin{array}{c}
+b_{1}\\
+b_{2}
+\end{array}\right]\Longrightarrow X'=AX+B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sistemas homogéneos con 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ diagonalizable
+\end_layout
+
+\begin_layout Standard
+La solución de 
+\begin_inset Formula $X'=AX$
+\end_inset
+
+ (
+\begin_inset Formula $A\in\mathbb{K}^{n\times n}$
+\end_inset
+
+), con 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ autovalor de 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ autovector de 
+\begin_inset Formula $A$
+\end_inset
+
+ asociado a 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+, es: 
+\begin_inset Formula 
+\[
+X=\sum_{i=1}^{n}c_{i}v_{i}e^{\lambda_{i}t}=\underbrace{\left[\begin{array}{ccc}
+| &  & |\\
+v_{1}e^{\lambda_{1}t} & \cdots & v_{n}e^{\lambda_{n}t}\\
+| &  & |
+\end{array}\right]}_{\varphi(t)\in\mathbb{K}^{n\times n}}\underbrace{\left[\begin{array}{c}
+c_{1}\\
+\vdots\\
+c_{n}
+\end{array}\right]}_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sistemas no homogéneos con 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ diagonalizable
+\end_layout
+
+\begin_layout Standard
+Sea el sistema 
+\begin_inset Formula $X'=AX+B$
+\end_inset
+
+.
+ La solución es 
+\begin_inset Formula $X_{G}=X_{H}+X_{P}$
+\end_inset
+
+ con: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X_{H}=\sum_{i=1}^{n}c_{i}v_{i}e^{\lambda_{i}t}=\varphi\left(t\right)\cdot C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X_{P}=\varphi(t)\cdot u(t)$
+\end_inset
+
+ siendo 
+\begin_inset Formula $u(t)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\varphi\left(t\right)\cdot u'\left(t\right)=B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Sistemas homogéneos con 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ no diagonalizable
+\end_layout
+
+\begin_layout Standard
+Sea el sistema 
+\begin_inset Formula $X'=AX$
+\end_inset
+
+ con 
+\begin_inset Formula $A$
+\end_inset
+
+ no diagonalizable, proponemos una factorización de la forma 
+\begin_inset Formula $A=PJP^{-1}$
+\end_inset
+
+, donde 
+\begin_inset Formula $J\in\mathbb{C}^{n\times n}$
+\end_inset
+
+ es la 
+\emph on
+matriz de Jordan
+\emph default
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ que tiene la siguiente estructura en bloques: 
+\begin_inset Formula $J=\left[\begin{array}{cccc}
+J_{1} & 0 & 0 & 0\\
+0 & J_{2} & 0 & 0\\
+0 & 0 & \ddots & 0\\
+0 & 0 & 0 & J_{l}
+\end{array}\right]$
+\end_inset
+
+ donde cada bloque 
+\begin_inset Formula $J_{i}$
+\end_inset
+
+ es una matriz 
+\begin_inset Formula $k_{i}\times k_{i}$
+\end_inset
+
+ de la forma 
+\begin_inset Formula $J_{i}=\left[\begin{array}{cccc}
+\lambda_{i} & 1 & 0 & 0\\
+0 & \lambda_{i} & 1 & 0\\
+\vdots & \vdots & \ddots & 1\\
+0 & 0 & \cdots & \lambda_{i}
+\end{array}\right]$
+\end_inset
+
+ para algún autovalor 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ (Dado un autovalor 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+, su multiplicidad geométrica es el número de bloques de Jordan correspondientes
+ a 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+, y su multiplicidad algebraica es la suma de los tamaños de los bloques
+ correspondientes a ese autovalor.)
+\end_layout
+
+\begin_layout Standard
+Luego: 
+\begin_inset Formula $X'=AX\overset{X=PY}{\longmapsto}PY'=PJP^{-1}PY\longmapsto Y^{'}=JY$
+\end_inset
+
+.
+ Resolvemos este sistema y la solución general del problema se expresará
+ como 
+\begin_inset Formula $X\left(t\right)=PY(t)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Caso 
+\begin_inset Formula $\mathbf{A}\in\mathbb{R}^{\mathbf{2}\mathbf{\times}\mathbf{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ necesariamente posee un autovalor doble 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ de multiplicidad geométrica 1, con lo cual la matriz 
+\begin_inset Formula $J$
+\end_inset
+
+ posee un solo bloque correspondiente a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+J=\left[\begin{array}{cc}
+\lambda & 1\\
+0 & \lambda
+\end{array}\right]
+\]
+
+\end_inset
+
+ Respecto de la matriz 
+\begin_inset Formula $P=\left[\begin{array}{cc}
+v_{1} & v_{2}\end{array}\right]$
+\end_inset
+
+ deber ser inversible y 
+\begin_inset Formula $AP=PJ.$
+\end_inset
+
+ La matriz P se obtiene hallando un par de vectores 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ LI que satisfagan las condiciones 
+\begin_inset Formula $\left(A-\lambda I\right)v_{1}=0$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(A-\lambda I\right)v_{2}=v_{1}$
+\end_inset
+
+.
+ Observamos que 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ es autovector de 
+\begin_inset Formula $A$
+\end_inset
+
+ asociado a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Caso 
+\begin_inset Formula $\mathbf{A}\in\mathbb{R}^{\mathbf{3}\mathbf{\times}\mathbf{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ tiene un autovalor triple 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ de multiplicidad geométrica 1.
+ En este caso: 
+\begin_inset Formula 
+\[
+J=\left[\begin{array}{ccc}
+\lambda & 1 & 0\\
+0 & \lambda & 1\\
+0 & 0 & \lambda
+\end{array}\right]
+\]
+
+\end_inset
+
+Respecto de 
+\begin_inset Formula $P=[\begin{array}{ccc}
+v_{1} & v_{2} & v_{3}]\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $\{v_{1},v_{2},v_{3}\}$
+\end_inset
+
+ deben ser LI y satisfacer las condiciones 
+\begin_inset Formula $\left(A-\lambda I\right)v_{1}=0,\left(A-\lambda I\right)v_{2}=v_{1},\left(A-\lambda I\right)v_{3}=v_{2}.$
+\end_inset
+
+ Observamos que 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ es autovector de
+\begin_inset Formula $A$
+\end_inset
+
+ asociado a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ tiene un autovalor triple 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ de multiplicidad geométrica 2.
+ En este caso: 
+\begin_inset Formula 
+\[
+J=\left[\begin{array}{ccc}
+\lambda & 1 & 0\\
+0 & \lambda & 0\\
+0 & 0 & \lambda
+\end{array}\right]
+\]
+
+\end_inset
+
+Respecto de 
+\begin_inset Formula $P=[\begin{array}{ccc}
+v_{1} & v_{2} & v_{3}]\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $\{v_{1},v_{2},v_{3}\}$
+\end_inset
+
+ deben ser LI y satisfacer las condiciones 
+\begin_inset Formula $\left(A-\lambda I\right)v_{1}=0,\left(A-\lambda I\right)v_{2}=v_{1},\left(A-\lambda I\right)v_{3}=0.$
+\end_inset
+
+ Observamos que 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $v_{3}$
+\end_inset
+
+ son autovectores de 
+\begin_inset Formula $A$
+\end_inset
+
+ asociados a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ tiene un autovalor doble 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ de multiplicidad geométrica 1 y un autovalor 
+\begin_inset Formula $\mu\in\mathbb{R}$
+\end_inset
+
+ simple.
+ En este caso 
+\begin_inset Formula $J$
+\end_inset
+
+ debe tener dos bloques de Jordan: 
+\begin_inset Formula 
+\[
+J=\left[\begin{array}{ccc}
+\lambda & 1 & 0\\
+0 & \lambda & 0\\
+0 & 0 & \mu
+\end{array}\right]
+\]
+
+\end_inset
+
+Respecto de 
+\begin_inset Formula $P=[\begin{array}{ccc}
+v_{1} & v_{2} & v_{3}\end{array}]$
+\end_inset
+
+, 
+\begin_inset Formula $\{v_{1},v_{2},v_{3}\}$
+\end_inset
+
+ deben ser LI y satisfacer las condiciones 
+\begin_inset Formula $\left(A-\lambda I\right)v_{1}=0,\left(A-\lambda I\right)v_{2}=v_{1},\left(A-\mu I\right)v_{3}=0.$
+\end_inset
+
+ Observamos que 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $v_{3}$
+\end_inset
+
+ son autovectores de 
+\begin_inset Formula $A$
+\end_inset
+
+ asociados a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ y 
+\begin_inset Formula $\mu$
+\end_inset
+
+ respectivamente.
+\end_layout
+
+\end_body
+\end_document

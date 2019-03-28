@@ -1,0 +1,3396 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{color}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{red}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{cyan}\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{blue}\normalfont\Large\bfseries}{\thesubsubsection}{1em}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Inteligencia Artificial"
+\pdf_author "Maria Ines Parnisari"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 1
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Inteligencia Artificial
+\end_layout
+
+\begin_layout Author
+María Inés Parnisari
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inteligencia Artificial
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inteligencia: 
+\series default
+habilidad para adquirir, comprender y aplicar conocimiento; aptitud para
+ recordar, pensar y razonar.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inteligencia Artificial: 
+\series default
+armar sistemas para resolver problemas que tratan de utilizar métodos similares
+ a los que utilizaría una persona.
+ Tiene distintos enfoques:
+\end_layout
+
+\begin_layout Enumerate
+Enfoque Científico: Trata de entender la forma de actuar de las personas.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Enfoque Ingeniería: Trata de seguir la misma línea de razonamiento que seguiría
+ una persona.
+ 
+\end_layout
+
+\begin_layout Subsection
+Test de Turing
+\end_layout
+
+\begin_layout Standard
+Indica si un programa es inteligente o no.
+ Consiste en poner a una persona, a una computadora y un evaluador que realiza
+ preguntas tanto a la persona como a la máquina, sin saber a quién se las
+ está haciendo.
+\end_layout
+
+\begin_layout Standard
+Si el evaluador no logra detectar quién es la persona y quién es la máquina,
+ entonces se considera que el sistema es inteligente.
+\end_layout
+
+\begin_layout Subsection
+Ramas
+\end_layout
+
+\begin_layout Itemize
+Sistemas Expertos 
+\end_layout
+
+\begin_layout Itemize
+Redes Neuronales 
+\end_layout
+
+\begin_layout Itemize
+Algoritmos Genéticos o Evolutivos 
+\end_layout
+
+\begin_layout Itemize
+Lógica Difusa 
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones
+\end_layout
+
+\begin_layout Itemize
+Juegos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+General Problem Solving
+\shape default
+ (GPS).
+ 
+\end_layout
+
+\begin_layout Itemize
+Procesamiento de Imágenes.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Imágenes de Medicina.
+ 
+\end_layout
+
+\begin_layout Itemize
+Fotos Satelitales.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Procesamiento del Lenguaje Natural.
+ 
+\end_layout
+
+\begin_layout Itemize
+Procesamiento del Sonido.
+ 
+\end_layout
+
+\begin_layout Itemize
+Demostración de Teoremas.
+ 
+\end_layout
+
+\begin_layout Section
+Sistemas Expertos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sistema Experto
+\series default
+: trata de simular lo que haría un experto humano en un determinado tema.
+ Consta de dos componentes:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Base de conocimiento
+\series default
+: base de datos que contiene la información relativa al tema que maneja
+ el sistema experto.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Motor de inferencia
+\series default
+: mecanismo para analizar los datos contenidos en la base de conocimientos.
+ Es un conjunto de algoritmos que permite recorrer los conocimientos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename SistemaExperto.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sistema experto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Clasificación de los sistemas expertos:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Con aprendizaje autónomo
+\series default
+: una vez que el Sistema Experto resolvió el problema guarda en la base
+ de conocimiento la forma en que solucionó ese problema.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sin aprendizaje autónomo
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Ingeniería del Conocimiento
+\end_layout
+
+\begin_layout Standard
+Su objetivo es extraer el conocimiento del ser humano para volcarlo a la
+ base de conocimientos de la mejor forma posible.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Objeto
+\series default
+: Elemento sobre el cual es necesario tener conocimiento.
+ Las propiedades nos van a permitir diferenciar a los objetos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Objeto 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Objeto 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Objeto 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Objeto 
+\emph on
+n
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Propiedad 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Propiedad 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Propiedad 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Propiedad 
+\emph on
+m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiene
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Clasificación
+\end_layout
+
+\begin_layout Subsubsection
+Encadenado Hacia Adelante
+\end_layout
+
+\begin_layout Standard
+Pide al usuario los valores para todas las 
+\shape italic
+m
+\shape default
+ posibles propiedades.
+ El usuario responde 
+\begin_inset Quotes grd
+\end_inset
+
+si” o 
+\begin_inset Quotes grd
+\end_inset
+
+no”.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Propiedad 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Propiedad 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Propiedad 
+\emph on
+m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El Sistema Experto recorre la matriz y compara el patrón ingresado por el
+ usuario, cuando encuentra la columna que coincide con lo indicado termina.
+\end_layout
+
+\begin_layout Standard
+También el Sistema Experto puede preguntar de antemano el porcentaje de
+ certeza con el cual se desea buscar.
+\end_layout
+
+\begin_layout Standard
+Se puede preguntar además qué hacer en el caso de encontrar más de una solución.
+\end_layout
+
+\begin_layout Subsubsection
+Encadenado Hacia Atrás
+\end_layout
+
+\begin_layout Standard
+La información se pide a medida que se va necesitando.
+\end_layout
+
+\begin_layout Standard
+Se toma un objeto que se cree que es la solución, este objeto es proporcionado
+ por el usuario, luego se va preguntando al usuario los valores de las propiedad
+es que tengan por 
+\begin_inset Quotes fld
+\end_inset
+
+si
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+no
+\begin_inset Quotes frd
+\end_inset
+
+, se va pasando a los objetos siguientes y se pregunta al usuario sobre
+ las propiedades que no tienen respuesta.
+\end_layout
+
+\begin_layout Standard
+Para optimizar las búsqueda se pueden ordenar los objetos de acuerdo a su
+ probabilidad y se comienza por el más probable.
+\end_layout
+
+\begin_layout Subsubsection
+Valor de la Regla
+\end_layout
+
+\begin_layout Standard
+Es una variante del encadenado hacia atrás.
+ Reordena dinámicamente los objetos por probabilidad basado en las propiedades
+ que fue cargando el usuario.
+ Se puede refinar la matriz ponderando las propiedades.
+\end_layout
+
+\begin_layout Standard
+El costo de desarrollo es mayor que el del encadenado hacia atrás.
+\end_layout
+
+\begin_layout Section
+Sistemas Basados en Conocimientos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename SBC.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+SBC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Clasificación de Requisitos
+\end_layout
+
+\begin_layout Itemize
+Abiertos: No se conoce perfectamente desde el inicio.
+ Varía en función del tiempo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Cerrados: Dice exactamente lo que quiere.
+ No varía con el tiempo.
+ 
+\end_layout
+
+\begin_layout Standard
+En los Sistemas Basados en Conocimientos se trabaja con requisitos abiertos,
+ por lo tanto las metodologías con las cuales se trabajen deben tener en
+ cuenta el hecho que los requisitos tengan esta característica.
+\end_layout
+
+\begin_layout Subsection
+Metodologías Para la Construcción del SBC Ideal
+\end_layout
+
+\begin_layout Enumerate
+Identificación de las tareas: Corresponde al análisis, se determina la convenien
+cia de realizar un SBC y si es posible realizarlo.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Plan de requisitos y adquisición de conocimientos, la adquisición de los
+ conocimientos es a nivel global.
+\end_layout
+
+\begin_layout Enumerate
+Evaluación de las tareas.
+ Se analizan los requisitos y se concluye la viabilidad.
+\end_layout
+
+\begin_layout Enumerate
+Definición de las características de las tareas.
+ Se formalizan las definiciones obtenidas en la etapa (a)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Desarrollo de prototipos: Se realizan los prototipos para discutir con el
+ usuario.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Concepción de la solución de los subproblemas.
+ Se toma el producto obtenido en la etapa 1 y se ve cómo implementar el
+ sistema.
+\end_layout
+
+\begin_layout Enumerate
+Adquisición de conocimientos.
+ El ingeniero del conocimiento adquiere el mismo a nivel de detalle.
+\end_layout
+
+\begin_layout Enumerate
+Formalización de los conocimientos.
+ Se le da forma a los conocimientos obtenidos en el punto (2b).
+\end_layout
+
+\begin_layout Enumerate
+Selección de la herramienta de implementación.
+ Se busca la herramienta para armar el SBC
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Herramientas específicas para SBC
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Costo de la herramienta alto.
+\end_layout
+
+\begin_layout Itemize
+Costo de desarrollo bajo.
+\end_layout
+
+\begin_layout Itemize
+Dependencia total hacia la herramienta.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Herramientas tradicionales
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Costo de la herramienta bajo.
+\end_layout
+
+\begin_layout Itemize
+Costo de desarrollo alto.
+\end_layout
+
+\begin_layout Itemize
+No hay limitaciones por parte de la herramienta.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Validación del prototipo.
+ Se muestra el prototipo al usuario quien lo evalúa y determina si el conocimien
+to es correcto o no.
+\end_layout
+
+\begin_layout Enumerate
+Nuevo prototipo.
+ Se define que funcionalidad se va a agregar al prototipo para generar un
+ nuevo prototipo.
+ Se vuelve al paso (2b).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Integración al Sistema: Se busca la integración del SBC con los demás sistemas
+ de la empresa.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Requisitos de la integración.
+ Se obtienen las interfaces con los demás sistemas.
+\end_layout
+
+\begin_layout Enumerate
+Implementación y evaluación.
+ Se implementan las interfaces.
+\end_layout
+
+\begin_layout Enumerate
+Aceptación.
+ El usuario da el visto bueno final.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mantenimiento.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Puede ser:
+\end_layout
+
+\begin_layout Itemize
+Correctivo: Se corrigen los errores detectados en producción
+\end_layout
+
+\begin_layout Itemize
+Perfectivo: Agrega funcionalidad.
+ En el SBC se agregan conocimientos a la base.
+\end_layout
+
+\begin_layout Enumerate
+Mantenimiento del sistema global.
+\end_layout
+
+\begin_layout Enumerate
+Mantenimiento de la base de conocimientos.
+\end_layout
+
+\begin_layout Enumerate
+Adquisición de nuevos conocimientos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Transferencia Tecnológica: En paralelo con la etapa 4.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Transferencia tecnológica -- capacitación.
+ Lograr que se comienza a usar el sistema y capacitar a usuario.
+\end_layout
+
+\begin_layout Enumerate
+Documentación.
+ Se arma la documentación del sistema (técnica, funcional).
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Conocimientos
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Conocimiento
+\series default
+: conjunto de hechos y principios acumulados por la humanidad, o el acto,
+ hecho o estado de conocer.
+ Es la familiaridad con el lenguaje, conceptos, procedimientos, reglas,
+ ideas, abstracciones, lugares, costumbres y asociaciones, unida a la habilidad
+ de utilizar estas nociones en forma efectiva para modelar diferentes aspectos
+ del universo que nos rodea.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Información
+\series default
+: todo aquello que incrementa nuestro conocimiento.
+\end_layout
+
+\begin_layout Subsection
+Niveles
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dato
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Es la información vista como símbolos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Es independiente del significado y del idioma.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noticia
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Depende del idioma.
+ 
+\end_layout
+
+\begin_layout Itemize
+Se interpreta la información.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Conocimiento
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Se le da un fin práctico.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename informacion.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Niveles de información
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Clasificación
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Declarativos
+\series default
+: sentencias acerca de los hechos del mundo que nos rodea.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedurales
+\series default
+ o 
+\series bold
+procedimental
+\series default
+: se refiere a la forma de realizar una cierta tarea, los pasos a seguir.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Heurísticos
+\series default
+: tipo especial de conocimiento usado por los humanos para resolver problemas
+ complejos.
+ Se entiende por 
+\begin_inset Quotes eld
+\end_inset
+
+heurístico
+\begin_inset Quotes erd
+\end_inset
+
+ a un criterio, estrategia, método o truco utilizado para simplificar la
+ solución de problemas.
+\end_layout
+
+\begin_layout Subsection
+Formas de Alimentar la Base de Conocimientos
+\end_layout
+
+\begin_layout Subsubsection
+Extracción
+\end_layout
+
+\begin_layout Standard
+Es obtener el conocimiento de medios escritos (libros, publicaciones, 
+\shape italic
+papers
+\shape default
+) mediante el análisis estructurado de textos:
+\end_layout
+
+\begin_layout Itemize
+Búsqueda de palabras claves.
+ Buscar palabras genéricas (
+\begin_inset Quotes grd
+\end_inset
+
+se define como”).
+ Se pueden fijar algunas palabras claves dependientes del campo de acción.
+ 
+\end_layout
+
+\begin_layout Itemize
+Detectar objetos o entidades (
+\begin_inset Quotes grd
+\end_inset
+
+se define x”) 
+\end_layout
+
+\begin_layout Itemize
+Relacionar objetos entre sí (
+\begin_inset Quotes grd
+\end_inset
+
+pertenece a”) 
+\end_layout
+
+\begin_layout Itemize
+Obtener atributos (
+\begin_inset Quotes grd
+\end_inset
+
+pesa”, 
+\begin_inset Quotes grd
+\end_inset
+
+mide”) 
+\end_layout
+
+\begin_layout Subsubsection
+Educción
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Directa
+\series default
+: Se le pide al experto el conocimiento.
+ Está basado en entrevistas.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Indirecta
+\series default
+: Son técnicas de observación.
+ Deducción de información no especificada.
+ 
+\end_layout
+
+\begin_layout Subsection
+Tipos de Entrevista
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Abierta
+\series default
+: No está completamente pensada de antemano.
+ No se tiene detalle de las preguntas.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Estructurada
+\series default
+: No sólo se saben de antemano los objetivos de la entrevista sino que conoce
+ el detalle de las preguntas que se harán.
+ 
+\end_layout
+
+\begin_layout Section
+Algoritmos Genéticos o Evolutivos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Población
+\series default
+: Conjunto de elementos del mismo tipo.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Proceso de Selección Natural
+\series default
+: Sobrevive el mas apto.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Proceso de Reproducción
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Proceso de Mutación
+\series default
+: Algún individuo cambia sus características (el cambio puede ser para peor
+ o para mejor).
+ 
+\end_layout
+
+\begin_layout Standard
+Todo algoritmo genético debe tener una función de aptitud que recibe como
+ parámetro un individuo y devuelve cuan apto es dicho individuo.
+\end_layout
+
+\begin_layout Subsection
+Selección
+\end_layout
+
+\begin_layout Subsubsection
+Rueda de ruleta
+\end_layout
+
+\begin_layout Standard
+Este método consiste en construir una ruleta particionada en ranuras de
+ igual tamaño, las cuales se numeran.
+ A cada individuo de la población se le asigna una cantidad de ranuras proporcio
+nal a su aptitud.
+\end_layout
+
+\begin_layout Standard
+El proceso se repite hasta completar la cantidad de individuos deseados.
+ Este método de selección otorga mayor probabilidad de contribuir a la siguiente
+ generación a los individuos con mayor aptitud.
+\end_layout
+
+\begin_layout Standard
+Hay algunas otras variantes como por ejemplo, incluir en la nueva generación
+ el mejor representante de la generación actual.
+ En este caso, se denomina método elitista.
+\end_layout
+
+\begin_layout Subsubsection
+Selección por torneo 
+\end_layout
+
+\begin_layout Standard
+En este caso dos individuos son elegidos al azar de la población actual
+ y el mejor o más apto de los dos se coloca en la generación siguiente.
+ Esto continúa hasta que se complete la nueva población.
+\end_layout
+
+\begin_layout Subsubsection
+Basado en el rango
+\end_layout
+
+\begin_layout Standard
+En este esquema se mantiene un porcentaje de la población, generalmente
+ la mayoría, para la siguiente generación.
+ Se coloca toda la población por orden de aptitud, y los M menos dignos
+ son eliminados y sustituidos por la descendencia de alguno de los M mejores
+ con algún otro individuo de la población.
+\end_layout
+
+\begin_layout Subsubsection
+Método estocástico
+\end_layout
+
+\begin_layout Standard
+Por cada individuo se calcula la aptitud relativa al promedio de aptitudes
+ de la población, y en función de esto se asignan las copias.
+ Por ejemplo, si la aptitud promedio de la población es 15 y la aptitud
+ del individuo es 10; entonces su aptitud relativa es 1.5.
+ Esto significa que se colocará una copia en la próxima generación y que
+ se tiene el 50 % de chance de colocar una segunda copia.
+\end_layout
+
+\begin_layout Subsection
+Reproducción
+\end_layout
+
+\begin_layout Standard
+Consiste en el intercambio de material genético entre dos cromosomas.
+\end_layout
+
+\begin_layout Subsubsection
+Cruza simple
+\end_layout
+
+\begin_layout Standard
+Los dos cromosomas padres se cortan por un punto, y el material genético
+ situado entre ellos se intercambia.
+\end_layout
+
+\begin_layout Standard
+Dada las siguientes estructuras de longitud 1 = 8, y eligiendo 3 como el
+ punto de cruza se intercambian los segmentos de cromosoma separados por
+ este punto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cruzaSimple.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cruza simple
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cruza de dos puntos
+\end_layout
+
+\begin_layout Standard
+En este método de cruza de dos puntos, se seleccionan dos puntos aleatoriamente
+ a lo largo de la longitud de los cromosomas y los dos padres intercambian
+ los segmentos entre estos puntos.
+\end_layout
+
+\begin_layout Subsubsection
+Cruza multipunto
+\end_layout
+
+\begin_layout Standard
+El cromosoma es considerado un anillo, y se eligen n puntos de cruza en
+ forma aleatoria.
+ Si la cantidad de puntos de cruza es par, se intercambian las porciones
+ de cromosomas definidas entre cada par de puntos consecutivos, si es impar
+ se asume un punto de cruza adicional en la posición cero y se procede de
+ igual modo.
+\end_layout
+
+\begin_layout Standard
+Dadas dos estructuras de longitud 1 = 8, con n = 4 puntos de cruza.
+ Intercambiando los segmentos de la posición 2 a 4 y 6 a 7, se tiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cruzaMultipunto.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cruza multipunto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cruza binomial 
+\end_layout
+
+\begin_layout Standard
+Para generar un cromosoma hijo por cruza binomial, se define la probabilidad
+ P0 como la probabilidad de que el Alelo de cualquier posición del descendiente
+ se herede del padre, y 1 -- P0 como la probabilidad de que lo herede de
+ la madre1.
+\end_layout
+
+\begin_layout Standard
+En este caso se puede construir un único hijo por cada aplicación del operador,
+ o bien generar un segundo hijo como complemento del primero.
+\end_layout
+
+\begin_layout Standard
+Cuando existe igual probabilidad de heredar del padre como de la madre,
+ P0 = 0,5 la cruza se denomina uniforme.
+ Para estructuras de longitud l la cruza uniforme implica un promedio de
+ l/2 puntos de cruza.
+\end_layout
+
+\begin_layout Subsection
+Mutación
+\end_layout
+
+\begin_layout Standard
+En la evolución, una mutación es un suceso bastante poco común (sucede aproximad
+amente una de cada mil replicaciones), en la mayoría de los casos las mutaciones
+ son letales, pero en promedio, contribuyen a la diversidad genética de
+ la especie.
+ En un algoritmo genético tendrán el mismo papel, y la misma frecuencia
+ (es decir, muy baja).
+\end_layout
+
+\begin_layout Standard
+Una vez establecida la frecuencia de mutación, por ejemplo, uno por mil,
+ se examina cada bit de cada cadena.
+ Si un número generado aleatoriamente está por debajo de esa probabilidad,
+ se cambiará el bit (es decir, de 0 a 1 o de 1 a 0).
+ Si no, se dejará como está.
+ Dependiendo del número de individuos que haya y del número de bits por
+ individuo, puede resultar que las mutaciones sean extremadamente raras
+ en una sola generación.
+\end_layout
+
+\begin_layout Standard
+No hace falta decir que no conviene abusar de la mutación.
+ Es cierto que es un mecanismo generador de diversidad, y, por tanto, la
+ solución cuando un algoritmo genético está estancado, pero también es cierto
+ que reduce el algoritmo genético a una búsqueda aleatoria.
+ Siempre es más conveniente usar otros mecanismos de generación de diversidad,
+ como aumentar el tamaño de la población, o garantizar la aleatoriedad de
+ la población inicial.
+\end_layout
+
+\begin_layout Section
+Sistemas de Producción
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sistema de Producción
+\series default
+: permite resolver problemas basados en estados.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Grafos
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+Implícito: grafo completo de todas las posibilidades de cambios de estado.
+ 
+\end_layout
+
+\begin_layout Itemize
+Explícito: subgrafo del grafo implícito.
+ 
+\end_layout
+
+\begin_layout Standard
+Un Sistema de Producción está formado por tres componentes:
+\end_layout
+
+\begin_layout Subsection
+Base de Datos Global (BDG) 
+\end_layout
+
+\begin_layout Standard
+Es un esquema de Base de Datos que permite representar el estado del problema
+ (conjunto de variables de estado).
+ Se define además el rango de valores válidos que tiene cada variable y
+ el significado de cada valor.
+ Estados a considerar:
+\end_layout
+
+\begin_layout Itemize
+Estado Inicial (BDGi): Se debe definir antes de iniciar el Sistema de Producción.
+ 
+\end_layout
+
+\begin_layout Itemize
+Condición de Fin (BDGf).
+ 
+\end_layout
+
+\begin_layout Standard
+El ejemplo de la BDG podría ser una matriz de 3 X 3.
+\end_layout
+
+\begin_layout Subsection
+Reglas de Producción
+\end_layout
+
+\begin_layout Standard
+En general para cambiar el estado se debe realizar alguna acción.
+\end_layout
+
+\begin_layout Itemize
+Definir acciones posibles
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mover arriba, abajo, izquierda, derecha.
+ 
+\end_layout
+
+\begin_layout Itemize
+En función del estado puede saberse si la acción podrá realizarse o no.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Formato general de una regla
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+En el árbol cada nodo es un estado y cada arco es una regla.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Estrategia de Control
+\end_layout
+
+\begin_layout Standard
+Es el algoritmo que permite obtener qué reglas se van a aplicar y en qué
+ orden.
+\end_layout
+
+\begin_layout Standard
+Condiciones de toda estrategia de control:
+\end_layout
+
+\begin_layout Itemize
+Ninguna regla puede ser elegida al azar.
+ 
+\end_layout
+
+\begin_layout Itemize
+No se puede elegir una sola regla.
+ 
+\end_layout
+
+\begin_layout Standard
+Existen distintos métodos para implementar una estrategia de control, estos
+ métodos tienen determinadas características:
+\end_layout
+
+\begin_layout Itemize
+Informado: posee información dependiente del problema.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tentativo: posee guarda información de los estados por los que pasó, para
+ volver a buscar una solución distinta.
+ 
+\end_layout
+
+\begin_layout Itemize
+Admisible: la primer solución que encuentra es la mejor posible.
+ 
+\end_layout
+
+\begin_layout Itemize
+Eficaz: siempre encuentra una solución.
+ 
+\end_layout
+
+\begin_layout Itemize
+Eficiente: utiliza la menor cantidad de recursos posibles.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descensos iterativos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Informado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iterativo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Admisible
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eficaz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eficiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Primero a lo Ancho (PA)
+\end_layout
+
+\begin_layout Enumerate
+Se aplican todas las reglas aplicables al primer estado.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Luego se hace lo mismo barriendo el árbol a lo ancho.
+ 
+\end_layout
+
+\begin_layout Standard
+Es el peor de los métodos pues el árbol explicito es igual que el implícito.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+CLAUSES
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([X|_]):-condterm(X),!.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([X|_]):-findall(y,regla(x,y),Ly),append(L,Ly,Ln),sol(Ln).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([_|L]):-sol(L).
+ /* descarta base sin solución */
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+GOAL
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([f([b,n,b],0,0)]) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Breadth-First
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Primero en Profundidad (PP)
+\end_layout
+
+\begin_layout Enumerate
+Aplica la primer regla aplicable.
+\end_layout
+
+\begin_layout Enumerate
+Luego se generan los siguientes nodos aplicando la primer regla aplicable
+ a los nodos que se van creando.
+\end_layout
+
+\begin_layout Enumerate
+Hasta encontrar la solución o no tener reglas aplicables (llego hasta la
+ hoja), se vuelve hacia atrás y se aplica la siguiente regla aplicable.
+\end_layout
+
+\begin_layout Standard
+Siempre que se utiliza este método se fija un nivel máximo de profundidad
+ desde el comienzo.
+\end_layout
+
+\begin_layout Standard
+En este método el árbol explicito es un subconjunto del árbol implícito.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+CLAUSES
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([X|_]):-condterm(X),!.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([X|_]):-findall(y,regla(x,y),Ly),append(Ly,L,Ln),sol(Ln).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([_|L]):-sol(L).
+ /* descarta base sin solución */
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+GOAL
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Sol([f([b,n,b],0,0)]) 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Depth-First
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Hill Climbing (HC)
+\end_layout
+
+\begin_layout Standard
+Para este método es necesaria una función de evaluación (son funciones heurístic
+as basadas en la experiencia).
+ Si la función es buena se llega a la solución de forma directa.
+\end_layout
+
+\begin_layout Subsubsection
+A*
+\end_layout
+
+\begin_layout Standard
+Este método es similar a PA, pero utiliza una función de evaluación formada
+ por la suma de dos funciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=\underset{\mbox{tiene un valor calculable}}{\underbrace{G}}+\underset{\mbox{función heuristica}}{\underbrace{H}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+sol([X|_]):-condterm(X),!.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sol([X|L]):-findall(y,regla(x,y),Ly),append(Ly,L,Ln), ord(Ln,L0),sol(L0).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/* ord : ordena la lista según la función “f” */ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sol([_|L]):-sol(L).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+A*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Descensos Iterativos
+\end_layout
+
+\begin_layout Standard
+Consiste en aplicar varias veces PP pero en iteración se va variando el
+ nivel.
+\end_layout
+
+\begin_layout Section
+Redes Neuronales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Red neuronal
+\series default
+: modelo matemático o computacional que está inspirado en la estructura
+ y aspectos funcionales de redes neuronales biológicas.
+ 
+\end_layout
+
+\begin_layout Standard
+Una red neuronal consiste en un grupo de neuronas interconectadas, que forman
+ 
+\begin_inset Quotes eld
+\end_inset
+
+capas
+\begin_inset Quotes erd
+\end_inset
+
+, que procesan la información.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sinapsis
+\series default
+: Relaciona la salida de una neurona con la entrada de otra.
+ Estas sinapsis almacenan parámetros o 
+\begin_inset Quotes eld
+\end_inset
+
+pesos
+\begin_inset Quotes erd
+\end_inset
+
+ que manipulan la información.
+ Hay 3 tipos de parámetros:
+\end_layout
+
+\begin_layout Itemize
+El patrón de interconexión entre distintas capas de neuronas.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Artificial_neural_network.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Red neuronal artificial
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Two_layer_ann.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Red de dos capas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+El proceso de entrenamiento para actualizar el peso de la interconexión.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Tipos de aprendizaje:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Aprendizaje Supervisado
+\series default
+: 
+\family roman
+\series medium
+\shape up
+Quiere decir que hay una asistente.
+
+\family sans
+\series bold
+\shape italic
+ 
+\family roman
+\series medium
+\shape up
+Se asignan ciertos pesos y se definen pares de entrada - salida, luego se
+ ingresan las entradas y se comparan las salidas con las salidas esperadas,
+ si no coinciden los pesos deberán ser modificados.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Aprendizaje No Supervisado
+\series default
+: 
+\family roman
+\series medium
+\shape up
+Se le da una gran cantidad de datos de entrada y la red intenta realizar
+ asociaciones.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+La función de activación que convierte la entrada de una neurona a su salida.
+ Esta función en general no es lineal y acota los valores de salida.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Función Escalón
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Función Sigmoide
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\begin{cases}
+0 & \mbox{si }0\leq x\leq1\\
+1 & \mbox{si }1\leq x\leq\infty
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\frac{1}{1+e^{-x}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename funcionEscalon.jpg
+	width 6.316cm
+	height 4.064cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename funcionSigmoide.jpg
+	width 6.772cm
+	height 3.281cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Perceptrón
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Perceptrón
+\series default
+: Red más elemental.
+ Consta de una sola neurona con 
+\emph on
+n
+\emph default
+ cantidad de entradas.
+ El perceptrón sirve para resolver problemas que son linealmente separables.
+\end_layout
+
+\begin_layout Standard
+Función de activación: Función escalón.
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones
+\end_layout
+
+\begin_layout Itemize
+Aproximación de funciones o análisis regresivo
+\end_layout
+
+\begin_layout Itemize
+Clasificación (reconocimiento de patrones)
+\end_layout
+
+\begin_layout Itemize
+Procesamiento de datos (filtros, compresión)
+\end_layout
+
+\begin_layout Itemize
+Robótica
+\end_layout
+
+\begin_layout Itemize
+Detección de objetos en imágenes.
+ Cada punto de la imagen es una entrada.
+ Las salidas son los posibles elementos que puede detectar la red.
+\end_layout
+
+\begin_layout Section
+Lógica Difusa
+\end_layout
+
+\begin_layout Standard
+Tiene un conjunto finito de valores o tiene un cierto rango de valores que
+ puede tener la variable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename logicaDifusa.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lógica difusa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conjuntos o variables difusas, están asociados a una variable base, en este
+ caso la edad.
+ La variable base representa los elementos que se pueden medir.
+\end_layout
+
+\begin_layout Subsection
+Funciones de Membresía (
+\begin_inset Formula $\mu$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Indican qué tanto una variable pertenece al conjunto.
+\end_layout
+
+\begin_layout Subsection
+Operadores de la Lógica Difusa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AND
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NOT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{1}\wedge\mu_{2}=\mu_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{1}\vee\mu_{2}=\mu_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $not(\mu_{1})=\mu_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{3}=\min(\mu_{1},\mu_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{3}=\max(\mu_{1},\mu_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{2}(x)=1-\mu_{1}(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tabla de verdad:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tabla de verdad:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Propiedades
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\bigcup Not(A)\neq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\bigcap Not(A)\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
